@@ -248,11 +248,7 @@ export function Header() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/blog" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-                  Blog
-                </NavigationMenuLink>
-              </Link>
+              
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
