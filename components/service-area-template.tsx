@@ -42,7 +42,7 @@ export function ServiceAreaTemplate({
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
         <div className="absolute inset-0">
           <Image
-            src={heroImage || "/placeholder.svg?height=600&width=1600"}
+            src={heroImage || "/gauteng-map-area.jpg?height=600&width=1600"}
             alt={`Goshen Projects services in ${areaName}`}
             fill
             className="object-cover opacity-15"
