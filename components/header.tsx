@@ -213,16 +213,16 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="hover:text-secondary">Services</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
+                <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px] bg-white dark:bg-gray-950">
                   {services.map((service) => (
                     <li key={service.title}>
                       <NavigationMenuLink asChild>
                         <Link
                           href={service.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-secondary focus:bg-muted"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary focus:bg-gray-100 dark:focus:bg-gray-800 text-gray-900 dark:text-gray-100"
                         >
                           <div className="text-sm font-medium leading-none">{service.title}</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-600 dark:text-gray-400">
                             {service.description}
                           </p>
                         </Link>
@@ -232,7 +232,7 @@ export function Header() {
                   <li className="col-span-2 mt-2 border-t pt-2">
                     <Link
                       href="/services"
-                      className="flex items-center gap-2 p-2 text-sm font-medium text-secondary hover:underline"
+                      className="flex items-center gap-2 p-2 text-sm font-medium text-primary hover:underline"
                     >
                       View All Services <ChevronRight className="h-4 w-4" />
                     </Link>
