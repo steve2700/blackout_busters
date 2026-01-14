@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -155,9 +156,9 @@ export function Header() {
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27123456789" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27722524721" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 12 345 6789
+              +27 72 252 4721
             </a>
             <a
               href="mailto:info@goshenprojects.co.za"
@@ -176,8 +177,14 @@ export function Header() {
 
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 shadow-lg">
-            <span className="text-xl font-bold text-primary-foreground">GP</span>
+          <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg">
+            <Image 
+              src="/logo-icon.png" 
+              alt="Goshen Projects Logo" 
+              width={44} 
+              height={44}
+              className="object-cover"
+            />
             <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-accent border-2 border-background"></div>
           </div>
           <div className="flex flex-col">
@@ -285,8 +292,14 @@ export function Header() {
               <div className="bg-primary p-6 text-primary-foreground">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-                      <span className="text-lg font-bold">GP</span>
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white/10">
+                      <Image 
+                        src="/logo-icon.png" 
+                        alt="Goshen Projects" 
+                        width={40} 
+                        height={40}
+                        className="object-cover"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold">Goshen Projects</p>
@@ -303,9 +316,9 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="flex flex-col gap-2 text-sm text-white/80">
-                  <a href="tel:+27123456789" className="flex items-center gap-2">
+                  <a href="tel:+27722524721" className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    +27 12 345 6789
+                    +27 72 252 4721
                   </a>
                   <a href="mailto:info@goshenprojects.co.za" className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
