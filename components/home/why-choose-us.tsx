@@ -86,7 +86,7 @@ export function WhyChooseUs() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/construction-team-meeting-on-site-in-gauteng-south.jpg?height=600&width=800"
                 alt="Goshen Projects team reviewing construction plans"
                 fill
                 className="object-cover"
@@ -94,7 +94,7 @@ export function WhyChooseUs() {
             </div>
             <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl">
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg?height=200&width=200"
                 alt="Goshen Projects professional worker"
                 fill
                 className="object-cover"
