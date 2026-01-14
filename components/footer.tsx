@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react"
 
 const services = [
@@ -29,8 +30,14 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
-                <span className="text-lg font-bold text-secondary-foreground">GP</span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-secondary">
+                <Image 
+                  src="/logo-icon.png" 
+                  alt="Goshen Projects" 
+                  width={40} 
+                  height={40}
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">Goshen Projects</h3>
@@ -108,25 +115,39 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                 <span className="text-sm text-primary-foreground/80">
-                  Gauteng, South Africa
+                  32 Richards Dr, Halfway House
                   <br />
-                  Serving Pretoria & Johannesburg
+                  Midrand 1632, South Africa
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <a href="tel:+27000000000" className="text-sm text-primary-foreground/80 hover:text-secondary">
-                  +27 (0) 00 000 0000
+                <a href="tel:+27722524721" className="text-sm text-primary-foreground/80 hover:text-secondary">
+                  +27 72 252 4721
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <a
-                  href="mailto:info@goshenprojects.co.za"
-                  className="text-sm text-primary-foreground/80 hover:text-secondary"
-                >
-                  info@goshenprojects.co.za
-                </a>
+              <li className="flex items-start gap-3">
+                <Mail className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="mailto:sales@goshenprojects.co.za"
+                    className="text-sm text-primary-foreground/80 hover:text-secondary"
+                  >
+                    sales@goshenprojects.co.za
+                  </a>
+                  <a
+                    href="mailto:admin@goshenprojects.co.za"
+                    className="text-sm text-primary-foreground/80 hover:text-secondary"
+                  >
+                    admin@goshenprojects.co.za
+                  </a>
+                  <a
+                    href="mailto:info@goshenprojects.co.za"
+                    className="text-sm text-primary-foreground/80 hover:text-secondary"
+                  >
+                    info@goshenprojects.co.za
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
