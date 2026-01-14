@@ -86,7 +86,7 @@ export function WhyChooseUs() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="/construction-team-meeting-on-site-in-gauteng-south.jpg?height=600&width=800"
+                src="/construction-team-meeting-on-site-in-gauteng-south-.jpg?height=600&width=800"
                 alt="Goshen Projects team reviewing construction plans"
                 fill
                 className="object-cover"
