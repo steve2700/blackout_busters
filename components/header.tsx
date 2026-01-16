@@ -194,75 +194,75 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="hidden lg:flex">
-          <NavigationMenuList className="gap-1">
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-                  Home
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-                  About Us
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuTrigger className="hover:text-secondary data-[state=open]:bg-muted data-[state=open]:text-secondary">
-              Services
-            </NavigationMenuTrigger>
-            <NavigationMenuContent className="bg-background text-foreground border border-border shadow-lg">
-   
-                <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
-                  {services.map((service) => (
-                    <li key={service.title}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={service.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-muted hover:text-secondary focus:bg-muted"
-                        >
-                          <div className="text-sm font-medium leading-none">{service.title}</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            {service.description}
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  ))}
-                  <li className="col-span-2 mt-2 border-t pt-2">
-                    <Link
-                      href="/services"
-                      className="flex items-center gap-2 p-2 text-sm font-medium text-secondary hover:underline"
-                    >
-                      View All Services <ChevronRight className="h-4 w-4" />
-                    </Link>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/service-areas" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-                  Service Areas
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-                  Contact
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+       <NavigationMenu className="hidden lg:flex">
+       <NavigationMenuList className="gap-1">
+       <NavigationMenuItem>
+      <Link href="/" legacyBehavior passHref>
+        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
+          Home
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
 
+    <NavigationMenuItem>
+      <Link href="/about" legacyBehavior passHref>
+        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
+          About Us
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
 
+    <NavigationMenuItem>
+      <NavigationMenuTrigger className="hover:text-secondary data-[state=open]:bg-muted data-[state=open]:text-secondary">
+        Services
+      </NavigationMenuTrigger>
+
+      <NavigationMenuContent className="bg-background text-foreground border border-border shadow-lg">
+        <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
+          {services.map((service) => (
+            <li key={service.title}>
+              <NavigationMenuLink asChild>
+                <Link
+                  href={service.href}
+                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-muted hover:text-secondary focus:bg-muted"
+                >
+                  <div className="text-sm font-medium leading-none">{service.title}</div>
+                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                    {service.description}
+                  </p>
+                </Link>
+              </NavigationMenuLink>
+            </li>
+          ))}
+          <li className="col-span-2 mt-2 border-t pt-2">
+            <Link
+              href="/services"
+              className="flex items-center gap-2 p-2 text-sm font-medium text-secondary hover:underline"
+            >
+              View All Services <ChevronRight className="h-4 w-4" />
+            </Link>
+          </li>
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+
+    <NavigationMenuItem>
+      <Link href="/service-areas" legacyBehavior passHref>
+        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
+          Service Areas
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+
+    <NavigationMenuItem>
+      <Link href="/contact" legacyBehavior passHref>
+        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
+          Contact
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+  </NavigationMenuList>
+  </NavigationMenu>
 
 
         {/* CTA Button & Mobile Menu */}
@@ -413,17 +413,6 @@ export function Header() {
                     </div>
                     Service Areas
                   </Link>
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2"
-                        />
-                      </svg>
-                    </div>
-                  
                   <Link
                     href="/contact"
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
