@@ -421,9 +421,7 @@ export function Header() {
                         />
                       </svg>
                     </div>
-                    Blog
-                  </Link>
-
+                  
                   <Link
                     href="/contact"
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
