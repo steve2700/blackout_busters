@@ -210,16 +210,18 @@ export function Header() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="hover:text-secondary">Services</NavigationMenuTrigger>
-              <NavigationMenuContent>
+            <NavigationMenuTrigger className="hover:text-secondary data-[state=open]:bg-muted data-[state=open]:text-secondary">
+              Services
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="bg-background text-foreground border border-border shadow-lg">
+   
                 <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
                   {services.map((service) => (
                     <li key={service.title}>
                       <NavigationMenuLink asChild>
                         <Link
                           href={service.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-secondary focus:bg-muted"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-muted hover:text-secondary focus:bg-muted"
                         >
                           <div className="text-sm font-medium leading-none">{service.title}</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
