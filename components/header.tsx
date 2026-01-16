@@ -217,17 +217,17 @@ export function Header() {
         Services
       </NavigationMenuTrigger>
 
-      <NavigationMenuContent className="bg-background text-foreground border border-border shadow-lg">
+      <NavigationMenuContent className="bg-white dark:bg-slate-950 border border-border shadow-lg">
         <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
           {services.map((service) => (
             <li key={service.title}>
               <NavigationMenuLink asChild>
                 <Link
                   href={service.href}
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-muted hover:text-secondary focus:bg-muted"
+                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-secondary focus:bg-muted"
                 >
-                  <div className="text-sm font-medium leading-none">{service.title}</div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <div className="text-sm font-medium leading-none text-slate-900 dark:text-slate-100">{service.title}</div>
+                  <p className="line-clamp-2 text-sm leading-snug text-slate-600 dark:text-slate-400">
                     {service.description}
                   </p>
                 </Link>
