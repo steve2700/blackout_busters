@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+27 (061 530 7314)"],
+    details: ["+27 061 530 7314"],
     href: "tel:+27615307314",
   },
   {
