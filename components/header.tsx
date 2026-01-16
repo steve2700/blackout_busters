@@ -1,17 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import {
   Menu,
@@ -135,15 +127,27 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [isMounted, setIsMounted] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    setIsMounted(true)
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
     }
+    
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setServicesOpen(false)
+      }
+    }
+
     window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    document.addEventListener("mousedown", handleClickOutside)
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
   }, [])
 
   return (
@@ -196,80 +200,86 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-       {isMounted && (
-       <NavigationMenu className="hidden lg:flex">
-       <NavigationMenuList className="gap-1">
-       <NavigationMenuItem>
-      <Link href="/" legacyBehavior passHref>
-        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-          Home
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
+        <nav className="hidden lg:flex items-center gap-1">
+          <Link
+            href="/"
+            className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
+          >
+            Home
+          </Link>
 
-    <NavigationMenuItem>
-      <Link href="/about" legacyBehavior passHref>
-        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-          About Us
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
+          <Link
+            href="/about"
+            className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
+          >
+            About Us
+          </Link>
 
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className="hover:text-secondary data-[state=open]:bg-muted data-[state=open]:text-secondary">
-        Services
-      </NavigationMenuTrigger>
-
-      <NavigationMenuContent className="bg-white text-gray-900 border border-gray-200 shadow-lg">
-        <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
-          {services.map((service) => (
-            <li key={service.title}>
-              <NavigationMenuLink asChild>
-                <Link
-                  href={service.href}
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-gray-900 hover:bg-gray-100 hover:text-blue-600 focus:bg-gray-100"
-                >
-                  <div className="text-sm font-medium leading-none text-gray-900">
-                    {service.title}
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-gray-600">
-                    {service.description}
-                  </p>
-                </Link>
-              </NavigationMenuLink>
-            </li>
-          ))}
-          <li className="col-span-2 mt-2 border-t pt-2">
-            <Link
-              href="/services"
-              className="flex items-center gap-2 p-2 text-sm font-medium text-secondary hover:underline"
+          {/* Custom Services Dropdown */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
             >
-              View All Services <ChevronRight className="h-4 w-4" />
-            </Link>
-          </li>
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
+              Services
+              <ChevronDown
+                className={cn(
+                  "ml-1 h-4 w-4 transition-transform duration-200",
+                  servicesOpen && "rotate-180"
+                )}
+              />
+            </button>
 
-    <NavigationMenuItem>
-      <Link href="/service-areas" legacyBehavior passHref>
-        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-          Service Areas
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
+            {servicesOpen && (
+              <div 
+                className="absolute left-0 top-full mt-2 w-[800px] rounded-lg border border-gray-200 bg-white shadow-xl z-50"
+                style={{ backgroundColor: '#ffffff', color: '#000000' }}
+              >
+                <div className="grid grid-cols-2 gap-1 p-4">
+                  {services.map((service) => (
+                    <Link
+                      key={service.title}
+                      href={service.href}
+                      onClick={() => setServicesOpen(false)}
+                      className="block select-none rounded-md p-3 transition-colors hover:bg-gray-100"
+                      style={{ color: '#000000' }}
+                    >
+                      <div className="text-sm font-medium leading-none mb-1" style={{ color: '#1a1a1a' }}>
+                        {service.title}
+                      </div>
+                      <p className="text-sm leading-snug" style={{ color: '#666666' }}>
+                        {service.description}
+                      </p>
+                    </Link>
+                  ))}
+                  <div className="col-span-2 mt-2 border-t border-gray-200 pt-2">
+                    <Link
+                      href="/services"
+                      onClick={() => setServicesOpen(false)}
+                      className="flex items-center gap-2 p-2 text-sm font-medium text-blue-600 hover:underline"
+                    >
+                      View All Services <ChevronRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
 
-    <NavigationMenuItem>
-      <Link href="/contact" legacyBehavior passHref>
-        <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary focus:bg-muted focus:text-secondary focus:outline-none">
-          Contact
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
-  </NavigationMenuList>
-  </NavigationMenu>
-       )}
+          <Link
+            href="/service-areas"
+            className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
+          >
+            Service Areas
+          </Link>
 
+          <Link
+            href="/contact"
+            className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
+          >
+            Contact
+          </Link>
+        </nav>
 
         {/* CTA Button & Mobile Menu */}
         <div className="flex items-center gap-3">
