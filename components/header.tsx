@@ -156,9 +156,9 @@ export function Header() {
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27722524721" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27 61 530 7314" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 72 252 4721
+              +27 61 530 7314
             </a>
             <a
               href="mailto:info@goshenprojects.co.za"
@@ -315,9 +315,9 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="flex flex-col gap-2 text-sm text-white/80">
-                  <a href="tel:+27722524721" className="flex items-center gap-2">
+                  <a href="tel:+27 61 530 7314" className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    +27 72 252 4721
+                    +27 61 530 7314
                   </a>
                   <a href="mailto:info@goshenprojects.co.za" className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
@@ -411,12 +411,6 @@ export function Header() {
                     </div>
                     Service Areas
                   </Link>
-
-                  <Link
-                    href="/blog"
-                    className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
                       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
