@@ -41,7 +41,7 @@ export function HeroSection() {
             </h1>
 
             <p className="mb-8 text-pretty text-lg text-primary-foreground/80 md:text-xl max-w-2xl mx-auto lg:mx-0">
-              Goshen Projects is your one-stop solution for all construction, renovation, maintenance, and security
+              Goshen Projects is your one-stop solution for all construction, renovation, maintenance,civil construction and automated security systems
               needs in <strong className="text-white">Pretoria, Johannesburg</strong>, and the greater{" "}
               <strong className="text-white">Gauteng</strong> region. We deliver excellence with every project.
             </p>
