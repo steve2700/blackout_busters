@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from "lucid
 export const metadata: Metadata = {
   title: "Contact Goshen Projects | Request a Quote in Gauteng",
   description:
-    "Contact Goshen Projects for construction, renovations, maintenance, paving, civil works, security, or solar solutions in Gauteng. Get a free consultation and quotation today.",
+    "Contact Goshen Projects for construction, renovations, maintenance, paving, civil works, automated security needs, or solar solutions in Gauteng. Get a free consultation and quotation today.",
   openGraph: {
     title: "Contact Goshen Projects | Request a Quote in Gauteng",
     description:
