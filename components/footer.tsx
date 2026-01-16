@@ -115,15 +115,15 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                 <span className="text-sm text-primary-foreground/80">
-                  32 Richards Dr, Halfway House
+                  22 Richards Dr, Halfway House
                   <br />
                   Midrand 1632, South Africa
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <a href="tel:+27722524721" className="text-sm text-primary-foreground/80 hover:text-secondary">
-                  +27 72 252 4721
+                <a href="tel:+27615307314" className="text-sm text-primary-foreground/80 hover:text-secondary">
+                  +27 61 530 7314
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -152,9 +152,9 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                 <span className="text-sm text-primary-foreground/80">
-                  Mon - Fri: 07:00 - 17:00
+                  24-Hour
                   <br />
-                  Sat: 08:00 - 14:00
+                  Emergency Support
                 </span>
               </li>
             </ul>
