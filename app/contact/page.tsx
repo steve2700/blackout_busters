@@ -18,13 +18,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: ["Gauteng, South Africa", "Serving Pretoria & Johannesburg"],
+    details: ["22 Richards Dr, Halfway House","Midrand 1632 South Africa"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+27 (0) 00 000 0000"],
-    href: "tel:+27000000000",
+    details: ["+27 (061 530 7314)"],
+    href: "tel:+27615307314",
   },
   {
     icon: Mail,
@@ -35,7 +35,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Business Hours",
-    details: ["Mon - Fri: 07:00 - 17:00", "Saturday: 08:00 - 14:00"],
+    details: ["24 hours Services"],
   },
 ]
 
