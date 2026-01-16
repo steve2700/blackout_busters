@@ -217,17 +217,20 @@ export function Header() {
         Services
       </NavigationMenuTrigger>
 
-      <NavigationMenuContent className="!bg-white !text-black border border-gray-200 shadow-lg">
+      <NavigationMenuContent className="bg-white border border-gray-200 shadow-lg" style={{ backgroundColor: '#ffffff' }}>
         <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
           {services.map((service) => (
             <li key={service.title}>
               <NavigationMenuLink asChild>
                 <Link
                   href={service.href}
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors !text-gray-900 hover:!bg-gray-100 hover:!text-blue-600 focus:!bg-gray-100"
+                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100"
+                  style={{ color: '#000000' }}
                 >
-                  <div className="text-sm font-medium leading-none !text-gray-900">{service.title}</div>
-                  <p className="line-clamp-2 text-sm leading-snug !text-gray-600">
+                  <div className="text-sm font-medium leading-none" style={{ color: '#1a1a1a' }}>
+                    {service.title}
+                  </div>
+                  <p className="line-clamp-2 text-sm leading-snug" style={{ color: '#666666' }}>
                     {service.description}
                   </p>
                 </Link>
