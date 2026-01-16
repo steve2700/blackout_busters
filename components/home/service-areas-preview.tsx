@@ -83,7 +83,7 @@ export function ServiceAreasPreview() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-2xl">
               <Image
-                src="/pr.jpg?height=600&width=800"
+                src="/gauteng-service-area.jpg?height=600&width=800"
                 alt="Goshen Projects service areas map - Gauteng, Pretoria, Johannesburg"
                 width={800}
                 height={600}
