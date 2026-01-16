@@ -135,8 +135,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    setIsMounted(true)
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
     }
@@ -194,6 +196,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
+       {isMounted && (
        <NavigationMenu className="hidden lg:flex">
        <NavigationMenuList className="gap-1">
        <NavigationMenuItem>
@@ -217,19 +220,26 @@ export function Header() {
         Services
       </NavigationMenuTrigger>
 
-      <NavigationMenuContent className="bg-popover text-popover-foreground border border-border shadow-lg">
+      <NavigationMenuContent 
+        className="bg-popover text-popover-foreground border border-border shadow-lg"
+        style={{
+          backgroundColor: 'white',
+          color: 'black'
+        }}
+      >
         <ul className="grid w-[600px] gap-1 p-4 md:w-[700px] md:grid-cols-2 lg:w-[800px]">
           {services.map((service) => (
             <li key={service.title}>
               <NavigationMenuLink asChild>
                 <Link
                   href={service.href}
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100"
+                  style={{ color: 'black' }}
                 >
-                  <div className="text-sm font-medium leading-none">
+                  <div className="text-sm font-medium leading-none" style={{ color: 'black' }}>
                     {service.title}
                   </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <p className="line-clamp-2 text-sm leading-snug" style={{ color: '#666' }}>
                     {service.description}
                   </p>
                 </Link>
@@ -265,6 +275,7 @@ export function Header() {
     </NavigationMenuItem>
   </NavigationMenuList>
   </NavigationMenu>
+       )}
 
 
         {/* CTA Button & Mobile Menu */}
