@@ -152,7 +152,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
                 <span className="text-sm text-primary-foreground/80">
-                  24 Hour Services
+                  24 Hour Services &
                   <br />
                   Emergency Support
                 </span>
