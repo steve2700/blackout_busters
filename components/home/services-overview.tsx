@@ -159,7 +159,7 @@ export function ServicesOverview() {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={service.image || "/placeholder.svg"}
+                  src={service.image || "/modern-renovated-kitchen-interior-design-south-afr.jpg"}
                   alt={service.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
