@@ -97,7 +97,7 @@ export function HeroSection() {
               {/* Main Image */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/professional-construction-workers-team-on-modern-b.jpg"
+                  src="/professional-construction-workers-team.jpg"
                   alt="Goshen Projects construction team at work in Gauteng"
                   fill
                   className="object-cover"
