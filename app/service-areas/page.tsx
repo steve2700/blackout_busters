@@ -241,7 +241,7 @@ export default function ServiceAreasPage() {
             <div className="relative">
               <div className="relative aspect-square overflow-hidden rounded-2xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/gauteng-service-areas-map.webp?height=600&width=600"
                   alt="Goshen Projects service coverage map"
                   fill
                   className="object-cover"
