@@ -135,7 +135,7 @@ export function ServiceAreaTemplate({
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/modern-renovated-kitchen-interior-design-south-afr.jpg?height=400&width=600"
                   alt={`Construction services in ${areaName}`}
                   fill
                   className="object-cover"
