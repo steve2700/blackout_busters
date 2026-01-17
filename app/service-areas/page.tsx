@@ -107,7 +107,7 @@ export default function ServiceAreasPage() {
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=600&width=1600"
+            src="/gauteng-service-areas-map.webp?height=600&width=1600"
             alt="Gauteng map service areas"
             fill
             className="object-cover opacity-10"
