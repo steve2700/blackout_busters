@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react"
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
 
 const services = [
   { title: "Building Construction", href: "/services/building-construction-renovations" },
@@ -8,9 +8,9 @@ const services = [
   { title: "Plumbing Services", href: "/services/plumbing-services" },
   { title: "Electrical Services", href: "/services/electrical-services" },
   { title: "Roofing & Repairs", href: "/services/roofing-services" },
+  { title: "Waterproofing", href: "/services/waterproofing-services" },
   { title: "Solar & Energy", href: "/services/solar-energy-solutions" },
   { title: "Security Systems", href: "/services/cctv-alarm-surveillance" },
-  { title: "Paving & Surfacing", href: "/services/paving-driveways-surfacing" },
 ]
 
 const serviceAreas = [
@@ -22,87 +22,147 @@ const serviceAreas = [
   { name: "Randburg", href: "/service-areas/randburg" },
 ]
 
+const quickLinks = [
+  { title: "About Us", href: "/about" },
+  { title: "All Services", href: "/services" },
+  { title: "Service Areas", href: "/service-areas" },
+  { title: "Contact Us", href: "/contact" },
+  { title: "Get a Quote", href: "/contact#quote" },
+  { title: "Careers", href: "/careers" },
+]
+
 export function Footer() {
   return (
     <footer className="border-t border-border bg-primary text-primary-foreground">
+      {/* Trust Badges */}
+      <div className="border-b border-primary-foreground/10 bg-primary/95">
+        <div className="container mx-auto px-4 py-8 lg:px-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <Award className="h-6 w-6 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white">Licensed & Certified</h4>
+                <p className="text-sm text-primary-foreground/70">Fully compliant professionals</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <Shield className="h-6 w-6 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white">Insured & Guaranteed</h4>
+                <p className="text-sm text-primary-foreground/70">All work fully insured</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <Users className="h-6 w-6 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white">Experienced Team</h4>
+                <p className="text-sm text-primary-foreground/70">Trusted by hundreds of clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-secondary">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+          {/* Company Info - Wider Column */}
+          <div className="space-y-4 lg:col-span-2">
+            <Link href="/" className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg overflow-hidden bg-white shadow-lg">
                 <Image 
                   src="/logo-icon.png" 
-                  alt="Goshen Projects" 
-                  width={40} 
-                  height={40}
+                  alt="Goshen Projects Solutions Logo" 
+                  width={48} 
+                  height={48}
                   className="object-cover"
+                  loading="lazy"
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold">Goshen Projects</h3>
+                <h3 className="text-xl font-bold text-white">Goshen Projects Solutions</h3>
                 <p className="text-xs text-primary-foreground/70">Building Excellence in Gauteng</p>
               </div>
-            </div>
-            <p className="text-sm text-primary-foreground/80">
-              Integrated Construction, Infrastructure, Maintenance & Security Solutions serving Gauteng, Pretoria &
-              Johannesburg.
+            </Link>
+            <p className="text-sm text-primary-foreground/80 leading-relaxed max-w-md">
+              Your trusted partner for comprehensive construction, infrastructure, maintenance, and security solutions across Gauteng. We deliver quality workmanship with professional service.
             </p>
-            <div className="flex gap-4">
-              <Link href="#" className="text-primary-foreground/70 transition-colors hover:text-secondary">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="text-primary-foreground/70 transition-colors hover:text-secondary">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-primary-foreground/70 transition-colors hover:text-secondary">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
+            
+            {/* Social Media Links */}
+            <div>
+              <h4 className="mb-3 text-sm font-semibold text-white">Follow Us</h4>
+              <div className="flex gap-3">
+                <a
+                  href="https://www.facebook.com/goshenprojectssolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/goshenprojectssolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.x.com/goshen_projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter className="h-5 w-5" />
+                </a>
+              </div>
             </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="mb-4 text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
+            <ul className="space-y-2.5">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent hover:translate-x-1 inline-block"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="mb-4 text-lg font-semibold">Our Services</h4>
-            <ul className="space-y-2">
-              {services.map((service) => (
+            <h4 className="mb-4 text-sm font-bold text-white uppercase tracking-wider">Our Services</h4>
+            <ul className="space-y-2.5">
+              {services.slice(0, 6).map((service) => (
                 <li key={service.href}>
                   <Link
                     href={service.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-secondary"
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent hover:translate-x-1 inline-block"
                   >
                     {service.title}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/services" className="text-sm font-medium text-secondary hover:underline">
+                <Link href="/services" className="text-sm font-semibold text-accent hover:underline inline-flex items-center gap-1">
                   View All Services →
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Service Areas */}
-          <div>
-            <h4 className="mb-4 text-lg font-semibold">Service Areas</h4>
-            <ul className="space-y-2">
-              {serviceAreas.map((area) => (
-                <li key={area.href}>
-                  <Link
-                    href={area.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-secondary"
-                  >
-                    {area.name}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/service-areas" className="text-sm font-medium text-secondary hover:underline">
-                  All Service Areas →
                 </Link>
               </li>
             </ul>
@@ -110,68 +170,89 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="mb-4 text-lg font-semibold">Contact Us</h4>
+            <h4 className="mb-4 text-sm font-bold text-white uppercase tracking-wider">Contact Us</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                <span className="text-sm text-primary-foreground/80">
-                  22 Richards Dr, Halfway House
-                  <br />
-                  Midrand 1632, South Africa
-                </span>
+              <li>
+                <a
+                  href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 group"
+                >
+                  <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-sm text-primary-foreground/80 group-hover:text-accent transition-colors">
+                    22 Richards Dr, Halfway House<br />Midrand 1632, South Africa
+                  </span>
+                </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <a href="tel:+27615307314" className="text-sm text-primary-foreground/80 hover:text-secondary">
-                  +27 61 530 7314
+              <li>
+                <a href="tel:+27615307314" className="flex items-center gap-3 group">
+                  <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-sm text-primary-foreground/80 group-hover:text-accent transition-colors">
+                    +27 61 530 7314
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@goshenprojects.co.za"
+                  className="flex items-center gap-3 group"
+                >
+                  <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-sm text-primary-foreground/80 group-hover:text-accent transition-colors">
+                    info@goshenprojects.co.za
+                  </span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                <div className="flex flex-col gap-1">
-                  <a
-                    href="mailto:sales@goshenprojects.co.za"
-                    className="text-sm text-primary-foreground/80 hover:text-secondary"
-                  >
-                    sales@goshenprojects.co.za
-                  </a>
-                  <a
-                    href="mailto:admin@goshenprojects.co.za"
-                    className="text-sm text-primary-foreground/80 hover:text-secondary"
-                  >
-                    admin@goshenprojects.co.za
-                  </a>
-                  <a
-                    href="mailto:info@goshenprojects.co.za"
-                    className="text-sm text-primary-foreground/80 hover:text-secondary"
-                  >
-                    info@goshenprojects.co.za
-                  </a>
+                <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
+                <div className="text-sm text-primary-foreground/80">
+                  <div className="font-semibold text-white">Mon-Fri: 8:00 - 17:00</div>
+                  <div className="text-accent">24/7 Emergency Support</div>
                 </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
-                <span className="text-sm text-primary-foreground/80">
-                  24 Hour Services &
-                  <br />
-                  Emergency Support
-                </span>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Service Areas Bar */}
+        <div className="mt-10 pt-8 border-t border-primary-foreground/10">
+          <h4 className="mb-4 text-sm font-bold text-white text-center uppercase tracking-wider">
+            Proudly Serving Gauteng
+          </h4>
+          <div className="flex flex-wrap justify-center gap-3">
+            {serviceAreas.map((area) => (
+              <Link
+                key={area.href}
+                href={area.href}
+                className="rounded-full bg-primary-foreground/10 px-4 py-1.5 text-sm text-primary-foreground/80 transition-all hover:bg-accent hover:text-white"
+              >
+                {area.name}
+              </Link>
+            ))}
+            <Link
+              href="/service-areas"
+              className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-white hover:bg-accent/90"
+            >
+              View All Areas →
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/20 pt-8 md:flex-row">
-          <p className="text-sm text-primary-foreground/70">
-            © {new Date().getFullYear()} Goshen Projects. All rights reserved.
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
+          <p className="text-sm text-primary-foreground/70 text-center md:text-left">
+            © {new Date().getFullYear()} Goshen Projects Solutions. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 hover:text-secondary">
+          <div className="flex flex-wrap justify-center gap-6">
+            <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-sm text-primary-foreground/70 hover:text-secondary">
+            <Link href="/terms-of-service" className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
               Terms of Service
+            </Link>
+            <Link href="/sitemap" className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+              Sitemap
             </Link>
           </div>
         </div>
