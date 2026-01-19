@@ -27,6 +27,9 @@ import {
   Sun,
   Snowflake,
   Car,
+  Facebook,
+  Instagram,
+  Twitter,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -159,10 +162,11 @@ export function Header() {
           : "border-transparent bg-background",
       )}
     >
+      {/* Top Bar with Contact Info and Social Links */}
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27 61 530 7314" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27615307314" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
               +27 61 530 7314
             </a>
@@ -173,28 +177,68 @@ export function Header() {
               <Mail className="h-3.5 w-3.5" />
               info@goshenprojects.co.za
             </a>
+            <a
+              href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-accent transition-colors"
+            >
+              <MapPin className="h-3.5 w-3.5" />
+              22 Richards Dr, Midrand
+            </a>
           </div>
-          <div className="flex items-center gap-2 text-sm">
-            <MapPin className="h-3.5 w-3.5" />
-            <span>Serving Pretoria, Johannesburg & Greater Gauteng</span>
+          <div className="flex items-center gap-4">
+            <span className="text-xs text-white/70">Follow Us:</span>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/goshenprojectssolutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/goshenprojectssolutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href="https://www.x.com/goshen_projects"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <Twitter className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Main Header */}
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg">
+          <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg bg-white">
             <Image 
               src="/logo-icon.png" 
-              alt="Goshen Projects Logo" 
+              alt="Goshen Projects Solutions Logo" 
               width={44} 
               height={44}
               className="object-cover"
+              priority
+              quality={90}
             />
             <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-accent border-2 border-background"></div>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary">Goshen Projects</span>
+            <span className="text-xl font-bold text-primary leading-tight">Goshen Projects Solutions</span>
             <span className="hidden text-xs text-muted-foreground sm:block">Building Excellence in Gauteng</span>
           </div>
         </Link>
@@ -215,11 +259,13 @@ export function Header() {
             About Us
           </Link>
 
-          {/* Custom Services Dropdown */}
+          {/* Services Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
               className="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-secondary"
+              aria-expanded={servicesOpen}
+              aria-haspopup="true"
             >
               Services
               <ChevronDown
@@ -232,33 +278,38 @@ export function Header() {
 
             {servicesOpen && (
               <div 
-                className="absolute left-0 top-full mt-2 w-[800px] rounded-lg border border-gray-200 bg-white shadow-xl z-50"
-                style={{ backgroundColor: '#ffffff', color: '#000000' }}
+                className="absolute left-0 top-full mt-2 w-[800px] rounded-lg border border-gray-200 bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
               >
                 <div className="grid grid-cols-2 gap-1 p-4">
                   {services.map((service) => (
                     <Link
-                      key={service.title}
+                      key={service.href}
                       href={service.href}
                       onClick={() => setServicesOpen(false)}
-                      className="block select-none rounded-md p-3 transition-colors hover:bg-gray-100"
-                      style={{ color: '#000000' }}
+                      className="group block select-none rounded-md p-3 transition-all hover:bg-gray-100 hover:shadow-sm"
                     >
-                      <div className="text-sm font-medium leading-none mb-1" style={{ color: '#1a1a1a' }}>
-                        {service.title}
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                          <service.icon className="h-4 w-4" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-sm font-semibold leading-tight mb-1 text-gray-900 group-hover:text-primary transition-colors">
+                            {service.title}
+                          </div>
+                          <p className="text-xs leading-snug text-gray-600 line-clamp-2">
+                            {service.description}
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-sm leading-snug" style={{ color: '#666666' }}>
-                        {service.description}
-                      </p>
                     </Link>
                   ))}
-                  <div className="col-span-2 mt-2 border-t border-gray-200 pt-2">
+                  <div className="col-span-2 mt-2 border-t border-gray-200 pt-3">
                     <Link
                       href="/services"
                       onClick={() => setServicesOpen(false)}
-                      className="flex items-center gap-2 p-2 text-sm font-medium text-blue-600 hover:underline"
+                      className="flex items-center justify-center gap-2 rounded-md bg-primary/5 p-3 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all"
                     >
-                      View All Services <ChevronRight className="h-4 w-4" />
+                      View All 15 Services <ChevronRight className="h-4 w-4" />
                     </Link>
                   </div>
                 </div>
@@ -289,7 +340,7 @@ export function Header() {
           >
             <Link href="/contact">
               <Phone className="mr-2 h-4 w-4" />
-              Request a Quote
+              Get Free Quote
             </Link>
           </Button>
 
@@ -299,9 +350,9 @@ export function Header() {
                 variant="outline"
                 size="icon"
                 className="lg:hidden border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all bg-transparent"
+                aria-label="Toggle menu"
               >
                 <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-md p-0 border-l-0 overflow-hidden [&>button]:hidden">
@@ -309,17 +360,18 @@ export function Header() {
               <div className="bg-primary p-6 text-primary-foreground">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white/10">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white">
                       <Image 
                         src="/logo-icon.png" 
-                        alt="Goshen Projects" 
+                        alt="Goshen Projects Solutions" 
                         width={40} 
                         height={40}
                         className="object-cover"
+                        priority
                       />
                     </div>
                     <div>
-                      <p className="font-semibold">Goshen Projects</p>
+                      <p className="font-bold text-sm">Goshen Projects Solutions</p>
                       <p className="text-xs text-white/70">Building Excellence</p>
                     </div>
                   </div>
@@ -328,18 +380,59 @@ export function Header() {
                     size="icon"
                     onClick={() => setIsOpen(false)}
                     className="text-white hover:bg-white/10"
+                    aria-label="Close menu"
                   >
                     <X className="h-5 w-5" />
                   </Button>
                 </div>
-                <div className="flex flex-col gap-2 text-sm text-white/80">
-                  <a href="tel:+27 61 530 7314" className="flex items-center gap-2">
+                <div className="space-y-2 text-sm text-white/90">
+                  <a href="tel:+27615307314" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Phone className="h-4 w-4" />
                     +27 61 530 7314
                   </a>
-                  <a href="mailto:info@goshenprojects.co.za" className="flex items-center gap-2">
+                  <a href="mailto:info@goshenprojects.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Mail className="h-4 w-4" />
                     info@goshenprojects.co.za
+                  </a>
+                  <a 
+                    href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-white transition-colors"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    22 Richards Dr, Midrand
+                  </a>
+                </div>
+                
+                {/* Social Links in Mobile */}
+                <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/20">
+                  <a
+                    href="https://www.facebook.com/goshenprojectssolutions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/80 hover:text-white transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/goshenprojectssolutions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/80 hover:text-white transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.x.com/goshen_projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/80 hover:text-white transition-colors"
+                    aria-label="X (Twitter)"
+                  >
+                    <Twitter className="h-5 w-5" />
                   </a>
                 </div>
               </div>
@@ -374,6 +467,7 @@ export function Header() {
                     <button
                       className="flex w-full items-center justify-between gap-3 p-4 text-lg font-medium hover:bg-muted transition-colors"
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                      aria-expanded={mobileServicesOpen}
                     >
                       <div className="flex items-center gap-3">
                         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
@@ -398,7 +492,7 @@ export function Header() {
                       <div className="grid grid-cols-2 gap-2 px-4 pb-4">
                         {services.slice(0, 8).map((service) => (
                           <Link
-                            key={service.title}
+                            key={service.href}
                             href={service.href}
                             className="flex flex-col items-center gap-2 rounded-xl bg-muted/50 p-3 text-center text-xs font-medium hover:bg-secondary/10 hover:text-secondary transition-colors"
                             onClick={() => setIsOpen(false)}
@@ -413,7 +507,7 @@ export function Header() {
                         className="mx-4 mb-4 flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-secondary/30 p-3 text-sm font-medium text-secondary hover:bg-secondary/5 transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        View All 16 Services
+                        View All 15 Services
                         <ChevronRight className="h-4 w-4" />
                       </Link>
                     </div>
@@ -429,6 +523,7 @@ export function Header() {
                     </div>
                     Service Areas
                   </Link>
+
                   <Link
                     href="/contact"
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
@@ -451,11 +546,11 @@ export function Header() {
                 >
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <Phone className="mr-2 h-5 w-5" />
-                    Request a Free Quote
+                    Get Your Free Quote
                   </Link>
                 </Button>
                 <p className="mt-3 text-center text-xs text-muted-foreground">
-                  Free consultations for all projects in Gauteng
+                  Free consultations • Licensed & Insured • Gauteng
                 </p>
               </div>
             </SheetContent>
