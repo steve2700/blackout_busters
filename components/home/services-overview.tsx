@@ -25,193 +25,303 @@ const services = [
     icon: Building2,
     title: "Building Construction & Renovations",
     description:
-      "New residential, commercial, and industrial buildings. Renovations, refurbishments, and home extensions.",
+      "New residential, commercial, and industrial buildings. Expert renovations, refurbishments, and home extensions in Gauteng.",
     href: "/services/building-construction-renovations",
     image: "/modern-building-construction-site-with-scaffolding.jpg",
+    keywords: "construction, renovations, building contractors",
   },
   {
     icon: Wrench,
     title: "Property Maintenance",
     description:
-      "Comprehensive residential and commercial maintenance, preventative programs, and facility management.",
+      "Comprehensive residential and commercial maintenance programs, preventative care, and professional facility management.",
     href: "/services/property-maintenance",
     image: "/property-maintenance-worker-fixing-repairs-profess.jpg",
+    keywords: "property maintenance, facility management, repairs",
   },
   {
     icon: Droplets,
     title: "Plumbing Services",
-    description: "Complete plumbing installations and repairs, leak detection, drain cleaning, and geyser maintenance.",
+    description: "Complete plumbing installations and repairs, leak detection, drain cleaning, and geyser maintenance across Gauteng.",
     href: "/services/plumbing-services",
     image: "/professional-plumber-working-on-pipes-installation.jpg",
+    keywords: "plumbing, leak detection, geyser repairs",
   },
   {
     icon: Zap,
     title: "Electrical Services",
     description:
-      "Electrical installations, rewiring, fault finding, lighting installations, and comprehensive maintenance.",
+      "Certified electrical installations, rewiring, fault finding, lighting installations, and comprehensive electrical maintenance.",
     href: "/services/electrical-services",
     image: "/electrician-working-on-electrical-panel-wiring-sou.jpg",
+    keywords: "electrical, rewiring, installations",
   },
   {
     icon: Home,
     title: "Roofing & Repairs",
     description:
-      "Expert roof leak detection and repairs, tile and IBR roofing, waterproofing, and gutter installations.",
+      "Expert roof leak detection and repairs, tile and IBR roofing, waterproofing solutions, and gutter installations.",
     href: "/services/roofing-services",
     image: "/roofer-installing-tiles-on-residential-roof-south-.jpg",
+    keywords: "roofing, roof repairs, waterproofing",
   },
   {
     icon: Shield,
-    title: "Waterproofing",
+    title: "Waterproofing Services",
     description:
-      "Professional waterproofing for roofs, balconies, bathrooms, foundations, and damp proofing solutions.",
+      "Professional waterproofing for roofs, balconies, bathrooms, foundations, and effective damp proofing solutions.",
     href: "/services/waterproofing-services",
     image: "/waterproofing-membrane-application-on-roof-south-a.jpg",
+    keywords: "waterproofing, damp proofing, roof sealing",
   },
   {
     icon: Hammer,
     title: "Carpentry Services",
-    description: "Quality roof timber structures, doors, frames, decking, pergolas, cabinetry, and repairs.",
+    description: "Quality roof timber structures, custom doors, frames, decking, pergolas, cabinetry, and expert carpentry repairs.",
     href: "/services/carpentry-services",
     image: "/carpenter-craftsman-working-on-wood-cabinetry-work.jpg",
+    keywords: "carpentry, timber structures, custom woodwork",
   },
   {
     icon: Construction,
-    title: "Kitchen & Bathroom",
-    description: "Custom kitchen cupboards, bathroom vanities, storage units, and built-in cupboards.",
+    title: "Kitchen & Bathroom Cupboards",
+    description: "Custom kitchen cupboards, bathroom vanities, storage solutions, and built-in cupboards tailored to your space.",
     href: "/services/kitchen-bathroom-cupboards",
     image: "/modern-kitchen-renovation-with-white-cabinets-sout.jpg",
+    keywords: "kitchen cupboards, bathroom vanities, custom cabinets",
   },
   {
     icon: PaintBucket,
     title: "Painting & Tiling",
-    description: "Interior and exterior painting, floor and wall tiling, surface preparation, and decorative finishes.",
+    description: "Professional interior and exterior painting, floor and wall tiling, surface preparation, and decorative finishes.",
     href: "/services/painting-tiling-finishing",
     image: "/professional-painter-painting-interior-wall-home-r.jpg",
+    keywords: "painting, tiling, interior design",
   },
   {
     icon: Car,
     title: "Paving & Driveways",
-    description: "Brick paving, tar paving, driveway construction, walkways, parking areas, and resurfacing.",
+    description: "Expert brick paving, tar paving, driveway construction, walkways, parking areas, and professional resurfacing.",
     href: "/services/paving-driveways-surfacing",
     image: "/brick-paving-driveway-installation-residential-sou.jpg",
+    keywords: "paving, driveways, tar surfacing",
   },
   {
     icon: Fence,
     title: "Fencing & Access Control",
-    description: "Palisade fencing, electric fencing, electric gate automation, and intercom systems.",
+    description: "Security palisade fencing, electric fencing, automated gate systems, and professional intercom installations.",
     href: "/services/fencing-gates-access-control",
     image: "/modern-palisade-security-fencing-gate-installation.jpg",
+    keywords: "fencing, gate automation, access control",
   },
   {
     icon: Camera,
-    title: "CCTV & Security",
-    description: "State-of-the-art CCTV installations, alarm systems, remote monitoring, and security maintenance.",
+    title: "CCTV & Security Systems",
+    description: "State-of-the-art CCTV installations, alarm systems, remote monitoring, and comprehensive security maintenance.",
     href: "/services/cctv-alarm-surveillance",
     image: "/cctv-security-camera-installation-professional-mon.jpg",
+    keywords: "CCTV, security systems, surveillance",
   },
   {
     icon: Sun,
-    title: "Solar Solutions",
-    description: "Solar power installations, solar geysers, inverter and battery backup systems.",
+    title: "Solar & Energy Solutions",
+    description: "Solar power installations, solar geysers, inverter systems, and battery backup solutions for energy independence.",
     href: "/services/solar-energy-solutions",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/modern-building-construction-site-with-scaffolding.jpg",
+    keywords: "solar power, solar geysers, energy solutions",
   },
   {
     icon: Snowflake,
-    title: "Air Conditioning",
+    title: "Air Conditioning Services",
     description:
-      "Professional air conditioning installation, servicing, and maintenance for efficient climate control.",
+      "Professional air conditioning installation, servicing, repairs, and maintenance for optimal climate control year-round.",
     href: "/services/air-conditioning-services",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/property-maintenance-worker-fixing-repairs-profess.jpg",
+    keywords: "air conditioning, HVAC, climate control",
   },
   {
     icon: Construction,
     title: "Road & Civil Works",
-    description: "Road construction, earthworks, site preparation, stormwater drainage, and concrete works.",
+    description: "Professional road construction, earthworks, site preparation, stormwater drainage systems, and concrete works.",
     href: "/services/road-construction-civil-works",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/modern-building-construction-site-with-scaffolding.jpg",
+    keywords: "civil works, road construction, earthworks",
   },
 ]
 
 export function ServicesOverview() {
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-b from-background to-muted/30">
+    <section 
+      className="py-20 lg:py-28 bg-gradient-to-b from-background to-muted/30" 
+      itemScope 
+      itemType="https://schema.org/ItemList"
+      aria-labelledby="services-heading"
+    >
       <div className="container mx-auto px-4 lg:px-8">
+        {/* Section Header - SEO Optimized */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-medium text-secondary">
+          <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary uppercase tracking-wide">
             Our Services
           </span>
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
-            Comprehensive Solutions for Every Project
+          <h2 
+            id="services-heading"
+            className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
+            itemProp="name"
+          >
+            Comprehensive Construction & Maintenance Solutions in Gauteng
           </h2>
-          <p className="text-pretty text-lg text-muted-foreground">
-            From construction and renovations to maintenance and security, Goshen Projects provides integrated solutions
-            that minimize the need for multiple contractors while guaranteeing quality, compliance, and professionalism.
+          <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
+            From construction and renovations to maintenance and security systems, <strong>Goshen Projects Solutions</strong> provides integrated services across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted partner for all your project needs.
           </p>
         </div>
 
+        {/* Featured Services - Cards with Images */}
         <div className="mb-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.slice(0, 6).map((service) => (
+          {services.slice(0, 6).map((service, index) => (
             <Card
-              key={service.title}
-              className="group overflow-hidden border-border transition-all duration-300 hover:border-secondary hover:shadow-xl"
+              key={service.href}
+              className="group overflow-hidden border-border transition-all duration-300 hover:border-secondary hover:shadow-2xl hover:-translate-y-1"
+              itemScope
+              itemType="https://schema.org/Service"
+              itemProp="itemListElement"
             >
-              <div className="relative h-48 overflow-hidden">
+              <meta itemProp="position" content={String(index + 1)} />
+              
+              {/* Service Image with Optimized Loading */}
+              <div className="relative h-48 overflow-hidden bg-muted">
                 <Image
-                  src={service.image || "/modern-renovated-kitchen-interior-design-south-afr.jpg"}
-                  alt={service.title}
+                  src={service.image}
+                  alt={`${service.title} in Gauteng - Professional ${service.keywords} services by Goshen Projects Solutions`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading={index < 3 ? "eager" : "lazy"}
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  itemProp="image"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-                <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-lg">
-                  <service.icon className="h-6 w-6" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                
+                {/* Icon Badge */}
+                <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-lg ring-2 ring-white/20 transition-transform group-hover:scale-110">
+                  <service.icon className="h-6 w-6" aria-hidden="true" />
                 </div>
               </div>
+
               <CardContent className="p-6">
-                <h3 className="mb-2 text-lg font-semibold group-hover:text-secondary transition-colors">
+                <h3 
+                  className="mb-2 text-lg font-bold group-hover:text-secondary transition-colors"
+                  itemProp="name"
+                >
                   {service.title}
                 </h3>
-                <p className="mb-4 text-sm text-muted-foreground line-clamp-2">{service.description}</p>
+                <p 
+                  className="mb-4 text-sm text-muted-foreground leading-relaxed line-clamp-3"
+                  itemProp="description"
+                >
+                  {service.description}
+                </p>
                 <Link
                   href={service.href}
-                  className="inline-flex items-center text-sm font-medium text-secondary hover:underline"
+                  className="inline-flex items-center text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors"
+                  itemProp="url"
                 >
-                  Learn More <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  Learn More 
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
+        {/* Additional Services - Compact List */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {services.slice(6).map((service) => (
+          {services.slice(6).map((service, index) => (
             <Link
-              key={service.title}
+              key={service.href}
               href={service.href}
-              className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all hover:border-secondary hover:shadow-lg"
+              className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-0.5"
+              itemScope
+              itemType="https://schema.org/Service"
+              itemProp="itemListElement"
             >
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
-                <service.icon className="h-5 w-5" />
+              <meta itemProp="position" content={String(index + 7)} />
+              
+              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all group-hover:bg-secondary group-hover:text-secondary-foreground group-hover:scale-110">
+                <service.icon className="h-5 w-5" aria-hidden="true" />
               </div>
-              <div className="min-w-0">
-                <h3 className="text-sm font-medium truncate group-hover:text-secondary transition-colors">
+              <div className="min-w-0 flex-1">
+                <h3 
+                  className="text-sm font-semibold truncate group-hover:text-secondary transition-colors"
+                  itemProp="name"
+                >
                   {service.title}
                 </h3>
-                <p className="text-xs text-muted-foreground">View Details</p>
+                <p className="text-xs text-muted-foreground">View Details →</p>
               </div>
             </Link>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8">
-            <Link href="/services">
-              View All 16 Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+        {/* CTA Section with Stats */}
+        <div className="mt-16 rounded-2xl bg-gradient-to-br from-primary to-primary/90 p-8 lg:p-12 text-center relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-10" aria-hidden="true">
+            <div className="absolute top-0 left-0 w-32 h-32 bg-accent rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-secondary rounded-full blur-3xl" />
+          </div>
+
+          <div className="relative z-10">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+              Ready to Start Your Project?
+            </h3>
+            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+              Get a free, no-obligation quote from Gauteng's most trusted construction and maintenance provider. Licensed, insured, and committed to excellence.
+            </p>
+            
+            {/* Stats */}
+            <div className="flex flex-wrap justify-center gap-8 mb-8 text-white">
+              <div>
+                <div className="text-3xl font-bold text-accent">15+</div>
+                <div className="text-sm text-white/80">Service Categories</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent">500+</div>
+                <div className="text-sm text-white/80">Happy Clients</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent">10+</div>
+                <div className="text-sm text-white/80">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent">24/7</div>
+                <div className="text-sm text-white/80">Emergency Support</div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 font-semibold transition-transform hover:scale-105"
+              >
+                <Link href="/contact">
+                  Get Your Free Quote
+                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                </Link>
+              </Button>
+              <Button 
+                asChild 
+                size="lg" 
+                variant="outline"
+                className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 font-semibold transition-transform hover:scale-105"
+              >
+                <Link href="/services">
+                  View All 15 Services
+                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
