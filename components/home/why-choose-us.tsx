@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CheckCircle, Shield, Users, Clock, Award, Leaf, ArrowRight } from "lucide-react"
+import { CheckCircle, Shield, Users, Clock, Award, Leaf, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -8,121 +8,251 @@ const reasons = [
     icon: Users,
     title: "Skilled & Experienced Professionals",
     description:
-      "Our team includes highly skilled engineers, technicians, carpenters, plumbers, electricians, and project managers with years of industry experience.",
+      "Our team includes highly skilled engineers, technicians, carpenters, plumbers, electricians, and project managers with over 10 years of industry experience across Gauteng.",
   },
   {
     icon: Shield,
-    title: "Compliance & Regulations",
+    title: "Full Compliance & Certification",
     description:
-      "We strictly adhere to South African building, electrical, and plumbing regulations, ensuring every project meets legal and safety standards.",
+      "We strictly adhere to South African building codes, NHBRC, CIDB, SABS, and ECSA regulations, ensuring every project meets legal and safety standards.",
   },
   {
     icon: CheckCircle,
-    title: "Transparent Pricing",
+    title: "Transparent Pricing & Quotes",
     description:
-      "No hidden costs or surprises. We provide clear, detailed quotations and transparent project management from start to finish.",
+      "No hidden costs or surprises. We provide clear, detailed quotations and transparent project management from start to finish with written guarantees.",
   },
   {
     icon: Award,
-    title: "Commitment to Quality",
+    title: "Uncompromising Quality Standards",
     description:
-      "Quality is non-negotiable. We use high-quality materials and proven techniques to deliver lasting results that exceed expectations.",
+      "Quality is non-negotiable. We use premium materials and proven construction techniques to deliver lasting results that exceed client expectations.",
   },
   {
     icon: Clock,
-    title: "Reliable Turnaround Times",
+    title: "On-Time Project Delivery",
     description:
-      "We understand time is valuable. Our efficient project execution ensures your projects are completed on schedule without compromising quality.",
+      "We understand deadlines matter. Our efficient project execution and scheduling ensures your projects are completed on time without compromising quality or safety.",
   },
   {
     icon: Leaf,
-    title: "Innovative & Sustainable Solutions",
+    title: "Sustainable & Innovative Solutions",
     description:
-      "We embrace innovation and sustainability, offering cost-effective solutions that are environmentally responsible and future-proof.",
+      "We embrace eco-friendly construction methods and innovative technologies, offering cost-effective solutions that are environmentally responsible and future-ready.",
   },
 ]
 
 const stats = [
-  { value: "500+", label: "Projects Completed" },
-  { value: "10+", label: "Years Experience" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "50+", label: "Team Members" },
+  { value: "500+", label: "Projects Completed", sublabel: "Across Gauteng" },
+  { value: "10+", label: "Years Experience", sublabel: "In Construction" },
+  { value: "98%", label: "Client Satisfaction", sublabel: "5-Star Reviews" },
+  { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
 ]
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-muted py-20 lg:py-28 overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section 
+      className="bg-muted py-20 lg:py-28 overflow-hidden relative"
+      itemScope 
+      itemType="https://schema.org/Organization"
+      aria-labelledby="why-choose-heading"
+    >
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5" aria-hidden="true">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-secondary rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-64 h-64 bg-accent rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 lg:px-8 relative">
+        {/* Header Section with Image */}
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center mb-20">
+          {/* Text Content */}
           <div>
-            <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-medium text-secondary">
+            <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary uppercase tracking-wide">
               Why Choose Us
             </span>
-            <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
-              Why Goshen Projects is Gauteng&apos;s Trusted Choice
+            <h2 
+              id="why-choose-heading"
+              className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
+              itemProp="name"
+            >
+              Why <span className="text-secondary">Goshen Projects Solutions</span> is Gauteng's Trusted Choice
             </h2>
-            <p className="mb-8 text-pretty text-lg text-muted-foreground">
-              We bring together expertise, reliability, and a commitment to excellence that makes us the preferred
-              partner for construction, maintenance, and infrastructure projects across Pretoria and Johannesburg.
+            <p className="mb-8 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
+              We bring together expertise, reliability, and a commitment to excellence that makes us the preferred partner for construction, maintenance, and infrastructure projects across <strong>Pretoria, Johannesburg, Midrand, and greater Gauteng</strong>.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 mb-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center sm:text-left">
-                  <p className="text-3xl font-bold text-secondary">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+            {/* Stats Grid - Enhanced */}
+            <div className="grid grid-cols-2 gap-6 mb-8">
+              {stats.map((stat, index) => (
+                <div 
+                  key={stat.label} 
+                  className="group text-center sm:text-left bg-card border border-border rounded-xl p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-1"
+                  itemProp="award"
+                >
+                  <p className="text-4xl font-bold text-secondary mb-1 group-hover:scale-110 transition-transform inline-block">
+                    {stat.value}
+                  </p>
+                  <p className="text-sm font-semibold text-foreground">{stat.label}</p>
+                  <p className="text-xs text-muted-foreground">{stat.sublabel}</p>
+                  {index === 2 && (
+                    <div className="flex items-center justify-center sm:justify-start gap-0.5 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
 
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link href="/about">
-                Learn More About Us
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                asChild 
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg h-12 px-8 transition-transform hover:scale-105"
+              >
+                <Link href="/about">
+                  Learn More About Us
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                </Link>
+              </Button>
+              <Button 
+                asChild 
+                size="lg"
+                variant="outline"
+                className="border-secondary/30 hover:bg-secondary/5 h-12 px-8 transition-transform hover:scale-105"
+              >
+                <Link href="/contact">
+                  Get Free Quote
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
           </div>
 
-          <div className="relative">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+          {/* Images Section - Optimized Loading */}
+          <div className="relative" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            {/* Main Image */}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
               <Image
-                src="/construction-team-meeting-on-site-in-gauteng.jpg?height=600&width=800"
-                alt="Goshen Projects team reviewing construction plans"
+                src="/construction-team-meeting-on-site-in-gauteng.jpg"
+                alt="Goshen Projects Solutions construction team reviewing building plans on site in Gauteng, Pretoria"
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-105"
+                loading="lazy"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                itemProp="contentUrl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+            </div>
+
+            {/* Secondary Image - Bottom Left */}
+            <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-border transition-transform hover:scale-105">
+              <Image
+                src="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg"
+                alt="Professional carpenter crafting custom cabinetry - Goshen Projects Solutions skilled worker in Gauteng"
                 fill
                 className="object-cover"
+                loading="lazy"
+                quality={80}
+                sizes="160px"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl">
-              <Image
-                src="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg?height=200&width=200"
-                alt="Goshen Projects professional worker"
-                fill
-                className="object-cover"
-              />
+
+            {/* Quality Badge - Top Right */}
+            <div className="absolute -top-4 -right-4 rounded-xl bg-gradient-to-br from-accent to-accent/90 p-5 shadow-xl ring-2 ring-white/20 transition-transform hover:scale-110">
+              <Award className="h-8 w-8 mb-1 text-white" aria-hidden="true" />
+              <p className="text-xs font-bold text-white">Quality</p>
+              <p className="text-xs font-bold text-white">Assured</p>
             </div>
-            <div className="absolute -top-4 -right-4 rounded-xl bg-accent p-4 shadow-xl text-accent-foreground">
-              <Award className="h-8 w-8 mb-1" />
-              <p className="text-xs font-medium">Quality Assured</p>
+
+            {/* Trust Badge - Bottom Right */}
+            <div className="absolute -bottom-4 -right-4 rounded-xl bg-secondary px-4 py-3 shadow-xl ring-2 ring-white/20 transition-transform hover:scale-110">
+              <div className="flex items-center gap-1">
+                <Shield className="h-5 w-5 text-secondary-foreground" aria-hidden="true" />
+                <div>
+                  <p className="text-xs font-bold text-secondary-foreground">Fully Licensed</p>
+                  <p className="text-[10px] text-secondary-foreground/80">& Insured</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {reasons.map((reason, index) => (
-            <div
-              key={reason.title}
-              className="group relative rounded-2xl bg-card p-6 shadow-sm border border-border transition-all hover:shadow-lg hover:border-secondary/30"
+        {/* Reasons Grid - Enhanced Cards */}
+        <div>
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              What Sets Us Apart in Gauteng's Construction Industry
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our commitment to excellence, safety, and customer satisfaction makes us the go-to choice for residential, commercial, and industrial projects.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {reasons.map((reason, index) => (
+              <div
+                key={reason.title}
+                className="group relative rounded-2xl bg-card p-6 shadow-sm border border-border transition-all hover:shadow-xl hover:border-secondary/50 hover:-translate-y-2"
+              >
+                {/* Number Badge */}
+                <div className="absolute -top-3 -left-3 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-sm font-bold text-secondary-foreground shadow-lg ring-2 ring-white/20">
+                  {index + 1}
+                </div>
+
+                {/* Icon */}
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-all group-hover:bg-secondary group-hover:text-secondary-foreground group-hover:scale-110 group-hover:rotate-6">
+                  <reason.icon className="h-7 w-7" aria-hidden="true" />
+                </div>
+
+                {/* Content */}
+                <h3 className="mb-3 text-lg font-bold group-hover:text-secondary transition-colors">
+                  {reason.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {reason.description}
+                </p>
+
+                {/* Hover Effect Line */}
+                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-secondary to-accent transition-all duration-300 group-hover:w-full rounded-b-2xl" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom CTA Section */}
+        <div className="mt-16 text-center bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-border">
+          <h3 className="text-2xl lg:text-3xl font-bold mb-4">
+            Ready to Experience the Goshen Projects Difference?
+          </h3>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Join 500+ satisfied clients across Gauteng who trust us for their construction, maintenance, and infrastructure needs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
-              <div className="absolute -top-3 -left-3 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-sm font-bold text-secondary-foreground shadow-lg">
-                {index + 1}
-              </div>
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-colors group-hover:bg-secondary group-hover:text-secondary-foreground">
-                <reason.icon className="h-7 w-7" />
-              </div>
-              <h3 className="mb-3 text-lg font-semibold">{reason.title}</h3>
-              <p className="text-muted-foreground">{reason.description}</p>
-            </div>
-          ))}
+              <Link href="/contact">
+                Request Your Free Quote
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+            </Button>
+            <Button 
+              asChild 
+              size="lg"
+              variant="outline"
+              className="border-secondary/30 hover:bg-secondary/10 h-14 px-8 font-semibold transition-transform hover:scale-105"
+            >
+              <Link href="tel:+27615307314">
+                Call Us: +27 61 530 7314
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
