@@ -19,10 +19,10 @@ interface ServiceAreaTemplateProps {
 }
 
 const popularServices = [
-  { icon: Building2, title: "Construction & Renovations", href: "/services/building-construction-renovations" },
-  { icon: Wrench, title: "Property Maintenance", href: "/services/property-maintenance" },
-  { icon: Zap, title: "Electrical Services", href: "/services/electrical-services" },
-  { icon: Shield, title: "Security Systems", href: "/services/cctv-alarm-surveillance" },
+  { icon: Building2, title: "Construction & Renovations", href: "/building-construction-renovations" },
+  { icon: Wrench, title: "Property Maintenance", href: "/property-maintenance" },
+  { icon: Zap, title: "Electrical Services", href: "/electrical-services" },
+  { icon: Shield, title: "Security Systems", href: "/cctv-alarm-surveillance" },
 ]
 
 export function ServiceAreaTemplate({
