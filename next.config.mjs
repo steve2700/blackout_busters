@@ -14,7 +14,7 @@ const nextConfig = {
   // Enable compression
   compress: true,
   // Optimize production builds
-  swcMinify: true,
+  //swcMinify: true,
   // Remove console logs in production
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
