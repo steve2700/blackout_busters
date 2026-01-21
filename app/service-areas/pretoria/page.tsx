@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Pretoria | Goshen Projects",
+  title: "Construction & Maintenance Services in Pretoria | Goshen Projects Solutions",
   description:
     "Professional construction, renovation, plumbing, electrical, and maintenance services in Pretoria. Serving Montana, Hatfield, Menlyn, Brooklyn, Waterkloof, Centurion & more.",
   openGraph: {
@@ -16,7 +16,7 @@ export default function PretoriaPage() {
   return (
     <ServiceAreaTemplate
       areaName="Pretoria"
-      description="Goshen Projects is your trusted partner for comprehensive construction, renovation, and maintenance services throughout Pretoria and the greater Tshwane Metropolitan area. From residential homes to commercial buildings, we deliver quality workmanship with every project."
+      description="Goshen Projects Solutions is your trusted partner for comprehensive construction, renovation, and maintenance services throughout Pretoria and the greater Tshwane Metropolitan area. From residential homes to commercial buildings, we deliver quality workmanship with every project."
       suburbs={[
         "Montana",
         "Hatfield",
@@ -34,7 +34,7 @@ export default function PretoriaPage() {
         "Arcadia",
         "Sunnyside",
       ]}
-      introduction="As Pretoria's capital city continues to grow and develop, property owners require reliable, professional services for construction, renovations, and ongoing maintenance. Goshen Projects has established a strong presence in Pretoria, serving homeowners, businesses, and institutions with a complete range of building and infrastructure solutions. Our local teams understand the unique architectural styles and building requirements of Pretoria properties, from historic homes in the older suburbs to modern developments in areas like Menlyn and Moreleta Park."
+      introduction="As Pretoria's capital city continues to grow and develop, property owners require reliable, professional services for construction, renovations, and ongoing maintenance. Goshen Projects Solutions has established a strong presence in Pretoria, serving homeowners, businesses, and institutions with a complete range of building and infrastructure solutions. Our local teams understand the unique architectural styles and building requirements of Pretoria properties, from historic homes in the older suburbs to modern developments in areas like Menlyn and Moreleta Park."
       servicesOffered={[
         "New residential construction and home building",
         "Commercial building construction and fit-outs",
