@@ -226,7 +226,7 @@ export function WhyChooseUs() {
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-border">
           <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-            Ready to Experience the Goshen Projects Difference?
+            Ready to Experience the Goshen Projects Solutions  Difference?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Join 500+ satisfied clients across Gauteng who trust us for their construction, maintenance, and infrastructure needs.
