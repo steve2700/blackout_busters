@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-sm text-muted-foreground">+27 61 530 7314</p>
+                    <p className="text-sm text-muted-foreground">061 530 7314</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -462,7 +462,7 @@ export default function PrivacyPolicyPage() {
                 <h3 className="mb-4 font-bold">To exercise your rights, contact us at:</h3>
                 <div className="space-y-2 text-sm">
                   <p><strong>Email:</strong> info@goshenprojects.co.za</p>
-                  <p><strong>Phone:</strong> +27 61 530 7314</p>
+                  <p><strong>Phone:</strong> 061 530 7314</p>
                   <p><strong>Address:</strong> 22 Richards Dr, Halfway House, Midrand 1632, South Africa</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold">We will respond to your request within 30 days.</p>
@@ -552,7 +552,7 @@ export default function PrivacyPolicyPage() {
                 <ul className="mb-4 ml-6 space-y-2 list-disc text-muted-foreground">
                   <li>Clicking the "unsubscribe" link in emails</li>
                   <li>Contacting us at info@goshenprojects.co.za</li>
-                  <li>Calling us at +27 61 530 7314</li>
+                  <li>Calling us at 061 530 7314</li>
                 </ul>
                 <p className="text-sm italic text-muted-foreground">
                   You will continue to receive service-related communications even after unsubscribing from marketing.
@@ -589,7 +589,7 @@ export default function PrivacyPolicyPage() {
                   <div className="space-y-2">
                     <p><strong>Information Officer:</strong> Goshen Projects Solutions Management</p>
                     <p><strong>Email:</strong> info@goshenprojects.co.za</p>
-                    <p><strong>Phone:</strong> +27 61 530 7314</p>
+                    <p><strong>Phone:</strong> 061 530 7314</p>
                     <p><strong>Address:</strong> 22 Richards Dr, Halfway House, Midrand 1632, South Africa</p>
                   </div>
                 </div>
@@ -638,4 +638,40 @@ export default function PrivacyPolicyPage() {
             </div>
 
             {/* Footer */}
-            <div className="border-t border
+            <div className="border-t border-border pt-8">
+              <div className="rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 p-8 text-center">
+                <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Your Privacy Matters to Us</h3>
+                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                  We are committed to protecting your personal information and respecting your privacy rights. 
+                  If you have any questions or concerns about this Privacy Policy or our data practices, 
+                  please don't hesitate to contact us.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="mailto:info@goshenprojects.co.za" 
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                    Email Us
+                  </a>
+                  <a 
+                    href="tel:+27615307314" 
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
+                  >
+                    <Phone className="h-4 w-4" />
+                    Call: 061 530 7314
+                  </a>
+                </div>
+                <p className="mt-6 text-sm text-muted-foreground">
+                  Last Updated: January 21, 2025 | Effective Date: January 21, 2025
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}-border pt-8">
