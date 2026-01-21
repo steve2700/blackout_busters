@@ -10,7 +10,7 @@ export function CTASection() {
       <div className="absolute inset-0">
         <Image
           src="/placeholder.svg?height=800&width=1600"
-          alt="Goshen Projects - Ready to start your project"
+          alt="Goshen Projects Solutions - Ready to start your project"
           fill
           className="object-cover opacity-10"
         />
@@ -32,7 +32,7 @@ export function CTASection() {
             Ready to Start Your Project?
           </h2>
           <p className="mb-10 text-pretty text-lg text-primary-foreground/80 md:text-xl">
-            Contact Goshen Projects today for a consultation or quotation. Our team is ready to provide professional
+            Contact Goshen Projects Solutions today for a consultation or quotation. Our team is ready to provide professional
             advice, detailed quotations, and project support tailored to your needs in Pretoria, Johannesburg, and
             throughout Gauteng.
           </p>
