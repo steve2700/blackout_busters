@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Fourways | Goshen Projects",
+  title: "Construction & Maintenance Services in Fourways | Goshen Projects Solutions",
   description:
     "Professional construction and maintenance in Fourways. Expert services for Lonehill, Dainfern, Broadacres, Cedar Lakes and surrounding areas.",
 }
@@ -11,7 +11,7 @@ export default function FourwaysPage() {
   return (
     <ServiceAreaTemplate
       areaName="Fourways"
-      description="Goshen Projects delivers quality construction and maintenance services to Fourways' upmarket residential estates and commercial developments. We understand the premium standards expected in this desirable area."
+      description="Goshen Projects Solutions delivers quality construction and maintenance services to Fourways' upmarket residential estates and commercial developments. We understand the premium standards expected in this desirable area."
       suburbs={[
         "Lonehill",
         "Dainfern",
@@ -22,7 +22,7 @@ export default function FourwaysPage() {
         "Douglasdale",
         "Magaliesig",
       ]}
-      introduction="Fourways has evolved into one of Johannesburg's most sought-after areas, featuring premier residential estates, modern commercial developments, and excellent amenities. Goshen Projects provides the high-quality construction and maintenance services that Fourways property owners expect, from luxury home renovations to estate common area maintenance."
+      introduction="Fourways has evolved into one of Johannesburg's most sought-after areas, featuring premier residential estates, modern commercial developments, and excellent amenities. Goshen Projects Solutions provides the high-quality construction and maintenance services that Fourways property owners expect, from luxury home renovations to estate common area maintenance."
       servicesOffered={[
         "Estate home renovations",
         "Custom kitchen and bathroom designs",
