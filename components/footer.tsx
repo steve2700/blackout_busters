@@ -3,14 +3,14 @@ import Image from "next/image"
 import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
 
 const services = [
-  { title: "Building Construction", href: "/services/building-construction-renovations" },
-  { title: "Property Maintenance", href: "/services/property-maintenance" },
-  { title: "Plumbing Services", href: "/services/plumbing-services" },
-  { title: "Electrical Services", href: "/services/electrical-services" },
-  { title: "Roofing & Repairs", href: "/services/roofing-services" },
-  { title: "Waterproofing", href: "/services/waterproofing-services" },
-  { title: "Solar & Energy", href: "/services/solar-energy-solutions" },
-  { title: "Security Systems", href: "/services/cctv-alarm-surveillance" },
+  { title: "Building Construction", href: "/building-construction-renovations" },
+  { title: "Property Maintenance", href: "/property-maintenance" },
+  { title: "Plumbing Services", href: "/plumbing-services" },
+  { title: "Electrical Services", href: "/electrical-services" },
+  { title: "Roofing & Repairs", href: "/roofing-roof-leak-repairs" },
+  { title: "Waterproofing", href: "/waterproofing-services" },
+  { title: "Solar & Energy", href: "/solar-energy-solutions" },
+  { title: "Security Systems", href: "/cctv-alarm-surveillance" },
 ]
 
 const serviceAreas = [
