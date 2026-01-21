@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Star,Users } from "lucide-react"
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users,  } from "lucide-react"
 
 const services = [
   { title: "Building Construction", href: "/building-construction-renovations" },
@@ -93,57 +93,52 @@ export function Footer() {
             <p className="text-sm text-primary-foreground/80 leading-relaxed max-w-md">
               Your trusted partner for comprehensive construction, infrastructure, maintenance, and security solutions across Gauteng. We deliver quality workmanship with professional service.
             </p>
-
-          {/* Social Media Links */}
             
-        <div> 
-        <h4 className="mb-3 text-sm font-semibold text-white">Follow Us</h4>
+            {/* Social Media Links */}
+            <div>
+              <h4 className="mb-3 text-sm font-semibold text-white">Follow Us</h4>
+              <div className="flex gap-3">
+                <a
+                  href="https://www.facebook.com/goshenprojectssolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/goshenprojectssolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.x.com/goshen_projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter className="h-5 w-5" />
+                </a>
+              </div>
+              {/* Google Reviews */}
+              <div className="mt-4">
+               <a
+                 href="https://share.google/sjRi612H5H6GQ2V0V"
+                 target="_blank"
+                 className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 hover:bg-accent hover:text-white transition"rel="noopener noreferrer"
+                 aria-label="Google Reviews"
+                >
+                 ⭐ ★★★★★ Google Reviews
+               </a>
+            </div>
+          </div>
 
-        <div className="flex gap-3">
-       <a
-       href="https://www.facebook.com/goshenprojectssolutions"
-       target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
-      aria-label="Facebook"
-     >
-      <Facebook className="h-5 w-5" />
-    </a>
-
-    <a
-      href="https://www.instagram.com/goshenprojectssolutions"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
-      aria-label="Instagram"
-    >
-      <Instagram className="h-5 w-5" />
-    </a>
-
-    <a
-      href="https://www.x.com/goshen_projects"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
-      aria-label="X (Twitter)"
-    >
-      <Twitter className="h-5 w-5" />
-    </a>
-  </div>
-
-  {/* Google Reviews */}
-  <div className="mt-4">
-    <a
-      href="https://share.google/sjRi612H5H6GQ2V0V"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 hover:bg-accent hover:text-white transition"
-      aria-label="Google Reviews"
-    >
-      ⭐ ★★★★★ Google Reviews
-    </a>
-  </div>
-  </div>
           {/* Quick Links */}
           <div>
             <h4 className="mb-4 text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
