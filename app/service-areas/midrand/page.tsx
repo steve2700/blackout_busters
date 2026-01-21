@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Midrand | Goshen Projects",
+  title: "Construction & Maintenance Services in Midrand | Goshen Projects Solutions",
   description:
     "Professional construction and maintenance services in Midrand. Serving Carlswald, Halfway House, Vorna Valley, Glen Austin and surrounding areas.",
 }
@@ -11,7 +11,7 @@ export default function MidrandPage() {
   return (
     <ServiceAreaTemplate
       areaName="Midrand"
-      description="Goshen Projects serves Midrand's growing residential and commercial communities with comprehensive construction and maintenance solutions. Our central location makes us ideal for servicing this rapidly developing area."
+      description="Goshen Projects Solutions serves Midrand's growing residential and commercial communities with comprehensive construction and maintenance solutions. Our central location makes us ideal for servicing this rapidly developing area."
       suburbs={[
         "Carlswald",
         "Halfway House",
@@ -22,7 +22,7 @@ export default function MidrandPage() {
         "Kyalami",
         "Waterfall",
       ]}
-      introduction="Midrand's strategic location between Pretoria and Johannesburg has made it one of Gauteng's fastest-growing areas. Goshen Projects is well-positioned to serve the construction and maintenance needs of Midrand's diverse mix of residential estates, commercial parks, and industrial developments. We provide the same quality service to new developments as we do to established properties."
+      introduction="Midrand's strategic location between Pretoria and Johannesburg has made it one of Gauteng's fastest-growing areas. Goshen Projects Solutions is well-positioned to serve the construction and maintenance needs of Midrand's diverse mix of residential estates, commercial parks, and industrial developments. We provide the same quality service to new developments as we do to established properties."
       servicesOffered={[
         "New home construction in estates",
         "Commercial and industrial building services",
