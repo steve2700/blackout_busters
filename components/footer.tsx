@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users,  } from "lucide-react"
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users,Star  } from "lucide-react"
 
 const services = [
   { title: "Building Construction", href: "/building-construction-renovations" },
