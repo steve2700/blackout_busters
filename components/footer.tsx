@@ -28,7 +28,7 @@ const quickLinks = [
   { title: "Service Areas", href: "/service-areas" },
   { title: "Contact Us", href: "/contact" },
   { title: "Get a Quote", href: "/contact#quote" },
-  { title: "Careers", href: "/careers" },
+  
 ]
 
 export function Footer() {
