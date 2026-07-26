@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, ArrowRight, Clock, MapPin, Shield } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export function CTASection() {
   return (
@@ -10,7 +11,7 @@ export function CTASection() {
       <div className="absolute inset-0">
         <Image
           src="/placeholder.svg?height=800&width=1600"
-          alt="Goshen Projects Solutions - Ready to start your project"
+          alt="ZECO Construction - Ready to start your project"
           fill
           className="object-cover opacity-10"
         />
@@ -32,7 +33,7 @@ export function CTASection() {
             Ready to Start Your Project?
           </h2>
           <p className="mb-10 text-pretty text-lg text-primary-foreground/80 md:text-xl">
-            Contact Goshen Projects Solutions today for a consultation or quotation. Our team is ready to provide professional
+            Contact ZECO Construction today for a consultation or quotation. Our team is ready to provide professional
             advice, detailed quotations, and project support tailored to your needs in Pretoria, Johannesburg, and
             throughout Gauteng.
           </p>
@@ -51,10 +52,20 @@ export function CTASection() {
             <Button
               asChild
               size="lg"
+              className="bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 h-14 px-8 text-base"
+            >
+              <a href="https://wa.me/27613821561" target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon className="mr-2 h-5 w-5" />
+                WhatsApp Us
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
               variant="outline"
               className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-14 px-8 text-base"
             >
-              <Link href="mailto:info@goshenprojects.co.za">
+              <Link href="mailto:info@zecoconstruction.co.za">
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us Directly
               </Link>

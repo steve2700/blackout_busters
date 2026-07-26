@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone, CheckCircle, Shield, Award, Star, Zap, Clock, Users } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/professional-construction-site-aerial-view-modern-.jpg"
-          alt="Professional construction site in Gauteng - Goshen Projects Solutions aerial view of modern building development in Pretoria and Johannesburg"
+          alt="Professional construction site in Gauteng - ZECO Construction aerial view of modern building development in Pretoria and Johannesburg"
           fill
           className="object-cover opacity-20"
           priority
@@ -50,18 +51,18 @@ export function HeroSection() {
 
             {/* Main Headline - SEO Optimized H1 */}
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl xl:text-7xl" itemProp="name">
-              <span className="block">Complete Construction &</span>
-              <span className="block text-accent">Infrastructure Solutions</span>
+              <span className="block">We Build Gauteng.</span>
+              <span className="block text-accent">From Foundation to Finish.</span>
               <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-primary-foreground/90">
-                in Gauteng, South Africa
+                Construction, Civil Works &amp; Maintenance
               </span>
             </h1>
 
             {/* SEO-Rich Description */}
             <p className="mb-8 text-pretty text-lg text-primary-foreground/80 md:text-xl max-w-2xl mx-auto lg:mx-0" itemProp="description">
-              <strong className="text-white">Goshen Projects Solutions</strong> is your trusted partner for comprehensive construction, renovation, maintenance, civil works, and automated security systems in{" "}
-              <strong className="text-white">Pretoria, Johannesburg, Midrand</strong>, and across{" "}
-              <strong className="text-white">Gauteng</strong>. Licensed, insured, and committed to excellence.
+              <strong className="text-white">ZECO Construction</strong> is your single trusted partner for building, renovations, maintenance, civil works, and automated security systems across{" "}
+              <strong className="text-white">Pretoria, Johannesburg, Midrand</strong> and greater{" "}
+              <strong className="text-white">Gauteng</strong>. Licensed, insured, and driven to deliver.
             </p>
 
             {/* Trust Indicators with Icons */}
@@ -101,6 +102,16 @@ export function HeroSection() {
               <Button
                 asChild
                 size="lg"
+                className="group h-14 px-8 text-base font-semibold bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 transition-all hover:scale-105"
+              >
+                <a href="https://wa.me/27613821561" target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon className="mr-2 h-5 w-5" aria-hidden="true" />
+                  Chat on WhatsApp
+                </a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
                 variant="outline"
                 className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-all hover:scale-105"
               >
@@ -131,7 +142,7 @@ export function HeroSection() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.02]">
                 <Image
                   src="/professional-construction-workers-team.jpg"
-                  alt="Professional construction team working on site in Gauteng - Goshen Projects Solutions skilled workers"
+                  alt="Professional construction team working on site in Gauteng - ZECO Construction skilled workers"
                   fill
                   className="object-cover"
                   priority
@@ -146,7 +157,7 @@ export function HeroSection() {
               <div className="absolute -bottom-8 -left-8 aspect-square w-48 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-white/10 transition-transform hover:scale-105">
                 <Image
                   src="/modern-renovated-kitchen-interior-design-south-afr.jpg"
-                  alt="Modern renovated kitchen in Gauteng - Completed renovation project by Goshen Projects Solutions"
+                  alt="Modern renovated kitchen in Gauteng - Completed renovation project by ZECO Construction"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -204,7 +215,7 @@ export function HeroSection() {
       </div>
 
       {/* Hidden Structured Data for SEO */}
-      <meta itemProp="provider" content="Goshen Projects Solutions" />
+      <meta itemProp="provider" content="ZECO Construction" />
       <meta itemProp="areaServed" content="Gauteng, Pretoria, Johannesburg, Midrand, Sandton, Centurion, Randburg" />
       <meta itemProp="serviceType" content="Construction, Renovation, Maintenance, Civil Works, Security Systems" />
     </section>

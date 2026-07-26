@@ -29,8 +29,8 @@ import {
   Car,
   Facebook,
   Instagram,
-  MessageCircle,
 } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 import { cn } from "@/lib/utils"
 
 const services = [
@@ -176,7 +176,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
-              <MessageCircle className="h-3.5 w-3.5" />
+              <WhatsAppIcon className="h-3.5 w-3.5" />
               WhatsApp Us
             </a>
             <a
@@ -398,7 +398,7 @@ export function Header() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <WhatsAppIcon className="h-4 w-4" />
                     WhatsApp: +27 61 382 1561
                   </a>
                   <a href="mailto:info@zecoconstruction.co.za" className="flex items-center gap-2 hover:text-white transition-colors">

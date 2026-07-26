@@ -76,7 +76,7 @@ export function WhyChooseUs() {
               className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
               itemProp="name"
             >
-              Why <span className="text-secondary">Goshen Projects Solutions</span> is Gauteng's Trusted Choice
+              Why <span className="text-accent">ZECO Construction</span> is Gauteng's Trusted Choice
             </h2>
             <p className="mb-8 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
               We bring together expertise, reliability, and a commitment to excellence that makes us the preferred partner for construction, maintenance, and infrastructure projects across <strong>Pretoria, Johannesburg, Midrand, and greater Gauteng</strong>.
@@ -137,7 +137,7 @@ export function WhyChooseUs() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
               <Image
                 src="/construction-team-meeting-on-site-in-gauteng.jpg"
-                alt="Goshen Projects Solutions construction team reviewing building plans on site in Gauteng, Pretoria"
+                alt="ZECO Construction team reviewing building plans on site in Gauteng, Pretoria"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
@@ -152,7 +152,7 @@ export function WhyChooseUs() {
             <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-border transition-transform hover:scale-105">
               <Image
                 src="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg"
-                alt="Professional carpenter crafting custom cabinetry - Goshen Projects Solutions skilled worker in Gauteng"
+                alt="Professional carpenter crafting custom cabinetry - ZECO Construction skilled worker in Gauteng"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -226,7 +226,7 @@ export function WhyChooseUs() {
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-border">
           <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-            Ready to Experience the Goshen Projects Solutions  Difference?
+            Ready to Experience the ZECO Construction Difference?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Join 500+ satisfied clients across Gauteng who trust us for their construction, maintenance, and infrastructure needs.
@@ -248,8 +248,8 @@ export function WhyChooseUs() {
               variant="outline"
               className="border-secondary/30 hover:bg-secondary/10 h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
-              <Link href="tel:+27615307314">
-                Call Us: +27 61 530 7314
+              <Link href="tel:+27613821561">
+                Call Us: +27 61 382 1561
               </Link>
             </Button>
           </div>

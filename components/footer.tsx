@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, MessageCircle, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
+import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 const services = [
   { title: "Building Construction", href: "/building-construction-renovations" },
@@ -104,7 +105,7 @@ export function Footer() {
 
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/goshenprojectssolutions"
+                  href="https://www.facebook.com/zecoconstruction"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -114,7 +115,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/goshenprojectssolutions"
+                  href="https://www.instagram.com/zecoconstruction"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -124,13 +125,13 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.x.com/goshen_projects"
+                  href="https://wa.me/27613821561"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
-                  aria-label="X (Twitter)"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-[#25D366] hover:text-white"
+                  aria-label="WhatsApp"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <WhatsAppIcon className="h-5 w-5" />
                 </a>
               </div>
 
@@ -188,32 +189,41 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+                  href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-start gap-3"
                 >
                   <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    22 Richards Dr, Halfway House
+                    Gauteng, South Africa
                     <br />
-                    Midrand 1632, South Africa
+                    Serving Pretoria &amp; Johannesburg
                   </span>
                 </a>
               </li>
 
               <li>
-                <a href="tel:+27615307314" className="group flex items-center gap-3">
+                <a href="tel:+27613821561" className="group flex items-center gap-3">
                   <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 61 530 7314</span>
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 61 382 1561</span>
                 </a>
               </li>
 
               <li>
-                <a href="mailto:info@goshenprojects.co.za" className="group flex items-center gap-3">
+                <a href="https://wa.me/27613821561" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
+                  <WhatsAppIcon className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
+                    WhatsApp: +27 61 382 1561
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:info@zecoconstruction.co.za" className="group flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    info@goshenprojects.co.za
+                    info@zecoconstruction.co.za
                   </span>
                 </a>
               </li>
@@ -251,7 +261,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
           <p className="text-center text-sm text-primary-foreground/70 md:text-left">
-            © {new Date().getFullYear()} Goshen Projects Solutions. All rights reserved.
+            © {new Date().getFullYear()} ZECO Construction. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 transition-colors hover:text-accent">
