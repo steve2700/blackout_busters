@@ -171,7 +171,7 @@ export function ServicesOverview() {
             Comprehensive Construction & Maintenance Solutions in Gauteng
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-            From construction and renovations to maintenance and security systems, <strong>Goshen Projects Solutions</strong> provides integrated services across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted partner for all your project needs.
+            From construction and renovations to maintenance and security systems, <strong>ZECO Construction</strong> provides integrated services across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted partner for all your project needs.
           </p>
         </div>
 
@@ -191,7 +191,7 @@ export function ServicesOverview() {
               <div className="relative h-48 overflow-hidden bg-muted">
                 <Image
                   src={service.image}
-                  alt={`${service.title} in Gauteng - Professional ${service.keywords} services by Goshen Projects Solutions`}
+                  alt={`${service.title} in Gauteng - Professional ${service.keywords} services by ZECO Construction`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   loading={index < 3 ? "eager" : "lazy"}

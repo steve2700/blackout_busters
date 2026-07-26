@@ -9,19 +9,19 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://goshenprojects.co.za"),
+  metadataBase: new URL("https://www.zecoconstruction.co.za"),
   title: {
-    default: "Goshen Projects Solutions | Construction, Infrastructure & Maintenance in Gauteng",
-    template: "%s | Goshen Projects Solutions - Gauteng's Trusted Service Provider",
+    default: "ZECO Construction | Building, Infrastructure & Maintenance in Gauteng",
+    template: "%s | ZECO Construction - Gauteng's Trusted Building Partner",
   },
   description:
-    "Goshen Projects Solutions delivers comprehensive construction, property maintenance, civil works, paving, security, electrical, plumbing, solar, and renovation services in Gauteng, Pretoria & Johannesburg. One-stop integrated service provider.",
+    "ZECO Construction delivers comprehensive building, property maintenance, civil works, paving, security, electrical, plumbing, solar, and renovation services in Gauteng, Pretoria & Johannesburg. One trusted partner from foundation to finish.",
   keywords:
-    "construction Gauteng, building contractor Pretoria, property maintenance Johannesburg, civil works South Africa, paving contractor Gauteng, electrical services Pretoria, plumbing Johannesburg, solar installation Gauteng, renovations Sandton, security systems Midrand, roofing Centurion, waterproofing Gauteng, Goshen Projects Solutions",
-  authors: [{ name: "Goshen Projects Solutions", url: "https://goshenprojects.co.za" }],
-  creator: "Goshen Projects Solutions",
-  publisher: "Goshen Projects Solutions",
-  applicationName: "Goshen Projects Solutions",
+    "construction Gauteng, building contractor Pretoria, property maintenance Johannesburg, civil works South Africa, paving contractor Gauteng, electrical services Pretoria, plumbing Johannesburg, solar installation Gauteng, renovations Sandton, security systems Midrand, roofing Centurion, waterproofing Gauteng, ZECO Construction",
+  authors: [{ name: "ZECO Construction", url: "https://www.zecoconstruction.co.za" }],
+  creator: "ZECO Construction",
+  publisher: "ZECO Construction",
+  applicationName: "ZECO Construction",
   robots: {
     index: true,
     follow: true,
@@ -44,44 +44,44 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#1a5632" },
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#f26a1b" },
     ],
   },
   manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://goshenprojects.co.za",
-    siteName: "Goshen Projects Solutions",
-    title: "Goshen Projects Solutions | Construction, Infrastructure & Maintenance in Gauteng",
+    url: "https://www.zecoconstruction.co.za",
+    siteName: "ZECO Construction",
+    title: "ZECO Construction | Building, Infrastructure & Maintenance in Gauteng",
     description:
-      "Gauteng's trusted integrated service provider for construction, maintenance, civil works, security, and energy solutions. Serving Pretoria, Johannesburg & surrounds.",
+      "Gauteng's trusted building partner for construction, maintenance, civil works, security, and energy solutions. Serving Pretoria, Johannesburg & surrounds.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Goshen Projects Solutions - Construction & Infrastructure Solutions in Gauteng",
+        alt: "ZECO Construction - Building & Infrastructure Solutions in Gauteng",
       },
       {
         url: "/logo-square.png",
         width: 512,
         height: 512,
-        alt: "Goshen Projects Solutions Logo",
+        alt: "ZECO Construction Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@goshen_projects",
-    creator: "@goshen_projects",
-    title: "Goshen Projects Solutions | Construction & Infrastructure Gauteng",
+    site: "@zecoconstruction",
+    creator: "@zecoconstruction",
+    title: "ZECO Construction | Building & Infrastructure Gauteng",
     description:
       "Integrated construction, infrastructure, maintenance & security solutions in Gauteng. Serving Pretoria, Johannesburg & surrounds.",
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://goshenprojects.co.za",
+    canonical: "https://www.zecoconstruction.co.za",
   },
   // Verification tags (add your verification codes when ready)
   verification: {
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "ZA-GP",
     "geo.placename": "Gauteng, South Africa",
-    "geo.position": "-25.9967;28.1242", // Midrand coordinates
-    "ICBM": "-25.9967, 28.1242",
+    "geo.position": "-26.1076;28.0567", // Gauteng coordinates
+    "ICBM": "-26.1076, 28.0567",
   },
 }
 
@@ -107,7 +107,7 @@ export default function RootLayout({
     <html lang="en-ZA">
       <head>
         {/* Additional meta tags for better indexing */}
-        <meta name="theme-color" content="#1a5632" />
+        <meta name="theme-color" content="#f26a1b" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
@@ -119,33 +119,30 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Goshen Projects Solutions",
-              url: "https://goshenprojects.co.za",
-              logo: "https://goshenprojects.co.za/logo.png",
-              image: "https://goshenprojects.co.za/og-image.jpg",
+              name: "ZECO Construction",
+              url: "https://www.zecoconstruction.co.za",
+              logo: "https://www.zecoconstruction.co.za/logo.png",
+              image: "https://www.zecoconstruction.co.za/og-image.jpg",
               description: "Comprehensive construction, infrastructure, and maintenance solutions in Gauteng",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "22 Richards Dr, Halfway House",
-                addressLocality: "Midrand",
+                addressLocality: "Johannesburg",
                 addressRegion: "Gauteng",
-                postalCode: "1632",
                 addressCountry: "ZA",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: -25.9967,
-                longitude: 28.1242,
+                latitude: -26.1076,
+                longitude: 28.0567,
               },
               areaServed: ["Gauteng", "Pretoria", "Johannesburg", "Sandton", "Midrand", "Centurion"],
               sameAs: [
-                "https://www.facebook.com/goshenprojectssolutions",
-                "https://www.instagram.com/goshenprojectssolutions",
-                "https://www.x.com/goshen_projects",
+                "https://www.facebook.com/zecoconstruction",
+                "https://www.instagram.com/zecoconstruction",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+27-61-530-7314",
+                telephone: "+27-61-382-1561",
                 contactType: "Customer Service",
                 areaServed: "ZA",
                 availableLanguage: ["en"],
@@ -161,24 +158,22 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://goshenprojects.co.za",
-              name: "Goshen Projects Solutions",
-              image: "https://goshenprojects.co.za/logo.png",
-              url: "https://goshenprojects.co.za",
-              telephone: "+27-61-530-7314",
+              "@id": "https://www.zecoconstruction.co.za",
+              name: "ZECO Construction",
+              image: "https://www.zecoconstruction.co.za/logo.png",
+              url: "https://www.zecoconstruction.co.za",
+              telephone: "+27-61-382-1561",
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "22 Richards Dr, Halfway House",
-                addressLocality: "Midrand",
+                addressLocality: "Johannesburg",
                 addressRegion: "Gauteng",
-                postalCode: "1632",
                 addressCountry: "ZA",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: -25.9967,
-                longitude: 28.1242,
+                latitude: -26.1076,
+                longitude: 28.0567,
               },
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
@@ -187,9 +182,8 @@ export default function RootLayout({
                 closes: "17:00",
               },
               sameAs: [
-                "https://www.facebook.com/goshenprojectssolutions",
-                "https://www.instagram.com/goshenprojectssolutions",
-                "https://www.x.com/goshen_projects",
+                "https://www.facebook.com/zecoconstruction",
+                "https://www.instagram.com/zecoconstruction",
               ],
             }),
           }}
