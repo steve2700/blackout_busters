@@ -29,7 +29,7 @@ import {
   Car,
   Facebook,
   Instagram,
-  Twitter,
+  MessageCircle,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -166,32 +166,41 @@ export function Header() {
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27615307314" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27613821561" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 61 530 7314
+              +27 61 382 1561
             </a>
             <a
-              href="mailto:info@goshenprojects.co.za"
+              href="https://wa.me/27613821561"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-accent transition-colors"
+            >
+              <MessageCircle className="h-3.5 w-3.5" />
+              WhatsApp Us
+            </a>
+            <a
+              href="mailto:info@zecoconstruction.co.za"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
-              info@goshenprojects.co.za
+              info@zecoconstruction.co.za
             </a>
             <a
-              href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+              href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <MapPin className="h-3.5 w-3.5" />
-              22 Richards Dr, Midrand
+              Gauteng, South Africa
             </a>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-xs text-white/70">Follow Us:</span>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/goshenprojectssolutions"
+                href="https://www.facebook.com/zecoconstruction"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
@@ -200,22 +209,13 @@ export function Header() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/goshenprojectssolutions"
+                href="https://www.instagram.com/zecoconstruction"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
-              <a
-                href="https://www.x.com/goshen_projects"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-accent transition-colors"
-                aria-label="X (Twitter)"
-              >
-                <Twitter className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -228,7 +228,7 @@ export function Header() {
           <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg bg-white">
             <Image 
               src="/logo-icon.png" 
-              alt="Goshen Projects Solutions Logo" 
+              alt="ZECO Construction Logo" 
               width={44} 
               height={44}
               className="object-cover"
@@ -238,7 +238,9 @@ export function Header() {
             <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-accent border-2 border-background"></div>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary leading-tight">Goshen Projects Solutions</span>
+            <span className="text-xl font-bold text-primary leading-tight tracking-tight">
+              ZECO <span className="text-accent">Construction</span>
+            </span>
             <span className="hidden text-xs text-muted-foreground sm:block">Building Excellence in Gauteng</span>
           </div>
         </Link>
@@ -363,7 +365,7 @@ export function Header() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white">
                       <Image 
                         src="/logo-icon.png" 
-                        alt="Goshen Projects Solutions" 
+                        alt="ZECO Construction" 
                         width={40} 
                         height={40}
                         className="object-cover"
@@ -371,7 +373,7 @@ export function Header() {
                       />
                     </div>
                     <div>
-                      <p className="font-bold text-sm">Goshen Projects Solutions</p>
+                      <p className="font-bold text-sm">ZECO Construction</p>
                       <p className="text-xs text-white/70">Building Excellence</p>
                     </div>
                   </div>
@@ -386,29 +388,38 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="space-y-2 text-sm text-white/90">
-                  <a href="tel:+27615307314" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a href="tel:+27613821561" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Phone className="h-4 w-4" />
-                    +27 61 530 7314
+                    +27 61 382 1561
                   </a>
-                  <a href="mailto:info@goshenprojects.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a
+                    href="https://wa.me/27613821561"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-white transition-colors"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    WhatsApp: +27 61 382 1561
+                  </a>
+                  <a href="mailto:info@zecoconstruction.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Mail className="h-4 w-4" />
-                    info@goshenprojects.co.za
+                    info@zecoconstruction.co.za
                   </a>
                   <a 
-                    href="https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632"
+                    href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
                     <MapPin className="h-4 w-4" />
-                    22 Richards Dr, Midrand
+                    Gauteng, South Africa
                   </a>
                 </div>
                 
                 {/* Social Links in Mobile */}
                 <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/20">
                   <a
-                    href="https://www.facebook.com/goshenprojectssolutions"
+                    href="https://www.facebook.com/zecoconstruction"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
@@ -417,22 +428,13 @@ export function Header() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/goshenprojectssolutions"
+                    href="https://www.instagram.com/zecoconstruction"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://www.x.com/goshen_projects"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white/80 hover:text-white transition-colors"
-                    aria-label="X (Twitter)"
-                  >
-                    <Twitter className="h-5 w-5" />
                   </a>
                 </div>
               </div>

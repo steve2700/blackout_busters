@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
+import { Facebook, Instagram, MessageCircle, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
 
 const services = [
   { title: "Building Construction", href: "/building-construction-renovations" },
@@ -79,7 +79,7 @@ export function Footer() {
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
                 <Image
                   src="/logo-icon.png"
-                  alt="Goshen Projects Solutions Logo"
+                  alt="ZECO Construction Logo"
                   width={48}
                   height={48}
                   className="object-cover"
@@ -87,13 +87,15 @@ export function Footer() {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Goshen Projects Solutions</h3>
+                <h3 className="text-xl font-bold text-white">
+                  ZECO <span className="text-accent">Construction</span>
+                </h3>
                 <p className="text-xs text-primary-foreground/70">Building Excellence in Gauteng</p>
               </div>
             </Link>
 
             <p className="max-w-md text-sm leading-relaxed text-primary-foreground/80">
-              Your trusted partner for comprehensive construction, infrastructure, maintenance, and security solutions across Gauteng. We deliver quality workmanship with professional service.
+              ZECO Construction is your trusted partner for comprehensive building, infrastructure, maintenance, and security solutions across Gauteng. From foundation to finish, we deliver quality workmanship with professional service.
             </p>
 
             {/* Social Media Links */}
