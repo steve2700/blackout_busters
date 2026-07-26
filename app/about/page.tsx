@@ -6,20 +6,20 @@ import { Button } from "@/components/ui/button"
 import { Target, Eye, CheckCircle, Users, Shield, Award, Leaf, Handshake, ArrowRight, Phone, Star, Building2, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Goshen Projects Solutions | Construction & Infrastructure Experts in Gauteng",
+  title: "About ZECO Construction | Building & Infrastructure Experts in Gauteng",
   description:
-    "Learn about Goshen Projects Solutions - Gauteng's trusted integrated service provider for construction, infrastructure, maintenance & security solutions. 10+ years serving Pretoria, Johannesburg & Midrand.",
-  keywords: "about Goshen Projects, construction company Gauteng, building contractors Pretoria, infrastructure Johannesburg, company history, mission vision values",
+    "Learn about ZECO Construction - Gauteng's trusted building partner for construction, infrastructure, maintenance & security solutions. 10+ years serving Pretoria, Johannesburg & Midrand.",
+  keywords: "about ZECO Construction, construction company Gauteng, building contractors Pretoria, infrastructure Johannesburg, company history, mission vision values",
   openGraph: {
-    title: "About Goshen Projects Solutions | Construction & Infrastructure Experts in Gauteng",
+    title: "About ZECO Construction | Building & Infrastructure Experts in Gauteng",
     description:
-      "Gauteng's trusted integrated service provider. 500+ projects completed. Licensed professionals delivering construction, maintenance, and infrastructure solutions in Pretoria, Johannesburg & Midrand.",
+      "Gauteng's trusted building partner. Licensed professionals delivering construction, maintenance, and infrastructure solutions in Pretoria, Johannesburg & Midrand.",
     images: [
       {
         url: "/construction-team-meeting-on-site-in-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Goshen Projects Solutions team on construction site",
+        alt: "ZECO Construction team on construction site",
       },
     ],
   },
@@ -62,10 +62,10 @@ const team = [
 ]
 
 const stats = [
-  { value: "500+", label: "Projects Completed", sublabel: "Across Gauteng" },
+  { value: "500+", label: "Projects Completed", sublabel: "Across Gauteng" }, // TODO: confirm real project count
   { value: "10+", label: "Years Experience", sublabel: "In Construction" },
-  { value: "98%", label: "Client Satisfaction", sublabel: "5-Star Reviews" },
-  { value: "15+", label: "Service Categories", sublabel: "Comprehensive Solutions" },
+  { value: "98%", label: "Client Satisfaction", sublabel: "5-Star Reviews" }, // TODO: confirm real satisfaction rate
+  { value: "15+", label: "Service Categories", sublabel: "Comprehensive Solutions" }, // TODO: confirm real service count
 ]
 
 export default function AboutPage() {
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
               <Award className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span>Gauteng's Trusted Construction Partner Since 2014</span>
+              <span>Gauteng's Trusted Construction Partner for 10+ Years</span>
               <div className="flex items-center gap-0.5 ml-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
@@ -93,11 +93,11 @@ export default function AboutPage() {
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              About <span className="text-accent">Goshen Projects Solutions</span>
+              About <span className="text-accent">ZECO Construction</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
               Founded with the vision to provide top-quality, reliable, and fully integrated building and infrastructure
-              services in <strong className="text-white">Gauteng</strong>, Goshen Projects Solutions has become a trusted partner for residential, commercial, industrial,
+              services in <strong className="text-white">Gauteng</strong>, ZECO Construction has become a trusted partner for residential, commercial, industrial,
               and public sector clients across <strong className="text-white">Pretoria, Johannesburg, and Midrand</strong>.
             </p>
 
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 Your Trusted Partner for Construction & Infrastructure in Gauteng
               </h2>
               <p className="mb-4 text-muted-foreground leading-relaxed" itemProp="description">
-                <strong>Goshen Projects Solutions</strong> is a proudly South African company delivering comprehensive construction, property
+                <strong>ZECO Construction</strong> is a proudly South African company delivering comprehensive construction, property
                 maintenance, civil works, paving, security, electrical, plumbing, solar, and renovation services
                 specifically for clients in <strong>Gauteng</strong>, including <strong>Pretoria, Johannesburg, and Midrand</strong>.
               </p>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 guaranteeing quality, compliance, and professionalism from start to finish.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With <strong>over 10 years of experience</strong> and <strong>500+ completed projects</strong>, we are committed to innovative solutions, sustainability, and exceeding client expectations in every
+                With <strong>over 10 years of experience</strong>, we are committed to innovative solutions, sustainability, and exceeding client expectations in every
                 project we undertake.
               </p>
 
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <meta itemProp="address" content="22 Richards Dr, Halfway House, Midrand 1632, South Africa" />
+              <meta itemProp="address" content="Johannesburg, Gauteng, South Africa" />
               <meta itemProp="areaServed" content="Gauteng, Pretoria, Johannesburg, Midrand" />
             </div>
             
@@ -167,7 +167,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
                   src="/construction-team-meeting-on-site-in-gauteng-south-.jpg"
-                  alt="Goshen Projects Solutions professional construction team reviewing building plans on site in Gauteng, South Africa"
+                  alt="ZECO Construction professional construction team reviewing building plans on site in Gauteng, South Africa"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="eager"
@@ -273,7 +273,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
                   src="/diverse-construction-team-working-together-in-gaut.jpg"
-                  alt="Diverse Goshen Projects Solutions construction team collaborating on building project in Gauteng"
+                  alt="Diverse ZECO Construction team collaborating on building project in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
@@ -287,6 +287,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2 text-primary-foreground">
                   <Users className="h-5 w-5" aria-hidden="true" />
                   <div>
+                    {/* TODO: confirm real team size */}
                     <p className="text-sm font-bold">50+ Professionals</p>
                     <p className="text-xs opacity-90">Expert Team</p>
                   </div>
@@ -302,6 +303,7 @@ export default function AboutPage() {
                 A Team <span className="text-secondary">Committed to Excellence</span>
               </h2>
               <p className="mb-6 text-muted-foreground leading-relaxed">
+                {/* TODO: confirm real team size */}
                 We bring together a team of <strong>50+ highly skilled professionals</strong> committed to excellence. Our years of
                 experience in construction, maintenance, and infrastructure sectors allow us to provide tailored
                 solutions for residential, commercial, and industrial clients across Gauteng.
@@ -397,7 +399,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Ready to Partner with <span className="text-accent">Goshen Projects Solutions</span>?
+              Ready to Partner with <span className="text-accent">ZECO Construction</span>?
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
               Contact us today to discuss your construction, maintenance, or infrastructure project. We're here to
@@ -422,8 +424,8 @@ export default function AboutPage() {
                 variant="outline"
                 className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
               >
-                <Link href="tel:+27615307314">
-                  Call: +27 61 530 7314
+                <Link href="tel:+27613821561">
+                  Call: +27 61 382 1561
                 </Link>
               </Button>
             </div>
