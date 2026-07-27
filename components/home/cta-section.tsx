@@ -54,7 +54,7 @@ export function CTASection() {
               size="lg"
               className="bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 h-14 px-8 text-base"
             >
-              <a href="https://wa.me/27613821561" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27748509727" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 WhatsApp Us
               </a>

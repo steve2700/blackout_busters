@@ -166,12 +166,12 @@ export function Header() {
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27613821561" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27748509727" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 61 382 1561
+              +27 74 850 9727
             </a>
             <a
-              href="https://wa.me/27613821561"
+              href="https://wa.me/27748509727"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
@@ -388,18 +388,18 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="space-y-2 text-sm text-white/90">
-                  <a href="tel:+27613821561" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a href="tel:+27748509727" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Phone className="h-4 w-4" />
-                    +27 61 382 1561
+                    +27 74 850 9727
                   </a>
                   <a
-                    href="https://wa.me/27613821561"
+                    href="https://wa.me/27748509727"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
-                    WhatsApp: +27 61 382 1561
+                    WhatsApp: +27 74 850 9727
                   </a>
                   <a href="mailto:info@zecoconstruction.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Mail className="h-4 w-4" />

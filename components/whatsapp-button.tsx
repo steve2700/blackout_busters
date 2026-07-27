@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({
-  phoneNumber = "27613821561",
+  phoneNumber = "27748509727",
   message = "Hi ZECO Construction, I'd like to get a quote for a project.",
 }: WhatsAppButtonProps) {
   const href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

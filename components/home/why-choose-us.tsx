@@ -248,8 +248,8 @@ export function WhyChooseUs() {
               variant="outline"
               className="border-secondary/30 hover:bg-secondary/10 h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
-              <Link href="tel:+27613821561">
-                Call Us: +27 61 382 1561
+              <Link href="tel:+27748509727">
+                Call Us: +27 74 850 9727
               </Link>
             </Button>
           </div>

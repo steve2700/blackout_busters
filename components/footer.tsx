@@ -125,7 +125,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://wa.me/27613821561"
+                  href="https://wa.me/27748509727"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-[#25D366] hover:text-white"
@@ -204,17 +204,17 @@ export function Footer() {
               </li>
 
               <li>
-                <a href="tel:+27613821561" className="group flex items-center gap-3">
+                <a href="tel:+27748509727" className="group flex items-center gap-3">
                   <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 61 382 1561</span>
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 74 850 9727</span>
                 </a>
               </li>
 
               <li>
-                <a href="https://wa.me/27613821561" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
+                <a href="https://wa.me/27748509727" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
                   <WhatsAppIcon className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    WhatsApp: +27 61 382 1561
+                    WhatsApp: +27 74 850 9727
                   </span>
                 </a>
               </li>

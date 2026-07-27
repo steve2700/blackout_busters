@@ -424,8 +424,8 @@ export default function AboutPage() {
                 variant="outline"
                 className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
               >
-                <Link href="tel:+27613821561">
-                  Call: +27 61 382 1561
+                <Link href="tel:+27748509727">
+                  Call: +27 74 850 9727
                 </Link>
               </Button>
             </div>

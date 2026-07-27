@@ -143,7 +143,7 @@ export default function RootLayout({
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+27-61-382-1561",
+                telephone: "+27-74-850-9727",
                 contactType: "Customer Service",
                 areaServed: "ZA",
                 availableLanguage: ["en"],
@@ -163,7 +163,7 @@ export default function RootLayout({
               name: "ZECO Construction",
               image: "https://www.zecoconstruction.co.za/logo.png",
               url: "https://www.zecoconstruction.co.za",
-              telephone: "+27-61-382-1561",
+              telephone: "+27-74-850-9727",
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
