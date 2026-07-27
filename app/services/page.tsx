@@ -1,5 +1,5 @@
 // File path: app/services/page.tsx
-// URL: https://goshenprojects.co.za/services
+// URL: https://www.zecoconstruction.co.za/services
 
 import type { Metadata } from "next"
 import Link from "next/link"
@@ -17,12 +17,8 @@ import {
   Hammer,
   PaintBucket,
   Construction,
-  Fence,
-  Camera,
-  Sun,
   ArrowRight,
   Car,
-  Snowflake,
   Phone,
   Blocks,
   CheckCircle,
@@ -33,20 +29,20 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Our Services | Construction, Maintenance & Infrastructure Solutions in Gauteng | Goshen Projects Solutions",
+  title: "Our Services | Construction, Maintenance & Infrastructure Solutions in Gauteng | ZECO Construction",
   description:
-    "Explore Goshen Projects Solutions' 15+ comprehensive services: construction, renovations, plumbing, electrical, roofing, waterproofing, paving, civil works, security systems, solar solutions in Pretoria, Johannesburg & Midrand. Licensed NHBRC & CIDB contractors.",
-  keywords: "construction services Gauteng, maintenance Pretoria, building contractors Johannesburg, plumbing electrical roofing, security systems, solar installation, civil works Midrand",
+    "Explore ZECO Construction's comprehensive services: construction, renovations, plumbing, electrical, roofing, waterproofing, paving, and concrete works in Pretoria, Johannesburg & Midrand. Licensed NHBRC & CIDB contractors.",
+  keywords: "construction services Gauteng, maintenance Pretoria, building contractors Johannesburg, plumbing electrical roofing, paving concrete Midrand",
   openGraph: {
-    title: "Our Services | Goshen Projects Solutions - Gauteng's Complete Service Provider",
+    title: "Our Services | ZECO Construction - Gauteng's Trusted Building Partner",
     description:
-      "15+ professional services including construction, maintenance, civil works, security, and energy solutions for Pretoria, Johannesburg & Gauteng. 500+ completed projects.",
+      "Professional construction, maintenance, and building services for Pretoria, Johannesburg & Gauteng.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Goshen Projects Solutions - Complete Construction Services",
+        alt: "ZECO Construction - Complete Construction Services",
       },
     ],
   },
@@ -186,15 +182,6 @@ const services = [
     featured: false,
   },
   {
-    icon: Construction,
-    title: "Road Construction & Civil Works",
-    description:
-      "Professional road construction, earthworks and site preparation, stormwater drainage systems, concrete works and kerbing.",
-    href: "/road-construction-civil-works",
-    features: ["Road construction", "Earthworks", "Stormwater drainage", "Concrete works", "Kerbing & surfacing"],
-    featured: false,
-  },
-  {
     icon: Blocks,
     title: "Concrete Works & Bricklaying",
     description:
@@ -203,37 +190,10 @@ const services = [
     features: ["Concrete slabs", "Foundations", "Bricklaying", "Plastering", "Structural concrete"],
     featured: false,
   },
-  {
-    icon: Fence,
-    title: "Fencing, Gates & Access Control",
-    description:
-      "Palisade fencing, electric fencing, electric gates and automation, garage doors, intercom systems for complete security.",
-    href: "/fencing-gates-access-control",
-    features: ["Palisade fencing", "Electric fencing", "Gate automation", "Garage doors", "Intercom systems"],
-    featured: false,
-  },
-  {
-    icon: Camera,
-    title: "CCTV, Alarm & Surveillance Systems",
-    description:
-      "State-of-the-art CCTV installations, alarm systems, remote monitoring, and security system maintenance.",
-    href: "/cctv-alarm-surveillance",
-    features: ["CCTV installation", "Alarm systems", "Remote monitoring", "Security maintenance", "Custom solutions"],
-    featured: false,
-  },
-  {
-    icon: Sun,
-    title: "Solar & Energy Solutions",
-    description:
-      "Solar power installations, solar geysers, inverter and battery backup systems, energy efficiency solutions.",
-    href: "/solar-energy-solutions",
-    features: ["Solar power", "Solar geysers", "Inverter systems", "Battery backup", "Energy efficiency"],
-    featured: false,
-  },
 ]
 
 const stats = [
-  { value: "15+", label: "Service Categories", icon: Award },
+  { value: "11+", label: "Service Categories", icon: Award },
   { value: "500+", label: "Projects Completed", icon: CheckCircle },
   { value: "10+", label: "Years Experience", icon: Clock },
   { value: "24/7", label: "Emergency Support", icon: Phone },
@@ -288,11 +248,10 @@ export default function ServicesPage() {
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              <span className="text-accent">15+</span> Professional Services <br />Across Gauteng
+              <span className="text-accent">11+</span> Professional Services <br />Across Gauteng
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed mb-8">
-              <strong className="text-white">Goshen Projects Solutions</strong> offers comprehensive services covering construction, maintenance, infrastructure,
-              security, and energy solutions. We minimize the need for multiple contractors by providing integrated,
+              <strong className="text-white">ZECO Construction</strong> offers comprehensive building and maintenance services. We minimize the need for multiple contractors by providing integrated,
               professional services across <strong className="text-white">Pretoria, Johannesburg, Midrand</strong>, and the greater Gauteng region.
             </p>
 
@@ -423,10 +382,10 @@ export default function ServicesPage() {
                 Why Choose Us
               </span>
               <h2 className="text-3xl font-bold mb-6 md:text-4xl">
-                The <span className="text-secondary">Goshen Projects Solutions</span> Advantage
+                The <span className="text-secondary">ZECO Construction</span> Advantage
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                With over <strong>10 years of experience</strong> and <strong>500+ completed projects</strong>, we've become Gauteng's trusted partner for all construction, maintenance, and infrastructure needs.
+                With over <strong>10 years of experience</strong> and <strong>500+ completed projects</strong>, we've become Gauteng's trusted partner for all construction, maintenance, and building needs.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -472,7 +431,7 @@ export default function ServicesPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
                   src="/construction-team-meeting-on-site-in-gauteng.jpg"
-                  alt="Goshen Projects Solutions professional team on construction site in Gauteng"
+                  alt="ZECO Construction professional team on construction site in Gauteng"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -518,8 +477,8 @@ export default function ServicesPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold">
-                <Link href="tel:+27615307314">
-                  Call: +27 61 530 7314
+                <Link href="tel:+27748509727">
+                  Call: +27 74 850 9727
                 </Link>
               </Button>
             </div>

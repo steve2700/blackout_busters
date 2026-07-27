@@ -10,8 +10,6 @@ const services = [
   { title: "Electrical Services", href: "/electrical-services" },
   { title: "Roofing & Repairs", href: "/roofing-roof-leak-repairs" },
   { title: "Waterproofing", href: "/waterproofing-services" },
-  { title: "Solar & Energy", href: "/solar-energy-solutions" },
-  { title: "Security Systems", href: "/cctv-alarm-surveillance" },
 ]
 
 const serviceAreas = [
@@ -168,7 +166,7 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">Our Services</h4>
             <ul className="space-y-2.5">
-              {services.slice(0, 6).map((service) => (
+              {services.map((service) => (
                 <li key={service.href}>
                   <Link href={service.href} className="inline-block text-sm text-primary-foreground/80 transition-colors hover:translate-x-1 hover:text-accent">
                     {service.title}

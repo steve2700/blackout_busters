@@ -22,10 +22,6 @@ import {
   Hammer,
   PaintBucket,
   Construction,
-  Fence,
-  Camera,
-  Sun,
-  Snowflake,
   Car,
   Facebook,
   Instagram,
@@ -93,36 +89,6 @@ const services = [
     href: "/paving-driveways-surfacing",
     description: "Brick paving, tar paving & driveway construction",
     icon: Car,
-  },
-  {
-    title: "Road Construction & Civil Works",
-    href: "/road-construction-civil-works",
-    description: "Road construction, earthworks & drainage systems",
-    icon: Construction,
-  },
-  {
-    title: "Fencing, Gates & Access Control",
-    href: "/fencing-gates-access-control",
-    description: "Palisade, electric fencing & gate automation",
-    icon: Fence,
-  },
-  {
-    title: "CCTV, Alarm & Surveillance",
-    href: "/cctv-alarm-surveillance",
-    description: "CCTV installations, alarms & remote monitoring",
-    icon: Camera,
-  },
-  {
-    title: "Solar & Energy Solutions",
-    href: "/solar-energy-solutions",
-    description: "Solar power, geysers, inverters & battery backup",
-    icon: Sun,
-  },
-  {
-    title: "Air Conditioning Services",
-    href: "/air-conditioning-services",
-    description: "AC installation, servicing & maintenance",
-    icon: Snowflake,
   },
 ]
 
@@ -311,7 +277,7 @@ export function Header() {
                       onClick={() => setServicesOpen(false)}
                       className="flex items-center justify-center gap-2 rounded-md bg-primary/5 p-3 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all"
                     >
-                      View All 15 Services <ChevronRight className="h-4 w-4" />
+                      View All 10 Services <ChevronRight className="h-4 w-4" />
                     </Link>
                   </div>
                 </div>
@@ -509,7 +475,7 @@ export function Header() {
                         className="mx-4 mb-4 flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-secondary/30 p-3 text-sm font-medium text-secondary hover:bg-secondary/5 transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        View All 15 Services
+                        View All 10 Services
                         <ChevronRight className="h-4 w-4" />
                       </Link>
                     </div>
