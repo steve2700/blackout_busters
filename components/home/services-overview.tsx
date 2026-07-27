@@ -12,12 +12,8 @@ import {
   Hammer,
   PaintBucket,
   Construction,
-  Fence,
-  Camera,
-  Sun,
   ArrowRight,
   Car,
-  Snowflake,
 } from "lucide-react"
 
 const services = [
@@ -106,47 +102,6 @@ const services = [
     image: "/brick-paving-driveway-installation-residential-sou.jpg",
     keywords: "paving, driveways, tar surfacing",
   },
-  {
-    icon: Fence,
-    title: "Fencing & Access Control",
-    description: "Security palisade fencing, electric fencing, automated gate systems, and professional intercom installations.",
-    href: "/fencing-gates-access-control",
-    image: "/modern-palisade-security-fencing-gate-installation.jpg",
-    keywords: "fencing, gate automation, access control",
-  },
-  {
-    icon: Camera,
-    title: "CCTV & Security Systems",
-    description: "State-of-the-art CCTV installations, alarm systems, remote monitoring, and comprehensive security maintenance.",
-    href: "/cctv-alarm-surveillance",
-    image: "/cctv-security-camera-installation-professional-mon.jpg",
-    keywords: "CCTV, security systems, surveillance",
-  },
-  {
-    icon: Sun,
-    title: "Solar & Energy Solutions",
-    description: "Solar power installations, solar geysers, inverter systems, and battery backup solutions for energy independence.",
-    href: "/solar-energy-solutions",
-    image: "/modern-building-construction-site-with-scaffolding.jpg",
-    keywords: "solar power, solar geysers, energy solutions",
-  },
-  {
-    icon: Snowflake,
-    title: "Air Conditioning Services",
-    description:
-      "Professional air conditioning installation, servicing, repairs, and maintenance for optimal climate control year-round.",
-    href: "/air-conditioning-services",
-    image: "/property-maintenance-worker-fixing-repairs-profess.jpg",
-    keywords: "air conditioning, HVAC, climate control",
-  },
-  {
-    icon: Construction,
-    title: "Road & Civil Works",
-    description: "Professional road construction, earthworks, site preparation, stormwater drainage systems, and concrete works.",
-    href: "/road-construction-civil-works",
-    image: "/modern-building-construction-site-with-scaffolding.jpg",
-    keywords: "civil works, road construction, earthworks",
-  },
 ]
 
 export function ServicesOverview() {
@@ -171,7 +126,7 @@ export function ServicesOverview() {
             Comprehensive Construction & Maintenance Solutions in Gauteng
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-            From construction and renovations to maintenance and security systems, <strong>ZECO Construction</strong> provides integrated services across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted partner for all your project needs.
+            From construction and renovations to maintenance services, <strong>ZECO Construction</strong> provides integrated services across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted partner for all your project needs.
           </p>
         </div>
 
@@ -281,7 +236,7 @@ export function ServicesOverview() {
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 mb-8 text-white">
               <div>
-                <div className="text-3xl font-bold text-accent">15+</div>
+                <div className="text-3xl font-bold text-accent">10+</div>
                 <div className="text-sm text-white/80">Service Categories</div>
               </div>
               <div>
@@ -316,7 +271,7 @@ export function ServicesOverview() {
                 className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 font-semibold transition-transform hover:scale-105"
               >
                 <Link href="/services">
-                  View All 15 Services
+                  View All 10 Services
                   <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
