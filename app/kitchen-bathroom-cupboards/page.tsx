@@ -1,17 +1,17 @@
 // File path: app/kitchen-bathroom-cupboards/page.tsx
-// Clean URL: https://goshenprojects.co.za/kitchen-bathroom-cupboards
+// Clean URL: https://www.zecoconstruction.co.za/kitchen-bathroom-cupboards
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Construction, Hammer, Ruler, Award, Package, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Kitchen & Bathroom Cupboards in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Kitchen & Bathroom Cupboards in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Custom kitchen and bathroom cupboards in Gauteng. Built-in cupboards, vanities, storage units, bedroom wardrobes, office cabinets, and storage solutions for residential & commercial properties in Pretoria, Johannesburg & Midrand. Quality materials, modern designs, professional installation. 500+ custom projects completed. Same-day quotes.",
   keywords: "kitchen cupboards Gauteng, bathroom vanities Pretoria, built-in cupboards Johannesburg, custom cupboards Midrand, bedroom wardrobes, storage solutions, kitchen renovations, bathroom cabinets, melamine cupboards",
   openGraph: {
-    title: "Kitchen & Bathroom Cupboards | Goshen Projects Solutions Gauteng",
+    title: "Kitchen & Bathroom Cupboards | ZECO Construction Gauteng",
     description:
       "Custom-designed kitchen and bathroom cupboards that maximize space, functionality, and style in Pretoria, Johannesburg & Gauteng. Quality materials, expert craftsmanship. 500+ installations completed.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/custom-kitchen-cupboards-installation-in-gauteng-so.jpg",
         width: 1200,
         height: 630,
-        alt: "Custom kitchen and bathroom cupboards installation in Gauteng - Goshen Projects Solutions",
+        alt: "Custom kitchen and bathroom cupboards installation in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -147,11 +147,11 @@ export default function KitchenBathroomCupboardsPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Custom Cupboards?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Custom Cupboards?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> designing and installing custom cupboards across Gauteng, Goshen Projects Solutions has become the preferred choice for homeowners and businesses seeking quality storage solutions. Based in <strong>Midrand at 22 Richards Dr</strong>, we've successfully completed <strong>500+ custom cupboard projects</strong> for kitchens, bathrooms, bedrooms, and offices throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
+                With <strong>over 10 years of experience</strong> designing and installing custom cupboards across Gauteng, ZECO Construction has become the preferred choice for homeowners and businesses seeking quality storage solutions. Based in <strong>Gauteng</strong>, we've successfully completed <strong>500+ custom cupboard projects</strong> for kitchens, bathrooms, bedrooms, and offices throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Custom Cupboard Solutions</h3>
