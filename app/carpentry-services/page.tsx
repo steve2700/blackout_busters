@@ -1,24 +1,24 @@
 // File path: app/carpentry-services/page.tsx
-// Clean URL: https://goshenprojects.co.za/carpentry-services
+// Clean URL: https://www.zecoconstruction.co.za/carpentry-services
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Hammer, Award, Ruler, Wrench, Home, Construction, Users } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Carpentry Services in Gauteng | Custom Woodwork, Decking, Pergolas & Repairs | Goshen Projects Solutions",
+  title: "Carpentry Services in Gauteng | Custom Woodwork, Decking, Pergolas & Repairs | ZECO Construction",
   description:
     "Professional carpentry services in Gauteng. Expert roof timber structures, custom doors & frames, decking, pergolas, cabinetry, and woodwork repairs in Pretoria, Johannesburg & Midrand. Skilled craftsmen with 10+ years experience. Quality timber, precision work, custom solutions.",
   keywords: "carpentry Gauteng, custom woodwork Pretoria, decking installation Johannesburg, pergolas Midrand, timber structures, door frames, cabinetry, furniture repairs, roof carpentry, skilled carpenters",
   openGraph: {
-    title: "Carpentry Services | Goshen Projects Solutions Gauteng",
+    title: "Carpentry Services | ZECO Construction Gauteng",
     description: "Quality woodwork combining functionality with aesthetic appeal for homes and businesses in Gauteng. Custom carpentry, decking, pergolas & repairs by skilled craftsmen.",
     images: [
       {
         url: "/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional carpentry services in Gauteng - Goshen Projects Solutions",
+        alt: "Professional carpentry services in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -28,7 +28,7 @@ export default function CarpentryServicesPage() {
   return (
     <ServicePageTemplate
       title="Carpentry Services"
-      description="Transform your space with expert carpentry from Goshen Projects Solutions. We provide high-quality woodwork that combines functionality with aesthetic appeal. Our skilled carpenters create custom solutions for residential and commercial properties throughout Gauteng, from structural roof timber to beautiful outdoor decking and everything in between."
+      description="Transform your space with expert carpentry from ZECO Construction. We provide high-quality woodwork that combines functionality with aesthetic appeal. Our skilled carpenters create custom solutions for residential and commercial properties throughout Gauteng, from structural roof timber to beautiful outdoor decking and everything in between."
       icon={Hammer}
       heroImage="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg"
       priceRange="From R1,500"
@@ -144,7 +144,7 @@ export default function CarpentryServicesPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> in carpentry and woodworking, <strong>Goshen Projects Solutions</strong> delivers exceptional craftsmanship for homes and businesses across <strong>Pretoria, Johannesburg, Midrand</strong>, and all of Gauteng. Whether you need structural roof timber, a stunning outdoor deck, custom cabinetry, or repairs to existing woodwork, our skilled carpenters have the expertise to bring your vision to life.
+                With <strong>over 10 years of experience</strong> in carpentry and woodworking, <strong>ZECO Construction</strong> delivers exceptional craftsmanship for homes and businesses across <strong>Pretoria, Johannesburg, Midrand</strong>, and all of Gauteng. Whether you need structural roof timber, a stunning outdoor deck, custom cabinetry, or repairs to existing woodwork, our skilled carpenters have the expertise to bring your vision to life.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Our Carpentry Specializations</h3>
@@ -326,7 +326,7 @@ export default function CarpentryServicesPage() {
                   All our carpentry work is backed by our quality guarantee. We take pride in our craftsmanship and stand behind every project we complete. If you're not satisfied, we'll make it right.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Contact us at <strong className="text-secondary">+27 61 530 7314</strong> or visit our office at <strong className="text-secondary">22 Richards Dr, Midrand</strong> to discuss your carpentry project.
+                  Contact us at <strong className="text-secondary">+27 74 850 9727</strong> or visit our office at <strong className="text-secondary">Gauteng</strong> to discuss your carpentry project.
                 </p>
               </div>
             </div>

@@ -1,17 +1,17 @@
 // File path: app/electrical-services/page.tsx
-// Clean URL: https://goshenprojects.co.za/electrical-services
+// Clean URL: https://www.zecoconstruction.co.za/electrical-services
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Zap, Shield, Award, Lightbulb, Battery, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Electrical Services & Installations in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Electrical Services & Installations in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional electrical services in Gauteng. Licensed electricians for installations, rewiring, fault finding, repairs, lighting, electrical maintenance, DB board upgrades, COC certificates for residential, commercial & industrial properties in Pretoria, Johannesburg & Midrand. SANS 10142 compliant. Emergency callouts available. Same-day quotes.",
   keywords: "electrician Gauteng, electrical installations Pretoria, rewiring Johannesburg, electrical repairs Midrand, COC certificate, electrical compliance, lighting installations, DB board upgrades, fault finding, licensed electricians",
   openGraph: {
-    title: "Electrical Services & Installations | Goshen Projects Solutions Gauteng",
+    title: "Electrical Services & Installations | ZECO Construction Gauteng",
     description:
       "Licensed electricians providing safe, compliant electrical services for homes and businesses in Pretoria, Johannesburg & Gauteng. 24/7 emergency callouts, COC certificates, 500+ installations completed.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/electrician-working-on-electrical-panel-in-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional electrical services and installations in Gauteng - Goshen Projects Solutions",
+        alt: "Professional electrical services and installations in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -110,9 +110,9 @@ export default function ElectricalServicesPage() {
       ]}
       relatedServices={[
         { 
-          title: "Solar & Energy Solutions", 
-          href: "/solar-energy-solutions",
-          icon: Battery,
+          title: "Waterproofing Services", 
+          href: "/waterproofing-services",
+          icon: Shield,
         },
         { 
           title: "Property Maintenance", 
@@ -122,11 +122,11 @@ export default function ElectricalServicesPage() {
         { 
           title: "Building Construction", 
           href: "/building-construction-renovations",
-          icon: Shield,
+          icon: Award,
         },
         { 
-          title: "CCTV & Surveillance", 
-          href: "/cctv-alarm-surveillance",
+          title: "Carpentry Services", 
+          href: "/carpentry-services",
           icon: Zap,
         },
       ]}
@@ -147,11 +147,11 @@ export default function ElectricalServicesPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Electrical Services?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Electrical Services?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> providing electrical services across Gauteng, Goshen Projects Solutions has become the trusted choice for safe, compliant, and professional electrical work. Based in <strong>Midrand at 22 Richards Dr</strong>, our licensed electricians have successfully completed <strong>500+ electrical projects</strong> for homes, businesses, and industrial facilities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
+                With <strong>over 10 years of experience</strong> providing electrical services across Gauteng, ZECO Construction has become the trusted choice for safe, compliant, and professional electrical work. Based in <strong>Gauteng</strong>, our licensed electricians have successfully completed <strong>500+ electrical projects</strong> for homes, businesses, and industrial facilities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Electrical Solutions</h3>

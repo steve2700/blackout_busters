@@ -1,17 +1,17 @@
 // File path: app/building-construction-renovations/page.tsx
-// Clean URL: https://goshenprojects.co.za/building-construction-renovations
+// Clean URL: https://www.zecoconstruction.co.za/building-construction-renovations
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Building2, Hammer, Wrench, Home, Users, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Building Construction & Renovations in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Building Construction & Renovations in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional building construction and renovation services in Gauteng. New residential, commercial & industrial builds, home extensions, renovations, refurbishments, and structural alterations in Pretoria, Johannesburg & Midrand. Licensed NHBRC & CIDB contractors. Get same-day quotes.",
   keywords: "building construction Gauteng, renovations Pretoria, home extensions Johannesburg, commercial construction Midrand, residential building contractors, industrial construction, structural alterations, NHBRC builders",
   openGraph: {
-    title: "Building Construction & Renovations | Goshen Projects Solutions Gauteng",
+    title: "Building Construction & Renovations | ZECO Construction Gauteng",
     description:
       "Expert construction and renovation services for residential, commercial & industrial projects in Pretoria, Johannesburg & Gauteng. 500+ completed projects. Licensed & insured.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/construction-workers-building-a-new-home-in-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional building construction in Gauteng - Goshen Projects Solutions",
+        alt: "Professional building construction in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -29,7 +29,7 @@ export default function BuildingConstructionPage() {
   return (
     <ServicePageTemplate
       title="Building Construction & Renovations"
-      description="Our construction projects are managed from concept to completion, ensuring strict adherence to timelines, budgets, and quality standards. Goshen Projects Solutions provides expert guidance on design, materials, and compliance for residential, commercial, and industrial clients throughout Gauteng. With over 10 years of experience and 500+ completed projects, we're your trusted construction partner."
+      description="Our construction projects are managed from concept to completion, ensuring strict adherence to timelines, budgets, and quality standards. ZECO Construction provides expert guidance on design, materials, and compliance for residential, commercial, and industrial clients throughout Gauteng. With over 10 years of experience and 500+ completed projects, we're your trusted construction partner."
       icon={Building2}
       heroImage="/construction-workers-building-a-new-home-in-gauteng.jpg"
       priceRange="Competitive Rates"
@@ -147,11 +147,11 @@ export default function BuildingConstructionPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Your Construction Project?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Your Construction Project?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> in the Gauteng construction industry, Goshen Projects Solutions has established itself as a trusted name in building construction and renovations. Based in <strong>Midrand at 22 Richards Dr</strong>, we've successfully completed <strong>500+ projects</strong> across <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
+                With <strong>over 10 years of experience</strong> in the Gauteng construction industry, ZECO Construction has established itself as a trusted name in building construction and renovations. Based in <strong>Gauteng</strong>, we've successfully completed <strong>500+ projects</strong> across <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Our Construction Specializations</h3>

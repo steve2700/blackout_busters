@@ -1,17 +1,17 @@
 // File path: app/roofing-roof-leak-repairs/page.tsx
-// Clean URL: https://goshenprojects.co.za/roofing-roof-leak-repairs
+// Clean URL: https://www.zecoconstruction.co.za/roofing-roof-leak-repairs
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Home, Shield, Wrench, Clock, CheckCircle, TrendingUp } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Roofing & Roof Leak Repairs in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Roofing & Roof Leak Repairs in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional roofing services and roof leak repairs in Gauteng. Tile roofing, IBR & corrugated roofing, roof waterproofing, gutter installation, fascia boards, ridge capping, leak detection & complete roof replacements for residential & commercial properties in Pretoria, Johannesburg & Midrand. Quality materials, expert workmanship, warranties included. NHBRC registered.",
   keywords: "roofing Gauteng, roof leak repairs Pretoria, tile roofing Johannesburg, IBR roofing Midrand, roof waterproofing, gutter installation, roof replacement, fascia boards, ridge capping, corrugated roofing, roof maintenance",
   openGraph: {
-    title: "Roofing & Roof Leak Repairs | Goshen Projects Solutions Gauteng",
+    title: "Roofing & Roof Leak Repairs | ZECO Construction Gauteng",
     description:
       "Expert roofing solutions for homes and businesses. Leak repairs, tile & IBR roofing, waterproofing, gutters. Quality materials, professional workmanship. Serving Pretoria, Johannesburg & Gauteng.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/roofer-installing-tiles-on-a-house-in-gauteng-south.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional roofing and roof leak repairs in Gauteng - Goshen Projects Solutions",
+        alt: "Professional roofing and roof leak repairs in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -150,11 +150,11 @@ export default function RoofingServicesPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Roofing Services?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Roofing Services?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of roofing experience</strong> across Gauteng, Goshen Projects Solutions provides professional roofing services and expert roof leak repairs for residential and commercial properties. Based in <strong>Midrand at 22 Richards Dr</strong>, our qualified roofing specialists have completed <strong>thousands of roofing projects</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. From emergency leak repairs to complete roof replacements, we deliver quality roofing solutions using premium materials, proven installation techniques, and comprehensive warranties ensuring your roof provides reliable protection for decades.
+                With <strong>over 10 years of roofing experience</strong> across Gauteng, ZECO Construction provides professional roofing services and expert roof leak repairs for residential and commercial properties. Based in <strong>Gauteng</strong>, our qualified roofing specialists have completed <strong>thousands of roofing projects</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. From emergency leak repairs to complete roof replacements, we deliver quality roofing solutions using premium materials, proven installation techniques, and comprehensive warranties ensuring your roof provides reliable protection for decades.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Roofing Services</h3>
@@ -236,18 +236,18 @@ export default function RoofingServicesPage() {
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Quality Materials & Workmanship</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Roof quality depends on both materials and installation expertise. We use premium materials from reputable suppliers including quality concrete and clay tiles, heavy-gauge IBR and corrugated sheeting, proven waterproofing membranes and coatings, durable gutter materials, and quality flashings and accessories. Material selection considers roof pitch and design, weather conditions and exposure, aesthetic requirements, budget parameters, and maintenance requirements. Our experienced roofing specialists provide proper installation techniques ensuring weather-tight roofs, attention to detail in critical areas, safety-focused work practices, neat workmanship, and site protection and cleanup. Quality control includes material inspection verifying specifications, installation checks ensuring correct methods, leak testing where applicable, and final inspection before completion. We stand behind our work with comprehensive warranties on materials (from manufacturers) and workmanship (from Goshen Projects), ensuring quality, reliability, and customer satisfaction. Quality roofing provides reliable weather protection, long service life minimizing replacement costs, minimal maintenance requirements, maintained property value and appearance, and peace of mind knowing your property is protected by professionally installed roofing built to last.
+                Roof quality depends on both materials and installation expertise. We use premium materials from reputable suppliers including quality concrete and clay tiles, heavy-gauge IBR and corrugated sheeting, proven waterproofing membranes and coatings, durable gutter materials, and quality flashings and accessories. Material selection considers roof pitch and design, weather conditions and exposure, aesthetic requirements, budget parameters, and maintenance requirements. Our experienced roofing specialists provide proper installation techniques ensuring weather-tight roofs, attention to detail in critical areas, safety-focused work practices, neat workmanship, and site protection and cleanup. Quality control includes material inspection verifying specifications, installation checks ensuring correct methods, leak testing where applicable, and final inspection before completion. We stand behind our work with comprehensive warranties on materials (from manufacturers) and workmanship (from ZECO Construction), ensuring quality, reliability, and customer satisfaction. Quality roofing provides reliable weather protection, long service life minimizing replacement costs, minimal maintenance requirements, maintained property value and appearance, and peace of mind knowing your property is protected by professionally installed roofing built to last.
               </p>
 
               {/* Call to Action */}
               <div className="mt-12 p-8 rounded-xl bg-primary/5 border-2 border-primary/20">
                 <h3 className="text-2xl font-bold mb-4">Protect Your Property with Quality Roofing</h3>
                 <p className="text-muted-foreground mb-6">
-                  Need roof repairs, new roofing installation, or emergency leak services? Contact Goshen Projects Solutions for professional roofing services across Gauteng. Our experienced specialists deliver quality solutions with premium materials and comprehensive warranties.
+                  Need roof repairs, new roofing installation, or emergency leak services? Contact ZECO Construction for professional roofing services across Gauteng. Our experienced specialists deliver quality solutions with premium materials and comprehensive warranties.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <strong>Emergency Leak Repairs Available</strong><br />
-                  <strong>Location:</strong> 22 Richards Dr, Midrand, Gauteng<br />
+                  <strong>Location:</strong> Gauteng, South Africa<br />
                   <strong>Service Areas:</strong> Pretoria, Johannesburg, Midrand, Centurion, Sandton & Gauteng
                 </p>
               </div>

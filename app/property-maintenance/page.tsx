@@ -1,17 +1,17 @@
 // File path: app/property-maintenance/page.tsx
-// Clean URL: https://goshenprojects.co.za/property-maintenance
+// Clean URL: https://www.zecoconstruction.co.za/property-maintenance
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Wrench, Clock, ShieldCheck, TrendingUp, CheckCircle, Settings } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Property Maintenance Services in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Property Maintenance Services in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional property maintenance services in Gauteng. Residential & commercial maintenance programs, preventative maintenance, general repairs, handyman services, facility management & emergency repairs for properties in Pretoria, Johannesburg & Midrand. Scheduled inspections, building assessments, compliance support. Same-day response.",
   keywords: "property maintenance Gauteng, maintenance services Pretoria, facility management Johannesburg, preventative maintenance Midrand, building maintenance, handyman services, emergency repairs, residential maintenance, commercial maintenance",
   openGraph: {
-    title: "Property Maintenance Services | Goshen Projects Solutions Gauteng",
+    title: "Property Maintenance Services | ZECO Construction Gauteng",
     description:
       "Comprehensive property maintenance for residential and commercial properties. Preventative programs, emergency repairs, facility support. Expert maintenance teams serving Pretoria, Johannesburg & Gauteng.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/property-maintenance-worker-repairing-fixtures-in-a.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional property maintenance services in Gauteng - Goshen Projects Solutions",
+        alt: "Professional property maintenance services in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -151,11 +151,11 @@ export default function PropertyMaintenancePage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Property Maintenance?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Property Maintenance?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of property maintenance experience</strong> across Gauteng, Goshen Projects Solutions delivers reliable, comprehensive maintenance services for residential, commercial, and industrial properties. Based in <strong>Midrand at 22 Richards Dr</strong>, our experienced maintenance teams have completed <strong>thousands of maintenance contracts, inspections, and emergency repairs</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. We combine multi-trade expertise, preventative maintenance philosophy, and responsive service to keep properties functional, safe, and well-maintained year-round.
+                With <strong>over 10 years of property maintenance experience</strong> across Gauteng, ZECO Construction delivers reliable, comprehensive maintenance services for residential, commercial, and industrial properties. Based in <strong>Gauteng</strong>, our experienced maintenance teams have completed <strong>thousands of maintenance contracts, inspections, and emergency repairs</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. We combine multi-trade expertise, preventative maintenance philosophy, and responsive service to keep properties functional, safe, and well-maintained year-round.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Property Maintenance Solutions</h3>

@@ -1,17 +1,17 @@
 // File path: app/plumbing-services/page.tsx
-// Clean URL: https://goshenprojects.co.za/plumbing-services
+// Clean URL: https://www.zecoconstruction.co.za/plumbing-services
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Droplets, Wrench, Clock, ShieldCheck, TrendingUp, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Plumbing Services in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Plumbing Services in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional plumbing services in Gauteng. Installations, repairs, leak detection, burst pipes, drain cleaning, geyser installation & repairs, bathroom & kitchen plumbing for residential & commercial properties in Pretoria, Johannesburg & Midrand. Licensed plumbers, 24/7 emergency service, compliance guaranteed. Same-day quotes.",
   keywords: "plumbers Gauteng, plumbing services Pretoria, emergency plumber Johannesburg, geyser installation Midrand, burst pipes, leak detection, drain cleaning, bathroom plumbing, kitchen plumbing, plumbing repairs",
   openGraph: {
-    title: "Plumbing Services | Goshen Projects Solutions Gauteng",
+    title: "Plumbing Services | ZECO Construction Gauteng",
     description:
       "Expert plumbing installations, repairs, and maintenance for homes and businesses. Licensed plumbers, modern equipment, compliance guaranteed. 24/7 emergency service. Serving Pretoria, Johannesburg & Gauteng.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/professional-plumber-working-on-pipes-in-a-gauteng-.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional plumbing services in Gauteng - Goshen Projects Solutions",
+        alt: "Professional plumbing services in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -150,11 +150,11 @@ export default function PlumbingServicesPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Plumbing Services?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Plumbing Services?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of plumbing experience</strong> across Gauteng, Goshen Projects Solutions delivers reliable, professional plumbing services for residential, commercial, and industrial clients. Based in <strong>Midrand at 22 Richards Dr</strong>, our licensed plumbers have completed <strong>thousands of plumbing installations, repairs, and emergency callouts</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. We combine technical expertise, modern equipment, and customer-focused service to solve plumbing challenges efficiently and effectively.
+                With <strong>over 10 years of plumbing experience</strong> across Gauteng, ZECO Construction delivers reliable, professional plumbing services for residential, commercial, and industrial clients. Based in <strong>Gauteng</strong>, our licensed plumbers have completed <strong>thousands of plumbing installations, repairs, and emergency callouts</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas. We combine technical expertise, modern equipment, and customer-focused service to solve plumbing challenges efficiently and effectively.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Plumbing Services</h3>

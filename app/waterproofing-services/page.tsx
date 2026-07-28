@@ -1,17 +1,17 @@
 // File path: app/waterproofing-services/page.tsx
-// Clean URL: https://goshenprojects.co.za/waterproofing-services
+// Clean URL: https://www.zecoconstruction.co.za/waterproofing-services
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Shield, Droplets, Home, Building, CheckCircle, AlertTriangle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Professional Waterproofing Services in Gauteng | Goshen Projects Solutions - Roof, Bathroom, Foundation & Damp Proofing Pretoria & Johannesburg",
+  title: "Professional Waterproofing Services in Gauteng | ZECO Construction - Roof, Bathroom, Foundation & Damp Proofing Pretoria & Johannesburg",
   description:
     "Expert waterproofing services in Gauteng protecting properties from water damage. Roof waterproofing, balcony sealing, bathroom waterproofing, foundation protection, damp proofing, basement waterproofing, wall treatments for residential & commercial properties in Pretoria, Johannesburg & Midrand. Prevent leaks, mold, structural damage. Premium waterproofing products, certified applicators, comprehensive warranties. 24/7 emergency leak repairs.",
   keywords: "waterproofing Gauteng, roof waterproofing Pretoria, damp proofing Johannesburg, bathroom waterproofing Midrand, foundation waterproofing, balcony sealing, basement waterproofing, leak repairs, moisture protection, mold prevention",
   openGraph: {
-    title: "Professional Waterproofing Services | Goshen Projects Solutions Gauteng",
+    title: "Professional Waterproofing Services | ZECO Construction Gauteng",
     description:
       "Protect your property from water damage with expert waterproofing solutions. Roof, bathroom, foundation, damp proofing. Premium products, certified installation. Serving Pretoria, Johannesburg & Gauteng.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/waterproofing-specialist-applying-sealant-on-a-roof.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional waterproofing services protecting properties from water damage in Gauteng - Goshen Projects Solutions",
+        alt: "Professional waterproofing services protecting properties from water damage in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -150,11 +150,11 @@ export default function WaterproofingServicesPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Waterproofing?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Waterproofing?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>extensive waterproofing experience</strong> across Gauteng, Goshen Projects Solutions provides professional waterproofing services protecting residential and commercial properties from water damage, leaks, and moisture-related problems. Based in <strong>Midrand at 22 Richards Dr</strong>, our certified waterproofing specialists have protected <strong>hundreds of properties</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas from water ingress and dampness. From emergency leak repairs to comprehensive waterproofing systems for new construction, we deliver effective moisture protection using premium products, proven techniques, and professional application ensuring long-lasting results and guaranteed performance.
+                With <strong>extensive waterproofing experience</strong> across Gauteng, ZECO Construction provides professional waterproofing services protecting residential and commercial properties from water damage, leaks, and moisture-related problems. Based in <strong>Gauteng</strong>, our certified waterproofing specialists have protected <strong>hundreds of properties</strong> throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas from water ingress and dampness. From emergency leak repairs to comprehensive waterproofing systems for new construction, we deliver effective moisture protection using premium products, proven techniques, and professional application ensuring long-lasting results and guaranteed performance.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Waterproofing Solutions</h3>
@@ -251,7 +251,7 @@ export default function WaterproofingServicesPage() {
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Get Professional Waterproofing Protection</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Protect your property from water damage with professional waterproofing services from Goshen Projects Solutions. Contact us for comprehensive waterproofing assessment identifying moisture issues and optimal solutions. Our waterproofing specialists inspect your property, identify water damage sources or vulnerable areas, and recommend appropriate waterproofing systems tailored to your needs and budget. We provide detailed quotations itemizing all work, products, and warranties with clear pricing and expectations. Our certified waterproofing technicians deliver professional installation using premium products and proven techniques ensuring effective, long-lasting protection. Comprehensive warranties and ongoing support provide peace of mind throughout waterproofing system lifespan. Whether addressing existing leaks requiring emergency repairs, preventing water damage in new construction, or comprehensive waterproofing for renovations, we deliver expertise, quality products, professional application, and reliable results protecting your property investment. Don't wait for water damage to escalate - proactive waterproofing prevents costly repairs and maintains property integrity. Contact Goshen Projects Solutions today for professional waterproofing services throughout Gauteng including Pretoria, Johannesburg, Midrand, and surrounding areas. Protect your property, preserve your investment, and enjoy peace of mind with expert waterproofing solutions.
+                Protect your property from water damage with professional waterproofing services from ZECO Construction. Contact us for comprehensive waterproofing assessment identifying moisture issues and optimal solutions. Our waterproofing specialists inspect your property, identify water damage sources or vulnerable areas, and recommend appropriate waterproofing systems tailored to your needs and budget. We provide detailed quotations itemizing all work, products, and warranties with clear pricing and expectations. Our certified waterproofing technicians deliver professional installation using premium products and proven techniques ensuring effective, long-lasting protection. Comprehensive warranties and ongoing support provide peace of mind throughout waterproofing system lifespan. Whether addressing existing leaks requiring emergency repairs, preventing water damage in new construction, or comprehensive waterproofing for renovations, we deliver expertise, quality products, professional application, and reliable results protecting your property investment. Don't wait for water damage to escalate - proactive waterproofing prevents costly repairs and maintains property integrity. Contact ZECO Construction today for professional waterproofing services throughout Gauteng including Pretoria, Johannesburg, Midrand, and surrounding areas. Protect your property, preserve your investment, and enjoy peace of mind with expert waterproofing solutions.
               </p>
 
               <div className="mt-12 p-8 rounded-xl bg-primary/5 border border-primary/20">
@@ -274,10 +274,10 @@ export default function WaterproofingServicesPage() {
                     Request Waterproofing Quote
                   </a>
                   <a 
-                    href="tel:+27615307314" 
+                    href="tel:+27748509727" 
                     className="inline-flex items-center justify-center px-6 py-3 bg-destructive text-destructive-foreground rounded-lg font-semibold hover:bg-destructive/90 transition-colors"
                   >
-                    Emergency: 061 530 7314
+                    Emergency: 074 850 9727
                   </a>
                 </div>
               </div>
