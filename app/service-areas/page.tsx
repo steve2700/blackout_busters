@@ -7,12 +7,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Phone, ArrowRight, CheckCircle, Clock, Navigation, Star, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Service Areas | Goshen Projects Solutions - Pretoria, Johannesburg, Midrand & All Gauteng",
+  title: "Service Areas | ZECO Construction - Pretoria, Johannesburg, Midrand & All Gauteng",
   description:
-    "Goshen Projects Solutions provides construction, maintenance, and infrastructure services throughout Gauteng including Pretoria, Johannesburg, Sandton, Centurion, Midrand, Fourways, and 10+ major areas. Same-day quotes, 24/7 emergency support, 20-40 min response times.",
+    "ZECO Construction provides construction, maintenance, and infrastructure services throughout Gauteng including Pretoria, Johannesburg, Sandton, Centurion, Midrand, Fourways, and 10+ major areas. Same-day quotes, 24/7 emergency support, 20-40 min response times.",
   keywords: "service areas Gauteng, construction Pretoria, contractors Johannesburg, building services Midrand, Sandton maintenance, Centurion contractors, Fourways construction",
   openGraph: {
-    title: "Service Areas | Goshen Projects Solutions Serving All Gauteng",
+    title: "Service Areas | ZECO Construction Serving All Gauteng",
     description:
       "Professional construction and maintenance services across all major areas in Gauteng province. Fast 20-40 min response times, free on-site consultations, and 24/7 emergency support.",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/gauteng-service-areas-map.webp",
         width: 1200,
         height: 630,
-        alt: "Goshen Projects Solutions service areas map - Gauteng Province",
+        alt: "ZECO Construction service areas map - Gauteng Province",
       },
     ],
   },
@@ -51,7 +51,7 @@ const serviceAreas = [
     name: "Midrand",
     href: "/service-areas/midrand",
     description:
-      "Based in Midrand at 22 Richards Dr. Reliable construction and infrastructure services in Carlswald, Halfway House, and surrounding areas.",
+      "Based in Midrand. Reliable construction and infrastructure services in Carlswald, Halfway House, and surrounding areas.",
     suburbs: ["Carlswald", "Halfway House", "Vorna Valley", "Glen Austin", "Waterfall Estate"],
     highlight: true,
     responseTime: "20 min",
@@ -169,7 +169,7 @@ export default function ServiceAreasPage() {
         <div className="absolute inset-0">
           <Image
             src="/gauteng-service-areas-map.webp"
-            alt="Goshen Projects Solutions comprehensive service coverage map of Gauteng Province including Pretoria, Johannesburg, and Midrand"
+            alt="ZECO Construction comprehensive service coverage map of Gauteng Province including Pretoria, Johannesburg, and Midrand"
             fill
             className="object-cover opacity-10"
             priority
@@ -202,7 +202,7 @@ export default function ServiceAreasPage() {
               Professional Services Across <span className="text-accent">Pretoria, Johannesburg & All Gauteng</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed mb-8">
-              <strong className="text-white">Goshen Projects Solutions</strong> delivers expert construction, maintenance, and infrastructure services throughout
+              <strong className="text-white">ZECO Construction</strong> delivers expert building, maintenance, and infrastructure services throughout
               Gauteng province. Based in <strong className="text-white">Midrand</strong>, our strategically positioned teams ensure <strong className="text-white">20-40 minute response times</strong> and exceptional service
               quality across all major areas.
             </p>
@@ -334,7 +334,7 @@ export default function ServiceAreasPage() {
                 Your Local <span className="text-secondary">Gauteng Service Provider</span>
               </h2>
               <p className="mb-8 text-muted-foreground text-lg leading-relaxed">
-                As a locally-based company with our main office in <strong>Midrand at 22 Richards Dr</strong>, we have teams strategically positioned throughout Gauteng. We understand the
+                As a locally-based company with our main office in <strong>Midrand</strong>, we have teams strategically positioned throughout Gauteng. We understand the
                 unique needs of each area and provide tailored solutions with industry-leading response times.
               </p>
 
@@ -360,8 +360,8 @@ export default function ServiceAreasPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-secondary/30 hover:bg-secondary/10 transition-transform hover:scale-105">
-                  <Link href="tel:+27615307314">
-                    Call: +27 61 530 7314
+                  <Link href="tel:+27748509727">
+                    Call: +27 74 850 9727
                   </Link>
                 </Button>
               </div>
@@ -371,7 +371,7 @@ export default function ServiceAreasPage() {
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
                   src="/gauteng-service-areas-map.webp"
-                  alt="Detailed Goshen Projects Solutions service coverage map showing all 10+ areas across Gauteng Province"
+                  alt="Detailed ZECO Construction service coverage map showing all 10+ areas across Gauteng Province"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
@@ -447,7 +447,7 @@ export default function ServiceAreasPage() {
                 className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
               >
                 <Link href="/services">
-                  View All 15 Services
+                  View All 10 Services
                   <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>

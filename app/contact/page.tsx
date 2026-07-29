@@ -1,23 +1,24 @@
 import type { Metadata } from "next"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ContactForm } from "@/components/contact-form"
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter, CheckCircle, Award, Zap, Shield } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, CheckCircle, Award, Zap, Shield } from "lucide-react"
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export const metadata: Metadata = {
-  title: "Contact Goshen Projects Solutions | Free Quote in Gauteng - Pretoria, Johannesburg & Midrand",
+  title: "Contact ZECO Construction | Free Quote in Gauteng - Pretoria, Johannesburg & Midrand",
   description:
-    "Contact Goshen Projects Solutions for construction, renovations, maintenance, paving, civil works, security systems, or solar solutions in Gauteng. Free consultation and same-day quotes. Call +27 61 530 7314 or visit us at 22 Richards Dr, Midrand.",
-  keywords: "contact Goshen Projects, construction quote Gauteng, free consultation Pretoria, building contractor Johannesburg, Midrand construction company, emergency services",
+    "Contact ZECO Construction for building, renovations, maintenance, paving, or civil works in Gauteng. Free consultation and same-day quotes. Call +27 74 850 9727.",
+  keywords: "contact ZECO Construction, construction quote Gauteng, free consultation Pretoria, building contractor Johannesburg, Midrand construction company, emergency services",
   openGraph: {
-    title: "Contact Goshen Projects Solutions | Free Quote in Gauteng",
+    title: "Contact ZECO Construction | Free Quote in Gauteng",
     description:
-      "Get in touch for all construction, maintenance, and infrastructure needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same-day response.",
+      "Get in touch for all building, maintenance, and infrastructure needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same-day response.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Goshen Projects Solutions",
+        alt: "Contact ZECO Construction",
       },
     ],
   },
@@ -26,23 +27,23 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Our Office",
-    details: ["22 Richards Dr, Halfway House", "Midrand 1632, South Africa"],
-    href: "https://www.google.com/maps?q=22+Richards+Dr,+Halfway+House,+Midrand+1632",
+    title: "Coverage Area",
+    details: ["Gauteng, South Africa", "Serving Pretoria & Johannesburg"],
+    href: "https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa",
     highlight: true,
   },
   {
     icon: Phone,
     title: "Phone & WhatsApp",
-    details: ["+27 61 530 7314"],
-    href: "tel:+27615307314",
+    details: ["+27 74 850 9727"],
+    href: "tel:+27748509727",
     highlight: true,
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@goshenprojects.co.za"],
-    href: "mailto:info@goshenprojects.co.za",
+    details: ["info@zecoconstruction.co.za"],
+    href: "mailto:info@zecoconstruction.co.za",
     highlight: false,
   },
   {
@@ -108,8 +109,8 @@ export default function ContactPage() {
               Get Your <span className="text-accent">Free Quote</span> Today
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              For construction, renovations, maintenance, paving, civil works, security systems, or solar solutions in <strong className="text-white">Gauteng</strong>,
-              contact <strong className="text-white">Goshen Projects Solutions</strong> today. Our expert team provides free consultations, same-day quotes, and professional advice
+              For building, renovations, maintenance, paving, or civil works in <strong className="text-white">Gauteng</strong>,
+              contact <strong className="text-white">ZECO Construction</strong> today. Our expert team provides free consultations, same-day quotes, and professional advice
               tailored to your project needs.
             </p>
 
@@ -231,14 +232,14 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              {/* Social Links - Updated */}
+              {/* Social Links */}
               <div className="mb-8 p-6 rounded-xl bg-gradient-to-br from-muted to-muted/50">
                 <h3 className="mb-4 font-bold flex items-center gap-2">
                   <span>Connect With Us</span>
                 </h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.facebook.com/goshenprojectssolutions"
+                    href="https://www.facebook.com/zecoconstruction"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#1877F2] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -247,7 +248,7 @@ export default function ContactPage() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/goshenprojectssolutions"
+                    href="https://www.instagram.com/zecoconstruction"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -256,13 +257,13 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.x.com/goshen_projects"
+                    href="https://wa.me/27748509727"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-black hover:text-white hover:scale-110 hover:shadow-lg"
-                    aria-label="X (Twitter)"
+                    className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#25D366] hover:text-white hover:scale-110 hover:shadow-lg"
+                    aria-label="WhatsApp"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <WhatsAppIcon className="h-5 w-5" />
                   </a>
                 </div>
                 <p className="mt-4 text-xs text-muted-foreground">
@@ -292,57 +293,8 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Don't see your area? <a href="tel:+27615307314" className="text-secondary font-semibold hover:underline">Call us</a> - we cover the entire province!
+                  Don't see your area? <a href="tel:+27748509727" className="text-secondary font-semibold hover:underline">Call us</a> - we cover the entire province!
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section - New */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-3">Visit Our Office in Midrand</h2>
-            <p className="text-muted-foreground">
-              Located at 22 Richards Dr, Halfway House - strategically positioned to serve all of Gauteng
-            </p>
-          </div>
-
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.0!2d28.1242!3d-25.9967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU5JzQ4LjEiUyAyOMKwMDcnMjcuMSJF!5e0!3m2!1sen!2sza!4v1234567890"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Goshen Projects Solutions Office Location - 22 Richards Dr, Midrand"
-            />
-          </div>
-
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
-              <MapPin className="h-8 w-8 text-secondary flex-shrink-0" aria-hidden="true" />
-              <div>
-                <p className="font-semibold">Easy to Find</p>
-                <p className="text-sm text-muted-foreground">Central Midrand location</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
-              <Clock className="h-8 w-8 text-secondary flex-shrink-0" aria-hidden="true" />
-              <div>
-                <p className="font-semibold">Walk-ins Welcome</p>
-                <p className="text-sm text-muted-foreground">Mon-Fri, 8 AM - 5 PM</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
-              <Phone className="h-8 w-8 text-secondary flex-shrink-0" aria-hidden="true" />
-              <div>
-                <p className="font-semibold">Call Ahead</p>
-                <p className="text-sm text-muted-foreground">+27 61 530 7314</p>
               </div>
             </div>
           </div>
