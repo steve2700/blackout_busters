@@ -113,8 +113,8 @@ export function ServicePageTemplate({
                   variant="outline"
                   className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
                 >
-                  <Link href="tel:+27615307314">
-                    Call: +27 61 530 7314
+                  <Link href="tel:+27748509727">
+                    Call: +27 74 850 9727
                   </Link>
                 </Button>
               </div>
@@ -125,7 +125,7 @@ export function ServicePageTemplate({
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
                 <Image
                   src={heroImage || "/placeholder.svg"}
-                  alt={`Professional ${title} services in Gauteng - Goshen Projects Solutions`}
+                  alt={`Professional ${title} services in Gauteng - ZECO Construction`}
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
@@ -169,7 +169,7 @@ export function ServicePageTemplate({
                 Our <span className="text-secondary">{title}</span> Services
               </h2>
               <p className="mb-8 text-muted-foreground text-lg leading-relaxed">
-                <strong>Goshen Projects Solutions</strong> provides comprehensive {title.toLowerCase()} solutions for residential, commercial, and
+                <strong>ZECO Construction</strong> provides comprehensive {title.toLowerCase()} solutions for residential, commercial, and
                 industrial clients across <strong>Pretoria, Johannesburg, Midrand</strong>, and the wider <strong>Gauteng</strong> region.
               </p>
               
@@ -193,7 +193,7 @@ export function ServicePageTemplate({
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                 <Image
                   src={heroImage || "/placeholder.svg"}
-                  alt={`${title} - Goshen Projects Solutions`}
+                  alt={`${title} - ZECO Construction`}
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -248,7 +248,7 @@ export function ServicePageTemplate({
               Benefits of Our <span className="text-secondary">{title}</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Experience the Goshen Projects Solutions difference with our professional, reliable service
+              Experience the ZECO Construction difference with our professional, reliable service
             </p>
           </div>
           
@@ -364,7 +364,7 @@ export function ServicePageTemplate({
               Ready to Get <span className="text-accent">Started?</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact <strong className="text-white">Goshen Projects Solutions</strong> today for a free consultation and detailed quotation for your {title.toLowerCase()} project
+              Contact <strong className="text-white">ZECO Construction</strong> today for a free consultation and detailed quotation for your {title.toLowerCase()} project
               in <strong className="text-white">Gauteng</strong>. Same-day quotes available!
             </p>
             

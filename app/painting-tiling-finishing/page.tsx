@@ -1,17 +1,17 @@
 // File path: app/painting-tiling-finishing/page.tsx
-// Clean URL: https://goshenprojects.co.za/painting-tiling-finishing
+// Clean URL: https://www.zecoconstruction.co.za/painting-tiling-finishing
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { PaintBucket, Brush, Droplets, Sparkles, Shield, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Painting, Tiling & Finishing Services in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Painting, Tiling & Finishing Services in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional painting, tiling, and finishing services in Gauteng. Interior & exterior painting, floor & wall tiling, texture coatings, waterproofing, decorative finishes for residential & commercial properties in Pretoria, Johannesburg & Midrand. Premium materials, expert application, 10+ years experience. Same-day quotes.",
   keywords: "painting services Gauteng, tiling contractors Pretoria, interior painting Johannesburg, exterior painting Midrand, floor tiling, wall tiling, texture coatings, decorative finishes, waterproofing, commercial painting",
   openGraph: {
-    title: "Painting, Tiling & Finishing Services | Goshen Projects Solutions Gauteng",
+    title: "Painting, Tiling & Finishing Services | ZECO Construction Gauteng",
     description:
       "Expert painting, tiling, and finishing services that transform properties with quality finishes, durability, and aesthetic appeal. Serving Pretoria, Johannesburg & Gauteng. 10+ years experience, premium materials.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/painter-applying-paint-to-interior-walls-in-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional painting services in Gauteng - Goshen Projects Solutions",
+        alt: "Professional painting services in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -147,11 +147,11 @@ export default function PaintingTilingFinishingPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Painting, Tiling & Finishing?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Painting, Tiling & Finishing?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> delivering exceptional finishing services across Gauteng, Goshen Projects Solutions has established a reputation for quality craftsmanship and customer satisfaction. Based in <strong>Midrand at 22 Richards Dr</strong>, we've completed <strong>hundreds of painting and tiling projects</strong> for homes, offices, retail spaces, and industrial facilities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
+                With <strong>over 10 years of experience</strong> delivering exceptional finishing services across Gauteng, ZECO Construction has established a reputation for quality craftsmanship and customer satisfaction. Based in <strong>Gauteng</strong>, we've completed <strong>hundreds of painting and tiling projects</strong> for homes, offices, retail spaces, and industrial facilities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Painting Services</h3>

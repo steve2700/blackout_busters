@@ -24,7 +24,7 @@ const popularServices = [
   { icon: Building2, title: "Construction & Renovations", href: "/building-construction-renovations" },
   { icon: Wrench, title: "Property Maintenance", href: "/property-maintenance" },
   { icon: Zap, title: "Electrical Services", href: "/electrical-services" },
-  { icon: Shield, title: "Security Systems", href: "/cctv-alarm-surveillance" },
+  { icon: Shield, title: "Waterproofing Services", href: "/waterproofing-services" },
 ]
 
 export function ServiceAreaTemplate({
@@ -47,7 +47,7 @@ export function ServiceAreaTemplate({
         <div className="absolute inset-0">
           <Image
             src={heroImage || "/gauteng-map-area.jpg?height=600&width=1600"}
-            alt={`Goshen Projects Solutions services in ${areaName}`}
+            alt={`ZECO Construction services in ${areaName}`}
             fill
             className="object-cover opacity-15"
             priority
@@ -129,7 +129,7 @@ export function ServiceAreaTemplate({
                     <strong className="text-white">Fast Response Times:</strong> We serve all suburbs in {areaName} with rapid response and professional service.
                   </p>
                   <p className="text-xs text-white/60">
-                    Based in Midrand at 22 Richards Dr, strategically located to serve {areaName} efficiently.
+                    Based in Gauteng, strategically located to serve {areaName} efficiently.
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export function ServiceAreaTemplate({
                 <p className="text-muted-foreground leading-relaxed mb-6">{introduction}</p>
                 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With <strong>over 10 years of experience</strong> serving {areaName} and surrounding areas, Goshen Projects Solutions has completed <strong>{projectsCompleted}+ successful projects</strong> for residential, commercial, and industrial clients. Our local expertise means we understand the unique requirements of properties in {areaName}.
+                  With <strong>over 10 years of experience</strong> serving {areaName} and surrounding areas, ZECO Construction has completed <strong>{projectsCompleted}+ successful projects</strong> for residential, commercial, and industrial clients. Our local expertise means we understand the unique requirements of properties in {areaName}.
                 </p>
               </div>
 
@@ -183,7 +183,7 @@ export function ServiceAreaTemplate({
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
                   src="/modern-renovated-kitchen-interior-design-south-afr.jpg?height=400&width=600"
-                  alt={`Professional construction services in ${areaName} - Goshen Projects Solutions`}
+                  alt={`Professional construction services in ${areaName} - ZECO Construction`}
                   fill
                   className="object-cover"
                 />
@@ -280,7 +280,7 @@ export function ServiceAreaTemplate({
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Why {areaName} Residents & Businesses Trust Goshen Projects Solutions
+                Why {areaName} Residents & Businesses Trust ZECO Construction
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -288,7 +288,7 @@ export function ServiceAreaTemplate({
                   local residential and commercial properties. Our commitment to quality workmanship, transparent pricing, and exceptional customer satisfaction has made us the preferred choice for construction and maintenance services.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Based at <strong>22 Richards Dr, Midrand</strong>, our strategic location enables us to provide <strong>rapid response times of {responseTime}</strong> to all suburbs in {areaName}. We're available for emergency callouts, routine maintenance, and major construction projects.
+                  Based in <strong>Gauteng</strong>, our strategic location enables us to provide <strong>rapid response times of {responseTime}</strong> to all suburbs in {areaName}. We're available for emergency callouts, routine maintenance, and major construction projects.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -311,7 +311,7 @@ export function ServiceAreaTemplate({
           <div className="mb-8">
             <h2 className="mb-3 text-2xl font-bold">We Also Serve Nearby Areas</h2>
             <p className="text-muted-foreground">
-              Goshen Projects Solutions provides professional construction and maintenance services throughout Gauteng. 
+              ZECO Construction provides professional construction and maintenance services throughout Gauteng. 
               Explore our other service areas:
             </p>
           </div>
@@ -341,7 +341,7 @@ export function ServiceAreaTemplate({
               Ready to Start Your Project in {areaName}?
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact Goshen Projects Solutions today for a free consultation and detailed quotation. Our experienced team is ready to provide expert guidance and tailored solutions for your {areaName} property—whether residential, commercial, or industrial.
+              Contact ZECO Construction today for a free consultation and detailed quotation. Our experienced team is ready to provide expert guidance and tailored solutions for your {areaName} property—whether residential, commercial, or industrial.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg">
@@ -356,7 +356,7 @@ export function ServiceAreaTemplate({
                 variant="outline" 
                 className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                <Link href="tel:+27615307314">
+                <Link href="tel:+27748509727">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Us Now
                 </Link>

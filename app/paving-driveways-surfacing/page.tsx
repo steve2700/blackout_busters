@@ -1,17 +1,17 @@
 // File path: app/paving-driveways-surfacing/page.tsx
-// Clean URL: https://goshenprojects.co.za/paving-driveways-surfacing
+// Clean URL: https://www.zecoconstruction.co.za/paving-driveways-surfacing
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
 import { Car, Layers, TrendingUp, Shield, Ruler, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Paving, Driveways & Surfacing Services in Gauteng | Goshen Projects Solutions - Pretoria, Johannesburg & Midrand",
+  title: "Paving, Driveways & Surfacing Services in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
   description:
     "Professional paving, driveways, and surfacing services in Gauteng. Brick paving, tar paving, concrete paving, cobblestone driveways, parking areas, walkways, patio paving for residential & commercial properties in Pretoria, Johannesburg & Midrand. Durable surfaces, expert installation, 10+ years experience. Same-day quotes.",
   keywords: "paving Gauteng, driveways Pretoria, brick paving Johannesburg, tar paving Midrand, driveway construction, parking area paving, concrete paving, cobblestone paving, patio paving, walkways",
   openGraph: {
-    title: "Paving, Driveways & Surfacing Services | Goshen Projects Solutions Gauteng",
+    title: "Paving, Driveways & Surfacing Services | ZECO Construction Gauteng",
     description:
       "Durable, attractive paving solutions for driveways, parking areas, walkways, and patios. Expert installation, quality materials, weather-resistant surfaces. Serving Pretoria, Johannesburg & Gauteng. 10+ years experience.",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "/brick-paving-installation-for-driveway-in-gauteng-s.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional brick paving and driveway installation in Gauteng - Goshen Projects Solutions",
+        alt: "Professional brick paving and driveway installation in Gauteng - ZECO Construction",
       },
     ],
   },
@@ -110,8 +110,8 @@ export default function PavingDrivewaysSurfacingPage() {
       ]}
       relatedServices={[
         { 
-          title: "Road Construction & Civil Works", 
-          href: "/road-construction-civil-works",
+          title: "Building Construction & Renovations", 
+          href: "/building-construction-renovations",
           icon: Car,
         },
         { 
@@ -120,8 +120,8 @@ export default function PavingDrivewaysSurfacingPage() {
           icon: Layers,
         },
         { 
-          title: "Fencing, Gates & Access Control", 
-          href: "/fencing-gates-access-control",
+          title: "Waterproofing Services", 
+          href: "/waterproofing-services",
           icon: Shield,
         },
         { 
@@ -147,11 +147,11 @@ export default function PavingDrivewaysSurfacingPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose Goshen Projects Solutions for Paving & Surfacing?</h2>
+            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Paving & Surfacing?</h2>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> in paving and surfacing across Gauteng, Goshen Projects Solutions has completed <strong>hundreds of driveway, parking area, and paving projects</strong> for residential, commercial, and industrial clients. Based in <strong>Midrand at 22 Richards Dr</strong>, we serve homeowners, businesses, property developers, and municipalities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas with professional paving solutions that combine durability, aesthetics, and value.
+                With <strong>over 10 years of experience</strong> in paving and surfacing across Gauteng, ZECO Construction has completed <strong>hundreds of driveway, parking area, and paving projects</strong> for residential, commercial, and industrial clients. Based in <strong>Gauteng</strong>, we serve homeowners, businesses, property developers, and municipalities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas with professional paving solutions that combine durability, aesthetics, and value.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Paving Solutions</h3>
