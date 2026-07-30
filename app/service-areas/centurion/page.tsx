@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Centurion | Goshen Projects Solutions",
+  title: "Construction & Maintenance Services in Centurion | ZECO Construction",
   description:
     "Expert construction and maintenance services in Centurion. Serving Highveld, Eldoraigne, Irene, Wierdapark, Zwartkop and all Centurion suburbs.",
 }
@@ -11,7 +11,7 @@ export default function CenturionPage() {
   return (
     <ServiceAreaTemplate
       areaName="Centurion"
-      description="Goshen Projects Solutions provides trusted construction and maintenance services throughout Centurion. From family homes in established suburbs to modern developments, we deliver quality workmanship for every property type."
+      description="ZECO Construction provides trusted construction and maintenance services throughout Centurion. From family homes in established suburbs to modern developments, we deliver quality workmanship for every property type."
       suburbs={[
         "Highveld",
         "Eldoraigne",
@@ -24,7 +24,7 @@ export default function CenturionPage() {
         "Lyttelton",
         "Clubview",
       ]}
-      introduction="Centurion offers an ideal blend of suburban living with easy access to both Pretoria and Johannesburg. Goshen Projects Solutions has established itself as a reliable service provider in this area, understanding the needs of Centurion's family-oriented communities and growing commercial sector. Our local presence ensures prompt service and familiarity with the area's specific requirements."
+      introduction="Centurion offers an ideal blend of suburban living with easy access to both Pretoria and Johannesburg. ZECO Construction has established itself as a reliable service provider in this area, understanding the needs of Centurion's family-oriented communities and growing commercial sector. Our local presence ensures prompt service and familiarity with the area's specific requirements."
       servicesOffered={[
         "Home renovations and additions",
         "New home construction",
@@ -34,8 +34,8 @@ export default function CenturionPage() {
         "Roofing and gutter services",
         "Driveway paving and repairs",
         "Boundary wall construction",
-        "Security upgrades",
-        "Solar installations",
+        "Waterproofing services",
+        "Carpentry and cabinetry work",
         "Pool maintenance",
         "General property maintenance",
       ]}

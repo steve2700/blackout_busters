@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Rosebank | Goshen Projects Solutions",
+  title: "Construction & Maintenance Services in Rosebank | ZECO Construction",
   description:
     "Premium construction and maintenance services in Rosebank. Expert solutions for Parktown, Saxonwold, Dunkeld, Forest Town and northern Johannesburg suburbs.",
 }
@@ -11,9 +11,9 @@ export default function RosebankPage() {
   return (
     <ServiceAreaTemplate
       areaName="Rosebank"
-      description="Goshen Projects Solutions serves Rosebank's sophisticated mix of heritage homes, modern apartments, and commercial properties with premium construction and maintenance services tailored to this prestigious area."
+      description="ZECO Construction serves Rosebank's sophisticated mix of heritage homes, modern apartments, and commercial properties with premium construction and maintenance services tailored to this prestigious area."
       suburbs={["Parktown", "Saxonwold", "Dunkeld", "Forest Town", "Parkhurst", "Greenside", "Westcliff", "Killarney"]}
-      introduction="Rosebank represents the heart of Johannesburg's northern suburbs, combining historic properties with contemporary developments. Goshen Projects Solutions understands the unique requirements of this area, from sensitive heritage renovations to modern commercial fit-outs. Our expertise ensures that every project respects the character of Rosebank while meeting modern standards."
+      introduction="Rosebank represents the heart of Johannesburg's northern suburbs, combining historic properties with contemporary developments. ZECO Construction understands the unique requirements of this area, from sensitive heritage renovations to modern commercial fit-outs. Our expertise ensures that every project respects the character of Rosebank while meeting modern standards."
       servicesOffered={[
         "Heritage home renovations",
         "Modern apartment upgrades",
@@ -22,8 +22,8 @@ export default function RosebankPage() {
         "Plumbing and electrical services",
         "Roofing and waterproofing",
         "Interior and exterior painting",
-        "Security system installations",
-        "Climate control solutions",
+        "Carpentry and cabinetry work",
+        "Paving and outdoor surfaces",
         "Property maintenance programs",
       ]}
       whyChooseUs={[
