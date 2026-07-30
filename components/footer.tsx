@@ -147,7 +147,7 @@ export function Footer() {
               {/* Google Reviews */}
               <div className="mt-4">
                 <a
-                  href="https://share.google/sjRi612H5H6GQ2V0V"
+                  href="https://www.google.com/search?q=ZECO+Construction+Gauteng+reviews"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 transition hover:bg-accent hover:text-white"
