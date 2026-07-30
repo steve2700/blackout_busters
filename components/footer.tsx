@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
+import { PinterestIcon } from "@/components/icons/pinterest-icon"
 
 const services = [
   { title: "Building Construction", href: "/building-construction-renovations" },
@@ -103,7 +104,7 @@ export function Footer() {
 
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/zecoconstruction"
+                  href="https://www.facebook.com/profile.php?id=61592716047862"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -113,13 +114,23 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/zecoconstruction"
+                  href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
+                </a>
+
+                <a
+                  href="https://za.pinterest.com/zecoconstruction/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
+                  aria-label="Pinterest"
+                >
+                  <PinterestIcon className="h-5 w-5" />
                 </a>
 
                 <a

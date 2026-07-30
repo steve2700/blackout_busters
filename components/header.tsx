@@ -27,6 +27,7 @@ import {
   Instagram,
 } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
+import { PinterestIcon } from "@/components/icons/pinterest-icon"
 import { cn } from "@/lib/utils"
 
 const services = [
@@ -166,7 +167,7 @@ export function Header() {
             <span className="text-xs text-white/70">Follow Us:</span>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/zecoconstruction"
+                href="https://www.facebook.com/profile.php?id=61592716047862"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
@@ -175,13 +176,22 @@ export function Header() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/zecoconstruction"
+                href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href="https://za.pinterest.com/zecoconstruction/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors"
+                aria-label="Pinterest"
+              >
+                <PinterestIcon className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -385,7 +395,7 @@ export function Header() {
                 {/* Social Links in Mobile */}
                 <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/20">
                   <a
-                    href="https://www.facebook.com/zecoconstruction"
+                    href="https://www.facebook.com/profile.php?id=61592716047862"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
@@ -394,13 +404,22 @@ export function Header() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/zecoconstruction"
+                    href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://za.pinterest.com/zecoconstruction/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/80 hover:text-white transition-colors"
+                    aria-label="Pinterest"
+                  >
+                    <PinterestIcon className="h-5 w-5" />
                   </a>
                 </div>
               </div>
