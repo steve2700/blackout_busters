@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next"
 
+export const dynamic = "force-static"
+
 const baseUrl = "https://www.zecoconstruction.co.za"
 
 const services = [
