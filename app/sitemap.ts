@@ -1,8 +1,3 @@
-
-/ File path: app/sitemap.ts
-// Next.js auto-generates /sitemap.xml from this file at build time (and on
-// each request in dev). No more manually editing an XML file by hand.
-
 import type { MetadataRoute } from "next"
 
 const baseUrl = "https://www.zecoconstruction.co.za"
