@@ -10,7 +10,7 @@ export function HeroSection() {
       {/* Background Image with Optimized Loading */}
       <div className="absolute inset-0">
         <Image
-          src="/professional-aircon-refrigeration-technician-at-work.jpg"
+          src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
           alt="Professional appliance and refrigeration technician at work in Gauteng, Cold Fix Services aircon installation in Pretoria and Johannesburg"
           fill
           className="object-cover opacity-20"
@@ -140,7 +140,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.02]">
                 <Image
-                  src="/aircon-technician-servicing-unit.jpg"
+                  src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
                   alt="Cold Fix Services technician servicing an air conditioning unit in Gauteng"
                   fill
                   className="object-cover"
@@ -154,8 +154,8 @@ export function HeroSection() {
 
               <div className="absolute -bottom-8 -left-8 aspect-square w-48 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-white/10 transition-transform hover:scale-105">
                 <Image
-                  src="/commercial-cold-room-interior.jpg"
-                  alt="Commercial cold room installed by Cold Fix Services in Gauteng"
+                  src="/property-maintenance-worker-fixing-repairs-profess.jpg"
+                  alt="Cold Fix Services technician repairing an appliance in Gauteng"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -170,7 +170,7 @@ export function HeroSection() {
                     <Award className="h-7 w-7 text-accent-foreground" aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-card-foreground">11</p>
+                    <p className="text-3xl font-bold text-card-foreground">10</p>
                     <p className="text-sm text-muted-foreground">Service Categories</p>
                   </div>
                 </div>

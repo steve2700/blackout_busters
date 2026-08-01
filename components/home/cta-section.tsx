@@ -10,8 +10,8 @@ export function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/placeholder.svg?height=800&width=1600"
-          alt="ZECO Construction - Ready to start your project"
+          src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+          alt="Cold Fix Services ready to help with your appliance and refrigeration repairs"
           fill
           className="object-cover opacity-10"
         />
@@ -26,16 +26,14 @@ export function CTASection() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
             <Shield className="h-4 w-4 text-accent" />
-            Free Consultation & Quote Available
+            Free Quote Available
           </div>
 
           <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-            Ready to Start Your Project?
+            Ready to Book a Repair?
           </h2>
           <p className="mb-10 text-pretty text-lg text-primary-foreground/80 md:text-xl">
-            Contact ZECO Construction today for a consultation or quotation. Our team is ready to provide professional
-            advice, detailed quotations, and project support tailored to your needs in Pretoria, Johannesburg, and
-            throughout Gauteng.
+            Contact Cold Fix Services today for a free quote. Our team is ready to help with appliance repairs, air conditioning, cold rooms, and commercial refrigeration across Pretoria, Johannesburg, and the rest of Gauteng.
           </p>
 
           <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -54,7 +52,7 @@ export function CTASection() {
               size="lg"
               className="bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 h-14 px-8 text-base"
             >
-              <a href="https://wa.me/27748509727" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 WhatsApp Us
               </a>
@@ -65,7 +63,7 @@ export function CTASection() {
               variant="outline"
               className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-14 px-8 text-base"
             >
-              <Link href="mailto:info@zecoconstruction.co.za">
+              <Link href="mailto:info@coldfix.co.za">
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us Directly
               </Link>
@@ -78,7 +76,7 @@ export function CTASection() {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/20 mx-auto">
                 <Clock className="h-6 w-6 text-accent" />
               </div>
-              <p className="text-sm font-medium text-white">Same-Day Response</p>
+              <p className="text-sm font-medium text-white">Same Day Response</p>
               <p className="mt-1 text-xs text-white/70">Quick turnaround on all quotes</p>
             </div>
 
@@ -86,8 +84,8 @@ export function CTASection() {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/20 mx-auto">
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
-              <p className="text-sm font-medium text-white">On-Site Consultation</p>
-              <p className="mt-1 text-xs text-white/70">Free visits across Gauteng</p>
+              <p className="text-sm font-medium text-white">On Site Callouts</p>
+              <p className="mt-1 text-xs text-white/70">Serving all of Gauteng</p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
@@ -95,25 +93,25 @@ export function CTASection() {
                 <Shield className="h-6 w-6 text-accent" />
               </div>
               <p className="text-sm font-medium text-white">No Obligation Quote</p>
-              <p className="mt-1 text-xs text-white/70">Transparent pricing guaranteed</p>
+              <p className="mt-1 text-xs text-white/70">Honest, upfront pricing</p>
             </div>
           </div>
 
           {/* Stats */}
           <div className="flex flex-wrap items-center justify-center gap-8 border-t border-primary-foreground/20 pt-12">
             <div className="text-center">
-              <p className="text-4xl font-bold text-accent">16+</p>
+              <p className="text-4xl font-bold text-accent">10</p>
               <p className="text-sm text-primary-foreground/70">Service Categories</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
             <div className="text-center">
-              <p className="text-4xl font-bold text-accent">10+</p>
+              <p className="text-4xl font-bold text-accent">11+</p>
               <p className="text-sm text-primary-foreground/70">Areas Served</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
             <div className="text-center">
               <p className="text-4xl font-bold text-accent">500+</p>
-              <p className="text-sm text-primary-foreground/70">Projects Completed</p>
+              <p className="text-sm text-primary-foreground/70">Clients Served</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
             <div className="text-center">
