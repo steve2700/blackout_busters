@@ -30,12 +30,12 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-accent/5 blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container relative mx-auto px-4 py-20 lg:px-8 lg:py-32">
+      <div className="container relative mx-auto px-4 py-10 lg:px-8 lg:py-32">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Content */}
           <div className="text-center lg:text-left">
             {/* Trust Badge with Rating */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all shadow-lg">
+            <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-medium text-white backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all shadow-lg">
               <Shield className="h-4 w-4 text-accent" aria-hidden="true" />
               <span className="hidden sm:inline">Gauteng's Trusted Repair Team</span>
               <span className="sm:hidden">Trusted in Gauteng</span>
@@ -50,23 +50,58 @@ export function HeroSection() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl xl:text-7xl" itemProp="name">
+            <h1 className="mb-4 sm:mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl" itemProp="name">
               <span className="block">We Keep Gauteng Cool.</span>
               <span className="block text-accent">Fast, Reliable Repairs.</span>
-              <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-primary-foreground/90">
+              <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 text-primary-foreground/90">
                 Appliances, Aircon &amp; Refrigeration
               </span>
             </h1>
 
             {/* Description */}
-            <p className="mb-8 text-pretty text-lg text-primary-foreground/80 md:text-xl max-w-2xl mx-auto lg:mx-0" itemProp="description">
+            <p className="mb-6 sm:mb-8 text-pretty text-base sm:text-lg text-primary-foreground/80 md:text-xl max-w-2xl mx-auto lg:mx-0" itemProp="description">
               <strong className="text-white">Cold Fix Services</strong> is your trusted partner for appliance repairs, air conditioning, cold room installation and commercial refrigeration across{" "}
               <strong className="text-white">Pretoria, Johannesburg, Midrand</strong> and greater{" "}
               <strong className="text-white">Gauteng</strong>. Experienced technicians, same day callouts.
             </p>
 
-            {/* Trust Indicators */}
-            <div className="mb-10 flex flex-wrap justify-center gap-4 lg:justify-start">
+            {/* CTA Buttons — kept high and compact so all three are visible without scrolling on mobile */}
+            <div className="flex flex-col gap-3 sm:gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <Button
+                asChild
+                size="lg"
+                className="group bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl shadow-accent/25 h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-semibold transition-all hover:scale-105"
+              >
+                <Link href="/contact" itemProp="url">
+                  <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" aria-hidden="true" />
+                  Get Your Free Quote Today
+                </Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                className="group h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-semibold bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 transition-all hover:scale-105"
+              >
+                <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
+                  Chat on WhatsApp
+                </a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-semibold transition-all hover:scale-105"
+              >
+                <Link href="/services">
+                  Explore Our Services
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+
+            {/* Trust Indicators — hidden on small screens so the CTAs stay above the fold */}
+            <div className="mt-8 hidden sm:flex flex-wrap justify-center gap-4 lg:justify-start">
               <div className="flex items-center gap-2.5 text-sm text-primary-foreground/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20">
                   <CheckCircle className="h-4 w-4 text-accent" aria-hidden="true" />
@@ -85,41 +120,6 @@ export function HeroSection() {
                 </div>
                 <span className="font-medium">24 Hour Emergency Callout</span>
               </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <Button
-                asChild
-                size="lg"
-                className="group bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl shadow-accent/25 h-14 px-8 text-base font-semibold transition-all hover:scale-105"
-              >
-                <Link href="/contact" itemProp="url">
-                  <Phone className="mr-2 h-5 w-5 group-hover:animate-pulse" aria-hidden="true" />
-                  Get Your Free Quote Today
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                className="group h-14 px-8 text-base font-semibold bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 transition-all hover:scale-105"
-              >
-                <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer">
-                  <WhatsAppIcon className="mr-2 h-5 w-5" aria-hidden="true" />
-                  Chat on WhatsApp
-                </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-all hover:scale-105"
-              >
-                <Link href="/services">
-                  Explore Our Services
-                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-                </Link>
-              </Button>
             </div>
 
             {/* Quick Stats */}
