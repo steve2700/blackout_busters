@@ -2,20 +2,19 @@ import type { MetadataRoute } from "next"
 
 export const dynamic = "force-static"
 
-const baseUrl = "https://www.zecoconstruction.co.za"
+const baseUrl = "https://www.coldfix.co.za"
 
 const services = [
-  "building-construction-renovations",
-  "property-maintenance",
+  "air-conditioning-services",
+  "refrigeration-repairs",
+  "cold-room-installation-repair",
+  "commercial-refrigeration",
+  "appliance-repairs",
+  "hvac-maintenance-contracts",
+  "emergency-callout-service",
   "plumbing-services",
   "electrical-services",
-  "roofing-roof-leak-repairs",
-  "waterproofing-services",
-  "carpentry-services",
-  "kitchen-bathroom-cupboards",
-  "painting-tiling-finishing",
-  "paving-driveways-surfacing",
-  "concrete-works-bricklaying",
+  "property-maintenance",
 ]
 
 const serviceAreas = [

@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Fast, reliable appliance repairs, air conditioning and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
         width: 1200,
         height: 630,
         alt: "Cold Fix Services, Appliance and Refrigeration Repairs in Gauteng",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: "Cold Fix Services | Appliance & Refrigeration Repairs Gauteng",
     description:
       "Appliance repairs, aircon and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
-    images: ["/og-image.jpg"],
+    images: ["/air-conditioning-technician-installing-ac-unit-in-.jpg"],
   },
   alternates: {
     canonical: "https://www.coldfix.co.za",
@@ -116,8 +116,8 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Cold Fix Services",
               url: "https://www.coldfix.co.za",
-              logo: "https://www.coldfix.co.za/logo.png",
-              image: "https://www.coldfix.co.za/og-image.jpg",
+              logo: "https://www.coldfix.co.za/logo-square.png",
+              image: "https://www.coldfix.co.za/air-conditioning-technician-installing-ac-unit-in-.jpg",
               description: "Appliance repair, cold room installation, air conditioning and refrigeration services in Gauteng",
               address: {
                 "@type": "PostalAddress",
@@ -154,7 +154,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "@id": "https://www.coldfix.co.za",
               name: "Cold Fix Services",
-              image: "https://www.coldfix.co.za/logo.png",
+              image: "https://www.coldfix.co.za/logo-square.png",
               url: "https://www.coldfix.co.za",
               telephone: "+27-70-309-6749",
               priceRange: "$$",

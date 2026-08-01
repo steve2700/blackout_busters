@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Phone, ArrowRight, MapPin, Building2, Wrench, Zap, Shield, Clock, Award } from "lucide-react"
+import { CheckCircle, Phone, ArrowRight, MapPin, Wind, Refrigerator, WashingMachine, Clock, Award } from "lucide-react"
 
 interface ServiceAreaTemplateProps {
   areaName: string
@@ -21,10 +21,10 @@ interface ServiceAreaTemplateProps {
 }
 
 const popularServices = [
-  { icon: Building2, title: "Construction & Renovations", href: "/building-construction-renovations" },
-  { icon: Wrench, title: "Property Maintenance", href: "/property-maintenance" },
-  { icon: Zap, title: "Electrical Services", href: "/electrical-services" },
-  { icon: Shield, title: "Waterproofing Services", href: "/waterproofing-services" },
+  { icon: Wind, title: "Air Conditioning Services", href: "/air-conditioning-services" },
+  { icon: Refrigerator, title: "Refrigeration Repairs", href: "/refrigeration-repairs" },
+  { icon: WashingMachine, title: "Appliance Repairs", href: "/appliance-repairs" },
+  { icon: Clock, title: "Emergency Callout Service", href: "/emergency-callout-service" },
 ]
 
 export function ServiceAreaTemplate({
@@ -36,7 +36,7 @@ export function ServiceAreaTemplate({
   servicesOffered,
   whyChooseUs,
   nearbyAreas,
-  responseTime = "20-40 minutes",
+  responseTime = "Same day",
   projectsCompleted = 500,
   children,
 }: ServiceAreaTemplateProps) {
@@ -46,8 +46,8 @@ export function ServiceAreaTemplate({
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
         <div className="absolute inset-0">
           <Image
-            src={heroImage || "/gauteng-map-area.jpg?height=600&width=1600"}
-            alt={`ZECO Construction services in ${areaName}`}
+            src={heroImage || "/map-of-gauteng-south-africa-highlighting-pretoria-.jpg"}
+            alt={`Cold Fix Services appliance and refrigeration repairs in ${areaName}`}
             fill
             className="object-cover opacity-15"
             priority
@@ -64,7 +64,7 @@ export function ServiceAreaTemplate({
                 Service Area
               </div>
               <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-                Professional Construction & Maintenance Services in {areaName}
+                Appliance, Aircon and Refrigeration Repairs in {areaName}
               </h1>
               <p className="mb-8 text-pretty text-lg text-primary-foreground/90 leading-relaxed">{description}</p>
 
@@ -80,7 +80,7 @@ export function ServiceAreaTemplate({
                 <div className="flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 backdrop-blur-sm border border-white/10">
                   <Award className="h-5 w-5 text-accent" />
                   <div>
-                    <div className="text-xs text-white/70">Projects Completed</div>
+                    <div className="text-xs text-white/70">Repairs Completed</div>
                     <div className="text-sm font-semibold text-white">{projectsCompleted}+</div>
                   </div>
                 </div>
@@ -115,21 +115,21 @@ export function ServiceAreaTemplate({
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {suburbs.map((suburb) => (
-                    <span 
-                      key={suburb} 
+                    <span
+                      key={suburb}
                       className="rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/90 border border-white/10 hover:bg-white/20 transition-colors"
                     >
                       {suburb}
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="mt-6 pt-6 border-t border-white/10">
                   <p className="text-sm text-white/80 mb-3">
-                    <strong className="text-white">Fast Response Times:</strong> We serve all suburbs in {areaName} with rapid response and professional service.
+                    <strong className="text-white">Fast response times:</strong> We serve every suburb in {areaName} with quick, professional service.
                   </p>
                   <p className="text-xs text-white/60">
-                    Based in Gauteng, strategically located to serve {areaName} efficiently.
+                    Based in Gauteng and positioned to reach {areaName} efficiently.
                   </p>
                 </div>
               </div>
@@ -147,13 +147,13 @@ export function ServiceAreaTemplate({
                 About Our Services
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Your Trusted Partner in {areaName}
+                Your Trusted Repair Team in {areaName}
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">{introduction}</p>
-                
+
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With <strong>over 10 years of experience</strong> serving {areaName} and surrounding areas, ZECO Construction has completed <strong>{projectsCompleted}+ successful projects</strong> for residential, commercial, and industrial clients. Our local expertise means we understand the unique requirements of properties in {areaName}.
+                  With years of experience serving {areaName} and surrounding areas, Cold Fix Services has completed <strong>{projectsCompleted}+ repairs and installations</strong> for homes and businesses. Our local knowledge means we understand the needs of properties in {areaName}.
                 </p>
               </div>
 
@@ -182,15 +182,15 @@ export function ServiceAreaTemplate({
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
-                  src="/modern-renovated-kitchen-interior-design-south-afr.jpg?height=400&width=600"
-                  alt={`Professional construction services in ${areaName} - ZECO Construction`}
+                  src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+                  alt={`Professional appliance and refrigeration repairs in ${areaName} by Cold Fix Services`}
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-accent p-6 shadow-2xl border border-border max-w-[200px] hidden md:block">
                 <div className="text-4xl font-bold text-accent-foreground mb-1">{projectsCompleted}+</div>
-                <div className="text-sm text-accent-foreground/80">Projects Completed in {areaName}</div>
+                <div className="text-sm text-accent-foreground/80">Repairs Completed in {areaName}</div>
               </div>
             </div>
           </div>
@@ -205,11 +205,10 @@ export function ServiceAreaTemplate({
               Comprehensive Services
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              Professional Services Available in {areaName}
+              Repair Services Available in {areaName}
             </h2>
             <p className="text-muted-foreground text-lg">
-              We provide a comprehensive range of construction, maintenance, and infrastructure services to residential,
-              commercial, and industrial clients throughout {areaName} and surrounding suburbs.
+              We provide a full range of appliance, air conditioning, and refrigeration services to homes and businesses throughout {areaName} and surrounding suburbs.
             </p>
           </div>
 
@@ -280,15 +279,14 @@ export function ServiceAreaTemplate({
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Why {areaName} Residents & Businesses Trust ZECO Construction
+                Why {areaName} Homes and Businesses Trust Cold Fix Services
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With years of experience serving {areaName} and surrounding areas, we understand the unique needs of
-                  local residential and commercial properties. Our commitment to quality workmanship, transparent pricing, and exceptional customer satisfaction has made us the preferred choice for construction and maintenance services.
+                  With years of experience serving {areaName} and surrounding areas, we understand the needs of local homes and businesses. Our commitment to quality workmanship, honest pricing, and friendly service has made us the preferred choice for appliance, aircon, and refrigeration repairs.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Based in <strong>Gauteng</strong>, our strategic location enables us to provide <strong>rapid response times of {responseTime}</strong> to all suburbs in {areaName}. We're available for emergency callouts, routine maintenance, and major construction projects.
+                  Based in <strong>Gauteng</strong>, we reach {areaName} quickly with <strong>{responseTime.toLowerCase()} service</strong> for most bookings. We are available for emergency callouts, routine servicing, and new installations.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -311,7 +309,7 @@ export function ServiceAreaTemplate({
           <div className="mb-8">
             <h2 className="mb-3 text-2xl font-bold">We Also Serve Nearby Areas</h2>
             <p className="text-muted-foreground">
-              ZECO Construction provides professional construction and maintenance services throughout Gauteng. 
+              Cold Fix Services provides appliance, aircon, and refrigeration repairs throughout Gauteng.
               Explore our other service areas:
             </p>
           </div>
@@ -338,10 +336,10 @@ export function ServiceAreaTemplate({
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl">
-              Ready to Start Your Project in {areaName}?
+              Need a Repair in {areaName}?
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact ZECO Construction today for a free consultation and detailed quotation. Our experienced team is ready to provide expert guidance and tailored solutions for your {areaName} property—whether residential, commercial, or industrial.
+              Contact Cold Fix Services today for a free quote. Our experienced technicians are ready to help with your appliance, air conditioning, or refrigeration needs in {areaName}, whether at home or at your business.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg">
@@ -350,20 +348,20 @@ export function ServiceAreaTemplate({
                   Request a Free Quote
                 </Link>
               </Button>
-              <Button 
-                asChild 
-                size="lg" 
-                variant="outline" 
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
                 className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                <Link href="tel:+27748509727">
+                <Link href="tel:+27703096749">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Us Now
                 </Link>
               </Button>
             </div>
             <p className="mt-6 text-sm text-primary-foreground/70">
-              Average response time in {areaName}: {responseTime} • Available 24/7 for emergencies
+              Response time in {areaName}: {responseTime} • Available 24/7 for emergencies
             </p>
           </div>
         </div>

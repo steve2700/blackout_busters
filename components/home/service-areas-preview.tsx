@@ -71,12 +71,12 @@ const areas = [
 const benefits = [
   {
     icon: Clock,
-    text: "Same-day response for emergency services",
+    text: "Same day response for emergency callouts",
     highlight: true,
   },
   {
     icon: CheckCircle,
-    text: "Free on-site consultations and quotes across Gauteng",
+    text: "Free quotes across Gauteng",
     highlight: false,
   },
   {
@@ -120,7 +120,7 @@ export function ServiceAreasPreview() {
               Proudly Serving All of <span className="text-secondary">Gauteng Province</span>
             </h2>
             <p className="mb-6 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-              <strong>Goshen Projects Solutions</strong> delivers professional construction, maintenance, and infrastructure services throughout Gauteng. Our teams are based in <strong>Midrand</strong> and strategically positioned to serve clients across <strong>Pretoria, Johannesburg</strong>, and all major suburbs with rapid response times.
+              <strong>Cold Fix Services</strong> delivers appliance, air conditioning, and refrigeration repairs throughout Gauteng. Our teams are positioned to serve clients across <strong>Pretoria, Johannesburg</strong>, and all major suburbs with fast response times.
             </p>
 
             {/* Benefits List - Enhanced */}
@@ -196,9 +196,9 @@ export function ServiceAreasPreview() {
                 variant="outline"
                 className="border-secondary/30 hover:bg-secondary/10 h-12 px-8 transition-transform hover:scale-105"
               >
-                <Link href="tel:+27615307314">
+                <Link href="tel:+27703096749">
                   <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                  Call: +27 61 530 7314
+                  Call: +27 70 309 6749
                 </Link>
               </Button>
             </div>
@@ -210,7 +210,7 @@ export function ServiceAreasPreview() {
             <div className="relative overflow-hidden rounded-2xl border-2 border-border shadow-2xl ring-1 ring-black/5 transition-transform hover:scale-[1.02]">
               <Image
                 src="/gauteng-service-areas-map.webp"
-                alt="Goshen Projects Solutions service coverage map showing Gauteng province including Pretoria, Johannesburg, Midrand, Sandton, and Centurion areas"
+                alt="Cold Fix Services coverage map showing Gauteng province including Pretoria, Johannesburg, Midrand, Sandton, and Centurion areas"
                 width={800}
                 height={600}
                 className="w-full"

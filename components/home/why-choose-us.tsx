@@ -1,59 +1,59 @@
 import Image from "next/image"
-import { CheckCircle, Shield, Users, Clock, Award, Leaf, ArrowRight, Star } from "lucide-react"
+import { CheckCircle, Shield, Users, Clock, Award, Snowflake, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const reasons = [
   {
     icon: Users,
-    title: "Skilled & Experienced Professionals",
+    title: "Experienced Technicians",
     description:
-      "Our team includes highly skilled engineers, technicians, carpenters, plumbers, electricians, and project managers with over 10 years of industry experience across Gauteng.",
+      "Our team is made up of skilled appliance, air conditioning, and refrigeration technicians with years of hands on experience across Gauteng.",
   },
   {
     icon: Shield,
-    title: "Full Compliance & Certification",
+    title: "Insured and Certified",
     description:
-      "We strictly adhere to South African building codes, NHBRC, CIDB, SABS, and ECSA regulations, ensuring every project meets legal and safety standards.",
+      "Our technicians are refrigerant handling certified and every callout is fully insured, so you can book with complete peace of mind.",
   },
   {
     icon: CheckCircle,
-    title: "Transparent Pricing & Quotes",
+    title: "Honest, Upfront Pricing",
     description:
-      "No hidden costs or surprises. We provide clear, detailed quotations and transparent project management from start to finish with written guarantees.",
+      "No hidden costs or surprises. We give you a clear quote before any work starts and stick to it, with transparent service from start to finish.",
   },
   {
     icon: Award,
-    title: "Uncompromising Quality Standards",
+    title: "Quality Workmanship",
     description:
-      "Quality is non-negotiable. We use premium materials and proven construction techniques to deliver lasting results that exceed client expectations.",
+      "We use quality parts and proven repair methods to deliver lasting fixes that keep your appliances and cooling systems running.",
   },
   {
     icon: Clock,
-    title: "On-Time Project Delivery",
+    title: "Fast, Same Day Callouts",
     description:
-      "We understand deadlines matter. Our efficient project execution and scheduling ensures your projects are completed on time without compromising quality or safety.",
+      "We know a broken fridge or freezer cannot wait. Our teams respond quickly with same day and 24 hour emergency callouts across Gauteng.",
   },
   {
-    icon: Leaf,
-    title: "Sustainable & Innovative Solutions",
+    icon: Snowflake,
+    title: "Cooling Specialists",
     description:
-      "We embrace eco-friendly construction methods and innovative technologies, offering cost-effective solutions that are environmentally responsible and future-ready.",
+      "From walk in cold rooms to household fridges and split unit air conditioners, cooling is what we do best every single day.",
   },
 ]
 
 const stats = [
-  { value: "500+", label: "Projects Completed", sublabel: "Across Gauteng" },
-  { value: "10+", label: "Years Experience", sublabel: "In Construction" },
-  { value: "98%", label: "Client Satisfaction", sublabel: "5-Star Reviews" },
+  { value: "500+", label: "Clients Served", sublabel: "Across Gauteng" },
+  { value: "Same Day", label: "Callouts", sublabel: "For Most Bookings" },
+  { value: "98%", label: "Client Satisfaction", sublabel: "5 Star Reviews" },
   { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
 ]
 
 export function WhyChooseUs() {
   return (
-    <section 
+    <section
       className="bg-muted py-20 lg:py-28 overflow-hidden relative"
-      itemScope 
+      itemScope
       itemType="https://schema.org/Organization"
       aria-labelledby="why-choose-heading"
     >
@@ -71,26 +71,26 @@ export function WhyChooseUs() {
             <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary uppercase tracking-wide">
               Why Choose Us
             </span>
-            <h2 
+            <h2
               id="why-choose-heading"
               className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
               itemProp="name"
             >
-              Why <span className="text-accent">ZECO Construction</span> is Gauteng's Trusted Choice
+              Why <span className="text-accent">Cold Fix Services</span> is Gauteng&apos;s Trusted Choice
             </h2>
             <p className="mb-8 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-              We bring together expertise, reliability, and a commitment to excellence that makes us the preferred partner for construction, maintenance, and infrastructure projects across <strong>Pretoria, Johannesburg, Midrand, and greater Gauteng</strong>.
+              We bring together technical skill, reliability, and a commitment to doing the job right for appliance, air conditioning, and refrigeration repairs across <strong>Pretoria, Johannesburg, Midrand, and greater Gauteng</strong>.
             </p>
 
-            {/* Stats Grid - Enhanced */}
+            {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6 mb-8">
               {stats.map((stat, index) => (
-                <div 
-                  key={stat.label} 
+                <div
+                  key={stat.label}
                   className="group text-center sm:text-left bg-card border border-border rounded-xl p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-1"
                   itemProp="award"
                 >
-                  <p className="text-4xl font-bold text-secondary mb-1 group-hover:scale-110 transition-transform inline-block">
+                  <p className="text-3xl font-bold text-secondary mb-1 group-hover:scale-110 transition-transform inline-block">
                     {stat.value}
                   </p>
                   <p className="text-sm font-semibold text-foreground">{stat.label}</p>
@@ -107,8 +107,8 @@ export function WhyChooseUs() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                asChild 
+              <Button
+                asChild
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg h-12 px-8 transition-transform hover:scale-105"
               >
@@ -117,8 +117,8 @@ export function WhyChooseUs() {
                   <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>
-              <Button 
-                asChild 
+              <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="border-secondary/30 hover:bg-secondary/5 h-12 px-8 transition-transform hover:scale-105"
@@ -131,13 +131,13 @@ export function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Images Section - Optimized Loading */}
+          {/* Images Section */}
           <div className="relative" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
             {/* Main Image */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
               <Image
-                src="/construction-team-meeting-on-site-in-gauteng.jpg"
-                alt="ZECO Construction team reviewing building plans on site in Gauteng, Pretoria"
+                src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+                alt="Cold Fix Services technician installing an air conditioning unit in Gauteng"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
@@ -151,8 +151,8 @@ export function WhyChooseUs() {
             {/* Secondary Image - Bottom Left */}
             <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-border transition-transform hover:scale-105">
               <Image
-                src="/carpenter-working-on-custom-cabinetry-in-gauteng-so.jpg"
-                alt="Professional carpenter crafting custom cabinetry - ZECO Construction skilled worker in Gauteng"
+                src="/property-maintenance-worker-fixing-repairs-profess.jpg"
+                alt="Cold Fix Services technician repairing a household appliance in Gauteng"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -173,22 +173,22 @@ export function WhyChooseUs() {
               <div className="flex items-center gap-1">
                 <Shield className="h-5 w-5 text-secondary-foreground" aria-hidden="true" />
                 <div>
-                  <p className="text-xs font-bold text-secondary-foreground">Fully Licensed</p>
-                  <p className="text-[10px] text-secondary-foreground/80">& Insured</p>
+                  <p className="text-xs font-bold text-secondary-foreground">Fully Insured</p>
+                  <p className="text-[10px] text-secondary-foreground/80">Callouts</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Reasons Grid - Enhanced Cards */}
+        {/* Reasons Grid */}
         <div>
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-3">
-              What Sets Us Apart in Gauteng's Construction Industry
+              What Sets Cold Fix Services Apart
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our commitment to excellence, safety, and customer satisfaction makes us the go-to choice for residential, commercial, and industrial projects.
+              Our commitment to quality, reliability, and customer care makes us the go to choice for homes and businesses across Gauteng.
             </p>
           </div>
 
@@ -226,14 +226,14 @@ export function WhyChooseUs() {
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-border">
           <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-            Ready to Experience the ZECO Construction Difference?
+            Ready to Experience the Cold Fix Services Difference?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join 500+ satisfied clients across Gauteng who trust us for their construction, maintenance, and infrastructure needs.
+            Join hundreds of satisfied clients across Gauteng who trust us to keep their appliances and cooling systems running.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
+            <Button
+              asChild
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
@@ -242,14 +242,14 @@ export function WhyChooseUs() {
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-            <Button 
-              asChild 
+            <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-secondary/30 hover:bg-secondary/10 h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
-              <Link href="tel:+27748509727">
-                Call Us: +27 74 850 9727
+              <Link href="tel:+27703096749">
+                Call Us: +27 70 309 6749
               </Link>
             </Button>
           </div>
