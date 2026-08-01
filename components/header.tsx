@@ -13,83 +13,82 @@ import {
   X,
   MapPin,
   Mail,
-  Building2,
+  Wind,
+  Refrigerator,
+  Warehouse,
+  Store,
+  WashingMachine,
   Wrench,
+  Clock,
   Droplets,
   Zap,
   Home,
-  Shield,
-  Hammer,
-  PaintBucket,
-  Construction,
-  Car,
   Facebook,
   Instagram,
 } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
-import { PinterestIcon } from "@/components/icons/pinterest-icon"
 import { cn } from "@/lib/utils"
 
 const services = [
   {
-    title: "Building Construction & Renovations",
-    href: "/building-construction-renovations",
-    description: "New builds, renovations, refurbishments & fit-outs",
-    icon: Building2,
+    title: "Air Conditioning Services",
+    href: "/air-conditioning-services",
+    description: "Installation, repair, servicing and gas refills",
+    icon: Wind,
   },
   {
-    title: "Property Maintenance",
-    href: "/property-maintenance",
-    description: "Residential & commercial maintenance programs",
+    title: "Refrigeration Repairs",
+    href: "/refrigeration-repairs",
+    description: "Fridges, freezers and chest freezers",
+    icon: Refrigerator,
+  },
+  {
+    title: "Cold Room Installation & Repair",
+    href: "/cold-room-installation-repair",
+    description: "Walk in cold rooms and commercial cold storage",
+    icon: Warehouse,
+  },
+  {
+    title: "Commercial Refrigeration",
+    href: "/commercial-refrigeration",
+    description: "Display fridges, butchery and restaurant equipment",
+    icon: Store,
+  },
+  {
+    title: "Appliance Repairs",
+    href: "/appliance-repairs",
+    description: "Washing machines, dishwashers, ovens and stoves",
+    icon: WashingMachine,
+  },
+  {
+    title: "HVAC Maintenance Contracts",
+    href: "/hvac-maintenance-contracts",
+    description: "Scheduled servicing for offices and retail",
     icon: Wrench,
+  },
+  {
+    title: "Emergency Callout Service",
+    href: "/emergency-callout-service",
+    description: "Same day and 24 hour breakdown response",
+    icon: Clock,
   },
   {
     title: "Plumbing Services",
     href: "/plumbing-services",
-    description: "Installations, repairs, leak detection & geysers",
+    description: "Gas and water connections for installs and repairs",
     icon: Droplets,
   },
   {
-    title: "Electrical Repairs & Installations",
+    title: "Electrical Services",
     href: "/electrical-services",
-    description: "Installations, rewiring, fault finding & repairs",
+    description: "Wiring and fault finding for appliance installs",
     icon: Zap,
   },
   {
-    title: "Roofing & Roof Leak Repairs",
-    href: "/roofing-roof-leak-repairs",
-    description: "Leak repairs, waterproofing & gutter installation",
+    title: "Maintenance Contracts",
+    href: "/property-maintenance",
+    description: "Scheduled upkeep for homes and businesses",
     icon: Home,
-  },
-  {
-    title: "Waterproofing Services",
-    href: "/waterproofing-services",
-    description: "Roof, balcony, foundation & damp proofing",
-    icon: Shield,
-  },
-  {
-    title: "Carpentry Services",
-    href: "/carpentry-services",
-    description: "Timber structures, decking, pergolas & cabinetry",
-    icon: Hammer,
-  },
-  {
-    title: "Kitchen & Bathroom Cupboards",
-    href: "/kitchen-bathroom-cupboards",
-    description: "Custom cupboards, vanities & built-in storage",
-    icon: Construction,
-  },
-  {
-    title: "Painting, Tiling & Finishing",
-    href: "/painting-tiling-finishing",
-    description: "Interior/exterior painting & floor/wall tiling",
-    icon: PaintBucket,
-  },
-  {
-    title: "Paving, Driveways & Surfacing",
-    href: "/paving-driveways-surfacing",
-    description: "Brick paving, tar paving & driveway construction",
-    icon: Car,
   },
 ]
 
@@ -104,7 +103,7 @@ export function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
     }
-    
+
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setServicesOpen(false)
@@ -113,7 +112,7 @@ export function Header() {
 
     window.addEventListener("scroll", handleScroll)
     document.addEventListener("mousedown", handleClickOutside)
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll)
       document.removeEventListener("mousedown", handleClickOutside)
@@ -133,12 +132,12 @@ export function Header() {
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27748509727" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27703096749" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 74 850 9727
+              +27 70 309 6749
             </a>
             <a
-              href="https://wa.me/27748509727"
+              href="https://wa.me/27703096749"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
@@ -147,14 +146,14 @@ export function Header() {
               WhatsApp Us
             </a>
             <a
-              href="mailto:info@zecoconstruction.co.za"
+              href="mailto:info@coldfix.co.za"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
-              info@zecoconstruction.co.za
+              info@coldfix.co.za
             </a>
             <a
-              href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
+              href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
@@ -167,7 +166,7 @@ export function Header() {
             <span className="text-xs text-white/70">Follow Us:</span>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/profile.php?id=61592716047862"
+                href="https://www.facebook.com/coldfixservices"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
@@ -176,22 +175,13 @@ export function Header() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
+                href="https://www.instagram.com/coldfixservices"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
-              <a
-                href="https://za.pinterest.com/zecoconstruction/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-accent transition-colors"
-                aria-label="Pinterest"
-              >
-                <PinterestIcon className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -202,10 +192,10 @@ export function Header() {
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg bg-white">
-            <Image 
-              src="/logo-icon.png" 
-              alt="ZECO Construction Logo" 
-              width={44} 
+            <Image
+              src="/logo-icon.png"
+              alt="Cold Fix Services Logo"
+              width={44}
               height={44}
               className="object-cover"
               priority
@@ -215,9 +205,9 @@ export function Header() {
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-bold text-primary leading-tight tracking-tight">
-              ZECO <span className="text-accent">Construction</span>
+              COLD <span className="text-accent">FIX</span>
             </span>
-            <span className="hidden text-xs text-muted-foreground sm:block">Building Excellence in Gauteng</span>
+            <span className="hidden text-xs text-muted-foreground sm:block">Keeping Gauteng Cool</span>
           </div>
         </Link>
 
@@ -255,7 +245,7 @@ export function Header() {
             </button>
 
             {servicesOpen && (
-              <div 
+              <div
                 className="absolute left-0 top-full mt-2 w-[800px] rounded-lg border border-gray-200 bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
               >
                 <div className="grid grid-cols-2 gap-1 p-4">
@@ -339,18 +329,18 @@ export function Header() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white">
-                      <Image 
-                        src="/logo-icon.png" 
-                        alt="ZECO Construction" 
-                        width={40} 
+                      <Image
+                        src="/logo-icon.png"
+                        alt="Cold Fix Services"
+                        width={40}
                         height={40}
                         className="object-cover"
                         priority
                       />
                     </div>
                     <div>
-                      <p className="font-bold text-sm">ZECO Construction</p>
-                      <p className="text-xs text-white/70">Building Excellence</p>
+                      <p className="font-bold text-sm">Cold Fix Services</p>
+                      <p className="text-xs text-white/70">Keeping Gauteng Cool</p>
                     </div>
                   </div>
                   <Button
@@ -364,25 +354,25 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="space-y-2 text-sm text-white/90">
-                  <a href="tel:+27748509727" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a href="tel:+27703096749" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Phone className="h-4 w-4" />
-                    +27 74 850 9727
+                    +27 70 309 6749
                   </a>
                   <a
-                    href="https://wa.me/27748509727"
+                    href="https://wa.me/27703096749"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
-                    WhatsApp: +27 74 850 9727
+                    WhatsApp: +27 70 309 6749
                   </a>
-                  <a href="mailto:info@zecoconstruction.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a href="mailto:info@coldfix.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Mail className="h-4 w-4" />
-                    info@zecoconstruction.co.za
+                    info@coldfix.co.za
                   </a>
-                  <a 
-                    href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
+                  <a
+                    href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
@@ -391,11 +381,11 @@ export function Header() {
                     Gauteng, South Africa
                   </a>
                 </div>
-                
+
                 {/* Social Links in Mobile */}
                 <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/20">
                   <a
-                    href="https://www.facebook.com/profile.php?id=61592716047862"
+                    href="https://www.facebook.com/coldfixservices"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
@@ -404,22 +394,13 @@ export function Header() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
+                    href="https://www.instagram.com/coldfixservices"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://za.pinterest.com/zecoconstruction/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white/80 hover:text-white transition-colors"
-                    aria-label="Pinterest"
-                  >
-                    <PinterestIcon className="h-5 w-5" />
                   </a>
                 </div>
               </div>
@@ -444,7 +425,7 @@ export function Header() {
                     onClick={() => setIsOpen(false)}
                   >
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                      <Building2 className="h-5 w-5" />
+                      <Wrench className="h-5 w-5" />
                     </div>
                     About Us
                   </Link>
@@ -458,7 +439,7 @@ export function Header() {
                     >
                       <div className="flex items-center gap-3">
                         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                          <Wrench className="h-5 w-5" />
+                          <Wind className="h-5 w-5" />
                         </div>
                         Services
                       </div>
@@ -473,11 +454,11 @@ export function Header() {
                     <div
                       className={cn(
                         "overflow-hidden transition-all duration-300",
-                        mobileServicesOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0",
+                        mobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0",
                       )}
                     >
                       <div className="grid grid-cols-2 gap-2 px-4 pb-4">
-                        {services.slice(0, 8).map((service) => (
+                        {services.map((service) => (
                           <Link
                             key={service.href}
                             href={service.href}
@@ -537,7 +518,7 @@ export function Header() {
                   </Link>
                 </Button>
                 <p className="mt-3 text-center text-xs text-muted-foreground">
-                  Free consultations • Licensed & Insured • Gauteng
+                  Free quotes and same day callouts across Gauteng
                 </p>
               </div>
             </SheetContent>
@@ -546,4 +527,4 @@ export function Header() {
       </div>
     </header>
   )
-}
+} 

@@ -2,15 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
-import { PinterestIcon } from "@/components/icons/pinterest-icon"
 
 const services = [
-  { title: "Building Construction", href: "/building-construction-renovations" },
-  { title: "Property Maintenance", href: "/property-maintenance" },
-  { title: "Plumbing Services", href: "/plumbing-services" },
-  { title: "Electrical Services", href: "/electrical-services" },
-  { title: "Roofing & Repairs", href: "/roofing-roof-leak-repairs" },
-  { title: "Waterproofing", href: "/waterproofing-services" },
+  { title: "Air Conditioning Services", href: "/air-conditioning-services" },
+  { title: "Refrigeration Repairs", href: "/refrigeration-repairs" },
+  { title: "Cold Room Installation & Repair", href: "/cold-room-installation-repair" },
+  { title: "Commercial Refrigeration", href: "/commercial-refrigeration" },
+  { title: "Appliance Repairs", href: "/appliance-repairs" },
+  { title: "Emergency Callout Service", href: "/emergency-callout-service" },
 ]
 
 const serviceAreas = [
@@ -42,8 +41,8 @@ export function Footer() {
                 <Award className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Licensed & Certified</h4>
-                <p className="text-sm text-primary-foreground/70">Fully compliant professionals</p>
+                <h4 className="font-semibold text-white">Experienced Technicians</h4>
+                <p className="text-sm text-primary-foreground/70">Refrigerant handling certified</p>
               </div>
             </div>
 
@@ -52,7 +51,7 @@ export function Footer() {
                 <Shield className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Insured & Guaranteed</h4>
+                <h4 className="font-semibold text-white">Insured Callouts</h4>
                 <p className="text-sm text-primary-foreground/70">All work fully insured</p>
               </div>
             </div>
@@ -62,7 +61,7 @@ export function Footer() {
                 <Users className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Experienced Team</h4>
+                <h4 className="font-semibold text-white">Trusted Team</h4>
                 <p className="text-sm text-primary-foreground/70">Trusted by hundreds of clients</p>
               </div>
             </div>
@@ -79,7 +78,7 @@ export function Footer() {
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
                 <Image
                   src="/logo-icon.png"
-                  alt="ZECO Construction Logo"
+                  alt="Cold Fix Services Logo"
                   width={48}
                   height={48}
                   className="object-cover"
@@ -88,14 +87,14 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">
-                  ZECO <span className="text-accent">Construction</span>
+                  COLD <span className="text-accent">FIX</span>
                 </h3>
-                <p className="text-xs text-primary-foreground/70">Building Excellence in Gauteng</p>
+                <p className="text-xs text-primary-foreground/70">Keeping Gauteng Cool</p>
               </div>
             </Link>
 
             <p className="max-w-md text-sm leading-relaxed text-primary-foreground/80">
-              ZECO Construction is your trusted partner for comprehensive building, infrastructure, maintenance, and security solutions across Gauteng. From foundation to finish, we deliver quality workmanship with professional service.
+              Cold Fix Services is your trusted partner for appliance repairs, air conditioning, cold room installation and commercial refrigeration across Gauteng. Experienced technicians, same day callouts, quality workmanship every time.
             </p>
 
             {/* Social Media Links */}
@@ -104,7 +103,7 @@ export function Footer() {
 
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/profile.php?id=61592716047862"
+                  href="https://www.facebook.com/coldfixservices"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -114,7 +113,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/zecoconstruction?igsh=bnFldWhiZ2FpeGph"
+                  href="https://www.instagram.com/coldfixservices"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -124,17 +123,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://za.pinterest.com/zecoconstruction/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
-                  aria-label="Pinterest"
-                >
-                  <PinterestIcon className="h-5 w-5" />
-                </a>
-
-                <a
-                  href="https://wa.me/27748509727"
+                  href="https://wa.me/27703096749"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-[#25D366] hover:text-white"
@@ -147,7 +136,7 @@ export function Footer() {
               {/* Google Reviews */}
               <div className="mt-4">
                 <a
-                  href="https://www.google.com/search?q=ZECO+Construction+Gauteng+reviews"
+                  href="https://www.google.com/search?q=Cold+Fix+Services+Gauteng+reviews"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 transition hover:bg-accent hover:text-white"
@@ -198,7 +187,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa"
+                  href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-start gap-3"
@@ -213,26 +202,26 @@ export function Footer() {
               </li>
 
               <li>
-                <a href="tel:+27748509727" className="group flex items-center gap-3">
+                <a href="tel:+27703096749" className="group flex items-center gap-3">
                   <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 74 850 9727</span>
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 70 309 6749</span>
                 </a>
               </li>
 
               <li>
-                <a href="https://wa.me/27748509727" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
+                <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
                   <WhatsAppIcon className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    WhatsApp: +27 74 850 9727
+                    WhatsApp: +27 70 309 6749
                   </span>
                 </a>
               </li>
 
               <li>
-                <a href="mailto:info@zecoconstruction.co.za" className="group flex items-center gap-3">
+                <a href="mailto:info@coldfix.co.za" className="group flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    info@zecoconstruction.co.za
+                    info@coldfix.co.za
                   </span>
                 </a>
               </li>
@@ -240,8 +229,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
                 <div className="text-sm text-primary-foreground/80">
-                  <div className="font-semibold text-white">Mon-Fri: 8:00 - 17:00</div>
-                  <div className="text-accent">24/7 Emergency Support</div>
+                  <div className="font-semibold text-white">Mon to Fri: 8:00 to 17:00</div>
+                  <div className="text-accent">24 Hour Emergency Support</div>
                 </div>
               </li>
             </ul>
@@ -270,7 +259,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
           <p className="text-center text-sm text-primary-foreground/70 md:text-left">
-            © {new Date().getFullYear()} ZECO Construction. All rights reserved.
+            © {new Date().getFullYear()} Cold Fix Services. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 transition-colors hover:text-accent">
