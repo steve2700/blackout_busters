@@ -10,7 +10,7 @@ export function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+          src="/air-conditioning-service-gauteng.png"
           alt="Cold Fix Services ready to help with your appliance and refrigeration repairs"
           fill
           className="object-cover opacity-10"

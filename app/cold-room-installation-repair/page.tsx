@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Professional cold room and freezer room installation, repair, and maintenance for businesses across Gauteng.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/cold-room-installation.png",
         width: 1200,
         height: 630,
         alt: "Cold room installation and repair in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function ColdRoomPage() {
       title="Cold Room Installation and Repair"
       description="Cold Fix Services designs, installs, repairs, and maintains walk in cold rooms and freezer rooms for restaurants, butcheries, retailers, and other businesses across Gauteng. From new installations to breakdown repairs and routine maintenance, our technicians keep your stock at the right temperature and your operation running."
       icon={Warehouse}
-      heroImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+      heroImage="/cold-room-installation.png"
       priceRange="Free quotes"
       responseTime="Same day"
       features={[

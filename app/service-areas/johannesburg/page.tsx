@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Johannesburg | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Johannesburg | Cold Fix Services",
   description:
-    "Expert construction, renovation, and maintenance services across Johannesburg. Serving Sandton, Rosebank, Fourways, Randburg, Parktown, and all JHB suburbs.",
+    "Air conditioning, refrigeration, and appliance repairs across Johannesburg. Serving Sandton, Rosebank, Fourways, Randburg, Bryanston and all JHB suburbs. Same day callouts available.",
   openGraph: {
-    title: "Construction & Maintenance Services in Johannesburg",
+    title: "Appliance, Aircon and Refrigeration Repairs in Johannesburg | Cold Fix Services",
     description:
-      "Professional building, renovation, and property maintenance solutions for Johannesburg residential and commercial properties.",
+      "Reliable air conditioning, refrigeration, and appliance repairs for Johannesburg homes and businesses.",
   },
 }
 
@@ -16,7 +16,7 @@ export default function JohannesburgPage() {
   return (
     <ServiceAreaTemplate
       areaName="Johannesburg"
-      description="ZECO Construction delivers premium construction, renovation, and maintenance services throughout Johannesburg, South Africa's economic hub. From luxury homes in the northern suburbs to commercial developments in the CBD, we provide tailored solutions for every project."
+      description="Cold Fix Services delivers air conditioning, refrigeration, and appliance repairs throughout Johannesburg. From homes in the northern suburbs to shops, offices, and restaurants in the city, we keep your cooling and appliances running with fast, professional service."
       suburbs={[
         "Sandton",
         "Rosebank",
@@ -34,28 +34,28 @@ export default function JohannesburgPage() {
         "Parkhurst",
         "Illovo",
       ]}
-      introduction="Johannesburg is a dynamic city with diverse construction and maintenance needs, from historic properties in established suburbs to cutting-edge developments in business districts. ZECO Construction has built a reputation as a trusted service provider across all of Johannesburg, delivering exceptional workmanship for residential homeowners, commercial property managers, and industrial facility operators. Our comprehensive service offering means you only need one contractor for all your building and maintenance requirements."
+      introduction="Johannesburg is a fast moving city where a broken fridge, cold room, or air conditioner can quickly become a real problem for a home or business. Cold Fix Services has built a strong reputation across Johannesburg, helping households, shops, offices, and restaurants keep their cooling and appliances working. With one trusted team for aircon, refrigeration, and appliance repairs, you only need to make one call."
       servicesOffered={[
-        "Luxury home construction and renovations",
-        "Office and retail fit-outs",
-        "Industrial facility maintenance",
-        "High-rise building services",
-        "Plumbing and electrical installations",
-        "Kitchen and bathroom cupboard installations",
-        "Carpentry and cabinetry work",
-        "Roofing and waterproofing",
-        "Interior and exterior painting",
-        "Landscaping and paving",
-        "Property maintenance contracts",
-        "Emergency repair services",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Restaurant and bar refrigeration repairs",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Extensive experience with Johannesburg's diverse property types",
-        "Teams strategically located across JHB for rapid response",
-        "Understanding of high-security requirements for premium properties",
-        "Expertise in both residential and commercial projects",
-        "Strong track record with property management companies",
-        "Competitive pricing without compromising quality",
+        "Technicians positioned across Johannesburg for rapid response",
+        "Refrigerant handling certified and fully insured teams",
+        "Experience with both homes and commercial refrigeration",
+        "Honest, upfront quotes with no hidden costs",
+        "24 hour emergency support for cooling breakdowns",
+        "Quality parts and lasting repairs on every job",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },

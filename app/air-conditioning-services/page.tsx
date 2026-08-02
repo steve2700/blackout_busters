@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Reliable climate control for homes and businesses in Gauteng. Professional AC installation, servicing, repairs and gas refills. Same day service available.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/air-conditioning-service-gauteng.png",
         width: 1200,
         height: 630,
         alt: "Professional air conditioning installation in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function AirConditioningServicesPage() {
       title="Air Conditioning Services"
       description="Stay comfortable all year round with professional air conditioning solutions from Cold Fix Services. We install, service, and repair split systems, multi split units, ducted systems, and inverters for homes and businesses across Gauteng. Our technicians are refrigerant handling certified and work with all major brands to keep your space cool and your running costs low."
       icon={Snowflake}
-      heroImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+      heroImage="/air-conditioning-service-gauteng.png"
       priceRange="Free quotes"
       responseTime="Same day"
       features={[

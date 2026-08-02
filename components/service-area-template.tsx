@@ -182,7 +182,7 @@ export function ServiceAreaTemplate({
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
-                  src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+                  src="/cold-fix-technicians-servicing-air-conditioner.png"
                   alt={`Professional appliance and refrigeration repairs in ${areaName} by Cold Fix Services`}
                   fill
                   className="object-cover"

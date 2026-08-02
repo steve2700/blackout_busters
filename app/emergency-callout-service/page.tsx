@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Fast emergency callouts for refrigeration, air conditioning, and appliance breakdowns across Gauteng.",
     images: [
       {
-        url: "/property-maintenance-worker-fixing-repairs-profess.jpg",
+        url: "/emergency-callout-technician.png",
         width: 1200,
         height: 630,
         alt: "Emergency callout service in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function EmergencyCalloutPage() {
       title="Emergency Callout Service"
       description="When a fridge, freezer, cold room, or air conditioner fails, every hour counts. Cold Fix Services provides a fast emergency callout service across Gauteng for refrigeration, air conditioning, and appliance breakdowns. We respond quickly to protect your stock, restore cooling, and get your home or business running again."
       icon={Clock}
-      heroImage="/property-maintenance-worker-fixing-repairs-profess.jpg"
+      heroImage="/emergency-callout-technician.png"
       priceRange="Free quotes"
       responseTime="Rapid response"
       features={[

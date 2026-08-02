@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Repair and maintenance for display fridges, coolers, ice machines, and commercial units across Gauteng.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/commercial-refrigeration-display.png",
         width: 1200,
         height: 630,
         alt: "Commercial refrigeration service in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function CommercialRefrigerationPage() {
       title="Commercial Refrigeration"
       description="Cold Fix Services keeps commercial refrigeration running for shops, restaurants, bars, and supermarkets across Gauteng. We repair and maintain display fridges, under counter units, bottle coolers, deli cabinets, ice machines, and more, helping you protect stock, meet food safety standards, and avoid costly downtime."
       icon={Store}
-      heroImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+      heroImage="/commercial-refrigeration-display.png"
       priceRange="Free quotes"
       responseTime="Same day"
       features={[

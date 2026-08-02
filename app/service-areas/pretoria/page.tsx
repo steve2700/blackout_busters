@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Pretoria | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Pretoria | Cold Fix Services",
   description:
-    "Professional construction, renovation, plumbing, electrical, and maintenance services in Pretoria. Serving Montana, Hatfield, Menlyn, Brooklyn, Waterkloof, Centurion & more.",
+    "Air conditioning, refrigeration, and appliance repairs in Pretoria. Serving Montana, Hatfield, Menlyn, Brooklyn, Waterkloof, Moreleta Park and surrounding suburbs. Same day callouts available.",
   openGraph: {
-    title: "Construction & Maintenance Services in Pretoria",
+    title: "Appliance, Aircon and Refrigeration Repairs in Pretoria | Cold Fix Services",
     description:
-      "Expert building, renovation, and property maintenance solutions for residential and commercial properties in Pretoria and surrounding suburbs.",
+      "Fast, reliable air conditioning, refrigeration, and appliance repairs for homes and businesses across Pretoria.",
   },
 }
 
@@ -16,7 +16,7 @@ export default function PretoriaPage() {
   return (
     <ServiceAreaTemplate
       areaName="Pretoria"
-      description="ZECO Construction is your trusted partner for comprehensive construction, renovation, and maintenance services throughout Pretoria and the greater Tshwane Metropolitan area. From residential homes to commercial buildings, we deliver quality workmanship with every project."
+      description="Cold Fix Services is your trusted team for air conditioning, refrigeration, and appliance repairs throughout Pretoria and the greater Tshwane area. From homes to businesses, we keep your fridges, freezers, air conditioners, and appliances running with fast, reliable service."
       suburbs={[
         "Montana",
         "Hatfield",
@@ -34,28 +34,28 @@ export default function PretoriaPage() {
         "Arcadia",
         "Sunnyside",
       ]}
-      introduction="As Pretoria's capital city continues to grow and develop, property owners require reliable, professional services for construction, renovations, and ongoing maintenance. ZECO Construction has established a strong presence in Pretoria, serving homeowners, businesses, and institutions with a complete range of building and infrastructure solutions. Our local teams understand the unique architectural styles and building requirements of Pretoria properties, from historic homes in the older suburbs to modern developments in areas like Menlyn and Moreleta Park."
+      introduction="As the capital continues to grow, homes and businesses in Pretoria need reliable cooling and appliance repairs they can count on. Cold Fix Services has built a strong presence in Pretoria, helping households and businesses with everything from a fridge that has stopped cooling to a new air conditioning installation. Our technicians reach suburbs across Pretoria East, the older central areas, and modern developments like Menlyn and Moreleta Park quickly and professionally."
       servicesOffered={[
-        "New residential construction and home building",
-        "Commercial building construction and fit-outs",
-        "Home renovations and extensions",
-        "Kitchen and bathroom remodeling",
-        "Plumbing installations and repairs",
-        "Electrical services and installations",
-        "Roofing and roof leak repairs",
-        "Waterproofing and damp proofing",
-        "Painting and decorating",
-        "Paving and driveway construction",
-        "Carpentry and custom cupboards",
-        "Concrete works and bricklaying",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Chest freezer and bar fridge repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Local teams based in Pretoria for fast response times",
-        "Deep understanding of Pretoria's building codes and regulations",
-        "Experience with both heritage properties and modern developments",
-        "Strong relationships with local suppliers for quality materials",
-        "24/7 emergency services for urgent repairs",
-        "Free on-site consultations throughout Pretoria",
+        "Local technicians reaching Pretoria quickly for same day callouts",
+        "Refrigerant handling certified and fully insured teams",
+        "Honest, upfront quotes with no hidden costs",
+        "Quality parts and lasting repairs on every job",
+        "24 hour emergency support for cooling breakdowns",
+        "Trusted by homes and businesses across Pretoria",
       ]}
       nearbyAreas={[
         { name: "Centurion", href: "/service-areas/centurion" },

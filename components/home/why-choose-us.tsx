@@ -136,7 +136,7 @@ export function WhyChooseUs() {
             {/* Main Image */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
               <Image
-                src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+                src="/air-conditioning-service-gauteng.png"
                 alt="Cold Fix Services technician installing an air conditioning unit in Gauteng"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Fast, reliable repairs for washing machines, dishwashers, ovens, and home appliances across Gauteng.",
     images: [
       {
-        url: "/property-maintenance-worker-fixing-repairs-profess.jpg",
+        url: "/appliance_repairs.jpg",
         width: 1200,
         height: 630,
         alt: "Appliance repairs in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function ApplianceRepairsPage() {
       title="Appliance Repairs"
       description="A broken appliance disrupts your whole day. Cold Fix Services repairs washing machines, tumble dryers, dishwashers, ovens, stoves, and other household appliances across Gauteng. Our technicians diagnose the fault, quote honestly, and repair with quality parts so your home runs smoothly again."
       icon={WashingMachine}
-      heroImage="/property-maintenance-worker-fixing-repairs-profess.jpg"
+      heroImage="/appliance_repairs.jpg"
       priceRange="Free quotes"
       responseTime="Same day"
       features={[

@@ -23,7 +23,7 @@ const services = [
     description:
       "Installation, servicing, repairs, and gas refills for split systems, ducted units, and inverters across Gauteng homes and offices.",
     href: "/air-conditioning-services",
-    image: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+    image: "/air-conditioning-service-gauteng.png",
     keywords: "air conditioning, aircon installation, aircon repair",
   },
   {
@@ -32,7 +32,7 @@ const services = [
     description:
       "Fast repairs for fridges, freezers, and chest freezers. We fix cooling faults, gas leaks, thermostats, and compressors.",
     href: "/refrigeration-repairs",
-    image: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+    image: "/refrigeration-repair-technician.png",
     keywords: "fridge repair, freezer repair, refrigeration",
   },
   {
@@ -41,7 +41,7 @@ const services = [
     description:
       "Walk in cold rooms and commercial cold storage designed, installed, and maintained for reliable performance.",
     href: "/cold-room-installation-repair",
-    image: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+    image: "/cold-room-installation.png",
     keywords: "cold room installation, cold storage, walk in cold room",
   },
   {
@@ -50,7 +50,7 @@ const services = [
     description:
       "Display fridges, butchery equipment, and restaurant refrigeration serviced and repaired to keep your business running.",
     href: "/commercial-refrigeration",
-    image: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+    image: "/commercial-refrigeration-display.png",
     keywords: "commercial refrigeration, display fridge, restaurant equipment",
   },
   {
