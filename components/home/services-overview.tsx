@@ -59,7 +59,7 @@ const services = [
     description:
       "Washing machines, dishwashers, tumble dryers, ovens, and stoves repaired quickly by experienced technicians.",
     href: "/appliance-repairs",
-    image: "/property-maintenance-worker-fixing-repairs-profess.jpg",
+    image: "/Appliances-All-scaled-e1585943218453.webp",
     keywords: "appliance repair, washing machine repair, oven repair",
   },
   {
