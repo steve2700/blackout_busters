@@ -183,7 +183,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 relative">
-          <Breadcrumbs items={[{ label: "Services" }]} />
+          <Breadcrumbs variant="onDark" items={[{ label: "Services" }]} />
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
               <Award className="h-4 w-4 text-accent" aria-hidden="true" />
