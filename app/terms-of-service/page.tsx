@@ -1,13 +1,13 @@
 // File path: app/terms-of-service/page.tsx
-// Clean URL: https://www.zecoconstruction.co.za/terms-of-service
+// Clean URL: https://www.coldfix.co.za/terms-of-service
 
 import type { Metadata } from "next"
 import { Scale, FileText, CheckCircle, AlertTriangle, Clock, Mail, Phone, MapPin, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | ZECO Construction",
+  title: "Terms of Service | Cold Fix Services",
   description:
-    "Terms of Service for ZECO Construction (Pty) Ltd. Read the terms and conditions governing our website, quotations, and building and maintenance services.",
+    "Terms of Service for Cold Fix Services. Read the terms and conditions governing our website, quotations, and air conditioning, refrigeration, and appliance repair services.",
   robots: "index, follow",
 }
 
@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
               </div>
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Terms of Service</h1>
-            <p className="text-lg text-muted-foreground">ZECO Construction (Pty) Ltd</p>
+            <p className="text-lg text-muted-foreground">Cold Fix Services</p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
@@ -49,13 +49,13 @@ export default function TermsOfServicePage() {
               <h2 className="mb-4 text-2xl font-bold">1. Introduction and Acceptance</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
                 These Terms of Service ("Terms") govern your use of the website{" "}
-                <a href="https://www.zecoconstruction.co.za" className="text-primary hover:underline">
-                  https://www.zecoconstruction.co.za
+                <a href="https://www.coldfix.co.za" className="text-primary hover:underline">
+                  https://www.coldfix.co.za
                 </a>{" "}
-                and any quotation, project, or service you engage ZECO Construction (Pty) Ltd ("we," "us," "our," or "ZECO Construction") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
+                and any quotation, job, or service you engage Cold Fix Services ("we," "us," "our," or "Cold Fix Services") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
               </p>
               <p className="leading-relaxed text-muted-foreground">
-                For project-specific work, these Terms apply alongside any separate written quotation, contract, or scope of work signed between you and ZECO Construction. Where a signed contract and these Terms conflict, the signed contract takes precedence.
+                For any booked work, these Terms apply alongside any separate written quotation or scope of work agreed between you and Cold Fix Services. Where a signed agreement and these Terms conflict, the signed agreement takes precedence.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">2. Our Services</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                ZECO Construction provides building construction, renovations, property maintenance, plumbing, electrical, roofing, waterproofing, carpentry, kitchen and bathroom installations, painting and tiling, and paving services to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any project is defined in the written quotation or contract provided to you before work begins.
+                Cold Fix Services provides air conditioning, refrigeration repairs, cold room installation and repair, commercial refrigeration, appliance repairs, HVAC maintenance contracts, emergency callouts, and related plumbing and electrical connections to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any job is defined in the written quotation provided to you before work begins.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We reserve the right to decline or discontinue any service request at our discretion, including where a site is unsafe, a request falls outside our expertise, or payment terms are not met.
@@ -164,7 +164,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">8. Limitation of Liability</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                While we carry appropriate insurance and take reasonable care in all work performed, ZECO Construction's liability for any claim arising from our services is limited to the value of the relevant project, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
+                While we carry appropriate insurance and take reasonable care in all work performed, the liability of Cold Fix Services for any claim arising from our services is limited to the value of the relevant job, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We are not liable for delays or failures caused by circumstances beyond our reasonable control, including extreme weather, load shedding, supplier delays, or municipal service interruptions.
@@ -175,7 +175,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">9. Insurance</h2>
               <p className="leading-relaxed text-muted-foreground">
-                ZECO Construction maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own homeowner's or business insurance covering the property during renovation or construction work.
+                Cold Fix Services maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own homeowner's or business insurance covering the property during any installation or repair work.
               </p>
             </div>
 
@@ -183,7 +183,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">10. Website Use and Intellectual Property</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                All content on this website — including text, images, logos, and design — is the property of ZECO Construction or its licensors and may not be copied, reproduced, or used without our prior written consent.
+                All content on this website, including text, images, logos, and design, is the property of Cold Fix Services or its licensors and may not be copied, reproduced, or used without our prior written consent.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 You agree not to use this website for any unlawful purpose or in a way that could damage, disable, or impair its functionality.
@@ -233,11 +233,11 @@ export default function TermsOfServicePage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">info@zecoconstruction.co.za</span>
+                    <span className="text-sm text-muted-foreground">info@coldfix.co.za</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">074 850 9727</span>
+                    <span className="text-sm text-muted-foreground">+27 70 309 6749</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
@@ -258,18 +258,18 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@zecoconstruction.co.za"
+                    href="mailto:info@coldfix.co.za"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
                   <a
-                    href="tel:+27748509727"
+                    href="tel:+27703096749"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: 074 850 9727
+                    Call: +27 70 309 6749
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">

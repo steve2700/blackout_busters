@@ -5,20 +5,21 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, CheckCircle, Award, Za
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export const metadata: Metadata = {
-  title: "Contact ZECO Construction | Free Quote in Gauteng - Pretoria, Johannesburg & Midrand",
+  title: "Contact Cold Fix Services | Free Quote in Gauteng, Pretoria, Johannesburg and Midrand",
   description:
-    "Contact ZECO Construction for building, renovations, maintenance, paving, or civil works in Gauteng. Free consultation and same-day quotes. Call +27 74 850 9727.",
-  keywords: "contact ZECO Construction, construction quote Gauteng, free consultation Pretoria, building contractor Johannesburg, Midrand construction company, emergency services",
+    "Contact Cold Fix Services for air conditioning, refrigeration, cold rooms, or appliance repairs in Gauteng. Free consultation and same day quotes. Call +27 70 309 6749.",
+  keywords:
+    "contact Cold Fix Services, air conditioning quote Gauteng, refrigeration repair Pretoria, appliance repair Johannesburg, Midrand cooling company, emergency callout",
   openGraph: {
-    title: "Contact ZECO Construction | Free Quote in Gauteng",
+    title: "Contact Cold Fix Services | Free Quote in Gauteng",
     description:
-      "Get in touch for all building, maintenance, and infrastructure needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same-day response.",
+      "Get in touch for all air conditioning, refrigeration, and appliance repair needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact ZECO Construction",
+        alt: "Contact Cold Fix Services",
       },
     ],
   },
@@ -29,27 +30,27 @@ const contactInfo = [
     icon: MapPin,
     title: "Coverage Area",
     details: ["Gauteng, South Africa", "Serving Pretoria & Johannesburg"],
-    href: "https://www.google.com/maps?q=ZECO+Construction+Gauteng+South+Africa",
+    href: "https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa",
     highlight: true,
   },
   {
     icon: Phone,
-    title: "Phone & WhatsApp",
-    details: ["+27 74 850 9727"],
-    href: "tel:+27748509727",
+    title: "Phone and WhatsApp",
+    details: ["+27 70 309 6749"],
+    href: "tel:+27703096749",
     highlight: true,
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@zecoconstruction.co.za"],
-    href: "mailto:info@zecoconstruction.co.za",
+    details: ["info@coldfix.co.za"],
+    href: "mailto:info@coldfix.co.za",
     highlight: false,
   },
   {
     icon: Clock,
     title: "Business Hours",
-    details: ["Mon-Fri: 8:00 AM - 5:00 PM", "24/7 Emergency Support"],
+    details: ["Mon to Fri: 8:00 AM to 5:00 PM", "24/7 Emergency Support"],
     highlight: false,
   },
 ]
@@ -70,15 +71,15 @@ const serviceAreas = [
 const benefits = [
   {
     icon: CheckCircle,
-    text: "Same-day response & quotes",
+    text: "Same day response and quotes",
   },
   {
     icon: Shield,
-    text: "Licensed & fully insured",
+    text: "Licensed and fully insured",
   },
   {
     icon: Award,
-    text: "500+ completed projects",
+    text: "Hundreds of clients served",
   },
   {
     icon: Zap,
@@ -109,9 +110,9 @@ export default function ContactPage() {
               Get Your <span className="text-accent">Free Quote</span> Today
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              For building, renovations, maintenance, paving, or civil works in <strong className="text-white">Gauteng</strong>,
-              contact <strong className="text-white">ZECO Construction</strong> today. Our expert team provides free consultations, same-day quotes, and professional advice
-              tailored to your project needs.
+              For air conditioning, refrigeration, cold rooms, or appliance repairs in <strong className="text-white">Gauteng</strong>,
+              contact <strong className="text-white">Cold Fix Services</strong> today. Our expert team provides free consultations, same day quotes, and honest advice
+              tailored to your needs.
             </p>
 
             {/* Quick Benefits */}
@@ -140,7 +141,7 @@ export default function ContactPage() {
               </span>
               <h2 className="mb-2 text-3xl font-bold">Get Your Free Quote in 24 Hours</h2>
               <p className="mb-8 text-muted-foreground leading-relaxed">
-                Fill out the form below with your project details. Our team will review your requirements and get back to you within 24 hours with a detailed, no-obligation quotation and expert recommendations.
+                Fill out the form below with your details. Our team will review your requirements and get back to you within 24 hours with a clear, no obligation quote and expert recommendations.
               </p>
               
               <ContactForm />
@@ -157,8 +158,8 @@ export default function ContactPage() {
                 <div className="flex items-center gap-3 p-4 rounded-lg bg-muted">
                   <Shield className="h-5 w-5 text-accent flex-shrink-0" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold">Fully Licensed</p>
-                    <p className="text-xs text-muted-foreground">NHBRC & CIDB</p>
+                    <p className="text-sm font-semibold">Fully Insured</p>
+                    <p className="text-xs text-muted-foreground">Certified Technicians</p>
                   </div>
                 </div>
               </div>
@@ -239,7 +240,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.facebook.com/zecoconstruction"
+                    href="https://www.facebook.com/coldfixservices"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#1877F2] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -248,7 +249,7 @@ export default function ContactPage() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/zecoconstruction"
+                    href="https://www.instagram.com/coldfixservices"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -257,7 +258,7 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://wa.me/27748509727"
+                    href="https://wa.me/27703096749"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#25D366] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -293,7 +294,7 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Don't see your area? <a href="tel:+27748509727" className="text-secondary font-semibold hover:underline">Call us</a> - we cover the entire province!
+                  Don't see your area? <a href="tel:+27703096749" className="text-secondary font-semibold hover:underline">Call us</a>, we cover the entire province!
                 </p>
               </div>
             </div>
