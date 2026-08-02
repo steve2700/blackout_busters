@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Fast, reliable appliance repairs, air conditioning and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Cold Fix Services, Appliance and Refrigeration Repairs in Gauteng",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: "Cold Fix Services | Appliance & Refrigeration Repairs Gauteng",
     description:
       "Appliance repairs, aircon and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
-    images: ["/air-conditioning-technician-installing-ac-unit-in-.jpg"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://www.coldfix.co.za",
@@ -117,7 +117,7 @@ export default function RootLayout({
               name: "Cold Fix Services",
               url: "https://www.coldfix.co.za",
               logo: "https://www.coldfix.co.za/logo-square.png",
-              image: "https://www.coldfix.co.za/air-conditioning-technician-installing-ac-unit-in-.jpg",
+              image: "https://www.coldfix.co.za/og-image.png",
               description: "Appliance repair, cold room installation, air conditioning and refrigeration services in Gauteng",
               address: {
                 "@type": "PostalAddress",

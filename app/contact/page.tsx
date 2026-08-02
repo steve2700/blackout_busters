@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Get in touch for all air conditioning, refrigeration, and appliance repair needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Contact Cold Fix Services",

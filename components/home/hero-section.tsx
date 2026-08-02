@@ -10,7 +10,7 @@ export function HeroSection() {
       {/* Background Image with Optimized Loading */}
       <div className="absolute inset-0">
         <Image
-          src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+          src="/air-conditioning-service-gauteng.png"
           alt="Professional appliance and refrigeration technician at work in Gauteng, Cold Fix Services aircon installation in Pretoria and Johannesburg"
           fill
           className="object-cover opacity-20"
@@ -140,7 +140,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.02]">
                 <Image
-                  src="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+                  src="/cold-fix-technicians-servicing-air-conditioner.png"
                   alt="Cold Fix Services technician servicing an air conditioning unit in Gauteng"
                   fill
                   className="object-cover"

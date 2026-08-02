@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Expert fridge and freezer repairs for homes and businesses across Gauteng. Same day callouts and honest pricing.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/refrigeration-repair-technician.png",
         width: 1200,
         height: 630,
         alt: "Refrigeration repairs in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function RefrigerationRepairsPage() {
       title="Refrigeration Repairs"
       description="When your fridge or freezer stops cooling, food and stock are on the line. Cold Fix Services provides fast, reliable refrigeration repairs for fridges, freezers, and chest freezers across Gauteng. Our refrigerant handling certified technicians diagnose cooling faults, gas leaks, thermostat problems, and compressor failures, then get your unit running again with quality parts and lasting repairs."
       icon={Refrigerator}
-      heroImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+      heroImage="/refrigeration-repair-technician.png"
       priceRange="Free quotes"
       responseTime="Same day"
       features={[

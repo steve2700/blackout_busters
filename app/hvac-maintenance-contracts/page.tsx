@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Scheduled HVAC and refrigeration maintenance plans that keep your systems efficient and reliable across Gauteng.",
     images: [
       {
-        url: "/air-conditioning-technician-installing-ac-unit-in-.jpg",
+        url: "/hvac-maintenance-technician.png",
         width: 1200,
         height: 630,
         alt: "HVAC maintenance contracts in Gauteng by Cold Fix Services",
@@ -32,7 +32,7 @@ export default function HvacMaintenancePage() {
       title="HVAC Maintenance Contracts"
       description="Regular maintenance keeps air conditioning and refrigeration systems efficient, reliable, and cheaper to run. Cold Fix Services offers tailored HVAC maintenance contracts for offices, retail, and industrial sites across Gauteng. Scheduled servicing means fewer breakdowns, longer equipment life, and lower running costs."
       icon={ShieldCheck}
-      heroImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
+      heroImage="/hvac-maintenance-technician.png"
       priceRange="Tailored plans"
       responseTime="Priority response"
       features={[

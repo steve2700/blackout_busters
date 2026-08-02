@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "The trusted cooling partner in Gauteng. Certified technicians delivering air conditioning, refrigeration, and appliance repairs in Pretoria, Johannesburg, and Midrand.",
     images: [
       {
-        url: "/cold-fix-technician-team-in-gauteng.jpg",
+        url: "/cold-fix-technician-team-in-gauteng.png",
         width: 1200,
         height: 630,
         alt: "Cold Fix Services technician team in Gauteng",
@@ -160,7 +160,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/cold-fix-technician-team-in-gauteng.jpg"
+                  src="/cold-fix-technician-team-in-gauteng.png"
                   alt="Cold Fix Services technicians preparing for air conditioning and refrigeration work in Gauteng, South Africa"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
@@ -261,7 +261,7 @@ export default function AboutPage() {
             <div className="order-2 lg:order-1">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/cold-fix-technicians-servicing-air-conditioner.jpg"
+                  src="/cold-fix-technicians-servicing-air-conditioner.png"
                   alt="Cold Fix Services technicians servicing an air conditioning unit in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"

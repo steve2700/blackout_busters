@@ -1,25 +1,26 @@
 // File path: app/electrical-services/page.tsx
-// Clean URL: https://www.zecoconstruction.co.za/electrical-services
+// Clean URL: https://www.coldfix.co.za/electrical-services
 
 import type { Metadata } from "next"
 import { ServicePageTemplate } from "@/components/service-page-template"
-import { Zap, Shield, Award, Lightbulb, Battery, CheckCircle } from "lucide-react"
+import { Zap, Shield, Award, Lightbulb, Battery, CheckCircle, Wind, Refrigerator, WashingMachine, Wrench } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Electrical Services & Installations in Gauteng | ZECO Construction - Pretoria, Johannesburg & Midrand",
+  title: "Electrical Services for Appliance and Aircon Installs in Gauteng | Cold Fix Services",
   description:
-    "Professional electrical services in Gauteng. Licensed electricians for installations, rewiring, fault finding, repairs, lighting, electrical maintenance, DB board upgrades, COC certificates for residential, commercial & industrial properties in Pretoria, Johannesburg & Midrand. SANS 10142 compliant. Emergency callouts available. Same-day quotes.",
-  keywords: "electrician Gauteng, electrical installations Pretoria, rewiring Johannesburg, electrical repairs Midrand, COC certificate, electrical compliance, lighting installations, DB board upgrades, fault finding, licensed electricians",
+    "Safe electrical connections, wiring, and fault finding for appliance, air conditioning, and refrigeration installations across Gauteng. Serving Pretoria, Johannesburg and Midrand. Same day quotes available.",
+  keywords:
+    "electrician Gauteng, appliance wiring Pretoria, aircon power connection Johannesburg, electrical fault finding Midrand, isolator installation, dedicated circuit",
   openGraph: {
-    title: "Electrical Services & Installations | ZECO Construction Gauteng",
+    title: "Electrical Services | Cold Fix Services Gauteng",
     description:
-      "Licensed electricians providing safe, compliant electrical services for homes and businesses in Pretoria, Johannesburg & Gauteng. 24/7 emergency callouts, COC certificates, 500+ installations completed.",
+      "Wiring, fault finding, and safe power connections for appliance and air conditioning installations across Gauteng.",
     images: [
       {
         url: "/electrician-working-on-electrical-panel-in-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional electrical services and installations in Gauteng - ZECO Construction",
+        alt: "Electrical connections for appliance and aircon installs in Gauteng by Cold Fix Services",
       },
     ],
   },
@@ -28,107 +29,95 @@ export const metadata: Metadata = {
 export default function ElectricalServicesPage() {
   return (
     <ServicePageTemplate
-      title="Electrical Services & Installations"
-      description="Our licensed electricians are trained to handle complex electrical projects while prioritizing safety, regulatory compliance, and energy efficiency. From simple repairs and fault finding to complete rewiring, new installations, and electrical upgrades, we provide professional electrical services across Gauteng. With over 10 years of experience and 500+ successful projects, we deliver reliable, certified electrical solutions for residential, commercial, and industrial clients."
+      title="Electrical Services"
+      description="Every appliance, air conditioner, and cold room needs a safe, reliable power supply. Cold Fix Services provides the electrical work that supports our installations, including wiring, fault finding, dedicated circuits, isolators, and safe power connections. Our team makes sure your equipment is connected correctly, safely, and to standard across Gauteng."
       icon={Zap}
       heroImage="/electrician-working-on-electrical-panel-in-gauteng.jpg"
-      priceRange="Competitive Rates"
-      responseTime="Same-day"
+      priceRange="Free quotes"
+      responseTime="Same day"
       features={[
-        "Complete electrical installations",
-        "House & commercial rewiring",
-        "Electrical fault finding & diagnostics",
-        "Emergency electrical repairs",
-        "Interior & exterior lighting installations",
-        "LED lighting upgrades",
-        "Power point & plug installations",
-        "DB board upgrades & replacements",
-        "Earth leakage & surge protection",
-        "Electrical compliance (COC) certificates",
-        "Electrical maintenance & inspections",
-        "Energy-efficient solutions & audits",
+        "Power connections for appliance installs",
+        "Dedicated circuits for aircon and cold rooms",
+        "Isolator switch installation",
+        "Plug points for new appliances",
+        "Electrical fault finding and diagnostics",
+        "Tripping and earth leakage faults",
+        "Stove and oven connections",
+        "Distribution board checks and upgrades",
+        "Safe wiring for refrigeration equipment",
+        "Surge protection for sensitive electronics",
+        "Rewiring tied to appliance installations",
+        "Emergency electrical fault callouts",
       ]}
       benefits={[
         {
-          title: "Fully Licensed & Certified Electricians",
+          title: "Safe Connections",
           description:
-            "All our electricians are registered, licensed, and certified to work on electrical installations in South Africa. We maintain strict professional standards and ongoing training to stay current with regulations.",
-          icon: Award,
-        },
-        {
-          title: "Safety-First Approach",
-          description:
-            "Electrical safety is paramount in every project. We follow rigorous safety protocols, use proper PPE, conduct thorough testing, and ensure all installations meet SANS 10142 electrical safety standards.",
+            "We connect appliances, air conditioners, and refrigeration equipment safely, protecting your family, staff, and equipment.",
           icon: Shield,
         },
         {
-          title: "COC Certificates & Full Compliance",
+          title: "Qualified Electricians",
           description:
-            "We issue legal Certificate of Compliance (COC) documents for all installation work as required by South African law. Essential for property sales, insurance claims, and municipal compliance.",
+            "Our electrical work is carried out by qualified electricians who follow South African wiring standards on every job.",
+          icon: Award,
+        },
+        {
+          title: "Fault Finding Experts",
+          description:
+            "Tripping breakers, dead plugs, and earth leakage faults are traced to the source and fixed properly, not patched.",
           icon: CheckCircle,
         },
         {
-          title: "Energy Efficiency Expertise",
+          title: "Protect Your Equipment",
           description:
-            "We advise on and install energy-efficient lighting, LED conversions, power factor correction, and smart solutions to significantly reduce your electricity consumption and monthly costs.",
+            "Correct circuits and surge protection keep your fridges, aircons, and appliances safe from power problems.",
           icon: Battery,
         },
         {
-          title: "Reliable & Professional Service",
+          title: "One Team, One Callout",
           description:
-            "Prompt response times, clear communication, transparent pricing, and professional conduct throughout your electrical project. We respect your property and leave work areas clean.",
+            "We handle the electrical side of your installation so you do not need to arrange a separate electrician.",
           icon: Lightbulb,
         },
         {
-          title: "Comprehensive Service Range",
+          title: "Honest Pricing",
           description:
-            "From minor repairs and plug replacements to major commercial installations, complete building rewires, and industrial electrical projects—we handle all electrical work with expertise.",
+            "You get a clear quote before any work begins, with no hidden costs and no unnecessary extras.",
           icon: Zap,
         },
       ]}
       process={[
         {
           step: 1,
-          title: "Electrical Assessment & Inspection",
-          description: "We thoroughly evaluate your electrical system, identify any faults, hazards, code violations, or inefficiencies, and discuss your specific requirements and safety concerns.",
+          title: "Assessment",
+          description:
+            "We inspect your power supply, board, and circuits to plan a safe connection for your appliance or cooling equipment.",
         },
         {
           step: 2,
-          title: "Detailed Quotation & Planning",
-          description: "Comprehensive quote provided including materials breakdown, labor costs, compliance certificate fees, project timeline, and any necessary upgrades or safety improvements required.",
+          title: "Clear Quote",
+          description:
+            "You receive an honest quote covering materials and labour, with any safety improvements clearly explained.",
         },
         {
           step: 3,
-          title: "Professional Installation/Repair",
-          description: "Licensed electricians complete all work following strict safety protocols, using quality materials, proper cable sizing, correct terminations, and adherence to electrical codes.",
+          title: "Safe Installation",
+          description:
+            "Our electricians complete the wiring, circuit, or connection to standard, using quality materials.",
         },
         {
           step: 4,
-          title: "Testing, Certification & Handover",
-          description: "Thorough electrical testing (insulation resistance, earth continuity, polarity), issuance of COC certificates where required, system demonstration, and comprehensive documentation.",
+          title: "Testing and Handover",
+          description:
+            "We test the connection, confirm it is safe and working, and make sure your equipment runs correctly.",
         },
       ]}
       relatedServices={[
-        { 
-          title: "Waterproofing Services", 
-          href: "/waterproofing-services",
-          icon: Shield,
-        },
-        { 
-          title: "Property Maintenance", 
-          href: "/property-maintenance",
-          icon: CheckCircle,
-        },
-        { 
-          title: "Building Construction", 
-          href: "/building-construction-renovations",
-          icon: Award,
-        },
-        { 
-          title: "Carpentry Services", 
-          href: "/carpentry-services",
-          icon: Zap,
-        },
+        { title: "Air Conditioning Services", href: "/air-conditioning-services", icon: Wind },
+        { title: "Appliance Repairs", href: "/appliance-repairs", icon: WashingMachine },
+        { title: "Refrigeration Repairs", href: "/refrigeration-repairs", icon: Refrigerator },
+        { title: "Plumbing Services", href: "/plumbing-services", icon: Wrench },
       ]}
       serviceAreas={[
         "Pretoria",
@@ -147,79 +136,49 @@ export default function ElectricalServicesPage() {
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-8 text-3xl font-bold">Why Choose ZECO Construction for Electrical Services?</h2>
-            
+            <h2 className="mb-8 text-3xl font-bold">Electrical Work That Supports Your Installations</h2>
+
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With <strong>over 10 years of experience</strong> providing electrical services across Gauteng, ZECO Construction has become the trusted choice for safe, compliant, and professional electrical work. Based in <strong>Gauteng</strong>, our licensed electricians have successfully completed <strong>500+ electrical projects</strong> for homes, businesses, and industrial facilities throughout <strong>Pretoria, Johannesburg</strong>, and surrounding areas.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Comprehensive Electrical Solutions</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Whether you need emergency fault finding, a complete house rewire, new lighting installations, or electrical compliance certificates, our qualified electricians deliver safe, certified solutions tailored to your specific requirements:
+                A new air conditioner, cold room, or major appliance is only as reliable as the power supply behind it. <strong>Cold Fix Services</strong> provides the electrical work that goes hand in hand with our cooling and appliance installations across <strong>Pretoria, Johannesburg, Midrand</strong>, and the wider Gauteng region. From dedicated circuits and isolators to fault finding on equipment that keeps tripping, our qualified electricians make sure everything is connected safely and correctly.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-bold text-lg mb-2 text-secondary">Residential Electrical Work</h4>
+                  <h3 className="font-bold text-lg mb-2 text-secondary">Connections for New Equipment</h3>
                   <p className="text-sm text-muted-foreground">
-                    Complete home wiring, rewiring, lighting installations, plug points, DB board upgrades, geyser connections, stove installations, and COC certificates.
+                    Dedicated circuits, isolators, and plug points for air conditioners, cold rooms, stoves, and large appliances.
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-bold text-lg mb-2 text-secondary">Commercial Electrical Services</h4>
+                  <h3 className="font-bold text-lg mb-2 text-secondary">Fault Finding and Repairs</h3>
                   <p className="text-sm text-muted-foreground">
-                    Office electrical installations, retail lighting, emergency lighting, three-phase power, distribution boards, equipment installations, and maintenance contracts.
+                    Tripping breakers, earth leakage faults, dead plugs, and wiring problems traced and fixed at the source.
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-bold text-lg mb-2 text-secondary">Industrial Electrical Solutions</h4>
+                  <h3 className="font-bold text-lg mb-2 text-secondary">Board Checks and Upgrades</h3>
                   <p className="text-sm text-muted-foreground">
-                    Heavy-duty installations, motor circuits, control panels, machinery wiring, factory lighting, power distribution, and industrial electrical maintenance.
+                    Distribution board inspections and upgrades so your circuits can safely handle modern appliance loads.
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-bold text-lg mb-2 text-secondary">Emergency Repairs & Fault Finding</h4>
+                  <h3 className="font-bold text-lg mb-2 text-secondary">Surge and Safety Protection</h3>
                   <p className="text-sm text-muted-foreground">
-                    24/7 emergency callouts, electrical fault diagnostics, tripping breakers, power failures, earth leakage issues, and urgent electrical repairs.
+                    Surge protection and earth leakage safeguards that protect your fridges, aircons, and sensitive electronics.
                   </p>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 mt-8">Licensed Professionals & Regulatory Compliance</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                All our electricians are registered with the Department of Employment and Labour, hold valid wireman's licenses, and are authorized to issue Certificate of Compliance (COC) documents. Every installation strictly adheres to SANS 10142-1 (Wiring of Premises) standards, ensuring your electrical system is safe, legal, and insurance-compliant. We stay current with the latest electrical regulations and best practices through ongoing professional development.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Certificate of Compliance (COC) Certificates</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                A COC certificate is a legal requirement in South Africa for property sales, transfers, new installations, and alterations. Our licensed electricians conduct thorough electrical inspections, perform required tests (insulation resistance, earth continuity, polarity verification), and issue legally valid COC certificates accepted by municipalities, conveyancing attorneys, and insurance companies. Without a valid COC, property transactions cannot proceed, making this an essential service for homeowners and businesses.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Energy-Efficient Lighting & Solutions</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Reduce your electricity consumption and monthly bills with our energy-efficient electrical solutions. We specialize in LED lighting conversions (reducing consumption by up to 80%), motion sensor installations, timer switches, smart lighting controls, and power factor correction for commercial clients. Our energy audits identify inefficiencies and provide actionable recommendations to lower your energy costs while maintaining optimal lighting and functionality.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">DB Board Upgrades & Safety Improvements</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Many older properties have outdated distribution boards (DB boards) that don't meet current safety standards or capacity requirements. We upgrade old-style fuse boxes to modern circuit breaker panels with earth leakage protection, surge protection, and adequate circuit capacity for modern electrical demands. These upgrades significantly improve electrical safety, prevent fires, protect expensive appliances, and ensure compliance with current regulations.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Rapid Emergency Response</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Electrical emergencies require immediate attention. Our <strong>24/7 emergency callout service</strong> ensures you're never left without power or facing dangerous electrical faults. Our strategically positioned teams provide <strong>rapid response times</strong> throughout Gauteng, with average arrival times of <strong>20-40 minutes</strong> depending on your location. We carry comprehensive stock of common electrical components to resolve most emergencies on the first visit.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Quality Materials & Workmanship</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                We use only high-quality electrical materials from reputable suppliers—including certified cables (SABS approved), quality circuit breakers, proper conduit, weatherproof fittings, and branded lighting fixtures. Our electricians follow proper installation techniques including correct cable sizing, appropriate protection ratings, secure terminations, proper earthing, and neat cable management. All work is tested and verified before completion.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">Transparent Pricing & Detailed Quotes</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                We provide detailed, itemized quotations that clearly break down material costs, labor charges, COC certificate fees, and any additional requirements. No hidden costs or unexpected surprises. Our competitive pricing reflects fair value for licensed, certified electrical work performed to the highest safety standards with full legal compliance and documentation.
-              </p>
+              <div className="mt-8 p-6 rounded-xl bg-gradient-to-br from-secondary/5 to-accent/5 border border-border">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  <Zap className="h-6 w-6 text-secondary" />
+                  Need a Safe Power Connection?
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Whether you are installing a new air conditioner or tracing a fault that keeps tripping your power, our team can help. Call us on <strong className="text-secondary">+27 70 309 6749</strong> for a free quote across Gauteng.
+                </p>
+              </div>
             </div>
           </div>
         </div>
