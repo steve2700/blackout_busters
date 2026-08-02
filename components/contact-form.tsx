@@ -11,22 +11,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { CheckCircle, Loader2, Send } from "lucide-react"
 
 const services = [
-  "Building Construction & Renovations",
-  "Property Maintenance",
-  "Plumbing Services",
-  "Electrical Repairs & Installations",
-  "Roofing & Roof Leak Repairs",
-  "Waterproofing Services",
-  "Carpentry Services",
-  "Kitchen & Bathroom Cupboards",
-  "Painting, Tiling & Finishing",
-  "Paving, Driveways & Surfacing",
-  "Road Construction & Civil Works",
-  "Concrete Works & Bricklaying",
-  "Fencing, Gates & Access Control",
-  "CCTV, Alarm & Surveillance Systems",
-  "Solar & Energy Solutions",
   "Air Conditioning Services",
+  "Refrigeration Repairs",
+  "Cold Room Installation and Repair",
+  "Commercial Refrigeration",
+  "Appliance Repairs",
+  "HVAC Maintenance Contracts",
+  "Emergency Callout Service",
+  "Plumbing Services",
+  "Electrical Services",
+  "Maintenance Contracts",
   "Other",
 ]
 

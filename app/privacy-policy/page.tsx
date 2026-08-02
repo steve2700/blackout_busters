@@ -1,13 +1,13 @@
 // File path: app/privacy-policy/page.tsx
-// Clean URL: https://www.zecoconstruction.co.za/privacy-policy
+// Clean URL: https://www.coldfix.co.za/privacy-policy
 
 import type { Metadata } from "next"
 import { Shield, Lock, Eye, FileText, Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ZECO Construction - POPIA Compliant",
+  title: "Privacy Policy | Cold Fix Services POPIA Compliant",
   description:
-    "Privacy Policy for ZECO Construction (Pty) Ltd. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
+    "Privacy Policy for Cold Fix Services. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
   robots: "index, follow",
 }
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Privacy Policy</h1>
             <p className="text-lg text-muted-foreground">
-              ZECO Construction (Pty) Ltd
+              Cold Fix Services
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -50,9 +50,9 @@ export default function PrivacyPolicyPage() {
             <div className="mb-12 rounded-xl bg-muted p-8">
               <h2 className="mb-4 text-2xl font-bold">1. Introduction</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                ZECO Construction (Pty) Ltd ("we," "us," "our," or "ZECO Construction") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
-                <a href="https://www.zecoconstruction.co.za" className="text-primary hover:underline">
-                  https://www.zecoconstruction.co.za
+                Cold Fix Services ("we," "us," "our," or "Cold Fix Services") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
+                <a href="https://www.coldfix.co.za" className="text-primary hover:underline">
+                  https://www.coldfix.co.za
                 </a>
                 , use our services, or interact with us.
               </p>
@@ -73,14 +73,14 @@ export default function PrivacyPolicyPage() {
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-sm text-muted-foreground">074 850 9727</p>
+                    <p className="text-sm text-muted-foreground">+27 70 309 6749</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-sm text-muted-foreground">info@zecoconstruction.co.za</p>
+                    <p className="text-sm text-muted-foreground">info@coldfix.co.za</p>
                   </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function PrivacyPolicyPage() {
                     items: [
                       "Processing service requests and quotations",
                       "Scheduling appointments and site visits",
-                      "Delivering construction and maintenance services",
+                      "Delivering air conditioning, refrigeration, and appliance repair services",
                       "Managing projects and client relationships",
                       "Communicating about your projects",
                     ],
@@ -461,8 +461,8 @@ export default function PrivacyPolicyPage() {
               <div className="rounded-xl bg-primary/10 p-6 border-2 border-primary/20">
                 <h3 className="mb-4 font-bold">To exercise your rights, contact us at:</h3>
                 <div className="space-y-2 text-sm">
-                  <p><strong>Email:</strong> info@zecoconstruction.co.za</p>
-                  <p><strong>Phone:</strong> 074 850 9727</p>
+                  <p><strong>Email:</strong> info@coldfix.co.za</p>
+                  <p><strong>Phone:</strong> +27 70 309 6749</p>
                   <p><strong>Location:</strong> Gauteng, South Africa</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold">We will respond to your request within 30 days.</p>
@@ -551,8 +551,8 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <ul className="mb-4 ml-6 space-y-2 list-disc text-muted-foreground">
                   <li>Clicking the "unsubscribe" link in emails</li>
-                  <li>Contacting us at info@zecoconstruction.co.za</li>
-                  <li>Calling us at 074 850 9727</li>
+                  <li>Contacting us at info@coldfix.co.za</li>
+                  <li>Calling us at +27 70 309 6749</li>
                 </ul>
                 <p className="text-sm italic text-muted-foreground">
                   You will continue to receive service-related communications even after unsubscribing from marketing.
@@ -587,9 +587,9 @@ export default function PrivacyPolicyPage() {
                     Our designated Information Officer under POPIA is available to address privacy concerns:
                   </p>
                   <div className="space-y-2">
-                    <p><strong>Information Officer:</strong> ZECO Construction Management</p>
-                    <p><strong>Email:</strong> info@zecoconstruction.co.za</p>
-                    <p><strong>Phone:</strong> 074 850 9727</p>
+                    <p><strong>Information Officer:</strong> Cold Fix Services Management</p>
+                    <p><strong>Email:</strong> info@coldfix.co.za</p>
+                    <p><strong>Phone:</strong> +27 70 309 6749</p>
                     <p><strong>Location:</strong> Gauteng, South Africa</p>
                   </div>
                 </div>
@@ -649,18 +649,18 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
-                    href="mailto:info@zecoconstruction.co.za" 
+                    href="mailto:info@coldfix.co.za" 
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
                   <a 
-                    href="tel:+27748509727" 
+                    href="tel:+27703096749" 
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: 074 850 9727
+                    Call: +27 70 309 6749
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">
