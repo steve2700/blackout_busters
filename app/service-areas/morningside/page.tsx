@@ -2,37 +2,45 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Morningside | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Morningside | Cold Fix Services",
   description:
-    "Exclusive construction and maintenance services in Morningside. Premium solutions for Sandton Central, Atholl, Inanda and surrounding upmarket areas.",
+    "Air conditioning, refrigeration, and appliance repairs in Morningside. Serving Sandton Central, Atholl, Inanda, Sandown, Benmore and surrounding areas. Same day callouts available.",
+  openGraph: {
+    title: "Appliance, Aircon and Refrigeration Repairs in Morningside | Cold Fix Services",
+    description:
+      "Reliable air conditioning, refrigeration, and appliance repairs for Morningside homes and businesses.",
+  },
 }
 
 export default function MorningsidePage() {
   return (
     <ServiceAreaTemplate
       areaName="Morningside"
-      description="ZECO Construction provides exclusive construction and maintenance services to Morningside's prestigious residential community. We deliver the premium quality that this upmarket area demands."
+      description="Cold Fix Services provides air conditioning, refrigeration, and appliance repairs throughout Morningside. From luxury homes to apartments and businesses, we keep your cooling and appliances running with careful, professional service."
+      introImage="/cold-room-installation.png"
       suburbs={["Sandton Central", "Atholl", "Inanda", "Sandown", "Benmore", "Strathavon"]}
-      introduction="Morningside is one of Johannesburg's most exclusive residential areas, featuring luxury homes with high-end finishes and sophisticated requirements. ZECO Construction specializes in serving Morningside's discerning homeowners with premium construction and maintenance services that match the area's prestige. Our attention to detail and commitment to excellence ensures every project meets the highest standards."
+      introduction="Morningside is one of Johannesburg's most desirable residential areas, home to luxury properties with high end appliances and cooling systems. Cold Fix Services looks after Morningside homeowners and businesses with reliable air conditioning, refrigeration, and appliance repairs, treating every property with care. Whether it is a premium fridge that needs repair or an aircon that needs servicing, our technicians deliver quality work with attention to detail."
       servicesOffered={[
-        "Luxury home renovations",
-        "Designer kitchen installations",
-        "Premium bathroom remodeling",
-        "Smart home technology integration",
-        "Waterproofing services",
-        "Pool and outdoor entertainment areas",
-        "Landscape architecture implementation",
-        "Premium finishes and materials",
-        "Bespoke carpentry and joinery",
-        "Comprehensive property maintenance",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Chest freezer and bar fridge repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Specialization in luxury properties",
-        "Premium materials and finishes",
-        "Discrete professional service",
-        "Attention to finest details",
-        "Excellent Morningside references",
-        "Understanding of premium property requirements",
+        "Technicians reaching Morningside quickly for same day callouts",
+        "Experience with premium homes and high end appliances",
+        "Refrigerant handling certified and fully insured teams",
+        "Discrete, professional service with attention to detail",
+        "Honest, upfront quotes with no hidden costs",
+        "24 hour emergency support for cooling breakdowns",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
@@ -42,4 +50,4 @@ export default function MorningsidePage() {
       ]}
     />
   )
-} 
+}

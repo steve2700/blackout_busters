@@ -12,6 +12,7 @@ export default function CenturionPage() {
     <ServiceAreaTemplate
       areaName="Centurion"
       description="Cold Fix Services provides trusted air conditioning, refrigeration, and appliance repairs throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep your cooling and appliances running reliably."
+      introImage="/appliance_repairs_centurion.jpg"
       suburbs={[
         "Highveld",
         "Eldoraigne",

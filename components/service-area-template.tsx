@@ -11,6 +11,7 @@ interface ServiceAreaTemplateProps {
   description: string
   suburbs: string[]
   heroImage?: string
+  introImage?: string
   introduction: string
   servicesOffered: string[]
   whyChooseUs: string[]
@@ -32,6 +33,7 @@ export function ServiceAreaTemplate({
   description,
   suburbs,
   heroImage,
+  introImage,
   introduction,
   servicesOffered,
   whyChooseUs,
@@ -182,7 +184,7 @@ export function ServiceAreaTemplate({
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
-                  src="/cold-fix-technicians-servicing-air-conditioner.png"
+                  src={introImage || "/cold-fix-technicians-servicing-air-conditioner.png"}
                   alt={`Professional appliance and refrigeration repairs in ${areaName} by Cold Fix Services`}
                   fill
                   className="object-cover"

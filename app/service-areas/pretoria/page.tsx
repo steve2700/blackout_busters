@@ -17,6 +17,7 @@ export default function PretoriaPage() {
     <ServiceAreaTemplate
       areaName="Pretoria"
       description="Cold Fix Services is your trusted team for air conditioning, refrigeration, and appliance repairs throughout Pretoria and the greater Tshwane area. From homes to businesses, we keep your fridges, freezers, air conditioners, and appliances running with fast, reliable service."
+      introImage="/air-conditioning-service-gauteng.png"
       suburbs={[
         "Montana",
         "Hatfield",

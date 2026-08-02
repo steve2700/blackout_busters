@@ -2,16 +2,22 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Fourways | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Fourways | Cold Fix Services",
   description:
-    "Professional construction and maintenance in Fourways. Expert services for Lonehill, Dainfern, Broadacres, Cedar Lakes and surrounding areas.",
+    "Air conditioning, refrigeration, and appliance repairs in Fourways. Serving Lonehill, Dainfern, Broadacres, Cedar Lakes, Douglasdale and surrounding areas. Same day callouts available.",
+  openGraph: {
+    title: "Appliance, Aircon and Refrigeration Repairs in Fourways | Cold Fix Services",
+    description:
+      "Reliable air conditioning, refrigeration, and appliance repairs for Fourways estates, homes, and businesses.",
+  },
 }
 
 export default function FourwaysPage() {
   return (
     <ServiceAreaTemplate
       areaName="Fourways"
-      description="ZECO Construction delivers quality construction and maintenance services to Fourways' upmarket residential estates and commercial developments. We understand the premium standards expected in this desirable area."
+      description="Cold Fix Services delivers air conditioning, refrigeration, and appliance repairs across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep your cooling and appliances running reliably."
+      introImage="/cold-fix-technician-team-in-gauteng.png"
       suburbs={[
         "Lonehill",
         "Dainfern",
@@ -22,26 +28,28 @@ export default function FourwaysPage() {
         "Douglasdale",
         "Magaliesig",
       ]}
-      introduction="Fourways has evolved into one of Johannesburg's most sought-after areas, featuring premier residential estates, modern commercial developments, and excellent amenities. ZECO Construction provides the high-quality construction and maintenance services that Fourways property owners expect, from luxury home renovations to estate common area maintenance."
+      introduction="Fourways has grown into one of Johannesburg's most sought after areas, with premier residential estates, modern shopping centres, and busy commercial developments. Cold Fix Services provides the reliable cooling and appliance repairs that Fourways property owners expect, from aircon servicing in an estate home to refrigeration repairs for a restaurant or shop. Our technicians understand estate access and work efficiently to get you back up and running."
       servicesOffered={[
-        "Estate home renovations",
-        "Custom kitchen and bathroom designs",
-        "Outdoor living space construction",
-        "Swimming pool installations",
-        "Landscaping and irrigation",
-        "Painting, tiling and finishing",
-        "Smart home integration",
-        "Energy-efficient solutions",
-        "Property maintenance programs",
-        "Commercial fit-outs",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Restaurant and retail refrigeration repairs",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Approved by major Fourways estates",
-        "Premium quality workmanship",
-        "Understanding of estate rules and regulations",
-        "Experience with luxury finishes",
-        "Discrete and professional approach",
-        "Strong referral network in Fourways",
+        "Technicians reaching Fourways quickly for same day callouts",
+        "Experience working within security estates and their rules",
+        "Refrigerant handling certified and fully insured teams",
+        "Honest, upfront quotes with no hidden costs",
+        "Quality parts and lasting repairs on every job",
+        "24 hour emergency support for cooling breakdowns",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },

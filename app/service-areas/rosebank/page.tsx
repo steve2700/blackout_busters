@@ -2,37 +2,45 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Rosebank | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Rosebank | Cold Fix Services",
   description:
-    "Premium construction and maintenance services in Rosebank. Expert solutions for Parktown, Saxonwold, Dunkeld, Forest Town and northern Johannesburg suburbs.",
+    "Air conditioning, refrigeration, and appliance repairs in Rosebank. Serving Parktown, Saxonwold, Dunkeld, Forest Town, Killarney and northern Johannesburg suburbs. Same day callouts available.",
+  openGraph: {
+    title: "Appliance, Aircon and Refrigeration Repairs in Rosebank | Cold Fix Services",
+    description:
+      "Reliable air conditioning, refrigeration, and appliance repairs for Rosebank homes, apartments, and businesses.",
+  },
 }
 
 export default function RosebankPage() {
   return (
     <ServiceAreaTemplate
       areaName="Rosebank"
-      description="ZECO Construction serves Rosebank's sophisticated mix of heritage homes, modern apartments, and commercial properties with premium construction and maintenance services tailored to this prestigious area."
+      description="Cold Fix Services serves Rosebank's mix of heritage homes, modern apartments, offices, and retail spaces with reliable air conditioning, refrigeration, and appliance repairs. We keep your cooling and appliances running with fast, professional service."
+      introImage="/hvac-maintenance-technician.png"
       suburbs={["Parktown", "Saxonwold", "Dunkeld", "Forest Town", "Parkhurst", "Greenside", "Westcliff", "Killarney"]}
-      introduction="Rosebank represents the heart of Johannesburg's northern suburbs, combining historic properties with contemporary developments. ZECO Construction understands the unique requirements of this area, from sensitive heritage renovations to modern commercial fit-outs. Our expertise ensures that every project respects the character of Rosebank while meeting modern standards."
+      introduction="Rosebank sits at the centre of Johannesburg's northern suburbs, combining older homes with modern apartment blocks, offices, and busy retail. Cold Fix Services helps residents and businesses in Rosebank with everything from a fridge that has stopped cooling to full air conditioning servicing for an office. Our technicians know the area well and respond quickly with quality work that lasts."
       servicesOffered={[
-        "Heritage home renovations",
-        "Modern apartment upgrades",
-        "Commercial office fit-outs",
-        "Retail space construction",
-        "Plumbing and electrical services",
-        "Roofing and waterproofing",
-        "Interior and exterior painting",
-        "Carpentry and cabinetry work",
-        "Paving and outdoor surfaces",
-        "Property maintenance programs",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Restaurant and office refrigeration repairs",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Experience with heritage properties",
-        "Understanding of Rosebank's character",
-        "High-end finish expertise",
-        "Relationships with local authorities",
-        "Premium service standards",
-        "Trusted by Rosebank property owners",
+        "Technicians reaching Rosebank quickly for same day callouts",
+        "Experience with apartments, offices, and retail spaces",
+        "Refrigerant handling certified and fully insured teams",
+        "Honest, upfront quotes with no hidden costs",
+        "Quality parts and lasting repairs on every job",
+        "24 hour emergency support for cooling breakdowns",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },

@@ -2,16 +2,22 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Randburg | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Randburg | Cold Fix Services",
   description:
-    "Reliable construction and maintenance services in Randburg. Serving Ferndale, Blairgowrie, Northcliff, Boskruin and all Randburg areas.",
+    "Air conditioning, refrigeration, and appliance repairs in Randburg. Serving Ferndale, Blairgowrie, Northcliff, Boskruin, Fairland and surrounding suburbs. Same day callouts available.",
+  openGraph: {
+    title: "Appliance, Aircon and Refrigeration Repairs in Randburg | Cold Fix Services",
+    description:
+      "Reliable air conditioning, refrigeration, and appliance repairs for Randburg homes, complexes, and businesses.",
+  },
 }
 
 export default function RandburgPage() {
   return (
     <ServiceAreaTemplate
       areaName="Randburg"
-      description="ZECO Construction has been serving Randburg's residential and commercial properties with professional construction and maintenance services. Our experienced teams deliver reliable solutions for this established Johannesburg suburb."
+      description="Cold Fix Services provides trusted air conditioning, refrigeration, and appliance repairs across Randburg. From established family homes and townhouse complexes to shops and offices, we keep your cooling and appliances working reliably."
+      introImage="/washing_machine_repairs.jpg"
       suburbs={[
         "Ferndale",
         "Blairgowrie",
@@ -22,26 +28,28 @@ export default function RandburgPage() {
         "Randpark Ridge",
         "Fontainebleau",
       ]}
-      introduction="Randburg's mix of established family homes, townhouse complexes, and commercial areas creates diverse construction and maintenance needs. ZECO Construction has developed expertise in serving all property types in Randburg, from heritage home renovations to modern commercial fit-outs. Our familiarity with the area ensures efficient, high-quality service."
+      introduction="Randburg blends established family homes, townhouse complexes, and busy commercial areas, and all of them rely on working fridges, freezers, air conditioners, and appliances. Cold Fix Services has become a dependable choice in Randburg for fast repairs and honest advice. Whether it is a washing machine that has stopped mid cycle or an aircon that needs a gas refill, our technicians arrive prepared to get things running again."
       servicesOffered={[
-        "Home renovations and modernization",
-        "Townhouse and complex maintenance",
-        "Commercial property services",
-        "Plumbing and electrical repairs",
-        "Roofing and waterproofing",
-        "Painting and decorating",
-        "Paving and outdoor areas",
-        "Carpentry and cabinetry work",
-        "Kitchen and bathroom cupboards",
-        "General maintenance programs",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Chest freezer and bar fridge repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Long-standing presence in Randburg",
-        "Understanding of diverse property types",
-        "Experience with body corporate projects",
-        "Reliable service at fair prices",
-        "Local references available",
-        "Quick response to Randburg clients",
+        "Local technicians reaching Randburg quickly for same day callouts",
+        "Experience with body corporate and complex work",
+        "Refrigerant handling certified and fully insured teams",
+        "Honest, upfront quotes with no hidden costs",
+        "Quality parts and lasting repairs on every job",
+        "24 hour emergency support for cooling breakdowns",
       ]}
       nearbyAreas={[
         { name: "Fourways", href: "/service-areas/fourways" },
