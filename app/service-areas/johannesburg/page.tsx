@@ -17,6 +17,7 @@ export default function JohannesburgPage() {
     <ServiceAreaTemplate
       areaName="Johannesburg"
       description="Cold Fix Services delivers air conditioning, refrigeration, and appliance repairs throughout Johannesburg. From homes in the northern suburbs to shops, offices, and restaurants in the city, we keep your cooling and appliances running with fast, professional service."
+      introImage="/commercial-refrigeration-display.png"
       suburbs={[
         "Sandton",
         "Rosebank",

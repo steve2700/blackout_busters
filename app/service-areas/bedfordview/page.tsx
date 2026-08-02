@@ -2,37 +2,45 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Construction & Maintenance Services in Bedfordview | ZECO Construction",
+  title: "Appliance, Aircon and Refrigeration Repairs in Bedfordview | Cold Fix Services",
   description:
-    "Quality construction and maintenance services in Bedfordview. Expert solutions for Edenvale, Germiston, Kensington, Kempton Park and East Rand areas.",
+    "Air conditioning, refrigeration, and appliance repairs in Bedfordview and the East Rand. Serving Edenvale, Germiston, Kensington, Kempton Park and surrounding areas. Same day callouts available.",
+  openGraph: {
+    title: "Appliance, Aircon and Refrigeration Repairs in Bedfordview | Cold Fix Services",
+    description:
+      "Reliable air conditioning, refrigeration, and appliance repairs for Bedfordview and East Rand homes and businesses.",
+  },
 }
 
 export default function BedfordviewPage() {
   return (
     <ServiceAreaTemplate
       areaName="Bedfordview"
-      description="ZECO Construction provides comprehensive construction and maintenance services to Bedfordview and the East Rand. We deliver quality workmanship for residential and commercial properties in this well-established area."
+      description="Cold Fix Services provides air conditioning, refrigeration, and appliance repairs across Bedfordview and the greater East Rand. From upmarket homes to shops, offices, and industrial facilities, we keep your cooling and appliances running reliably."
+      introImage="/air_conditioner_installed_kemptonpark.jpg"
       suburbs={["Edenvale", "Germiston", "Kensington", "Kempton Park", "Boksburg", "Benoni", "East Rand Mall area"]}
-      introduction="Bedfordview and the greater East Rand area features a diverse range of properties, from upmarket homes to industrial facilities. ZECO Construction serves this region with comprehensive construction and maintenance solutions, understanding the specific needs of East Rand property owners. Our commitment to quality and reliability has earned us a strong reputation in the area."
+      introduction="Bedfordview and the greater East Rand feature a wide mix of properties, from upmarket homes to retail centres and industrial facilities. Cold Fix Services serves this region with reliable cooling and appliance repairs, understanding the practical needs of East Rand homes and businesses. Whether it is a fridge, freezer, air conditioner, or appliance that needs attention, our technicians respond quickly with quality work."
       servicesOffered={[
-        "Residential construction and renovations",
-        "Industrial facility maintenance",
-        "Commercial building services",
-        "Plumbing and electrical work",
-        "Roofing and structural repairs",
-        "Painting and finishing",
-        "Waterproofing services",
-        "Carpentry and cabinetry work",
-        "Paving and hardscaping",
-        "Property maintenance contracts",
+        "Air conditioning installation and servicing",
+        "Aircon repairs and gas refills",
+        "Fridge and freezer repairs",
+        "Cold room installation and repair",
+        "Commercial and display fridge servicing",
+        "Restaurant and retail refrigeration repairs",
+        "Washing machine and tumble dryer repairs",
+        "Dishwasher, oven, and stove repairs",
+        "Ice machine repairs and servicing",
+        "Emergency breakdown callouts",
+        "Scheduled maintenance contracts",
+        "Appliance water and gas connections",
       ]}
       whyChooseUs={[
-        "Experience across the East Rand",
-        "Understanding of industrial property needs",
-        "Strong track record in Bedfordview",
-        "Competitive East Rand pricing",
-        "Reliable and punctual service",
-        "Multi-skilled teams available",
+        "Technicians reaching the East Rand quickly for same day callouts",
+        "Experience with homes, retail, and industrial refrigeration",
+        "Refrigerant handling certified and fully insured teams",
+        "Honest, upfront quotes with no hidden costs",
+        "Quality parts and lasting repairs on every job",
+        "24 hour emergency support for cooling breakdowns",
       ]}
       nearbyAreas={[
         { name: "Johannesburg", href: "/service-areas/johannesburg" },

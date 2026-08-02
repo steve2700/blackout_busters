@@ -12,6 +12,7 @@ export default function MidrandPage() {
     <ServiceAreaTemplate
       areaName="Midrand"
       description="Cold Fix Services serves Midrand's growing residential and commercial communities with air conditioning, refrigeration, and appliance repairs. Our central location makes us ideal for fast callouts across this rapidly developing area."
+      introImage="/refrigeration-repair-technician.png"
       suburbs={[
         "Carlswald",
         "Halfway House",
