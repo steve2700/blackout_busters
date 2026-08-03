@@ -10,19 +10,19 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.coldfix.co.za"),
+  metadataBase: new URL("https://www.jerofiresolutions.com"),
   title: {
-    default: "Cold Fix Services | Appliance, Aircon & Refrigeration Repairs in Gauteng",
-    template: "%s | Cold Fix Services Gauteng",
+    default: "Jero Fire Solutions | Fire Detection, Suppression & Safety Compliance in Gauteng",
+    template: "%s | Jero Fire Solutions",
   },
   description:
-    "Cold Fix Services delivers fast, reliable appliance repairs, air conditioning installation and servicing, cold room installation and commercial refrigeration across Gauteng, Pretoria and Johannesburg. Same day callouts available.",
+    "Jero Fire Solutions delivers fire detection and alarm systems, extinguisher servicing, sprinkler and suppression installation, and OHS fire safety compliance across Gauteng, Johannesburg and Pretoria.",
   keywords:
-    "fridge repair Johannesburg, appliance repairs Gauteng, air conditioning repair Pretoria, cold room installation Gauteng, commercial refrigeration Johannesburg, aircon service Sandton, washing machine repair Gauteng, emergency fridge repair, Cold Fix Services",
-  authors: [{ name: "Cold Fix Services", url: "https://www.coldfix.co.za" }],
-  creator: "Cold Fix Services",
-  publisher: "Cold Fix Services",
-  applicationName: "Cold Fix Services",
+    "fire extinguisher servicing Gauteng, fire alarm installation Johannesburg, fire detection system maintenance, sprinkler system servicing Gauteng, fire safety compliance certificate Gauteng, OHS fire safety audit, fire equipment maintenance contract, emergency fire alarm repair, Jero Fire Solutions",
+  authors: [{ name: "Jero Fire Solutions", url: "https://www.jerofiresolutions.com" }],
+  creator: "Jero Fire Solutions",
+  publisher: "Jero Fire Solutions",
+  applicationName: "Jero Fire Solutions",
   robots: {
     index: true,
     follow: true,
@@ -44,49 +44,49 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#0F2C59" },
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#5C0000" },
     ],
   },
   manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://www.coldfix.co.za",
-    siteName: "Cold Fix Services",
-    title: "Cold Fix Services | Appliance, Aircon & Refrigeration Repairs in Gauteng",
+    url: "https://www.jerofiresolutions.com",
+    siteName: "Jero Fire Solutions",
+    title: "Jero Fire Solutions | Fire Detection, Suppression & Safety Compliance in Gauteng",
     description:
-      "Fast, reliable appliance repairs, air conditioning and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
+      "Fire detection, alarm, suppression and extinguisher servicing across Gauteng. Serving Johannesburg, Pretoria and surrounding areas.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cold Fix Services, Appliance and Refrigeration Repairs in Gauteng",
+        alt: "Jero Fire Solutions, Fire Detection and Safety Compliance in Gauteng",
       },
       {
         url: "/logo-square.png",
         width: 512,
         height: 512,
-        alt: "Cold Fix Services Logo",
+        alt: "Jero Fire Solutions Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@coldfixservices",
-    creator: "@coldfixservices",
-    title: "Cold Fix Services | Appliance & Refrigeration Repairs Gauteng",
+    site: "@jerofiresolutions",
+    creator: "@jerofiresolutions",
+    title: "Jero Fire Solutions | Fire Safety & Compliance Gauteng",
     description:
-      "Appliance repairs, aircon and refrigeration services across Gauteng. Serving Pretoria, Johannesburg and surrounding areas.",
+      "Fire detection, suppression, extinguisher servicing and compliance audits across Gauteng, Johannesburg and Pretoria.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://www.coldfix.co.za",
+    canonical: "https://www.jerofiresolutions.com",
   },
   verification: {
     google: "your-google-verification-code",
   },
-  category: "Appliance and Refrigeration Repair",
+  category: "Fire Detection, Suppression & Safety Compliance",
   other: {
     "geo.region": "ZA-GP",
     "geo.placename": "Gauteng, South Africa",
@@ -103,7 +103,7 @@ export default function RootLayout({
   return (
     <html lang="en-ZA">
       <head>
-        <meta name="theme-color" content="#0F2C59" />
+        <meta name="theme-color" content="#5C0000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
@@ -114,14 +114,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Cold Fix Services",
-              url: "https://www.coldfix.co.za",
-              logo: "https://www.coldfix.co.za/logo-square.png",
-              image: "https://www.coldfix.co.za/og-image.png",
-              description: "Appliance repair, cold room installation, air conditioning and refrigeration services in Gauteng",
+              name: "Jero Fire Solutions",
+              url: "https://www.jerofiresolutions.com",
+              logo: "https://www.jerofiresolutions.com/logo-square.png",
+              image: "https://www.jerofiresolutions.com/og-image.png",
+              description:
+                "Fire detection and alarm systems, extinguisher servicing, sprinkler and suppression systems, and fire safety compliance in Gauteng",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
+                streetAddress: "18 Profusa Street, Aston Manor",
+                addressLocality: "Kempton Park",
                 addressRegion: "Gauteng",
                 addressCountry: "ZA",
               },
@@ -130,14 +132,15 @@ export default function RootLayout({
                 latitude: -26.1076,
                 longitude: 28.0567,
               },
-              areaServed: ["Gauteng", "Pretoria", "Johannesburg", "Sandton", "Midrand", "Centurion"],
+              areaServed: ["Gauteng", "Johannesburg", "Pretoria", "Kempton Park", "Sandton", "Midrand", "Centurion"],
               sameAs: [
-                "https://www.facebook.com/coldfixservices",
-                "https://www.instagram.com/coldfixservices",
+                "https://www.facebook.com/jerofiresolutions",
+                "https://www.instagram.com/jerofiresolutions",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+27-70-309-6749",
+                telephone: "+27-78-133-6684",
+                email: "014@jerofiresolutions.co.za",
                 contactType: "Customer Service",
                 areaServed: "ZA",
                 availableLanguage: ["en"],
@@ -152,15 +155,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://www.coldfix.co.za",
-              name: "Cold Fix Services",
-              image: "https://www.coldfix.co.za/logo-square.png",
-              url: "https://www.coldfix.co.za",
-              telephone: "+27-70-309-6749",
+              "@id": "https://www.jerofiresolutions.com",
+              name: "Jero Fire Solutions",
+              image: "https://www.jerofiresolutions.com/logo-square.png",
+              url: "https://www.jerofiresolutions.com",
+              telephone: "+27-78-133-6684",
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
+                streetAddress: "18 Profusa Street, Aston Manor",
+                addressLocality: "Kempton Park",
                 addressRegion: "Gauteng",
                 addressCountry: "ZA",
               },
@@ -176,8 +180,8 @@ export default function RootLayout({
                 closes: "17:00",
               },
               sameAs: [
-                "https://www.facebook.com/coldfixservices",
-                "https://www.instagram.com/coldfixservices",
+                "https://www.facebook.com/jerofiresolutions",
+                "https://www.instagram.com/jerofiresolutions",
               ],
             }),
           }}
