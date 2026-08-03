@@ -13,15 +13,12 @@ import {
   X,
   MapPin,
   Mail,
-  Wind,
-  Refrigerator,
-  Warehouse,
-  Store,
-  WashingMachine,
-  Wrench,
-  Clock,
+  Siren,
+  FireExtinguisher,
   Droplets,
-  Zap,
+  GraduationCap,
+  Wrench,
+  ShieldCheck,
   Home,
   Facebook,
   Instagram,
@@ -31,64 +28,40 @@ import { cn } from "@/lib/utils"
 
 const services = [
   {
-    title: "Air Conditioning Services",
-    href: "/air-conditioning-services",
-    description: "Installation, repair, servicing and gas refills",
-    icon: Wind,
+    title: "Fire Detection & Alarm Systems",
+    href: "/fire-detection-alarm-systems",
+    description: "Smoke detectors, heat detectors and alarm panels",
+    icon: Siren,
   },
   {
-    title: "Refrigeration Repairs",
-    href: "/refrigeration-repairs",
-    description: "Fridges, freezers and chest freezers",
-    icon: Refrigerator,
+    title: "Fire Extinguisher Supply & Servicing",
+    href: "/fire-extinguisher-supply-servicing",
+    description: "Sales, annual servicing, refills and certification",
+    icon: FireExtinguisher,
   },
   {
-    title: "Cold Room Installation & Repair",
-    href: "/cold-room-installation-repair",
-    description: "Walk in cold rooms and commercial cold storage",
-    icon: Warehouse,
-  },
-  {
-    title: "Commercial Refrigeration",
-    href: "/commercial-refrigeration",
-    description: "Display fridges, butchery and restaurant equipment",
-    icon: Store,
-  },
-  {
-    title: "Appliance Repairs",
-    href: "/appliance-repairs",
-    description: "Washing machines, dishwashers, ovens and stoves",
-    icon: WashingMachine,
-  },
-  {
-    title: "HVAC Maintenance Contracts",
-    href: "/hvac-maintenance-contracts",
-    description: "Scheduled servicing for offices and retail",
-    icon: Wrench,
-  },
-  {
-    title: "Emergency Callout Service",
-    href: "/emergency-callout-service",
-    description: "Same day and 24 hour breakdown response",
-    icon: Clock,
-  },
-  {
-    title: "Plumbing Services",
-    href: "/plumbing-services",
-    description: "Gas and water connections for installs and repairs",
+    title: "Sprinkler & Suppression Systems",
+    href: "/sprinkler-suppression-systems",
+    description: "Installation, inspection and maintenance",
     icon: Droplets,
   },
   {
-    title: "Electrical Services",
-    href: "/electrical-services",
-    description: "Wiring and fault finding for appliance installs",
-    icon: Zap,
+    title: "Fire Safety Training & Compliance",
+    href: "/fire-safety-training-compliance",
+    description: "Evacuation drills, staff training and OHS audits",
+    icon: GraduationCap,
   },
   {
-    title: "Maintenance Contracts",
-    href: "/property-maintenance",
-    description: "Scheduled upkeep for homes and businesses",
-    icon: Home,
+    title: "Fire Equipment Maintenance Contracts",
+    href: "/fire-equipment-maintenance-contracts",
+    description: "Scheduled servicing for commercial clients",
+    icon: Wrench,
+  },
+  {
+    title: "Fire Hydrant Installation & Testing",
+    href: "/fire-hydrant-installation-testing",
+    description: "Installation, pressure testing and certification",
+    icon: ShieldCheck,
   },
 ]
 
@@ -128,16 +101,19 @@ export function Header() {
           : "border-transparent bg-background",
       )}
     >
+      {/* Thin accent strip */}
+      <div className="h-1 w-full bg-accent" />
+
       {/* Top Bar with Contact Info and Social Links */}
       <div className="hidden border-b border-border/50 bg-primary text-primary-foreground lg:block">
         <div className="container mx-auto flex h-10 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-6 text-sm">
-            <a href="tel:+27703096749" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+27781336684" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              +27 70 309 6749
+              +27 78 133 6684
             </a>
             <a
-              href="https://wa.me/27703096749"
+              href="https://wa.me/27781336684"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
@@ -146,27 +122,27 @@ export function Header() {
               WhatsApp Us
             </a>
             <a
-              href="mailto:info@coldfix.co.za"
+              href="mailto:014@jerofiresolutions.co.za"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <Mail className="h-3.5 w-3.5" />
-              info@coldfix.co.za
+              014@jerofiresolutions.co.za
             </a>
             <a
-              href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
+              href="https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <MapPin className="h-3.5 w-3.5" />
-              Gauteng, South Africa
+              Kempton Park, Gauteng
             </a>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-xs text-white/70">Follow Us:</span>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/coldfixservices"
+                href="https://www.facebook.com/jerofiresolutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
@@ -175,7 +151,7 @@ export function Header() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/coldfixservices"
+                href="https://www.instagram.com/jerofiresolutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
@@ -191,23 +167,22 @@ export function Header() {
       {/* Main Header */}
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-xl overflow-hidden shadow-lg bg-white">
+          <div className="relative flex h-11 w-11 items-center justify-center rounded-full overflow-hidden shadow-lg bg-white ring-2 ring-accent/40">
             <Image
               src="/logo-icon.png"
-              alt="Cold Fix Services Logo"
+              alt="Jero Fire Solutions Logo"
               width={44}
               height={44}
               className="object-cover"
               priority
               quality={90}
             />
-            <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-accent border-2 border-background"></div>
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-bold text-primary leading-tight tracking-tight">
-              COLD <span className="text-accent">FIX</span>
+              JERO <span className="text-accent">FIRE</span>
             </span>
-            <span className="hidden text-xs text-muted-foreground sm:block">Keeping Gauteng Cool</span>
+            <span className="hidden text-xs text-muted-foreground sm:block">Fire & Life Safety Compliance</span>
           </div>
         </Link>
 
@@ -246,7 +221,7 @@ export function Header() {
 
             {servicesOpen && (
               <div
-                className="absolute left-0 top-full mt-2 w-[800px] rounded-lg border border-gray-200 bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                className="absolute left-0 top-full mt-2 w-[720px] rounded-lg border border-gray-200 bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
               >
                 <div className="grid grid-cols-2 gap-1 p-4">
                   {services.map((service) => (
@@ -254,10 +229,10 @@ export function Header() {
                       key={service.href}
                       href={service.href}
                       onClick={() => setServicesOpen(false)}
-                      className="group block select-none rounded-md p-3 transition-all hover:bg-gray-100 hover:shadow-sm"
+                      className="group block select-none rounded-md p-3 transition-all hover:bg-primary/5 hover:shadow-sm"
                     >
                       <div className="flex items-start gap-3">
-                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                           <service.icon className="h-4 w-4" />
                         </div>
                         <div className="flex-1 min-w-0">
@@ -277,7 +252,7 @@ export function Header() {
                       onClick={() => setServicesOpen(false)}
                       className="flex items-center justify-center gap-2 rounded-md bg-primary/5 p-3 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all"
                     >
-                      View All 10 Services <ChevronRight className="h-4 w-4" />
+                      View All 6 Services <ChevronRight className="h-4 w-4" />
                     </Link>
                   </div>
                 </div>
@@ -302,13 +277,18 @@ export function Header() {
 
         {/* CTA Button & Mobile Menu */}
         <div className="flex items-center gap-3">
+          <span className="hidden xl:inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-semibold text-primary">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+            24/7 Emergency Callout
+          </span>
+
           <Button
             asChild
-            className="hidden bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/25 sm:inline-flex"
+            className="hidden bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:from-accent/90 hover:to-accent/70 shadow-lg shadow-accent/25 sm:inline-flex"
           >
             <Link href="/contact">
               <Phone className="mr-2 h-4 w-4" />
-              Get Free Quote
+              Get a Free Quote
             </Link>
           </Button>
 
@@ -328,10 +308,10 @@ export function Header() {
               <div className="bg-primary p-6 text-primary-foreground">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-white">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full overflow-hidden bg-white ring-2 ring-accent/40">
                       <Image
                         src="/logo-icon.png"
-                        alt="Cold Fix Services"
+                        alt="Jero Fire Solutions"
                         width={40}
                         height={40}
                         className="object-cover"
@@ -339,8 +319,8 @@ export function Header() {
                       />
                     </div>
                     <div>
-                      <p className="font-bold text-sm">Cold Fix Services</p>
-                      <p className="text-xs text-white/70">Keeping Gauteng Cool</p>
+                      <p className="font-bold text-sm">Jero Fire Solutions</p>
+                      <p className="text-xs text-white/70">Fire & Life Safety Compliance</p>
                     </div>
                   </div>
                   <Button
@@ -354,38 +334,41 @@ export function Header() {
                   </Button>
                 </div>
                 <div className="space-y-2 text-sm text-white/90">
-                  <a href="tel:+27703096749" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <a href="tel:+27781336684" className="flex items-center gap-2 hover:text-white transition-colors">
                     <Phone className="h-4 w-4" />
-                    +27 70 309 6749
+                    +27 78 133 6684
                   </a>
                   <a
-                    href="https://wa.me/27703096749"
+                    href="https://wa.me/27781336684"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
-                    WhatsApp: +27 70 309 6749
-                  </a>
-                  <a href="mailto:info@coldfix.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
-                    <Mail className="h-4 w-4" />
-                    info@coldfix.co.za
+                    WhatsApp: +27 78 133 6684
                   </a>
                   <a
-                    href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
+                    href="mailto:014@jerofiresolutions.co.za"
+                    className="flex items-center gap-2 hover:text-white transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                    014@jerofiresolutions.co.za
+                  </a>
+                  <a
+                    href="https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-white transition-colors"
                   >
                     <MapPin className="h-4 w-4" />
-                    Gauteng, South Africa
+                    Kempton Park, Gauteng
                   </a>
                 </div>
 
                 {/* Social Links in Mobile */}
                 <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/20">
                   <a
-                    href="https://www.facebook.com/coldfixservices"
+                    href="https://www.facebook.com/jerofiresolutions"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
@@ -394,7 +377,7 @@ export function Header() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/coldfixservices"
+                    href="https://www.instagram.com/jerofiresolutions"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-white transition-colors"
@@ -413,7 +396,7 @@ export function Header() {
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-secondary">
                       <Home className="h-5 w-5" />
                     </div>
                     Home
@@ -424,8 +407,8 @@ export function Header() {
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                      <Wrench className="h-5 w-5" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+                      <ShieldCheck className="h-5 w-5" />
                     </div>
                     About Us
                   </Link>
@@ -438,8 +421,8 @@ export function Header() {
                       aria-expanded={mobileServicesOpen}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                          <Wind className="h-5 w-5" />
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+                          <FireExtinguisher className="h-5 w-5" />
                         </div>
                         Services
                       </div>
@@ -475,7 +458,7 @@ export function Header() {
                         className="mx-4 mb-4 flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-secondary/30 p-3 text-sm font-medium text-secondary hover:bg-secondary/5 transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        View All 10 Services
+                        View All 6 Services
                         <ChevronRight className="h-4 w-4" />
                       </Link>
                     </div>
@@ -486,7 +469,7 @@ export function Header() {
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-secondary">
                       <MapPin className="h-5 w-5" />
                     </div>
                     Service Areas
@@ -497,7 +480,7 @@ export function Header() {
                     className="flex items-center gap-3 rounded-xl p-4 text-lg font-medium hover:bg-muted transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-secondary">
                       <Mail className="h-5 w-5" />
                     </div>
                     Contact
@@ -510,7 +493,7 @@ export function Header() {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg"
+                  className="w-full bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:from-accent/90 hover:to-accent/70 shadow-lg"
                 >
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <Phone className="mr-2 h-5 w-5" />
@@ -518,7 +501,7 @@ export function Header() {
                   </Link>
                 </Button>
                 <p className="mt-3 text-center text-xs text-muted-foreground">
-                  Free quotes and same day callouts across Gauteng
+                  Free quotes and 24/7 emergency callouts across Gauteng
                 </p>
               </div>
             </SheetContent>
@@ -527,4 +510,4 @@ export function Header() {
       </div>
     </header>
   )
-} 
+}
