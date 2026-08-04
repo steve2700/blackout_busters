@@ -1,20 +1,20 @@
 import Image from "next/image"
-import { CheckCircle, Shield, Users, Clock, Award, Snowflake, ArrowRight, Star } from "lucide-react"
+import { CheckCircle, Shield, Users, Clock, Award, Siren, ArrowRight, FileCheck, ClipboardCheck, BadgeCheck } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const reasons = [
   {
     icon: Users,
-    title: "Experienced Technicians",
+    title: "Certified Fire Technicians",
     description:
-      "Our team is made up of skilled appliance, air conditioning, and refrigeration technicians with years of hands on experience across Gauteng.",
+      "Our team is made up of skilled fire detection, suppression, and compliance technicians with years of hands on experience across Gauteng.",
   },
   {
     icon: Shield,
-    title: "Insured and Certified",
+    title: "Insured and Compliant",
     description:
-      "Our technicians are refrigerant handling certified and every callout is fully insured, so you can book with complete peace of mind.",
+      "Every callout is fully insured and carried out in line with OHS fire safety requirements, so you can book with complete peace of mind.",
   },
   {
     icon: CheckCircle,
@@ -24,29 +24,45 @@ const reasons = [
   },
   {
     icon: Award,
-    title: "Quality Workmanship",
+    title: "Compliance-Grade Workmanship",
     description:
-      "We use quality parts and proven repair methods to deliver lasting fixes that keep your appliances and cooling systems running.",
+      "We install and service to the standard your auditor and insurer expect, not just the standard that gets equipment working.",
   },
   {
     icon: Clock,
-    title: "Fast, Same Day Callouts",
+    title: "Responsive Emergency Callouts",
     description:
-      "We know a broken fridge or freezer cannot wait. Our teams respond quickly with same day and 24 hour emergency callouts across Gauteng.",
+      "A fault on a detection or suppression system cannot wait. Our teams respond quickly with same day and 24 hour emergency callouts across Gauteng.",
   },
   {
-    icon: Snowflake,
-    title: "Cooling Specialists",
+    icon: Siren,
+    title: "Fire Safety Specialists, Not Generalists",
     description:
-      "From walk in cold rooms to household fridges and split unit air conditioners, cooling is what we do best every single day.",
+      "From detection and alarms to suppression, hydrants, and OHS compliance, fire safety is the only thing we do, every single day.",
   },
 ]
 
-const stats = [
-  { value: "500+", label: "Clients Served", sublabel: "Across Gauteng" },
-  { value: "Same Day", label: "Callouts", sublabel: "For Most Bookings" },
-  { value: "98%", label: "Client Satisfaction", sublabel: "5 Star Reviews" },
-  { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
+const promises = [
+  {
+    icon: FileCheck,
+    title: "No Compliance, No Invoice",
+    description: "If it doesn't meet certification standards, we don't consider the job finished.",
+  },
+  {
+    icon: CheckCircle,
+    title: "One Quote, No Surprises",
+    description: "What we quote is what you pay. No hidden add-ons once work has started.",
+  },
+  {
+    icon: Clock,
+    title: "We Show Up When We Say",
+    description: "Site visits and callouts booked at a time that works for your business, not just ours.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Documentation You Can Actually Use",
+    description: "Certificates and reports handed over in a format ready for your auditor or insurer.",
+  },
 ]
 
 export function WhyChooseUs() {
@@ -76,32 +92,24 @@ export function WhyChooseUs() {
               className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
               itemProp="name"
             >
-              Why <span className="text-accent">Cold Fix Services</span> is Gauteng&apos;s Trusted Choice
+              Why <span className="text-accent">Jero Fire Solutions</span> is Gauteng&apos;s Trusted Choice
             </h2>
             <p className="mb-8 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-              We bring together technical skill, reliability, and a commitment to doing the job right for appliance, air conditioning, and refrigeration repairs across <strong>Pretoria, Johannesburg, Midrand, and greater Gauteng</strong>.
+              We bring together technical skill, regulatory know-how, and a commitment to doing the job right for fire detection, suppression, and compliance across <strong>Johannesburg, Pretoria, Kempton Park, and greater Gauteng</strong>.
             </p>
 
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              {stats.map((stat, index) => (
+            {/* Promise Grid — replaces vanity stats with concrete commitments */}
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              {promises.map((promise) => (
                 <div
-                  key={stat.label}
-                  className="group text-center sm:text-left bg-card border border-border rounded-xl p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-1"
-                  itemProp="award"
+                  key={promise.title}
+                  className="group bg-card border border-border rounded-xl p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-1"
                 >
-                  <p className="text-3xl font-bold text-secondary mb-1 group-hover:scale-110 transition-transform inline-block">
-                    {stat.value}
-                  </p>
-                  <p className="text-sm font-semibold text-foreground">{stat.label}</p>
-                  <p className="text-xs text-muted-foreground">{stat.sublabel}</p>
-                  {index === 2 && (
-                    <div className="flex items-center justify-center sm:justify-start gap-0.5 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
-                      ))}
-                    </div>
-                  )}
+                  <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-full bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors">
+                    <promise.icon className="h-4.5 w-4.5" aria-hidden="true" />
+                  </div>
+                  <p className="text-sm font-bold text-foreground leading-snug mb-1">{promise.title}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{promise.description}</p>
                 </div>
               ))}
             </div>
@@ -132,12 +140,13 @@ export function WhyChooseUs() {
           </div>
 
           {/* Images Section */}
+          {/* PLACEHOLDER: reuses the two hero image filenames — swap crop/angle for variety once real photos exist */}
           <div className="relative" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
             {/* Main Image */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
               <Image
-                src="/air-conditioning-service-gauteng.png"
-                alt="Cold Fix Services technician installing an air conditioning unit in Gauteng"
+                src="/fire-alarm-technician-installing-panel.jpg"
+                alt="Jero Fire Solutions technician installing a fire alarm panel in Gauteng"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
@@ -151,8 +160,8 @@ export function WhyChooseUs() {
             {/* Secondary Image - Bottom Left */}
             <div className="absolute -bottom-6 -left-6 aspect-square w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-border transition-transform hover:scale-105">
               <Image
-                src="/property-maintenance-worker-fixing-repairs-profess.jpg"
-                alt="Cold Fix Services technician repairing a household appliance in Gauteng"
+                src="/fire-extinguisher-inspection-certification.jpg"
+                alt="Jero Fire Solutions technician inspecting and certifying a fire extinguisher"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -163,8 +172,8 @@ export function WhyChooseUs() {
 
             {/* Quality Badge - Top Right */}
             <div className="absolute -top-4 -right-4 rounded-xl bg-gradient-to-br from-accent to-accent/90 p-5 shadow-xl ring-2 ring-white/20 transition-transform hover:scale-110">
-              <Award className="h-8 w-8 mb-1 text-white" aria-hidden="true" />
-              <p className="text-xs font-bold text-white">Quality</p>
+              <BadgeCheck className="h-8 w-8 mb-1 text-white" aria-hidden="true" />
+              <p className="text-xs font-bold text-white">Compliance</p>
               <p className="text-xs font-bold text-white">Assured</p>
             </div>
 
@@ -185,10 +194,10 @@ export function WhyChooseUs() {
         <div>
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-3">
-              What Sets Cold Fix Services Apart
+              What Sets Jero Fire Solutions Apart
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our commitment to quality, reliability, and customer care makes us the go to choice for homes and businesses across Gauteng.
+              Our commitment to compliance, reliability, and customer care makes us the go to choice for homes and businesses across Gauteng.
             </p>
           </div>
 
@@ -226,10 +235,10 @@ export function WhyChooseUs() {
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-border">
           <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-            Ready to Experience the Cold Fix Services Difference?
+            Ready to Experience the Jero Fire Solutions Difference?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join hundreds of satisfied clients across Gauteng who trust us to keep their appliances and cooling systems running.
+            Join businesses and homeowners across Gauteng who trust us to keep their fire safety systems compliant and ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -248,8 +257,8 @@ export function WhyChooseUs() {
               variant="outline"
               className="border-secondary/30 hover:bg-secondary/10 h-14 px-8 font-semibold transition-transform hover:scale-105"
             >
-              <Link href="tel:+27703096749">
-                Call Us: +27 70 309 6749
+              <Link href="tel:+27781336684">
+                Call Us: +27 78 133 6684
               </Link>
             </Button>
           </div>
