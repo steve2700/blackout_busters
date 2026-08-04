@@ -3,24 +3,42 @@ import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
-import { Target, Eye, CheckCircle, Users, Shield, Award, Leaf, Handshake, ArrowRight, Phone, Star, Snowflake, Clock } from "lucide-react"
+import {
+  Target,
+  Eye,
+  CheckCircle,
+  Users,
+  Shield,
+  ShieldCheck,
+  Award,
+  Handshake,
+  ArrowRight,
+  Phone,
+  Star,
+  Clock,
+  Siren,
+  FireExtinguisher,
+  ClipboardCheck,
+  GraduationCap,
+  Droplets,
+} from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Cold Fix Services | Air Conditioning and Refrigeration Experts in Gauteng",
+  title: "About Jero Fire Solutions | Fire Detection and Compliance Specialists in Gauteng",
   description:
-    "Learn about Cold Fix Services, the trusted name in Gauteng for air conditioning, refrigeration, and appliance repairs. Over 10 years serving Pretoria, Johannesburg, and Midrand.",
+    "Jero Fire Solutions installs, services, and certifies fire detection, suppression, and safety equipment for homes and businesses across Gauteng, keeping people safe and sites compliant.",
   keywords:
-    "about Cold Fix Services, air conditioning company Gauteng, refrigeration technicians Pretoria, appliance repairs Johannesburg, company history, mission vision values",
+    "about Jero Fire Solutions, fire safety company Gauteng, fire compliance Johannesburg, fire equipment servicing Pretoria, OHS Act compliance",
   openGraph: {
-    title: "About Cold Fix Services | Air Conditioning and Refrigeration Experts in Gauteng",
+    title: "About Jero Fire Solutions | Fire Detection and Compliance Specialists in Gauteng",
     description:
-      "The trusted cooling partner in Gauteng. Certified technicians delivering air conditioning, refrigeration, and appliance repairs in Pretoria, Johannesburg, and Midrand.",
+      "Certified technicians delivering fire detection, suppression, and compliance services across Gauteng, so your site stays protected and your certificates stay current.",
     images: [
       {
-        url: "/cold-fix-technician-team-in-gauteng.png",
+        url: "/jero-fire-team-technicians-gauteng.jpg",
         width: 1200,
         height: 630,
-        alt: "Cold Fix Services technician team in Gauteng",
+        alt: "Jero Fire Solutions technician team in Gauteng",
       },
     ],
   },
@@ -28,45 +46,45 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: Award,
-    title: "Excellence in Every Repair",
+    icon: ShieldCheck,
+    title: "Compliance Without Shortcuts",
     description:
-      "We deliver the highest standards of workmanship, making sure every unit we touch is fixed properly and built to last. Quality is never compromised.",
+      "A certificate only means something if the work behind it is real. Every system we install or service is signed off honestly, not rubber stamped.",
   },
   {
     icon: Shield,
-    title: "Safety and Full Compliance",
+    title: "People Before Paperwork",
     description:
-      "We follow correct refrigerant handling and electrical safety standards on every job, protecting your family, your staff, and your equipment.",
+      "Compliance exists because fires cost lives, not just money. We design and service systems around what actually protects the people in a building.",
   },
   {
-    icon: Leaf,
-    title: "Efficient and Sustainable",
+    icon: Clock,
+    title: "We Answer When It Matters",
     description:
-      "We help you run cooling and appliances that use less energy, saving you money on running costs while being kinder to the environment.",
+      "A fire alarm fault or an expired extinguisher certificate is not something that can wait weeks. We treat urgent callouts as urgent.",
   },
   {
     icon: Handshake,
-    title: "Long Term Relationships",
+    title: "Contracts, Not Once Off Jobs",
     description:
-      "We build lasting relationships through trust, transparency, and consistent service. Your comfort and peace of mind are our priority.",
+      "Fire safety is not a single visit, it is an ongoing responsibility. We would rather keep a client for years through maintenance contracts than sell a single service and disappear.",
   },
 ]
 
 const team = [
-  { role: "Certified refrigeration technicians", icon: Snowflake },
-  { role: "Air conditioning specialists", icon: Award },
-  { role: "Appliance repair experts", icon: Users },
-  { role: "Qualified electricians", icon: Shield },
-  { role: "Cold room installers", icon: Award },
+  { role: "Certified fire detection technicians", icon: Siren },
+  { role: "Extinguisher service technicians", icon: FireExtinguisher },
+  { role: "Suppression system specialists", icon: Droplets },
+  { role: "OHS compliance auditors", icon: ClipboardCheck },
+  { role: "Fire safety trainers", icon: GraduationCap },
   { role: "Dedicated support team", icon: Users },
 ]
 
 const stats = [
-  { value: "100s", label: "Clients Served", sublabel: "Across Gauteng" },
-  { value: "10+", label: "Years Experience", sublabel: "In Cooling" },
-  { value: "5 Star", label: "Client Rating", sublabel: "Trusted Service" },
-  { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
+  { value: "Certified", label: "Technicians", sublabel: "Trained & Qualified" },
+  { value: "Compliant", label: "Certification", sublabel: "OHS Act Aligned" },
+  { value: "Same Day", label: "Quotes", sublabel: "No Waiting Around" },
+  { value: "24 Hour", label: "Emergency Callouts", sublabel: "Always Available" },
 ]
 
 export default function AboutPage() {
@@ -83,8 +101,8 @@ export default function AboutPage() {
           <Breadcrumbs variant="onDark" items={[{ label: "About Us" }]} />
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
-              <Award className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span>Gauteng's Trusted Cooling Partner for 10+ Years</span>
+              <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
+              <span>Fire Detection, Suppression & Compliance</span>
               <div className="flex items-center gap-0.5 ml-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
@@ -93,18 +111,17 @@ export default function AboutPage() {
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              About <span className="text-accent">Cold Fix Services</span>
+              About <span className="text-accent">Jero Fire Solutions</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              Founded with the goal to keep homes and businesses cool, comfortable, and running, {" "}
-              <strong className="text-white">Cold Fix Services</strong> has become a trusted partner for residential, commercial, and industrial clients across{" "}
-              <strong className="text-white">Pretoria, Johannesburg, and Midrand</strong>.
+              Fire safety is not something you notice until the moment it fails. {" "}
+              <strong className="text-white">Jero Fire Solutions</strong> exists to make sure that moment never happens, through honest installations, proper servicing, and certification that actually holds up.
             </p>
 
             <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <p className="text-3xl md:text-4xl font-bold text-accent mb-1">{stat.value}</p>
+                  <p className="text-2xl md:text-3xl font-bold text-accent mb-1">{stat.value}</p>
                   <p className="text-sm font-semibold text-white">{stat.label}</p>
                   <p className="text-xs text-white/70">{stat.sublabel}</p>
                 </div>
@@ -123,45 +140,46 @@ export default function AboutPage() {
                 Who We Are
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl" itemProp="name">
-                Your Trusted Partner for Cooling and Appliances in Gauteng
+                Fire Safety Handled Properly, Not Just Signed Off
               </h2>
               <p className="mb-4 text-muted-foreground leading-relaxed" itemProp="description">
-                <strong>Cold Fix Services</strong> is a proudly South African company delivering air conditioning, refrigeration repairs, cold room installation, commercial refrigeration, appliance repairs, and maintenance contracts for clients in{" "}
-                <strong>Gauteng</strong>, including <strong>Pretoria, Johannesburg, and Midrand</strong>.
+                <strong>Jero Fire Solutions</strong> installs, services, and certifies fire detection systems, extinguishers, suppression equipment, and hydrants for homes and businesses across{" "}
+                <strong>Gauteng</strong>, including <strong>Johannesburg, Pretoria, and Kempton Park</strong>.
               </p>
               <p className="mb-6 text-muted-foreground leading-relaxed">
-                We specialise in reliable, high quality service for homes and businesses. Our team keeps your fridges, freezers, cold rooms, air conditioners, and appliances running so you never have to worry about spoiled stock or an uncomfortable space.
+                A lot of fire safety compliance in South Africa gets treated as a box to tick once a year. We do not work that way. Every system we touch gets tested properly, every certificate we issue reflects what we actually found on site, and every client gets told the truth about what their building needs.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With <strong>over 10 years of experience</strong>, we are committed to honest advice, lasting repairs, and exceeding client expectations on every callout.
+                Whether it is a single extinguisher service or a full detection and suppression installation for a commercial site, the standard does not change.
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-muted">
-                  <Shield className="h-5 w-5 text-secondary flex-shrink-0" aria-hidden="true" />
+                  <ShieldCheck className="h-5 w-5 text-secondary flex-shrink-0" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold">Fully Insured</p>
+                    <p className="text-sm font-semibold">OHS Act Aligned</p>
                     <p className="text-xs text-muted-foreground">Certified Technicians</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-muted">
                   <Clock className="h-5 w-5 text-secondary flex-shrink-0" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold">24/7 Available</p>
-                    <p className="text-xs text-muted-foreground">Emergency Support</p>
+                    <p className="text-sm font-semibold">24 Hour Available</p>
+                    <p className="text-xs text-muted-foreground">Emergency Callouts</p>
                   </div>
                 </div>
               </div>
 
-              <meta itemProp="address" content="Johannesburg, Gauteng, South Africa" />
-              <meta itemProp="areaServed" content="Gauteng, Pretoria, Johannesburg, Midrand" />
+              <meta itemProp="address" content="Aston Manor, Kempton Park, Johannesburg, Gauteng, South Africa" />
+              <meta itemProp="areaServed" content="Gauteng, Johannesburg, Pretoria, Kempton Park" />
             </div>
 
             <div className="relative">
+              {/* PLACEHOLDER: swap for a real photo of the Jero Fire Solutions team or a technician on site */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/cold-fix-technician-team-in-gauteng.png"
-                  alt="Cold Fix Services technicians preparing for air conditioning and refrigeration work in Gauteng, South Africa"
+                  src="/jero-fire-team-technicians-gauteng.jpg"
+                  alt="Jero Fire Solutions technicians preparing for a fire safety inspection in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="eager"
@@ -172,9 +190,9 @@ export default function AboutPage() {
               </div>
 
               <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gradient-to-br from-accent to-accent/90 p-6 text-accent-foreground shadow-2xl ring-2 ring-white/20">
-                <p className="text-4xl font-bold">10+</p>
-                <p className="text-sm font-semibold">Years</p>
-                <p className="text-xs opacity-90">Excellence</p>
+                <ShieldCheck className="h-8 w-8 mb-1" aria-hidden="true" />
+                <p className="text-sm font-semibold">Compliance</p>
+                <p className="text-xs opacity-90">Done Properly</p>
               </div>
             </div>
           </div>
@@ -194,25 +212,25 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Deliver excellence on every callout, ensuring <strong>client satisfaction, safety, and long term value</strong> through quality workmanship.
+                    Make sure every detection, suppression, and extinguisher system we touch <strong>actually works when it is needed</strong>, not just on paper.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Maintain the highest standards of <strong>safety, compliance, and quality</strong> in line with South African regulations.
+                    Give clients <strong>honest assessments</strong>, even when the truth is that something needs replacing rather than patching.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Offer <strong>energy efficient and reliable solutions</strong> that benefit our clients and the environment.
+                    Keep clients <strong>compliant year round</strong>, not scrambling to fix expired certificates before an audit.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Build <strong>long lasting relationships</strong> based on trust, transparency, and exceptional service.
+                    Train staff and site teams so they know what to do <strong>before an emergency</strong>, not only after one.
                   </span>
                 </li>
               </ul>
@@ -227,25 +245,25 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Become the <strong>most trusted and sought after</strong> air conditioning and refrigeration company in Gauteng and beyond.
+                    Be the fire safety provider Gauteng businesses call <strong>before an inspector forces them to</strong>.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    <strong>Support communities</strong> by keeping homes comfortable and businesses running without interruption.
+                    Change how fire compliance is seen, from an annual formality to <strong>an ongoing standard worth maintaining</strong>.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Lead in <strong>reliability, efficiency, and service excellence</strong> within the South African cooling industry.
+                    Reduce preventable fire damage and injury across the sites and communities we serve.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Set the benchmark for <strong>honest, dependable cooling services</strong> that deliver exceptional value.
+                    Build a reputation where our name on a certificate means <strong>something was genuinely checked</strong>.
                   </span>
                 </li>
               </ul>
@@ -258,11 +276,12 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 relative">
+              {/* PLACEHOLDER: swap for a real photo of a technician servicing an alarm panel or extinguisher */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/cold-fix-technicians-servicing-air-conditioner.png"
-                  alt="Cold Fix Services technicians servicing an air conditioning unit in Gauteng"
+                  src="/jero-fire-technician-servicing-panel.jpg"
+                  alt="Jero Fire Solutions technician servicing a fire alarm panel in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
@@ -275,8 +294,8 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2 text-primary-foreground">
                   <Users className="h-5 w-5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-bold">Skilled Technicians</p>
-                    <p className="text-xs opacity-90">Expert Team</p>
+                    <p className="text-sm font-bold">Certified Technicians</p>
+                    <p className="text-xs opacity-90">Trained & Compliant</p>
                   </div>
                 </div>
               </div>
@@ -287,10 +306,10 @@ export default function AboutPage() {
                 Our Team
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                A Team <span className="text-secondary">Committed to Excellence</span>
+                People Who Understand <span className="text-secondary">What They Are Certifying</span>
               </h2>
               <p className="mb-6 text-muted-foreground leading-relaxed">
-                We bring together a team of <strong>skilled, certified professionals</strong> committed to excellence. Our years of experience in air conditioning, refrigeration, and appliance repair let us provide tailored solutions for residential, commercial, and industrial clients across Gauteng.
+                Every technician on our team is trained on the specific systems they work on, detection, suppression, extinguishers, or hydrants, rather than being a generalist stretched across everything. That is what lets us stand behind every certificate we sign.
               </p>
 
               <div className="mb-8 grid grid-cols-2 gap-3">
@@ -328,10 +347,10 @@ export default function AboutPage() {
               Our Core Values
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              The Principles That <span className="text-secondary">Guide Everything We Do</span>
+              Why Our Certificates Are <span className="text-secondary">Worth Trusting</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Our core values shape every decision we make, every repair we deliver, and every relationship we build.
+              These are not values we picked because they sound good. They are what separates a real fire safety inspection from a rubber stamp.
             </p>
           </div>
 
@@ -368,10 +387,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Ready to Work with <span className="text-accent">Cold Fix Services?</span>
+              Ready to Get Your Site <span className="text-accent">Properly Protected?</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact us today to discuss your air conditioning, refrigeration, or appliance repair needs. We are here to provide expert guidance, transparent quotes, and lasting solutions.
+              Contact us today to discuss detection, suppression, extinguishers, training, or a maintenance contract. We will tell you honestly what your site needs, not just what is easiest to sell.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -382,12 +401,12 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105">
-                <Link href="tel:+27703096749">Call: +27 70 309 6749</Link>
+                <Link href="tel:+27781336684">Call: +27 78 133 6684</Link>
               </Button>
             </div>
 
             <p className="text-sm text-primary-foreground/70">
-              Serving Gauteng • Licensed and Insured • 24/7 Emergency Support
+              Serving Gauteng • Certified & Compliant • 24 Hour Emergency Support
             </p>
           </div>
         </div>
