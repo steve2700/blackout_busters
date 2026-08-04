@@ -1,111 +1,91 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import {
-  Wind,
-  Refrigerator,
-  Warehouse,
-  Store,
-  WashingMachine,
-  Clock,
-  Wrench,
+  Siren,
+  FireExtinguisher,
   Droplets,
-  Zap,
-  Home,
+  GraduationCap,
+  Wrench,
+  ShieldCheck,
   ArrowRight,
+  FileCheck,
+  ClipboardCheck,
+  BellRing,
 } from "lucide-react"
 
 const services = [
   {
-    icon: Wind,
-    title: "Air Conditioning Services",
+    icon: Siren,
+    number: "01",
+    title: "Fire Detection & Alarm Systems",
     description:
-      "Installation, servicing, repairs, and gas refills for split systems, ducted units, and inverters across Gauteng homes and offices.",
-    href: "/air-conditioning-services",
-    image: "/air-conditioning-service-gauteng.png",
-    keywords: "air conditioning, aircon installation, aircon repair",
+      "Smoke detectors, heat detectors, and alarm panels supplied, installed, and maintained for homes, offices, and industrial sites.",
+    href: "/fire-detection-alarm-systems",
+    keywords: "fire alarm installation, smoke detectors, heat detectors",
   },
   {
-    icon: Refrigerator,
-    title: "Refrigeration Repairs",
+    icon: FireExtinguisher,
+    number: "02",
+    title: "Fire Extinguisher Supply & Servicing",
     description:
-      "Fast repairs for fridges, freezers, and chest freezers. We fix cooling faults, gas leaks, thermostats, and compressors.",
-    href: "/refrigeration-repairs",
-    image: "/refrigeration-repair-technician.png",
-    keywords: "fridge repair, freezer repair, refrigeration",
-  },
-  {
-    icon: Warehouse,
-    title: "Cold Room Installation and Repair",
-    description:
-      "Walk in cold rooms and commercial cold storage designed, installed, and maintained for reliable performance.",
-    href: "/cold-room-installation-repair",
-    image: "/cold-room-installation.png",
-    keywords: "cold room installation, cold storage, walk in cold room",
-  },
-  {
-    icon: Store,
-    title: "Commercial Refrigeration",
-    description:
-      "Display fridges, butchery equipment, and restaurant refrigeration serviced and repaired to keep your business running.",
-    href: "/commercial-refrigeration",
-    image: "/commercial-refrigeration-display.png",
-    keywords: "commercial refrigeration, display fridge, restaurant equipment",
-  },
-  {
-    icon: WashingMachine,
-    title: "Appliance Repairs",
-    description:
-      "Washing machines, dishwashers, tumble dryers, ovens, and stoves repaired quickly by experienced technicians.",
-    href: "/appliance-repairs",
-    image: "/Appliances-All-scaled-e1585943218453.webp",
-    keywords: "appliance repair, washing machine repair, oven repair",
-  },
-  {
-    icon: Clock,
-    title: "Emergency Callout Service",
-    description:
-      "Same day and 24 hour breakdown response when your fridge, freezer, or cold room stops cooling.",
-    href: "/emergency-callout-service",
-    image: "/property-maintenance-worker-repairing-fixtures-in-a.jpg",
-    keywords: "emergency repair, breakdown response, 24 hour callout",
-  },
-  {
-    icon: Wrench,
-    title: "HVAC Maintenance Contracts",
-    description:
-      "Scheduled servicing for offices, retail, and industrial sites to keep cooling systems efficient and reliable.",
-    href: "/hvac-maintenance-contracts",
-    image: "/property-maintenance-worker-repairing-fixtures-in-a.jpg",
-    keywords: "hvac maintenance, servicing contract, scheduled servicing",
+      "Sales, annual servicing, refills, and certification to keep your extinguishers compliant and ready when it counts.",
+    href: "/fire-extinguisher-supply-servicing",
+    keywords: "fire extinguisher servicing, extinguisher certification, refills",
   },
   {
     icon: Droplets,
-    title: "Plumbing Services",
+    number: "03",
+    title: "Sprinkler & Suppression Systems",
     description:
-      "Gas and water connections for appliance installs, plus leak repairs tied to fridges, ice makers, and dishwashers.",
-    href: "/plumbing-services",
-    image: "/professional-plumber-working-on-pipes-installation.jpg",
-    keywords: "plumbing, water connection, gas connection",
+      "Installation, inspection, and maintenance of sprinkler and suppression systems for commercial and industrial properties.",
+    href: "/sprinkler-suppression-systems",
+    keywords: "sprinkler system installation, suppression systems, fire sprinklers",
   },
   {
-    icon: Zap,
-    title: "Electrical Services",
+    icon: GraduationCap,
+    number: "04",
+    title: "Fire Safety Training & Compliance",
     description:
-      "Wiring, fault finding, and safe power connections for appliance and air conditioning installations.",
-    href: "/electrical-services",
-    image: "/electrician-working-on-electrical-panel-wiring-sou.jpg",
-    keywords: "electrical, wiring, fault finding",
+      "Evacuation drills, staff fire safety training, and OHS compliance audits so your team knows what to do and your business stays covered.",
+    href: "/fire-safety-training-compliance",
+    keywords: "fire safety training, evacuation drills, OHS compliance audit",
   },
   {
-    icon: Home,
-    title: "Maintenance Contracts",
+    icon: Wrench,
+    number: "05",
+    title: "Fire Equipment Maintenance Contracts",
     description:
-      "Scheduled upkeep for homes and businesses so your appliances and cooling equipment keep working year round.",
-    href: "/property-maintenance",
-    image: "/property-maintenance-worker-fixing-repairs-profess.jpg",
-    keywords: "maintenance contracts, scheduled upkeep, servicing",
+      "Scheduled servicing contracts for commercial clients, so detection and suppression equipment is always inspection-ready.",
+    href: "/fire-equipment-maintenance-contracts",
+    keywords: "fire equipment maintenance, servicing contract, scheduled inspections",
+  },
+  {
+    icon: ShieldCheck,
+    number: "06",
+    title: "Fire Hydrant Installation & Testing",
+    description:
+      "Installation, pressure testing, and certification of fire hydrants for new developments and existing properties.",
+    href: "/fire-hydrant-installation-testing",
+    keywords: "fire hydrant installation, hydrant pressure testing, hydrant certification",
+  },
+]
+
+const inclusions = [
+  {
+    icon: FileCheck,
+    title: "Certificate of Compliance",
+    description: "Every completed job comes with the documentation you need for audits, insurance, and OHS records.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Full Site Assessment",
+    description: "We inspect the full site, not just the equipment on the job card, and flag anything else that needs attention.",
+  },
+  {
+    icon: BellRing,
+    title: "Follow-Up Inspection Reminder",
+    description: "We track when your next annual service or certification renewal is due, so nothing lapses unnoticed.",
   },
 ]
 
@@ -128,61 +108,53 @@ export function ServicesOverview() {
             className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
             itemProp="name"
           >
-            Appliance, Aircon and Refrigeration Repairs in Gauteng
+            Fire Detection, Suppression &amp; Compliance in Gauteng
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-            From fridges and freezers to air conditioning and cold rooms, <strong>Cold Fix Services</strong> keeps homes and businesses cool across <strong>Pretoria, Johannesburg, and Gauteng</strong>. One trusted team for all your cooling and appliance needs.
+            From alarm systems and extinguisher servicing to sprinkler installation and OHS compliance audits, <strong>Jero Fire Solutions</strong> protects properties across <strong>Johannesburg, Pretoria, and Gauteng</strong>. One certified team for every part of your fire safety plan.
           </p>
         </div>
 
-        {/* Featured Services - Cards with Images */}
-        <div className="mb-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.slice(0, 6).map((service, index) => (
+        {/* Services Grid — icon-first, numbered, no photography */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
             <Card
               key={service.href}
-              className="group overflow-hidden border-border transition-all duration-300 hover:border-secondary hover:shadow-2xl hover:-translate-y-1"
+              className="group relative overflow-hidden border-border transition-all duration-300 hover:border-accent hover:shadow-xl hover:-translate-y-1"
               itemScope
               itemType="https://schema.org/Service"
               itemProp="itemListElement"
             >
               <meta itemProp="position" content={String(index + 1)} />
 
-              {/* Service Image */}
-              <div className="relative h-48 overflow-hidden bg-muted">
-                <Image
-                  src={service.image || "/placeholder.svg"}
-                  alt={`${service.title} in Gauteng by Cold Fix Services`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading={index < 3 ? "eager" : "lazy"}
-                  quality={85}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  itemProp="image"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+              {/* Watermark number */}
+              <span
+                className="pointer-events-none absolute -top-4 right-2 text-7xl font-black text-primary/5 group-hover:text-accent/10 transition-colors select-none"
+                aria-hidden="true"
+              >
+                {service.number}
+              </span>
 
-                {/* Icon Badge */}
-                <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-lg ring-2 ring-white/20 transition-transform group-hover:scale-110">
+              <CardContent className="relative p-6">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                   <service.icon className="h-6 w-6" aria-hidden="true" />
                 </div>
-              </div>
 
-              <CardContent className="p-6">
                 <h3
-                  className="mb-2 text-lg font-bold group-hover:text-secondary transition-colors"
+                  className="mb-2 text-lg font-bold group-hover:text-primary transition-colors"
                   itemProp="name"
                 >
                   {service.title}
                 </h3>
                 <p
-                  className="mb-4 text-sm text-muted-foreground leading-relaxed line-clamp-3"
+                  className="mb-4 text-sm text-muted-foreground leading-relaxed"
                   itemProp="description"
                 >
                   {service.description}
                 </p>
                 <Link
                   href={service.href}
-                  className="inline-flex items-center text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors"
+                  className="inline-flex items-center text-sm font-semibold text-primary hover:text-accent transition-colors"
                   itemProp="url"
                 >
                   Learn More
@@ -193,94 +165,54 @@ export function ServicesOverview() {
           ))}
         </div>
 
-        {/* Additional Services - Compact List */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {services.slice(6).map((service, index) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all hover:border-secondary hover:shadow-lg hover:-translate-y-0.5"
-              itemScope
-              itemType="https://schema.org/Service"
-              itemProp="itemListElement"
-            >
-              <meta itemProp="position" content={String(index + 7)} />
-
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all group-hover:bg-secondary group-hover:text-secondary-foreground group-hover:scale-110">
-                <service.icon className="h-5 w-5" aria-hidden="true" />
+        {/* What's included — replaces vanity stats with concrete service inclusions */}
+        <div className="mt-16 grid gap-6 sm:grid-cols-3">
+          {inclusions.map((item) => (
+            <div key={item.title} className="flex gap-4 rounded-xl border border-border bg-card p-5">
+              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
+                <item.icon className="h-5 w-5" aria-hidden="true" />
               </div>
-              <div className="min-w-0 flex-1">
-                <h3
-                  className="text-sm font-semibold truncate group-hover:text-secondary transition-colors"
-                  itemProp="name"
-                >
-                  {service.title}
-                </h3>
-                <p className="text-xs text-muted-foreground">View Details</p>
+              <div>
+                <h3 className="mb-1 text-sm font-bold">{item.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
-        {/* CTA Section with Stats */}
-        <div className="mt-16 rounded-2xl bg-gradient-to-br from-primary to-primary/90 p-8 lg:p-12 text-center relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-10" aria-hidden="true">
-            <div className="absolute top-0 left-0 w-32 h-32 bg-accent rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-0 w-32 h-32 bg-secondary rounded-full blur-3xl" />
-          </div>
+        {/* CTA — outlined card instead of a solid gradient block */}
+        <div className="mt-12 rounded-2xl border-2 border-accent/30 bg-card p-8 lg:p-12 text-center relative overflow-hidden">
+          <div className="absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary" aria-hidden="true" />
 
-          <div className="relative z-10">
-            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
-              Need a Repair Today?
-            </h3>
-            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
-              Get a free, no obligation quote from Gauteng&apos;s trusted appliance and refrigeration team. Experienced technicians, same day callouts, and quality workmanship every time.
-            </p>
+          <h3 className="text-2xl lg:text-3xl font-bold text-card-foreground mb-4">
+            Need a Compliance Certificate Before Your Next Audit?
+          </h3>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Get a free, no obligation quote from Gauteng&apos;s certified fire detection, suppression, and compliance team. Full documentation provided on every job.
+          </p>
 
-            {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-8 mb-8 text-white">
-              <div>
-                <div className="text-3xl font-bold text-accent">10</div>
-                <div className="text-sm text-white/80">Service Categories</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-white/80">Happy Clients</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent">Same Day</div>
-                <div className="text-sm text-white/80">Callouts Available</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent">24/7</div>
-                <div className="text-sm text-white/80">Emergency Support</div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 font-semibold transition-transform hover:scale-105"
-              >
-                <Link href="/contact">
-                  Get Your Free Quote
-                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 font-semibold transition-transform hover:scale-105"
-              >
-                <Link href="/services">
-                  View All 10 Services
-                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-                </Link>
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 font-semibold transition-transform hover:scale-105"
+            >
+              <Link href="/contact">
+                Get Your Free Quote
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground h-14 px-8 font-semibold transition-transform hover:scale-105"
+            >
+              <Link href="/services">
+                View All 6 Services
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
