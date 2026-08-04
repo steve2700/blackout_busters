@@ -166,24 +166,15 @@ export function Header() {
 
       {/* Main Header */}
       <div className="container mx-auto flex h-16 lg:h-20 items-center justify-between px-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-full overflow-hidden shadow-lg bg-white ring-2 ring-accent/40">
-            <Image
-              src="/logo-icon.png"
-              alt="Jero Fire Solutions Logo"
-              width={44}
-              height={44}
-              className="object-cover"
-              priority
-              quality={90}
-            />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary leading-tight tracking-tight">
-              JERO <span className="text-accent">FIRE</span>
-            </span>
-            <span className="hidden text-xs text-muted-foreground sm:block">Fire & Life Safety Compliance</span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-wordmark.svg"
+            alt="Jero Fire Solutions"
+            width={1000}
+            height={300}
+            className="h-10 w-auto sm:h-12"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -307,21 +298,15 @@ export function Header() {
               {/* Mobile Menu Header */}
               <div className="bg-primary p-6 text-primary-foreground">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full overflow-hidden bg-white ring-2 ring-accent/40">
-                      <Image
-                        src="/logo-icon.png"
-                        alt="Jero Fire Solutions"
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                        priority
-                      />
-                    </div>
-                    <div>
-                      <p className="font-bold text-sm">Jero Fire Solutions</p>
-                      <p className="text-xs text-white/70">Fire & Life Safety Compliance</p>
-                    </div>
+                  <div className="rounded-lg bg-white px-3 py-2 shadow-sm">
+                    <Image
+                      src="/logo-wordmark.svg"
+                      alt="Jero Fire Solutions"
+                      width={1000}
+                      height={300}
+                      className="h-8 w-auto"
+                      priority
+                    />
                   </div>
                   <Button
                     variant="ghost"
