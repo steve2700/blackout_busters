@@ -1,17 +1,18 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Phone, CheckCircle, Shield, Award, Star, Zap, Clock, Users } from "lucide-react"
+import { ArrowRight, Phone, CheckCircle, Shield, Award, Star, Siren, Clock, FileCheck } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-primary" itemScope itemType="https://schema.org/Service">
       {/* Background Image with Optimized Loading */}
+      {/* PLACEHOLDER: swap for a real Jero Fire Solutions site/technician photo */}
       <div className="absolute inset-0">
         <Image
-          src="/air-conditioning-service-gauteng.png"
-          alt="Professional appliance and refrigeration technician at work in Gauteng, Cold Fix Services aircon installation in Pretoria and Johannesburg"
+          src="/fire-technician-servicing-extinguisher-gauteng.jpg"
+          alt="Fire safety technician servicing fire protection equipment in Gauteng, Jero Fire Solutions"
           fill
           className="object-cover opacity-20"
           priority
@@ -37,7 +38,7 @@ export function HeroSection() {
             {/* Trust Badge with Rating */}
             <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-medium text-white backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-all shadow-lg">
               <Shield className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span className="hidden sm:inline">Gauteng's Trusted Repair Team</span>
+              <span className="hidden sm:inline">Gauteng's Trusted Fire Safety Partner</span>
               <span className="sm:hidden">Trusted in Gauteng</span>
               <div className="flex items-center gap-0.5 ml-2" itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
                 <meta itemProp="ratingValue" content="5" />
@@ -51,18 +52,18 @@ export function HeroSection() {
 
             {/* Main Headline */}
             <h1 className="mb-4 sm:mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl" itemProp="name">
-              <span className="block">We Keep Gauteng Cool.</span>
-              <span className="block text-accent">Fast, Reliable Repairs.</span>
+              <span className="block">We Keep Gauteng Protected.</span>
+              <span className="block text-accent">Compliant. Certified. Ready.</span>
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 text-primary-foreground/90">
-                Appliances, Aircon &amp; Refrigeration
+                Detection, Suppression &amp; Compliance
               </span>
             </h1>
 
             {/* Description */}
             <p className="mb-6 sm:mb-8 text-pretty text-base sm:text-lg text-primary-foreground/80 md:text-xl max-w-2xl mx-auto lg:mx-0" itemProp="description">
-              <strong className="text-white">Cold Fix Services</strong> is your trusted partner for appliance repairs, air conditioning, cold room installation and commercial refrigeration across{" "}
-              <strong className="text-white">Pretoria, Johannesburg, Midrand</strong> and greater{" "}
-              <strong className="text-white">Gauteng</strong>. Experienced technicians, same day callouts.
+              <strong className="text-white">Jero Fire Solutions</strong> delivers fire detection and alarm systems, extinguisher servicing, sprinkler and suppression installation, and OHS fire safety compliance audits across{" "}
+              <strong className="text-white">Johannesburg, Pretoria, Kempton Park</strong> and greater{" "}
+              <strong className="text-white">Gauteng</strong>. Certified technicians, full compliance documentation.
             </p>
 
             {/* CTA Buttons — kept high and compact so all three are visible without scrolling on mobile */}
@@ -82,7 +83,7 @@ export function HeroSection() {
                 size="lg"
                 className="group h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-semibold bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 transition-all hover:scale-105"
               >
-                <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/27781336684" target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
                   Chat on WhatsApp
                 </a>
@@ -106,42 +107,44 @@ export function HeroSection() {
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20">
                   <CheckCircle className="h-4 w-4 text-accent" aria-hidden="true" />
                 </div>
-                <span className="font-medium">Experienced Technicians</span>
+                <span className="font-medium">Certified Fire Technicians</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-primary-foreground/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20">
-                  <Award className="h-4 w-4 text-accent" aria-hidden="true" />
+                  <FileCheck className="h-4 w-4 text-accent" aria-hidden="true" />
                 </div>
-                <span className="font-medium">Quality Guaranteed</span>
+                <span className="font-medium">Compliance Documentation Provided</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-primary-foreground/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20">
                   <Clock className="h-4 w-4 text-accent" aria-hidden="true" />
                 </div>
-                <span className="font-medium">24 Hour Emergency Callout</span>
+                <span className="font-medium">24/7 Emergency Callout</span>
               </div>
             </div>
 
             {/* Quick Stats */}
+            {/* PLACEHOLDER: confirm real experience/client numbers before launch */}
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-primary-foreground/70">
               <div className="flex items-center gap-2">
-                <Zap className="h-4 w-4 text-accent" aria-hidden="true" />
-                <span>Same day callouts available</span>
+                <Siren className="h-4 w-4 text-accent" aria-hidden="true" />
+                <span>Site assessments available on request</span>
               </div>
               <div className="flex items-center gap-2">
-                <Users className="h-4 w-4 text-accent" aria-hidden="true" />
-                <span>500+ Happy clients</span>
+                <FileCheck className="h-4 w-4 text-accent" aria-hidden="true" />
+                <span>Every job leaves a compliance trail</span>
               </div>
             </div>
           </div>
 
           {/* Hero Images */}
+          {/* PLACEHOLDER: swap all three images below for real Jero Fire Solutions photography */}
           <div className="relative hidden lg:block" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.02]">
                 <Image
-                  src="/cold-fix-technicians-servicing-air-conditioner.png"
-                  alt="Cold Fix Services technician servicing an air conditioning unit in Gauteng"
+                  src="/fire-alarm-technician-installing-panel.jpg"
+                  alt="Jero Fire Solutions technician installing a fire alarm panel in Gauteng"
                   fill
                   className="object-cover"
                   priority
@@ -154,8 +157,8 @@ export function HeroSection() {
 
               <div className="absolute -bottom-8 -left-8 aspect-square w-48 overflow-hidden rounded-2xl border-4 border-background shadow-xl ring-1 ring-white/10 transition-transform hover:scale-105">
                 <Image
-                  src="/property-maintenance-worker-fixing-repairs-profess.jpg"
-                  alt="Cold Fix Services technician repairing an appliance in Gauteng"
+                  src="/fire-extinguisher-inspection-certification.jpg"
+                  alt="Jero Fire Solutions technician inspecting and certifying a fire extinguisher"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -170,8 +173,8 @@ export function HeroSection() {
                     <Award className="h-7 w-7 text-accent-foreground" aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-card-foreground">10</p>
-                    <p className="text-sm text-muted-foreground">Service Categories</p>
+                    <p className="text-3xl font-bold text-card-foreground">6</p>
+                    <p className="text-sm text-muted-foreground">Fire Safety Services</p>
                   </div>
                 </div>
               </div>
@@ -187,20 +190,20 @@ export function HeroSection() {
         {/* Trust Badges */}
         <div className="mt-16 border-t border-white/10 pt-10">
           <p className="text-center text-sm text-primary-foreground/60 mb-6 font-medium">
-            Trusted by 500+ residential, commercial and industrial clients across Gauteng
+            Trusted by residential, commercial and industrial clients across Gauteng
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
             <div className="flex items-center gap-2 text-white/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm hover:bg-white/10 transition-all">
               <Shield className="h-5 w-5 text-accent" aria-hidden="true" />
-              <span className="text-sm font-semibold">Licensed Technicians</span>
+              <span className="text-sm font-semibold">Certified Fire Technicians</span>
             </div>
             <div className="flex items-center gap-2 text-white/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <Award className="h-5 w-5 text-accent" aria-hidden="true" />
-              <span className="text-sm font-semibold">Refrigerant Handling Certified</span>
+              <FileCheck className="h-5 w-5 text-accent" aria-hidden="true" />
+              <span className="text-sm font-semibold">OHS Compliance Audits</span>
             </div>
             <div className="flex items-center gap-2 text-white/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm hover:bg-white/10 transition-all">
               <CheckCircle className="h-5 w-5 text-accent" aria-hidden="true" />
-              <span className="text-sm font-semibold">SABS Compliant</span>
+              <span className="text-sm font-semibold">Certification on Completion</span>
             </div>
             <div className="flex items-center gap-2 text-white/90 bg-white/5 rounded-lg px-4 py-2 backdrop-blur-sm hover:bg-white/10 transition-all">
               <Shield className="h-5 w-5 text-accent" aria-hidden="true" />
@@ -211,9 +214,9 @@ export function HeroSection() {
       </div>
 
       {/* Hidden Structured Data for SEO */}
-      <meta itemProp="provider" content="Cold Fix Services" />
-      <meta itemProp="areaServed" content="Gauteng, Pretoria, Johannesburg, Midrand, Sandton, Centurion, Randburg" />
-      <meta itemProp="serviceType" content="Appliance Repair, Air Conditioning, Refrigeration, Cold Room Installation" />
+      <meta itemProp="provider" content="Jero Fire Solutions" />
+      <meta itemProp="areaServed" content="Gauteng, Johannesburg, Pretoria, Kempton Park, Sandton, Centurion, Midrand" />
+      <meta itemProp="serviceType" content="Fire Detection, Fire Alarm Systems, Extinguisher Servicing, Sprinkler and Suppression Systems, Fire Safety Compliance" />
     </section>
   )
 }
