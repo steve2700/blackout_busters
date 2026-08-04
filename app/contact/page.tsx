@@ -5,21 +5,21 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, CheckCircle, Award, Za
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export const metadata: Metadata = {
-  title: "Contact Cold Fix Services | Free Quote in Gauteng, Pretoria, Johannesburg and Midrand",
+  title: "Contact Jero Fire Solutions | Free Quote in Gauteng, Johannesburg, Pretoria and Kempton Park",
   description:
-    "Contact Cold Fix Services for air conditioning, refrigeration, cold rooms, or appliance repairs in Gauteng. Free consultation and same day quotes. Call +27 70 309 6749.",
+    "Contact Jero Fire Solutions for fire detection, alarm systems, extinguisher servicing, suppression, or OHS compliance in Gauteng. Free consultation and same day quotes. Call +27 78 133 6684.",
   keywords:
-    "contact Cold Fix Services, air conditioning quote Gauteng, refrigeration repair Pretoria, appliance repair Johannesburg, Midrand cooling company, emergency callout",
+    "contact Jero Fire Solutions, fire safety quote Gauteng, fire extinguisher servicing Pretoria, fire alarm installation Johannesburg, Kempton Park fire compliance, emergency callout",
   openGraph: {
-    title: "Contact Cold Fix Services | Free Quote in Gauteng",
+    title: "Contact Jero Fire Solutions | Free Quote in Gauteng",
     description:
-      "Get in touch for all air conditioning, refrigeration, and appliance repair needs in Pretoria, Johannesburg, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
+      "Get in touch for fire detection, suppression, extinguisher servicing, and OHS compliance needs across Johannesburg, Pretoria, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Contact Cold Fix Services",
+        alt: "Contact Jero Fire Solutions",
       },
     ],
   },
@@ -29,22 +29,22 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Coverage Area",
-    details: ["Gauteng, South Africa", "Serving Pretoria & Johannesburg"],
-    href: "https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa",
+    details: ["Gauteng, South Africa", "Serving Johannesburg & Pretoria"],
+    href: "https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng",
     highlight: true,
   },
   {
     icon: Phone,
     title: "Phone and WhatsApp",
-    details: ["+27 70 309 6749"],
-    href: "tel:+27703096749",
+    details: ["+27 78 133 6684"],
+    href: "tel:+27781336684",
     highlight: true,
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@coldfix.co.za"],
-    href: "mailto:info@coldfix.co.za",
+    details: ["014@jerofiresolutions.co.za"],
+    href: "mailto:014@jerofiresolutions.co.za",
     highlight: false,
   },
   {
@@ -56,8 +56,9 @@ const contactInfo = [
 ]
 
 const serviceAreas = [
-  { name: "Pretoria", featured: true },
   { name: "Johannesburg", featured: true },
+  { name: "Pretoria", featured: true },
+  { name: "Kempton Park", featured: true },
   { name: "Midrand", featured: true },
   { name: "Sandton", featured: false },
   { name: "Centurion", featured: false },
@@ -65,7 +66,6 @@ const serviceAreas = [
   { name: "Randburg", featured: false },
   { name: "Bedfordview", featured: false },
   { name: "Rosebank", featured: false },
-  { name: "Roodepoort", featured: false },
 ]
 
 const benefits = [
@@ -79,7 +79,7 @@ const benefits = [
   },
   {
     icon: Award,
-    text: "Hundreds of clients served",
+    text: "Certified fire technicians",
   },
   {
     icon: Zap,
@@ -110,9 +110,9 @@ export default function ContactPage() {
               Get Your <span className="text-accent">Free Quote</span> Today
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              For air conditioning, refrigeration, cold rooms, or appliance repairs in <strong className="text-white">Gauteng</strong>,
-              contact <strong className="text-white">Cold Fix Services</strong> today. Our expert team provides free consultations, same day quotes, and honest advice
-              tailored to your needs.
+              For fire detection, alarm systems, extinguisher servicing, suppression, or OHS compliance in <strong className="text-white">Gauteng</strong>,
+              contact <strong className="text-white">Jero Fire Solutions</strong> today. Our certified team provides free consultations, same day quotes, and full compliance documentation
+              tailored to your site.
             </p>
 
             {/* Quick Benefits */}
@@ -141,9 +141,9 @@ export default function ContactPage() {
               </span>
               <h2 className="mb-2 text-3xl font-bold">Get Your Free Quote in 24 Hours</h2>
               <p className="mb-8 text-muted-foreground leading-relaxed">
-                Fill out the form below with your details. Our team will review your requirements and get back to you within 24 hours with a clear, no obligation quote and expert recommendations.
+                Fill out the form below with your details. Our team will review your requirements and get back to you within 24 hours with a clear, no obligation quote and compliance-ready recommendations.
               </p>
-              
+
               <ContactForm />
 
               {/* Trust Indicators Below Form */}
@@ -179,13 +179,13 @@ export default function ContactPage() {
                 <meta itemProp="contactType" content="Customer Service" />
                 <meta itemProp="areaServed" content="Gauteng, South Africa" />
                 <meta itemProp="availableLanguage" content="English" />
-                
+
                 {contactInfo.map((info) => (
-                  <div 
-                    key={info.title} 
+                  <div
+                    key={info.title}
                     className={`group flex items-start gap-4 p-4 rounded-xl transition-all ${
-                      info.highlight 
-                        ? 'bg-secondary/5 border-2 border-secondary/20 hover:border-secondary/40 hover:shadow-lg' 
+                      info.highlight
+                        ? 'bg-secondary/5 border-2 border-secondary/20 hover:border-secondary/40 hover:shadow-lg'
                         : 'bg-muted hover:bg-muted/80'
                     }`}
                   >
@@ -198,12 +198,12 @@ export default function ContactPage() {
                       <h3 className="font-bold mb-1">{info.title}</h3>
                       {info.details.map((detail, index) =>
                         info.href ? (
-                          <a 
-                            key={detail} 
-                            href={info.href} 
+                          <a
+                            key={detail}
+                            href={info.href}
                             className={`block transition-colors ${
-                              info.highlight 
-                                ? 'text-secondary font-semibold hover:text-secondary/80' 
+                              info.highlight
+                                ? 'text-secondary font-semibold hover:text-secondary/80'
                                 : 'text-muted-foreground hover:text-secondary'
                             }`}
                             target={info.icon === MapPin ? "_blank" : undefined}
@@ -240,7 +240,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.facebook.com/coldfixservices"
+                    href="https://www.facebook.com/jerofiresolutions"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#1877F2] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -249,7 +249,7 @@ export default function ContactPage() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/coldfixservices"
+                    href="https://www.instagram.com/jerofiresolutions"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -258,7 +258,7 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://wa.me/27703096749"
+                    href="https://wa.me/27781336684"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#25D366] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -268,7 +268,7 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <p className="mt-4 text-xs text-muted-foreground">
-                  Follow us for project updates, tips, and special offers
+                  Follow us for compliance reminders, tips, and updates
                 </p>
               </div>
 
@@ -280,8 +280,8 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {serviceAreas.map((area) => (
-                    <span 
-                      key={area.name} 
+                    <span
+                      key={area.name}
                       className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition-all ${
                         area.featured
                           ? 'bg-secondary text-secondary-foreground shadow-md hover:shadow-lg hover:scale-105'
@@ -294,7 +294,7 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Don't see your area? <a href="tel:+27703096749" className="text-secondary font-semibold hover:underline">Call us</a>, we cover the entire province!
+                  Don't see your area? <a href="tel:+27781336684" className="text-secondary font-semibold hover:underline">Call us</a>, we cover the entire province!
                 </p>
               </div>
             </div>
