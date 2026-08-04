@@ -1,17 +1,18 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Phone, Mail, ArrowRight, Clock, MapPin, Shield } from "lucide-react"
+import { Phone, Mail, ArrowRight, Clock, MapPin, Shield, FileCheck } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export function CTASection() {
   return (
     <section className="relative overflow-hidden bg-primary py-20 lg:py-28">
       {/* Background Image */}
+      {/* PLACEHOLDER: reuses the hero background filename — swap once real photography exists */}
       <div className="absolute inset-0">
         <Image
-          src="/air-conditioning-service-gauteng.png"
-          alt="Cold Fix Services ready to help with your appliance and refrigeration repairs"
+          src="/fire-technician-servicing-extinguisher-gauteng.jpg"
+          alt="Jero Fire Solutions ready to help with fire detection, suppression, and compliance"
           fill
           className="object-cover opacity-10"
         />
@@ -30,10 +31,10 @@ export function CTASection() {
           </div>
 
           <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-            Ready to Book a Repair?
+            Ready to Get Your Site Compliant?
           </h2>
           <p className="mb-10 text-pretty text-lg text-primary-foreground/80 md:text-xl">
-            Contact Cold Fix Services today for a free quote. Our team is ready to help with appliance repairs, air conditioning, cold rooms, and commercial refrigeration across Pretoria, Johannesburg, and the rest of Gauteng.
+            Contact Jero Fire Solutions today for a free quote. Our team is ready to help with fire detection, alarm systems, extinguisher servicing, suppression, and OHS compliance audits across Johannesburg, Pretoria, and the rest of Gauteng.
           </p>
 
           <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -52,7 +53,7 @@ export function CTASection() {
               size="lg"
               className="bg-[#25D366] text-white hover:bg-[#25D366]/90 shadow-xl shadow-[#25D366]/25 h-14 px-8 text-base"
             >
-              <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27781336684" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 WhatsApp Us
               </a>
@@ -63,7 +64,7 @@ export function CTASection() {
               variant="outline"
               className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm h-14 px-8 text-base"
             >
-              <Link href="mailto:info@coldfix.co.za">
+              <Link href="mailto:014@jerofiresolutions.co.za">
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us Directly
               </Link>
@@ -84,7 +85,7 @@ export function CTASection() {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/20 mx-auto">
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
-              <p className="text-sm font-medium text-white">On Site Callouts</p>
+              <p className="text-sm font-medium text-white">On Site Assessments</p>
               <p className="mt-1 text-xs text-white/70">Serving all of Gauteng</p>
             </div>
 
@@ -97,26 +98,26 @@ export function CTASection() {
             </div>
           </div>
 
-          {/* Stats */}
+          {/* Qualitative highlights — replaces the invented stats bar */}
           <div className="flex flex-wrap items-center justify-center gap-8 border-t border-primary-foreground/20 pt-12">
-            <div className="text-center">
-              <p className="text-4xl font-bold text-accent">10</p>
-              <p className="text-sm text-primary-foreground/70">Service Categories</p>
+            <div className="flex flex-col items-center gap-1.5 text-center">
+              <Shield className="h-6 w-6 text-accent" />
+              <p className="text-sm font-semibold text-primary-foreground">Certified Technicians</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
-            <div className="text-center">
-              <p className="text-4xl font-bold text-accent">11+</p>
-              <p className="text-sm text-primary-foreground/70">Areas Served</p>
+            <div className="flex flex-col items-center gap-1.5 text-center">
+              <MapPin className="h-6 w-6 text-accent" />
+              <p className="text-sm font-semibold text-primary-foreground">Gauteng-Wide Coverage</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
-            <div className="text-center">
-              <p className="text-4xl font-bold text-accent">500+</p>
-              <p className="text-sm text-primary-foreground/70">Clients Served</p>
+            <div className="flex flex-col items-center gap-1.5 text-center">
+              <FileCheck className="h-6 w-6 text-accent" />
+              <p className="text-sm font-semibold text-primary-foreground">Compliance on Every Job</p>
             </div>
             <div className="h-12 w-px bg-primary-foreground/20" />
-            <div className="text-center">
-              <p className="text-4xl font-bold text-accent">98%</p>
-              <p className="text-sm text-primary-foreground/70">Client Satisfaction</p>
+            <div className="flex flex-col items-center gap-1.5 text-center">
+              <Clock className="h-6 w-6 text-accent" />
+              <p className="text-sm font-semibold text-primary-foreground">24/7 Emergency Support</p>
             </div>
           </div>
 
