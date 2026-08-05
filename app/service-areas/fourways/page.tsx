@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Fourways | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Fourways | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Fourways. Serving Lonehill, Dainfern, Broadacres, Cedar Lakes, Douglasdale and surrounding areas. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Fourways. Serving Lonehill, Dainfern, Broadacres, Cedar Lakes, Douglasdale and surrounding areas. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Fourways | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Fourways | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Fourways estates, homes, and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Fourways estates, homes, and businesses.",
   },
 }
 
@@ -16,8 +16,8 @@ export default function FourwaysPage() {
   return (
     <ServiceAreaTemplate
       areaName="Fourways"
-      description="Cold Fix Services delivers air conditioning, refrigeration, and appliance repairs across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep your cooling and appliances running reliably."
-      introImage="/cold-fix-technician-team-in-gauteng.png"
+      description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep buildings protected and certificates current."
+      introImage="/jero-fire-technician-fourways.jpg"
       suburbs={[
         "Lonehill",
         "Dainfern",
@@ -28,28 +28,28 @@ export default function FourwaysPage() {
         "Douglasdale",
         "Magaliesig",
       ]}
-      introduction="Fourways has grown into one of Johannesburg's most sought after areas, with premier residential estates, modern shopping centres, and busy commercial developments. Cold Fix Services provides the reliable cooling and appliance repairs that Fourways property owners expect, from aircon servicing in an estate home to refrigeration repairs for a restaurant or shop. Our technicians understand estate access and work efficiently to get you back up and running."
+      introduction="Fourways has grown into one of Johannesburg's most sought after areas, with premier residential estates, modern shopping centres, and busy commercial developments, each carrying its own fire safety and compliance obligations. Jero Fire Solutions provides the detection, suppression, extinguisher servicing, and compliance work that Fourways property owners and body corporates actually need, from alarm servicing in an estate home to a full suppression system for a shopping centre. Our technicians understand estate access requirements and work efficiently to get systems tested, certified, and back online."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Restaurant and retail refrigeration repairs",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for retail and commercial sites",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Technicians reaching Fourways quickly for same day callouts",
-        "Experience working within security estates and their rules",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "Quality parts and lasting repairs on every job",
-        "24 hour emergency support for cooling breakdowns",
+        "Certified technicians reaching Fourways quickly for same day quotes",
+        "Experience working within security estates and their access rules",
+        "Technicians who understand OHS Act requirements, not just paperwork",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
+        "24 hour emergency response for fire safety faults",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
