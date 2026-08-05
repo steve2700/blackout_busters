@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Pretoria | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Pretoria | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Pretoria. Serving Montana, Hatfield, Menlyn, Brooklyn, Waterkloof, Moreleta Park and surrounding suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Pretoria. Serving Montana, Hatfield, Menlyn, Brooklyn, Waterkloof, Moreleta Park and surrounding suburbs. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Pretoria | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Pretoria | Jero Fire Solutions",
     description:
-      "Fast, reliable air conditioning, refrigeration, and appliance repairs for homes and businesses across Pretoria.",
+      "Certified fire safety installation, servicing, and compliance work for homes and businesses across Pretoria.",
   },
 }
 
@@ -16,8 +16,8 @@ export default function PretoriaPage() {
   return (
     <ServiceAreaTemplate
       areaName="Pretoria"
-      description="Cold Fix Services is your trusted team for air conditioning, refrigeration, and appliance repairs throughout Pretoria and the greater Tshwane area. From homes to businesses, we keep your fridges, freezers, air conditioners, and appliances running with fast, reliable service."
-      introImage="/air-conditioning-service-gauteng.png"
+      description="Jero Fire Solutions is your certified team for fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Pretoria and the greater Tshwane area. From homes to businesses, we keep buildings protected and every certificate current."
+      introImage="/jero-fire-technician-pretoria.jpg"
       suburbs={[
         "Montana",
         "Hatfield",
@@ -35,27 +35,27 @@ export default function PretoriaPage() {
         "Arcadia",
         "Sunnyside",
       ]}
-      introduction="As the capital continues to grow, homes and businesses in Pretoria need reliable cooling and appliance repairs they can count on. Cold Fix Services has built a strong presence in Pretoria, helping households and businesses with everything from a fridge that has stopped cooling to a new air conditioning installation. Our technicians reach suburbs across Pretoria East, the older central areas, and modern developments like Menlyn and Moreleta Park quickly and professionally."
+      introduction="As the capital continues to grow, homes and businesses in Pretoria need fire safety work they can actually trust, not just a certificate that looks right on paper. Jero Fire Solutions has built a presence in Pretoria helping households and businesses with everything from a single extinguisher service to a full detection and suppression system installation. Our technicians reach suburbs across Pretoria East, the older central areas, and modern developments like Menlyn and Moreleta Park, and every job finishes with documentation that would hold up under an actual inspection."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Chest freezer and bar fridge repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for offices and retail",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Local technicians reaching Pretoria quickly for same day callouts",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "Quality parts and lasting repairs on every job",
-        "24 hour emergency support for cooling breakdowns",
+        "Certified technicians reaching Pretoria quickly for same day quotes",
+        "Technicians who understand OHS Act requirements, not just paperwork",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
+        "24 hour emergency response for fire safety faults",
         "Trusted by homes and businesses across Pretoria",
       ]}
       nearbyAreas={[
