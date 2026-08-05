@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Morningside | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Morningside | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Morningside. Serving Sandton Central, Atholl, Inanda, Sandown, Benmore and surrounding areas. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Morningside. Serving Sandton Central, Atholl, Inanda, Sandown, Benmore and surrounding areas. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Morningside | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Morningside | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Morningside homes and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Morningside homes and businesses.",
   },
 }
 
@@ -16,31 +16,31 @@ export default function MorningsidePage() {
   return (
     <ServiceAreaTemplate
       areaName="Morningside"
-      description="Cold Fix Services provides air conditioning, refrigeration, and appliance repairs throughout Morningside. From luxury homes to apartments and businesses, we keep your cooling and appliances running with careful, professional service."
-      introImage="/cold-room-installation.png"
+      description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Morningside. From luxury homes to apartments and businesses, we handle every site with the same discretion and care."
+      introImage="/jero-fire-technician-morningside.jpg"
       suburbs={["Sandton Central", "Atholl", "Inanda", "Sandown", "Benmore", "Strathavon"]}
-      introduction="Morningside is one of Johannesburg's most desirable residential areas, home to luxury properties with high end appliances and cooling systems. Cold Fix Services looks after Morningside homeowners and businesses with reliable air conditioning, refrigeration, and appliance repairs, treating every property with care. Whether it is a premium fridge that needs repair or an aircon that needs servicing, our technicians deliver quality work with attention to detail."
+      introduction="Morningside is one of Johannesburg's most desirable residential areas, home to luxury properties and high value businesses that cannot afford an insurer or auditor finding a lapsed fire certificate. Jero Fire Solutions looks after Morningside homeowners and businesses with detection, suppression, extinguisher servicing, and compliance work that stands up to real scrutiny, not a rushed sign off. Whether it is a residential alarm system or full compliance documentation for a business, our technicians deliver careful, properly certified work."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Chest freezer and bar fridge repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for offices and residences",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Technicians reaching Morningside quickly for same day callouts",
-        "Experience with premium homes and high end appliances",
-        "Refrigerant handling certified and fully insured teams",
-        "Discrete, professional service with attention to detail",
-        "Honest, upfront quotes with no hidden costs",
-        "24 hour emergency support for cooling breakdowns",
+        "Certified technicians reaching Morningside quickly for same day quotes",
+        "Experience with premium homes and high value business sites",
+        "Discreet, professional service with attention to detail",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
+        "24 hour emergency response for fire safety faults",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
