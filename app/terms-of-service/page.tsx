@@ -1,13 +1,13 @@
 // File path: app/terms-of-service/page.tsx
-// Clean URL: https://www.coldfix.co.za/terms-of-service
+// Clean URL: https://www.jerofiresolutions.com/terms-of-service
 
 import type { Metadata } from "next"
-import { Scale, FileText, CheckCircle, AlertTriangle, Clock, Mail, Phone, MapPin, Shield } from "lucide-react"
+import { Scale, FileText, CheckCircle, AlertTriangle, Mail, Phone, MapPin, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Cold Fix Services",
+  title: "Terms of Service | Jero Fire Solutions",
   description:
-    "Terms of Service for Cold Fix Services. Read the terms and conditions governing our website, quotations, and air conditioning, refrigeration, and appliance repair services.",
+    "Terms of Service for Jero Fire Solutions. Read the terms and conditions governing our website, quotations, and fire detection, suppression, extinguisher servicing, and compliance services.",
   robots: "index, follow",
 }
 
@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
               </div>
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Terms of Service</h1>
-            <p className="text-lg text-muted-foreground">Cold Fix Services</p>
+            <p className="text-lg text-muted-foreground">Jero Fire Solutions</p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
@@ -49,13 +49,13 @@ export default function TermsOfServicePage() {
               <h2 className="mb-4 text-2xl font-bold">1. Introduction and Acceptance</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
                 These Terms of Service ("Terms") govern your use of the website{" "}
-                <a href="https://www.coldfix.co.za" className="text-primary hover:underline">
-                  https://www.coldfix.co.za
+                <a href="https://www.jerofiresolutions.com" className="text-primary hover:underline">
+                  https://www.jerofiresolutions.com
                 </a>{" "}
-                and any quotation, job, or service you engage Cold Fix Services ("we," "us," "our," or "Cold Fix Services") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
+                and any quotation, job, or service you engage Jero Fire Solutions ("we," "us," "our," or "Jero Fire Solutions") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
               </p>
               <p className="leading-relaxed text-muted-foreground">
-                For any booked work, these Terms apply alongside any separate written quotation or scope of work agreed between you and Cold Fix Services. Where a signed agreement and these Terms conflict, the signed agreement takes precedence.
+                For any booked work, these Terms apply alongside any separate written quotation or scope of work agreed between you and Jero Fire Solutions. Where a signed agreement and these Terms conflict, the signed agreement takes precedence.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">2. Our Services</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                Cold Fix Services provides air conditioning, refrigeration repairs, cold room installation and repair, commercial refrigeration, appliance repairs, HVAC maintenance contracts, emergency callouts, and related plumbing and electrical connections to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any job is defined in the written quotation provided to you before work begins.
+                Jero Fire Solutions provides fire detection and alarm systems, fire extinguisher supply and servicing, sprinkler and suppression systems, fire safety training and OHS compliance audits, fire equipment maintenance contracts, and fire hydrant installation and testing to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any job is defined in the written quotation provided to you before work begins.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We reserve the right to decline or discontinue any service request at our discretion, including where a site is unsafe, a request falls outside our expertise, or payment terms are not met.
@@ -75,7 +75,7 @@ export default function TermsOfServicePage() {
               <h2 className="mb-6 text-2xl font-bold">3. Quotations and Estimates</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "Free Quotations", description: "Initial quotations are provided free of charge following a site visit or consultation." },
+                  { title: "Free Quotations", description: "Initial quotations are provided free of charge following a site assessment or consultation." },
                   { title: "Validity Period", description: "Quotations are valid for 30 days from the date issued unless otherwise stated." },
                   { title: "Estimates vs. Fixed Price", description: "Quotations reflect the scope known at the time. Unforeseen site conditions may require a revised quotation." },
                   { title: "Written Approval", description: "Work begins only once you approve the quotation in writing (including email or WhatsApp confirmation)." },
@@ -129,13 +129,13 @@ export default function TermsOfServicePage() {
                 We stand behind the quality of our workmanship. Warranty terms (including duration and coverage) are specific to the type of work performed and will be detailed in your project documentation. Warranties generally do not cover:
               </p>
               <ul className="ml-6 space-y-2 list-disc text-muted-foreground">
-                <li>Damage caused by misuse, neglect, or lack of maintenance</li>
+                <li>Damage caused by misuse, tampering, or lack of maintenance</li>
                 <li>Normal wear and tear</li>
                 <li>Work or alterations carried out by third parties after project completion</li>
                 <li>Pre-existing defects not identified as part of the original scope</li>
               </ul>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Manufacturer warranties on materials and fixtures (e.g. geysers, tiles, fittings) are passed through to you as provided by the manufacturer or supplier.
+                Manufacturer warranties on materials and equipment (e.g. detectors, panels, extinguishers) are passed through to you as provided by the manufacturer or supplier.
               </p>
             </div>
 
@@ -164,7 +164,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">8. Limitation of Liability</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                While we carry appropriate insurance and take reasonable care in all work performed, the liability of Cold Fix Services for any claim arising from our services is limited to the value of the relevant job, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
+                While we carry appropriate insurance and take reasonable care in all work performed, the liability of Jero Fire Solutions for any claim arising from our services is limited to the value of the relevant job, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We are not liable for delays or failures caused by circumstances beyond our reasonable control, including extreme weather, load shedding, supplier delays, or municipal service interruptions.
@@ -175,7 +175,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">9. Insurance</h2>
               <p className="leading-relaxed text-muted-foreground">
-                Cold Fix Services maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own homeowner's or business insurance covering the property during any installation or repair work.
+                Jero Fire Solutions maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own property or business insurance covering the site during any installation, servicing, or compliance work.
               </p>
             </div>
 
@@ -183,7 +183,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">10. Website Use and Intellectual Property</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                All content on this website, including text, images, logos, and design, is the property of Cold Fix Services or its licensors and may not be copied, reproduced, or used without our prior written consent.
+                All content on this website, including text, images, logos, and design, is the property of Jero Fire Solutions or its licensors and may not be copied, reproduced, or used without our prior written consent.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 You agree not to use this website for any unlawful purpose or in a way that could damage, disable, or impair its functionality.
@@ -233,15 +233,15 @@ export default function TermsOfServicePage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">info@coldfix.co.za</span>
+                    <span className="text-sm text-muted-foreground">014@jerofiresolutions.co.za</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">+27 70 309 6749</span>
+                    <span className="text-sm text-muted-foreground">+27 78 133 6684</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Gauteng, South Africa</span>
+                    <span className="text-sm text-muted-foreground">Kempton Park, Gauteng, South Africa</span>
                   </div>
                 </div>
               </div>
@@ -258,18 +258,18 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@coldfix.co.za"
+                    href="mailto:014@jerofiresolutions.co.za"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
                   <a
-                    href="tel:+27703096749"
+                    href="tel:+27781336684"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: +27 70 309 6749
+                    Call: +27 78 133 6684
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">

@@ -1,13 +1,13 @@
 // File path: app/privacy-policy/page.tsx
-// Clean URL: https://www.coldfix.co.za/privacy-policy
+// Clean URL: https://www.jerofiresolutions.com/privacy-policy
 
 import type { Metadata } from "next"
 import { Shield, Lock, Eye, FileText, Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Cold Fix Services POPIA Compliant",
+  title: "Privacy Policy | Jero Fire Solutions POPIA Compliant",
   description:
-    "Privacy Policy for Cold Fix Services. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
+    "Privacy Policy for Jero Fire Solutions. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
   robots: "index, follow",
 }
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Privacy Policy</h1>
             <p className="text-lg text-muted-foreground">
-              Cold Fix Services
+              Jero Fire Solutions
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -45,14 +45,14 @@ export default function PrivacyPolicyPage() {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            
+
             {/* Introduction */}
             <div className="mb-12 rounded-xl bg-muted p-8">
               <h2 className="mb-4 text-2xl font-bold">1. Introduction</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                Cold Fix Services ("we," "us," "our," or "Cold Fix Services") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
-                <a href="https://www.coldfix.co.za" className="text-primary hover:underline">
-                  https://www.coldfix.co.za
+                Jero Fire Solutions ("we," "us," "our," or "Jero Fire Solutions") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
+                <a href="https://www.jerofiresolutions.com" className="text-primary hover:underline">
+                  https://www.jerofiresolutions.com
                 </a>
                 , use our services, or interact with us.
               </p>
@@ -66,21 +66,21 @@ export default function PrivacyPolicyPage() {
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Location</p>
-                    <p className="text-sm text-muted-foreground">Gauteng, South Africa</p>
+                    <p className="text-sm text-muted-foreground">18 Profusa Street, Aston Manor, Kempton Park, Gauteng, South Africa</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-sm text-muted-foreground">+27 70 309 6749</p>
+                    <p className="text-sm text-muted-foreground">+27 78 133 6684</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-sm text-muted-foreground">info@coldfix.co.za</p>
+                    <p className="text-sm text-muted-foreground">014@jerofiresolutions.co.za</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
             {/* Information We Collect */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">2. Information We Collect</h2>
-              
+
               <div className="space-y-6">
                 <div>
                   <h3 className="mb-3 text-xl font-semibold">2.1 Personal Information You Provide</h3>
@@ -114,8 +114,8 @@ export default function PrivacyPolicyPage() {
                       "Phone number(s)",
                       "Physical address",
                       "Company name (for commercial clients)",
-                      "Property details",
-                      "Service requirements and preferences",
+                      "Property and site details",
+                      "Service requirements and compliance history",
                       "Payment information",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <div className="space-y-2">
                     {[
-                      "Social media platforms (Facebook, Instagram, Pinterest)",
+                      "Social media platforms (Facebook, Instagram)",
                       "Payment processors",
                       "Marketing partners",
                       "Publicly available sources",
@@ -175,17 +175,17 @@ export default function PrivacyPolicyPage() {
             {/* How We Use Your Information */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">3. How We Use Your Information</h2>
-              
+
               <div className="space-y-6">
                 {[
                   {
                     title: "3.1 Service Delivery",
                     items: [
                       "Processing service requests and quotations",
-                      "Scheduling appointments and site visits",
-                      "Delivering air conditioning, refrigeration, and appliance repair services",
+                      "Scheduling site assessments, installations, and servicing visits",
+                      "Delivering fire detection, suppression, extinguisher servicing, and compliance services",
                       "Managing projects and client relationships",
-                      "Communicating about your projects",
+                      "Communicating about your site's compliance status",
                     ],
                   },
                   {
@@ -194,8 +194,8 @@ export default function PrivacyPolicyPage() {
                       "Processing payments and maintaining financial records",
                       "Managing customer accounts",
                       "Providing customer support",
-                      "Conducting quality assurance and project follow-ups",
-                      "Maintaining records for warranty and compliance purposes",
+                      "Conducting quality assurance and follow-up inspections",
+                      "Maintaining records for certification and compliance purposes",
                     ],
                   },
                   {
@@ -211,7 +211,7 @@ export default function PrivacyPolicyPage() {
                     title: "3.4 Legal and Compliance",
                     items: [
                       "Complying with legal obligations and regulations",
-                      "Maintaining NHBRC, CIDB, and other certification requirements",
+                      "Maintaining applicable fire safety industry certification and OHS compliance records",
                       "Protecting our legal rights and preventing fraud",
                       "Responding to legal processes and government requests",
                     ],
@@ -277,15 +277,15 @@ export default function PrivacyPolicyPage() {
             {/* How We Share Information */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">5. How We Share Your Information</h2>
-              
+
               <div className="mb-6 space-y-6">
                 {[
                   {
                     title: "5.1 Service Providers and Contractors",
                     items: [
-                      "Subcontractors and specialist tradespeople",
-                      "Suppliers and material vendors",
-                      "Professional consultants (engineers, architects)",
+                      "Subcontractors and specialist fire safety technicians",
+                      "Equipment suppliers and material vendors",
+                      "Professional consultants (fire engineers, OHS auditors)",
                       "Payment processors",
                     ],
                   },
@@ -293,7 +293,7 @@ export default function PrivacyPolicyPage() {
                     title: "5.2 Business Partners",
                     items: [
                       "Insurance providers",
-                      "Certification bodies (NHBRC, CIDB, ECSA)",
+                      "Applicable fire safety certification and compliance bodies",
                       "Industry associations",
                     ],
                   },
@@ -372,7 +372,7 @@ export default function PrivacyPolicyPage() {
                 <li>Fulfill the purposes outlined in this Privacy Policy</li>
                 <li>Comply with legal, regulatory, and contractual obligations</li>
                 <li>Resolve disputes and enforce agreements</li>
-                <li>Maintain warranty and project records</li>
+                <li>Maintain compliance and certification records</li>
               </ul>
 
               <h3 className="mb-4 text-lg font-semibold">Retention Periods:</h3>
@@ -383,8 +383,8 @@ export default function PrivacyPolicyPage() {
                     period: "Duration of service relationship plus 5 years",
                   },
                   {
-                    type: "Project documentation",
-                    period: "5 years after project completion (NHBRC requirements)",
+                    type: "Compliance and certification documentation",
+                    period: "5 years after certification issue, or longer where required by applicable regulation",
                   },
                   {
                     type: "Financial records",
@@ -415,7 +415,7 @@ export default function PrivacyPolicyPage() {
               <p className="mb-6 leading-relaxed text-muted-foreground">
                 You have the following rights regarding your personal information:
               </p>
-              
+
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 {[
                   {
@@ -461,9 +461,9 @@ export default function PrivacyPolicyPage() {
               <div className="rounded-xl bg-primary/10 p-6 border-2 border-primary/20">
                 <h3 className="mb-4 font-bold">To exercise your rights, contact us at:</h3>
                 <div className="space-y-2 text-sm">
-                  <p><strong>Email:</strong> info@coldfix.co.za</p>
-                  <p><strong>Phone:</strong> +27 70 309 6749</p>
-                  <p><strong>Location:</strong> Gauteng, South Africa</p>
+                  <p><strong>Email:</strong> 014@jerofiresolutions.co.za</p>
+                  <p><strong>Phone:</strong> +27 78 133 6684</p>
+                  <p><strong>Location:</strong> Kempton Park, Gauteng, South Africa</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold">We will respond to your request within 30 days.</p>
               </div>
@@ -536,7 +536,7 @@ export default function PrivacyPolicyPage() {
             {/* Marketing Communications */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">13. Marketing Communications</h2>
-              
+
               <div className="mb-6">
                 <h3 className="mb-3 text-lg font-semibold">13.1 Consent</h3>
                 <p className="text-muted-foreground">
@@ -551,8 +551,8 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <ul className="mb-4 ml-6 space-y-2 list-disc text-muted-foreground">
                   <li>Clicking the "unsubscribe" link in emails</li>
-                  <li>Contacting us at info@coldfix.co.za</li>
-                  <li>Calling us at +27 70 309 6749</li>
+                  <li>Contacting us at 014@jerofiresolutions.co.za</li>
+                  <li>Calling us at +27 78 133 6684</li>
                 </ul>
                 <p className="text-sm italic text-muted-foreground">
                   You will continue to receive service-related communications even after unsubscribing from marketing.
@@ -579,7 +579,7 @@ export default function PrivacyPolicyPage() {
             {/* Contact and Complaints */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">15. Contact Us and Complaints</h2>
-              
+
               <div className="mb-8">
                 <h3 className="mb-4 text-lg font-semibold">15.1 Information Officer</h3>
                 <div className="rounded-xl bg-muted p-6">
@@ -587,10 +587,10 @@ export default function PrivacyPolicyPage() {
                     Our designated Information Officer under POPIA is available to address privacy concerns:
                   </p>
                   <div className="space-y-2">
-                    <p><strong>Information Officer:</strong> Cold Fix Services Management</p>
-                    <p><strong>Email:</strong> info@coldfix.co.za</p>
-                    <p><strong>Phone:</strong> +27 70 309 6749</p>
-                    <p><strong>Location:</strong> Gauteng, South Africa</p>
+                    <p><strong>Information Officer:</strong> Jero Fire Solutions Management</p>
+                    <p><strong>Email:</strong> 014@jerofiresolutions.co.za</p>
+                    <p><strong>Phone:</strong> +27 78 133 6684</p>
+                    <p><strong>Location:</strong> Kempton Park, Gauteng, South Africa</p>
                   </div>
                 </div>
               </div>
@@ -643,24 +643,24 @@ export default function PrivacyPolicyPage() {
                 <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Your Privacy Matters to Us</h3>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  We are committed to protecting your personal information and respecting your privacy rights. 
-                  If you have any questions or concerns about this Privacy Policy or our data practices, 
+                  We are committed to protecting your personal information and respecting your privacy rights.
+                  If you have any questions or concerns about this Privacy Policy or our data practices,
                   please don't hesitate to contact us.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="mailto:info@coldfix.co.za" 
+                  <a
+                    href="mailto:014@jerofiresolutions.co.za"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
-                  <a 
-                    href="tel:+27703096749" 
+                  <a
+                    href="tel:+27781336684"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: +27 70 309 6749
+                    Call: +27 78 133 6684
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">
