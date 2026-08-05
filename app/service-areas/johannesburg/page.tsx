@@ -17,7 +17,7 @@ export default function JohannesburgPage() {
     <ServiceAreaTemplate
       areaName="Johannesburg"
       description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Johannesburg. From homes in the northern suburbs to shops, offices, and restaurants in the city, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-johannesburg.jpg"
+      introImage="/jero-fire-technician-commercial-gauteng.jpg"
       suburbs={[
         "Sandton",
         "Rosebank",

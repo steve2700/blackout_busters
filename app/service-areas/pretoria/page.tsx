@@ -17,7 +17,7 @@ export default function PretoriaPage() {
     <ServiceAreaTemplate
       areaName="Pretoria"
       description="Jero Fire Solutions is your certified team for fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Pretoria and the greater Tshwane area. From homes to businesses, we keep buildings protected and every certificate current."
-      introImage="/jero-fire-technician-pretoria.jpg"
+      introImage="/jero-fire-technician-commercial-gauteng.jpg"
       suburbs={[
         "Montana",
         "Hatfield",

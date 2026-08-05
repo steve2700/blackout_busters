@@ -17,7 +17,7 @@ export default function KemptonParkPage() {
     <ServiceAreaTemplate
       areaName="Kempton Park"
       description="Kempton Park is home base for Jero Fire Solutions. From our offices in Aston Manor we deliver certified fire detection, extinguisher servicing, suppression systems, and OHS compliance to homes, factories, warehouses, and businesses across the area, with the fastest response times anywhere in our coverage."
-      introImage="/jero-fire-technician-kempton-park.jpg"
+      introImage="/jero-fire-technician-industrial-gauteng.jpg"
       responseTime="Rapid same day"
       suburbs={[
         "Aston Manor",

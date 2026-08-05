@@ -17,7 +17,7 @@ export default function RosebankPage() {
     <ServiceAreaTemplate
       areaName="Rosebank"
       description="Jero Fire Solutions serves Rosebank's mix of heritage homes, modern apartments, offices, and retail spaces with certified fire detection, extinguisher servicing, suppression systems, and OHS compliance. We keep buildings protected and compliance certificates current with fast, professional service."
-      introImage="/jero-fire-technician-rosebank.jpg"
+      introImage="/jero-fire-technician-retail-gauteng.jpg"
       suburbs={["Parktown", "Saxonwold", "Dunkeld", "Forest Town", "Parkhurst", "Greenside", "Westcliff", "Killarney"]}
       introduction="Rosebank sits at the centre of Johannesburg's northern suburbs, combining older homes with modern apartment blocks, offices, and busy retail. Jero Fire Solutions helps residents and businesses in Rosebank with everything from an expired extinguisher certificate to full alarm and suppression system servicing for an office or shopping precinct. Our certified technicians know the area well and respond quickly with work that is done properly and backed by full compliance documentation."
       servicesOffered={[

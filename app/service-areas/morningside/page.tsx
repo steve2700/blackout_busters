@@ -17,7 +17,7 @@ export default function MorningsidePage() {
     <ServiceAreaTemplate
       areaName="Morningside"
       description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Morningside. From luxury homes to apartments and businesses, we handle every site with the same discretion and care."
-      introImage="/jero-fire-technician-morningside.jpg"
+      introImage="/jero-fire-technician-residential-gauteng.jpg"
       suburbs={["Sandton Central", "Atholl", "Inanda", "Sandown", "Benmore", "Strathavon"]}
       introduction="Morningside is one of Johannesburg's most desirable residential areas, home to luxury properties and high value businesses that cannot afford an insurer or auditor finding a lapsed fire certificate. Jero Fire Solutions looks after Morningside homeowners and businesses with detection, suppression, extinguisher servicing, and compliance work that stands up to real scrutiny, not a rushed sign off. Whether it is a residential alarm system or full compliance documentation for a business, our technicians deliver careful, properly certified work."
       servicesOffered={[

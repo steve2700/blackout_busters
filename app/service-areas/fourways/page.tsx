@@ -17,7 +17,7 @@ export default function FourwaysPage() {
     <ServiceAreaTemplate
       areaName="Fourways"
       description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-fourways.jpg"
+      introImage="/jero-fire-technician-retail-gauteng.jpg"
       suburbs={[
         "Lonehill",
         "Dainfern",

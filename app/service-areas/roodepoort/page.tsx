@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "Certified fire safety installation, servicing, and compliance work for Roodepoort homes and businesses.",
     images: [
       {
-        url: "/jero-fire-technician-roodepoort.jpg",
+        url: "/jero-fire-technician-residential-gauteng.jpg",
         width: 1200,
         height: 630,
         alt: "Certified fire safety technician in Roodepoort by Jero Fire Solutions",
@@ -27,7 +27,7 @@ export default function RoodepoortPage() {
     <ServiceAreaTemplate
       areaName="Roodepoort"
       description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Roodepoort and its surrounding suburbs. From family homes to shops, offices, and industrial units, we keep buildings protected with honest pricing and documented workmanship."
-      introImage="/jero-fire-technician-roodepoort.jpg"
+      introImage="/jero-fire-technician-residential-gauteng.jpg"
       suburbs={[
         "Wilgeheuwel",
         "Honeydew",
