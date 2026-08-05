@@ -2,24 +2,21 @@ import type { MetadataRoute } from "next"
 
 export const dynamic = "force-static"
 
-const baseUrl = "https://www.coldfix.co.za"
+const baseUrl = "https://www.jerofiresolutions.com"
 
 const services = [
-  "air-conditioning-services",
-  "refrigeration-repairs",
-  "cold-room-installation-repair",
-  "commercial-refrigeration",
-  "appliance-repairs",
-  "hvac-maintenance-contracts",
-  "emergency-callout-service",
-  "plumbing-services",
-  "electrical-services",
-  "property-maintenance",
+  "fire-detection-alarm-systems",
+  "fire-extinguisher-supply-servicing",
+  "sprinkler-suppression-systems",
+  "fire-safety-training-compliance",
+  "fire-equipment-maintenance-contracts",
+  "fire-hydrant-installation-testing",
 ]
 
 const serviceAreas = [
-  "pretoria",
   "johannesburg",
+  "pretoria",
+  "kempton-park",
   "midrand",
   "sandton",
   "centurion",
@@ -27,8 +24,6 @@ const serviceAreas = [
   "randburg",
   "bedfordview",
   "rosebank",
-  "roodepoort",
-  "morningside",
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
