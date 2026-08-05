@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Sandton | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Sandton | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Sandton. Serving Morningside, Rivonia, Sunninghill, Bryanston, Hyde Park and surrounding suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Sandton. Serving Morningside, Rivonia, Sunninghill, Bryanston, Hyde Park and surrounding suburbs. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Sandton | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Sandton | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Sandton homes, offices, and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Sandton homes, offices, and businesses.",
   },
 }
 
@@ -16,31 +16,31 @@ export default function SandtonPage() {
   return (
     <ServiceAreaTemplate
       areaName="Sandton"
-      description="Cold Fix Services keeps Sandton homes, apartments, offices, and businesses cool and running with professional air conditioning, refrigeration, and appliance repairs. From executive homes to corporate buildings, we deliver reliable service that matches the high standards expected in the area."
-      introImage="/air-conditioning-technician-installing-ac-unit-in-.jpg"
-      suburbs={["Morningside", "Rivonia", "Sunninghill", "Bryanston", "Hyde Park", "Sandown", "Atholl", "Inanda"]}
-      introduction="As the financial and business heart of Johannesburg, Sandton depends on reliable cooling and appliances every day of the year. Cold Fix Services helps households, offices, restaurants, and retailers in Sandton with fast air conditioning, refrigeration, and appliance repairs. Whether it is a fridge that has stopped cooling in an apartment or an aircon that needs servicing in a corporate office, our technicians respond quickly with professional, lasting work."
+      description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Sandton. From executive homes and apartment blocks to corporate offices and retail, we keep buildings protected and compliance certificates current to the high standards the area expects."
+      introImage="/jero-fire-technician-sandton.jpg"
+      suburbs={["Morningside", "Rivonia", "Sunninghill", "Bryanston", "Hyde Park", "Sandown", "Atholl", "Illovo"]}
+      introduction="As the financial and business heart of Johannesburg, Sandton depends on buildings that stay safe and compliant every day of the year. Jero Fire Solutions helps households, offices, restaurants, and retailers in Sandton with fire detection, suppression, extinguisher servicing, and OHS compliance. Whether it is an alarm panel that keeps faulting in a corporate office or an expired extinguisher certificate in an apartment block, our certified technicians respond quickly with work that is done properly and documented in full."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Chest freezer and bar fridge repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Restaurant and office refrigeration repairs",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for restaurants and offices",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
         "Technicians reaching Sandton quickly for same day callouts",
+        "Certified technicians who understand OHS Act requirements",
         "Experience with executive homes and corporate buildings",
-        "Refrigerant handling certified and fully insured teams",
         "Discrete, professional service with minimal disruption",
-        "Honest, upfront quotes with no hidden costs",
-        "24 hour emergency support for cooling breakdowns",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
       ]}
       nearbyAreas={[
         { name: "Johannesburg", href: "/service-areas/johannesburg" },
