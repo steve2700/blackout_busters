@@ -1,8 +1,8 @@
-# Cold Fix Services — Website
+# Jero Fire Solutions — Website
 
-Marketing website for **Cold Fix Services**, an appliance, air conditioning, and refrigeration repair company serving Gauteng, South Africa (Pretoria, Johannesburg, Midrand, and surrounds).
+Marketing website for **Jero Fire Solutions**, a fire detection, suppression, and safety compliance company serving Gauteng, South Africa (Johannesburg, Pretoria, Kempton Park, and surrounds).
 
-- **Live URL:** https://www.coldfix.co.za
+- **Live URL:** https://www.jerofiresolutions.com
 - **Framework:** Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
 - **Package manager:** pnpm
 - **Deployment:** Vercel
@@ -30,17 +30,18 @@ pnpm lint    # run eslint
 
 | | |
 |---|---|
-| **Company name** | Cold Fix Services |
-| **Phone** | +27 70 309 6749 |
-| **WhatsApp** | wa.me/27703096749 |
-| **Email** | info@coldfix.co.za |
-| **Location** | Gauteng, South Africa (Pretoria, Johannesburg, Midrand and surrounds — no public street address) |
-| **Primary color (theme/mask-icon)** | `#0F2C59` (deep navy) |
-| **Logo mark** | See `/public/logo-icon.png`, `/public/logo-square.png` |
-| **Positioning** | Certified, fully insured technicians; same day quotes and 24/7 emergency callouts |
-| **Years in operation** | 10+ |
+| **Company name** | Jero Fire Solutions |
+| **Phone** | +27 78 133 6684 |
+| **WhatsApp** | wa.me/27781336684 |
+| **Email** | 014@jerofiresolutions.co.za (also mabena@jerofiresolutions.co.za) |
+| **Address** | 18 Profusa Street, Aston Manor, Kempton Park, Johannesburg, Gauteng, South Africa |
+| **Primary color** | `#5C0000` (deep red/maroon) |
+| **Accent color** | `#D4A017` (gold) |
+| **Logo mark** | See `/public/logo-icon.png`, `/public/logo-square.png`, `/public/logo-icon.svg` (vector source) |
+| **Positioning** | Certified technicians, honest compliance documentation, same day quotes and 24 hour emergency callouts |
+| **Years in operation** | Not confirmed, do not state a specific figure until provided |
 
-Keep any new copy consistent with this reference. Do not reintroduce the old ZECO Construction or Goshen Projects Solutions branding, their phone numbers, or a specific street address. Written copy on the site intentionally avoids the "-" character in body text.
+Keep any new copy consistent with this reference. This site replaces Jero's previous Wix site, there is no prior branding to avoid reintroducing. Written copy on the site intentionally avoids the "-" character in body text (headings, paragraphs, button labels), though it is fine in code, URLs, file paths, and this README.
 
 ---
 
@@ -48,41 +49,32 @@ Keep any new copy consistent with this reference. Do not reintroduce the old ZEC
 
 ```
 app/
-├── layout.tsx                          # Root layout, metadata, JSON-LD, WhatsApp button
-├── page.tsx                            # Homepage
-├── about/                              # About page
-├── contact/                            # Contact page
-├── services/                           # Services overview (/services)
-├── service-areas/                      # Service area hub + per-suburb pages
-├── privacy-policy/
-├── terms-of-service/
+├── layout.tsx                                # Root layout, metadata, JSON-LD, WhatsApp button (not yet built)
+├── page.tsx                                   # Homepage (not yet built)
+├── about/                                      # About page (done)
+├── contact/                                    # Contact page (done)
+├── services/                                   # Services overview, /services (done)
+├── service-areas/                              # Service area hub + per-suburb pages (not yet built)
+├── privacy-policy/                             # (not yet built)
+├── terms-of-service/                           # (not yet built)
 │
-├── air-conditioning-services/          # Service page
-├── refrigeration-repairs/              # Service page
-├── cold-room-installation-repair/      # Service page
-├── commercial-refrigeration/           # Service page
-├── appliance-repairs/                  # Service page
-├── hvac-maintenance-contracts/         # Service page
-├── emergency-callout-service/          # Service page
-├── plumbing-services/                  # Service page
-├── electrical-services/                # Service page
-└── property-maintenance/               # Service page (Maintenance Contracts)
+├── fire-detection-alarm-systems/               # Service page (done)
+├── fire-extinguisher-supply-servicing/         # Service page (not yet built)
+├── sprinkler-suppression-systems/              # Service page (not yet built)
+├── fire-safety-training-compliance/            # Service page (done)
+├── fire-equipment-maintenance-contracts/        # Service page (done)
+└── fire-hydrant-installation-testing/          # Service page (done)
 
 components/
-├── header.tsx                          # Nav, services dropdown, contact bar
-├── footer.tsx                          # Footer nav, service list, contact info
-├── whatsapp-button.tsx                 # Floating WhatsApp CTA (rendered in layout.tsx)
-├── breadcrumbs.tsx                     # Shared breadcrumb trail
-├── contact-form.tsx                    # Contact / quote request form
-├── service-page-template.tsx           # Shared wrapper for all /service pages
-├── service-area-template.tsx           # Shared wrapper for all /service-areas/[suburb] pages
-├── theme-provider.tsx
-└── home/
-    ├── hero-section.tsx
-    ├── services-overview.tsx
-    ├── why-choose-us.tsx
-    ├── service-areas-preview.tsx
-    └── cta-section.tsx
+├── header.tsx                                  # Nav, services dropdown, contact bar (not yet built)
+├── footer.tsx                                  # Footer nav, service list, contact info (not yet built)
+├── whatsapp-button.tsx                         # Floating WhatsApp CTA (not yet built)
+├── breadcrumbs.tsx                             # Shared breadcrumb trail, supports variant="onDark" (done)
+├── contact-form.tsx                            # Contact / quote request form (assumed present, referenced by contact page)
+├── service-page-template.tsx                   # Shared wrapper for all service pages (done)
+├── service-area-template.tsx                   # Shared wrapper for all service area pages (not yet built)
+└── icons/
+    └── whatsapp-icon.tsx
 
 public/
 ├── favicon.ico, favicon-16x16.png, favicon-32x32.png
@@ -90,71 +82,66 @@ public/
 ├── android-chrome-192x192.png, android-chrome-512x512.png
 ├── safari-pinned-tab.svg
 ├── site.webmanifest
-├── logo-icon.png, logo-square.png
+├── logo-icon.png, logo-square.png, logo-icon.svg, logo-wordmark.svg
 ├── og-image.png
-├── robots.txt, llms.txt
-└── service + area photography (aircon, refrigeration, appliance, plumbing, electrical, etc.)
+├── robots.txt, llms.txt (not yet built)
+└── service photography (fire detection, extinguisher, sprinkler, training, hydrant, etc., mostly placeholder references pending real photos)
 ```
 
 ---
 
-## Current Services (10)
+## Current Services (6, assumed list, confirm or edit with the client)
 
-The active service list, consistent across the header nav, homepage grid, and `/services` page:
+1. Fire Detection & Alarm Systems
+2. Fire Extinguisher Supply & Servicing
+3. Sprinkler & Suppression Systems
+4. Fire Safety Training & Compliance
+5. Fire Equipment Maintenance Contracts
+6. Fire Hydrant Installation & Testing
 
-1. Air Conditioning Services
-2. Refrigeration Repairs
-3. Cold Room Installation and Repair
-4. Commercial Refrigeration
-5. Appliance Repairs
-6. HVAC Maintenance Contracts
-7. Emergency Callout Service
-8. Plumbing Services (appliance and refrigeration related)
-9. Electrical Services (appliance and refrigeration related)
-10. Maintenance Contracts (`/property-maintenance`)
+If Jero does not actually offer all six, trim the list now rather than after every page and nav reference exists.
 
 ---
 
-## Service Areas (11)
+## Service Areas
 
-Each area has its own page at `/service-areas/[suburb]`, rendered via `ServiceAreaTemplate`:
-
-Pretoria, Johannesburg, Midrand, Sandton, Centurion, Fourways, Randburg, Bedfordview, Rosebank, Roodepoort, Morningside.
-
-Every area page uses a distinct `introImage` so the pages stay visually unique. The default image (`/cold-fix-technicians-servicing-air-conditioner.png`) is only used as a fallback when no `introImage` prop is passed.
+Not yet built. The contact page references Johannesburg, Pretoria, Kempton Park, and Midrand as featured areas, with Sandton, Centurion, Fourways, Randburg, Bedfordview, and Rosebank as additional coverage, but no `/service-areas` hub or per-suburb pages exist yet. Confirm this list before building those pages.
 
 ---
 
 ## URL Structure
 
-- Service pages: `/service-name` (e.g. `/refrigeration-repairs`)
-- Service areas: `/service-areas/[suburb]` (e.g. `/service-areas/sandton`)
+- Service pages: `/service-name` (e.g. `/fire-detection-alarm-systems`)
+- Service areas: `/service-areas/[suburb]` (not yet built)
 
 ---
 
 ## SEO Files
 
-- **`app/sitemap.ts`** — generates `/sitemap.xml`. Includes the homepage, core pages, all 10 service pages, and all 11 service areas. Update it whenever a page is added or removed.
-- **`public/robots.txt`** — points crawlers to the sitemap at `https://www.coldfix.co.za/sitemap.xml`.
-- **`public/llms.txt`** — plain language summary of the business, services, and service areas for LLM consumption. Keep it in sync with the live service and area lists.
-- **`app/layout.tsx`** — global metadata, Open Graph/Twitter tags, and Organization + LocalBusiness JSON-LD.
+- **`app/sitemap.ts`** — not yet built. Once created, it must include the homepage, core pages, all 6 service pages, and every service area page.
+- **`public/robots.txt`** — not yet built.
+- **`public/llms.txt`** — not yet built. Should summarize the business, real service list, and real service areas once confirmed.
+- **`app/layout.tsx`** — not yet built. Will hold global metadata, Open Graph/Twitter tags, and Organization + LocalBusiness JSON-LD, following the same pattern used on the Cold Fix Services build.
 
 ---
 
 ## Known TODOs
 
-- [ ] **Search verification codes** — placeholder values (e.g. `your-google-verification-code`) still in `layout.tsx` metadata.
-- [ ] **Unconfirmed stats** — figures such as "100s of clients served" and "10+ years experience" carried through the templates should be confirmed as accurate.
-- [ ] **`safari-pinned-tab.svg`** — placeholder silhouette, not a true vector trace of the real logo. Replace if you want pixel perfect accuracy.
+- [ ] **Confirm the service list** — the six services above are assumed from the original brief, not confirmed by the client.
+- [ ] **Confirm the service area list** — suburbs referenced only appear on the contact page so far.
+- [ ] **No fabricated stats** — do not add "X years in business" or "hundreds of clients served" style claims anywhere without a real, confirmed number. The service page template and about page were deliberately written to avoid this.
+- [ ] **Real photography** — every image reference across the About, Services, and service pages is a placeholder filename with a comment describing what real photo should replace it.
+- [ ] **Region confirmation** — the original brief marked "Gauteng, South Africa" as assumed, confirm this is correct.
+- [ ] **`layout.tsx`, `header.tsx`, `footer.tsx`, `whatsapp-button.tsx`, `page.tsx`** — foundation files not yet built, needed before the site can run.
+- [ ] **Search verification codes** — placeholder values will need real ones once `layout.tsx` exists.
 
 ---
 
 ## Notes for Future Edits
 
-- The **`ServicePageTemplate`** and **`ServiceAreaTemplate`** components in `components/` are shared wrappers. Editing them affects *every* service page or every service area page at once, so check there first before assuming a bug is page specific.
-- When adding or removing a service, update it in **all** of these places: `components/header.tsx`, `components/footer.tsx`, `components/home/services-overview.tsx`, `app/services/page.tsx`, `app/sitemap.ts`, `public/llms.txt`, and any `relatedServices` arrays on individual service pages that might link to it.
-- When adding or removing a service area, update `app/service-areas/` (the page), the service areas hub, `components/home/service-areas-preview.tsx`, `app/sitemap.ts`, and `public/llms.txt`.
-- Contact details (phone `+27 70 309 6749`, WhatsApp `wa.me/27703096749`, email `info@coldfix.co.za`) appear across the header, footer, and home components. Change all of them together.
+- The **`ServicePageTemplate`** component in `components/` is a shared wrapper. Editing it affects *every* service page at once, so check there first before assuming a bug is page specific.
+- When adding or removing a service, it needs to be updated in **all** of these places once they exist: `components/header.tsx`, `components/footer.tsx`, `app/services/page.tsx`, `app/sitemap.ts`, `public/llms.txt`, and any `relatedServices` arrays on individual service pages that link to it. Right now that means `app/services/page.tsx` and the `relatedServices` array on each of the four built service pages.
+- Contact details (phone `+27 78 133 6684`, WhatsApp `wa.me/27781336684`, email `014@jerofiresolutions.co.za`) currently appear in `app/about/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, and `components/service-page-template.tsx`. Change all of them together once the header, footer, and layout files exist too.
 - Bulk find and replace across the repo works well from Git Bash:
   ```bash
   find . -type f \( -name "*.tsx" -o -name "*.ts" \) -not -path "*/node_modules/*" \
