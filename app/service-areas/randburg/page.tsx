@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Randburg | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Randburg | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Randburg. Serving Ferndale, Blairgowrie, Northcliff, Boskruin, Fairland and surrounding suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Randburg. Serving Ferndale, Blairgowrie, Northcliff, Boskruin, Fairland and surrounding suburbs. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Randburg | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Randburg | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Randburg homes, complexes, and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Randburg homes, complexes, and businesses.",
   },
 }
 
@@ -16,8 +16,8 @@ export default function RandburgPage() {
   return (
     <ServiceAreaTemplate
       areaName="Randburg"
-      description="Cold Fix Services provides trusted air conditioning, refrigeration, and appliance repairs across Randburg. From established family homes and townhouse complexes to shops and offices, we keep your cooling and appliances working reliably."
-      introImage="/washing_machine_repairs.jpg"
+      description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Randburg. From established family homes and townhouse complexes to shops and offices, we keep buildings protected and certificates current."
+      introImage="/jero-fire-technician-randburg.jpg"
       suburbs={[
         "Ferndale",
         "Blairgowrie",
@@ -28,28 +28,28 @@ export default function RandburgPage() {
         "Randpark Ridge",
         "Fontainebleau",
       ]}
-      introduction="Randburg blends established family homes, townhouse complexes, and busy commercial areas, and all of them rely on working fridges, freezers, air conditioners, and appliances. Cold Fix Services has become a dependable choice in Randburg for fast repairs and honest advice. Whether it is a washing machine that has stopped mid cycle or an aircon that needs a gas refill, our technicians arrive prepared to get things running again."
+      introduction="Randburg blends established family homes, townhouse complexes, and busy commercial areas, and all of them carry fire safety obligations that are easy to overlook until an insurer or an inspector asks for proof. Jero Fire Solutions has become a dependable choice in Randburg for detection systems, extinguisher servicing, and compliance work that is honest about what a site actually needs. Whether it is a body corporate needing extinguishers serviced across a whole complex or a business needing a suppression system tested, our technicians arrive prepared and leave the paperwork correct."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Chest freezer and bar fridge repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for offices and retail",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Local technicians reaching Randburg quickly for same day callouts",
-        "Experience with body corporate and complex work",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "Quality parts and lasting repairs on every job",
-        "24 hour emergency support for cooling breakdowns",
+        "Certified technicians reaching Randburg quickly for same day quotes",
+        "Experience with body corporate and complex wide servicing",
+        "Technicians who understand OHS Act requirements, not just paperwork",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
+        "24 hour emergency response for fire safety faults",
       ]}
       nearbyAreas={[
         { name: "Fourways", href: "/service-areas/fourways" },
