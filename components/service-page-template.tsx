@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Phone, ArrowRight, Star, Award, Shield, Clock, type LucideIcon } from "lucide-react"
+import { CheckCircle, Phone, ArrowRight, Award, Shield, ShieldCheck, Clock, type LucideIcon } from "lucide-react"
 
 interface ServicePageTemplateProps {
   title: string
@@ -24,7 +24,7 @@ interface ServicePageTemplateProps {
 const trustBadges = [
   { icon: Award, text: "Licensed & Certified" },
   { icon: Shield, text: "Fully Insured" },
-  { icon: Star, text: "Hundreds Served" },
+  { icon: ShieldCheck, text: "OHS Compliant" },
   { icon: Clock, text: "24/7 Support" },
 ]
 
@@ -91,8 +91,8 @@ export function ServicePageTemplate({
                   </div>
                 )}
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-white border border-white/20">
-                  <Star className="h-4 w-4 text-accent" aria-hidden="true" />
-                  <span>5-Star Service</span>
+                  <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
+                  <span>Compliance Certified</span>
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ export function ServicePageTemplate({
                   variant="outline"
                   className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
                 >
-                  <Link href="tel:+27703096749">
-                    Call: +27 70 309 6749
+                  <Link href="tel:+27781336684">
+                    Call: +27 78 133 6684
                   </Link>
                 </Button>
               </div>
@@ -126,7 +126,7 @@ export function ServicePageTemplate({
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
                 <Image
                   src={heroImage || "/placeholder.svg"}
-                  alt={`Professional ${title} in Gauteng by Cold Fix Services`}
+                  alt={`Professional ${title} in Gauteng by Jero Fire Solutions`}
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
@@ -137,9 +137,9 @@ export function ServicePageTemplate({
 
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gradient-to-br from-accent to-accent/90 p-6 text-accent-foreground shadow-2xl ring-2 ring-white/20">
-                <p className="text-4xl font-bold">10+</p>
-                <p className="text-sm font-semibold">Years</p>
-                <p className="text-xs opacity-90">Experience</p>
+                <ShieldCheck className="h-8 w-8 mb-1" aria-hidden="true" />
+                <p className="text-sm font-semibold">Compliance</p>
+                <p className="text-xs opacity-90">Done Properly</p>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ export function ServicePageTemplate({
                 Our <span className="text-secondary">{title}</span> Services
               </h2>
               <p className="mb-8 text-muted-foreground text-lg leading-relaxed">
-                <strong>Cold Fix Services</strong> provides reliable {title.toLowerCase()} for homes and businesses across <strong>Pretoria, Johannesburg, Midrand</strong>, and the wider <strong>Gauteng</strong> region.
+                <strong>Jero Fire Solutions</strong> provides reliable {title.toLowerCase()} for homes and businesses across <strong>Johannesburg, Pretoria, Kempton Park</strong>, and the wider <strong>Gauteng</strong> region.
               </p>
               
               <ul className="grid gap-4">
@@ -193,7 +193,7 @@ export function ServicePageTemplate({
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                 <Image
                   src={heroImage || "/placeholder.svg"}
-                  alt={`${title} by Cold Fix Services`}
+                  alt={`${title} by Jero Fire Solutions`}
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -227,7 +227,7 @@ export function ServicePageTemplate({
                       ))}
                     </div>
                     <p className="mt-4 text-sm text-muted-foreground">
-                      Don't see your area? <Link href="/contact" className="text-secondary font-semibold hover:underline">Contact us</Link> - we serve all of Gauteng!
+                      Don't see your area? <Link href="/contact" className="text-secondary font-semibold hover:underline">Contact us</Link>, we serve all of Gauteng.
                     </p>
                   </CardContent>
                 </Card>
@@ -248,7 +248,7 @@ export function ServicePageTemplate({
               Benefits of Our <span className="text-secondary">{title}</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Experience the Cold Fix Services difference with our professional, reliable team
+              A certified, compliance focused team that stands behind every certificate it signs
             </p>
           </div>
           
@@ -291,7 +291,7 @@ export function ServicePageTemplate({
                 How We <span className="text-secondary">Work</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                Our streamlined process ensures efficient project execution from start to finish
+                A clear process from assessment to certification, with no steps skipped
               </p>
             </div>
             
@@ -326,7 +326,7 @@ export function ServicePageTemplate({
       {relatedServices && relatedServices.length > 0 && (
         <section className="bg-gradient-to-b from-muted to-muted/50 py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
-            <h2 className="mb-8 text-2xl font-bold">Related Services You Might Need</h2>
+            <h2 className="mb-8 text-2xl font-bold">Related Fire Safety Services You Might Need</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {relatedServices.map((service) => (
                 <Link
@@ -364,7 +364,7 @@ export function ServicePageTemplate({
               Ready to Get <span className="text-accent">Started?</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact <strong className="text-white">Cold Fix Services</strong> today for a free quote on your {title.toLowerCase()} needs
+              Contact <strong className="text-white">Jero Fire Solutions</strong> today for a free quote on your {title.toLowerCase()} needs
               in <strong className="text-white">Gauteng</strong>. Same day quotes available.
             </p>
             
@@ -393,7 +393,7 @@ export function ServicePageTemplate({
             </div>
 
             <p className="text-sm text-primary-foreground/70">
-              24/7 Emergency Support • Licensed & Insured • Serving All Gauteng • Free Consultations
+              24 Hour Emergency Support • Licensed & Insured • Serving All Gauteng • Free Consultations
             </p>
           </div>
         </div>
