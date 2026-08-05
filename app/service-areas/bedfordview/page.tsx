@@ -17,7 +17,7 @@ export default function BedfordviewPage() {
     <ServiceAreaTemplate
       areaName="Bedfordview"
       description="Jero Fire Solutions provides fire detection, extinguisher servicing, suppression systems, and OHS compliance across Bedfordview and the greater East Rand. From upmarket homes to shops, offices, and industrial facilities, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-bedfordview.jpg"
+      introImage="/jero-fire-technician-industrial-gauteng.jpg"
       suburbs={["Edenvale", "Germiston", "Kensington", "Kempton Park", "Boksburg", "Benoni", "East Rand Mall area"]}
       introduction="Bedfordview and the greater East Rand feature a wide mix of properties, from upmarket homes to retail centres, offices, and industrial facilities, each with different fire safety and OHS compliance requirements. Jero Fire Solutions serves this region with detection, suppression, extinguisher servicing, and compliance work that holds up under an actual audit, not just a signature on a form. Whether it is a single extinguisher service or a full alarm system installation, our technicians treat every site the same way, properly."
       servicesOffered={[

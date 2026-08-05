@@ -17,7 +17,7 @@ export default function RandburgPage() {
     <ServiceAreaTemplate
       areaName="Randburg"
       description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Randburg. From established family homes and townhouse complexes to shops and offices, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-randburg.jpg"
+      introImage="/jero-fire-technician-residential-gauteng.jpg"
       suburbs={[
         "Ferndale",
         "Blairgowrie",

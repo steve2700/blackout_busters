@@ -12,7 +12,7 @@ export default function CenturionPage() {
     <ServiceAreaTemplate
       areaName="Centurion"
       description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-centurion.jpg"
+      introImage="/jero-fire-technician-residential-gauteng.jpg"
       suburbs={[
         "Highveld",
         "Eldoraigne",

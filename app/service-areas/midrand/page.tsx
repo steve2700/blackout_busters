@@ -12,7 +12,7 @@ export default function MidrandPage() {
     <ServiceAreaTemplate
       areaName="Midrand"
       description="Jero Fire Solutions serves Midrand's growing residential and commercial communities with certified fire detection, extinguisher servicing, suppression systems, and OHS compliance. Dispatched from our Kempton Park base, we reach Midrand quickly for both routine servicing and urgent callouts."
-      introImage="/jero-fire-technician-midrand.jpg"
+      introImage="/jero-fire-technician-industrial-gauteng.jpg"
       suburbs={[
         "Carlswald",
         "Halfway House",

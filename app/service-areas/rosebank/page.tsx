@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Rosebank | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Rosebank | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Rosebank. Serving Parktown, Saxonwold, Dunkeld, Forest Town, Killarney and northern Johannesburg suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Rosebank. Serving Parktown, Saxonwold, Dunkeld, Forest Town, Killarney and northern Johannesburg suburbs. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Rosebank | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Rosebank | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Rosebank homes, apartments, and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Rosebank homes, apartments, and businesses.",
   },
 }
 
@@ -16,31 +16,31 @@ export default function RosebankPage() {
   return (
     <ServiceAreaTemplate
       areaName="Rosebank"
-      description="Cold Fix Services serves Rosebank's mix of heritage homes, modern apartments, offices, and retail spaces with reliable air conditioning, refrigeration, and appliance repairs. We keep your cooling and appliances running with fast, professional service."
-      introImage="/hvac-maintenance-technician.png"
+      description="Jero Fire Solutions serves Rosebank's mix of heritage homes, modern apartments, offices, and retail spaces with certified fire detection, extinguisher servicing, suppression systems, and OHS compliance. We keep buildings protected and compliance certificates current with fast, professional service."
+      introImage="/jero-fire-technician-retail-gauteng.jpg"
       suburbs={["Parktown", "Saxonwold", "Dunkeld", "Forest Town", "Parkhurst", "Greenside", "Westcliff", "Killarney"]}
-      introduction="Rosebank sits at the centre of Johannesburg's northern suburbs, combining older homes with modern apartment blocks, offices, and busy retail. Cold Fix Services helps residents and businesses in Rosebank with everything from a fridge that has stopped cooling to full air conditioning servicing for an office. Our technicians know the area well and respond quickly with quality work that lasts."
+      introduction="Rosebank sits at the centre of Johannesburg's northern suburbs, combining older homes with modern apartment blocks, offices, and busy retail. Jero Fire Solutions helps residents and businesses in Rosebank with everything from an expired extinguisher certificate to full alarm and suppression system servicing for an office or shopping precinct. Our certified technicians know the area well and respond quickly with work that is done properly and backed by full compliance documentation."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Restaurant and office refrigeration repairs",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for restaurants and offices",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
         "Technicians reaching Rosebank quickly for same day callouts",
+        "Certified technicians who understand OHS Act requirements",
         "Experience with apartments, offices, and retail spaces",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "Quality parts and lasting repairs on every job",
-        "24 hour emergency support for cooling breakdowns",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "24 hour emergency response for fire safety faults",
+        "A Certificate of Compliance issued on every completed job",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
