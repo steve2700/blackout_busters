@@ -1,26 +1,40 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Phone, ArrowRight, CheckCircle, Clock, Navigation, Star, Award, Wind, Refrigerator, WashingMachine } from "lucide-react"
+import {
+  MapPin,
+  Phone,
+  ArrowRight,
+  CheckCircle,
+  Clock,
+  Navigation,
+  Star,
+  Award,
+  FileCheck,
+  Siren,
+  FireExtinguisher,
+  Droplets,
+  GraduationCap,
+} from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Service Areas | Cold Fix Services - Pretoria, Johannesburg, Midrand & All Gauteng",
+  title: "Service Areas | Jero Fire Solutions - Johannesburg, Pretoria, Kempton Park & All Gauteng",
   description:
-    "Cold Fix Services provides appliance, air conditioning, and refrigeration repairs throughout Gauteng including Pretoria, Johannesburg, Sandton, Centurion, Midrand, Fourways, and 10 major areas. Same day quotes and 24 hour emergency support.",
-  keywords: "service areas Gauteng, fridge repair Pretoria, aircon repair Johannesburg, appliance repairs Midrand, Sandton refrigeration, Centurion aircon, Fourways appliance repair",
+    "Jero Fire Solutions provides fire detection, suppression, extinguisher servicing, and OHS compliance across Gauteng including Johannesburg, Pretoria, Kempton Park, Sandton, Centurion, and more. Same day quotes and 24 hour emergency support.",
+  keywords:
+    "service areas Gauteng, fire alarm installation Johannesburg, fire extinguisher servicing Pretoria, sprinkler installation Midrand, Sandton fire compliance, Centurion fire safety, Kempton Park fire equipment",
   openGraph: {
-    title: "Service Areas | Cold Fix Services Serving All Gauteng",
+    title: "Service Areas | Jero Fire Solutions Serving All Gauteng",
     description:
-      "Appliance, air conditioning, and refrigeration repairs across all major areas in Gauteng province. Same day callouts, free quotes, and 24 hour emergency support.",
+      "Fire detection, suppression, extinguisher servicing, and OHS compliance across all major areas in Gauteng province. Same day callouts, free quotes, and 24 hour emergency support.",
     images: [
       {
-        url: "/gauteng-service-areas-map.webp",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cold Fix Services service areas map, Gauteng Province",
+        alt: "Jero Fire Solutions service areas across Gauteng Province",
       },
     ],
   },
@@ -28,96 +42,78 @@ export const metadata: Metadata = {
 
 const serviceAreas = [
   {
-    name: "Pretoria",
-    href: "/service-areas/pretoria",
-    description:
-      "Appliance, air conditioning, and refrigeration repairs throughout Pretoria and surrounding suburbs including Montana, Hatfield, Menlyn, Brooklyn, and Centurion.",
-    suburbs: ["Montana", "Hatfield", "Menlyn", "Brooklyn", "Waterkloof", "Centurion", "Lynnwood", "Silverton"],
-    highlight: true,
-    responseTime: "30 min",
-    projects: "150+",
-  },
-  {
     name: "Johannesburg",
     href: "/service-areas/johannesburg",
     description:
-      "Full service appliance, aircon, and refrigeration repairs across Johannesburg including Sandton, Rosebank, Fourways, Randburg, and the CBD.",
-    suburbs: ["Sandton", "Rosebank", "Fourways", "Randburg", "Parktown", "CBD", "Melrose", "Houghton"],
+      "Fire detection, extinguisher servicing, suppression, and compliance across Johannesburg including Sandton, Rosebank, Fourways, Randburg, and the CBD.",
+    suburbs: ["Sandton", "Rosebank", "Fourways", "Randburg", "Roodepoort"],
     highlight: true,
-    responseTime: "30 min",
-    projects: "200+",
+  },
+  {
+    name: "Pretoria",
+    href: "/service-areas/pretoria",
+    description:
+      "Fire safety installation and compliance services throughout Pretoria and surrounding suburbs including Centurion, Montana, Hatfield, and Brooklyn.",
+    suburbs: ["Centurion", "Montana", "Hatfield", "Silverton", "Brooklyn"],
+    highlight: true,
+  },
+  {
+    name: "Kempton Park",
+    href: "/service-areas/kempton-park",
+    description:
+      "Home base for Jero Fire Solutions, with rapid response fire detection, suppression, and compliance work across Kempton Park and Aston Manor.",
+    suburbs: ["Aston Manor", "Birchleigh", "Edleen", "Glen Marais"],
+    highlight: true,
   },
   {
     name: "Midrand",
     href: "/service-areas/midrand",
     description:
-      "Reliable appliance, aircon, and refrigeration repairs in Carlswald, Halfway House, and surrounding areas.",
-    suburbs: ["Carlswald", "Halfway House", "Vorna Valley", "Glen Austin", "Waterfall Estate"],
+      "Reliable fire detection, extinguisher servicing, and suppression system work in Carlswald, Halfway House, and surrounding areas.",
+    suburbs: ["Carlswald", "Halfway House", "Waterfall Estate"],
     highlight: true,
-    responseTime: "20 min",
-    projects: "100+",
   },
   {
     name: "Sandton",
     href: "/service-areas/sandton",
     description:
-      "Trusted appliance and refrigeration repairs for residential and commercial properties in Sandton, Morningside, Rivonia, and Sunninghill.",
-    suburbs: ["Morningside", "Rivonia", "Sunninghill", "Bryanston", "Hyde Park"],
-    responseTime: "25 min",
-    projects: "80+",
+      "Trusted fire detection and compliance services for residential and commercial properties in Sandton, Morningside, Rivonia, and Bryanston.",
+    suburbs: ["Morningside", "Rivonia", "Bryanston"],
   },
   {
     name: "Centurion",
     href: "/service-areas/centurion",
     description:
-      "Expert appliance, aircon, and refrigeration repair solutions throughout Centurion including Highveld, Eldoraigne, and Irene.",
-    suburbs: ["Highveld", "Eldoraigne", "Irene", "Wierdapark", "Zwartkop"],
-    responseTime: "25 min",
-    projects: "70+",
+      "Expert fire detection, suppression, and compliance solutions throughout Centurion including Highveld, Eldoraigne, and Irene.",
+    suburbs: ["Highveld", "Eldoraigne", "Irene"],
   },
   {
     name: "Fourways",
     href: "/service-areas/fourways",
     description:
-      "Professional appliance and refrigeration repair services in Fourways, Lonehill, Dainfern, and the northern suburbs of Johannesburg.",
-    suburbs: ["Lonehill", "Dainfern", "Broadacres", "Cedar Lakes"],
-    responseTime: "30 min",
-    projects: "60+",
+      "Professional fire safety and compliance services in Fourways, Lonehill, Dainfern, and the northern suburbs of Johannesburg.",
+    suburbs: ["Lonehill", "Dainfern", "Cedar Lakes"],
   },
   {
     name: "Randburg",
     href: "/service-areas/randburg",
     description:
-      "Quality appliance and refrigeration repairs for residential and commercial properties in Randburg, Ferndale, and Blairgowrie.",
-    suburbs: ["Ferndale", "Blairgowrie", "Northcliff", "Boskruin"],
-    responseTime: "35 min",
-    projects: "50+",
+      "Quality fire detection and extinguisher servicing for residential and commercial properties in Randburg, Ferndale, and Blairgowrie.",
+    suburbs: ["Ferndale", "Blairgowrie", "Northcliff"],
   },
   {
     name: "Bedfordview",
     href: "/service-areas/bedfordview",
-    description: "Comprehensive appliance and refrigeration repair services in Bedfordview, Edenvale, Germiston, and the East Rand suburbs.",
-    suburbs: ["Edenvale", "Germiston", "Kensington", "Kempton Park"],
-    responseTime: "40 min",
-    projects: "40+",
+    description:
+      "Comprehensive fire detection and compliance services in Bedfordview, Edenvale, Germiston, and the East Rand suburbs.",
+    suburbs: ["Edenvale", "Germiston", "Kensington"],
   },
   {
     name: "Rosebank",
     href: "/service-areas/rosebank",
     description:
-      "Trusted appliance and refrigeration repairs in Rosebank, Parktown, Saxonwold, and the northern Johannesburg suburbs.",
-    suburbs: ["Parktown", "Saxonwold", "Dunkeld", "Forest Town"],
-    responseTime: "35 min",
-    projects: "45+",
-  },
-  {
-    name: "Roodepoort",
-    href: "/service-areas/roodepoort",
-    description:
-      "Expert appliance and refrigeration repairs in Roodepoort, Florida, Constantia Kloof, and western Johannesburg suburbs.",
-    suburbs: ["Northgate", "Florida", "Constantia Kloof", "Wilropark"],
-    responseTime: "40 min",
-    projects: "35+",
+      "Trusted fire safety and compliance services in Rosebank, Parktown, Saxonwold, and the northern Johannesburg suburbs.",
+    suburbs: ["Parktown", "Saxonwold", "Melrose"],
   },
 ]
 
@@ -125,7 +121,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Same Day Response",
-    description: "Emergency repairs and quotes within hours, not days",
+    description: "Emergency callouts and quotes within hours, not days",
   },
   {
     icon: CheckCircle,
@@ -134,58 +130,45 @@ const benefits = [
   },
   {
     icon: Navigation,
-    title: "Strategic Location",
-    description: "Based in Gauteng for rapid deployment across the province",
+    title: "Kempton Park HQ",
+    description: "Based in Kempton Park for rapid deployment across the province",
   },
   {
     icon: MapPin,
     title: "Local Expertise",
-    description: "Deep knowledge of appliances, aircon systems, and refrigeration equipment in each area",
+    description: "Deep knowledge of fire safety requirements and compliance standards in each area",
   },
   {
     icon: Award,
-    title: "Licensed & Certified",
-    description: "Refrigerant handling certified with all required certifications",
+    title: "Certified Technicians",
+    description: "Fully qualified fire safety technicians with all required certifications",
   },
   {
-    icon: Star,
-    title: "Proven Track Record",
-    description: "500+ completed repairs across Gauteng",
+    icon: FileCheck,
+    title: "Compliance Documentation",
+    description: "A Certificate of Compliance issued on every completed job",
   },
 ]
 
 const stats = [
-  { value: "10+", label: "Service Areas", sublabel: "Across Gauteng" },
-  { value: "500+", label: "Repairs Completed", sublabel: "Homes & Businesses" },
+  { value: "10", label: "Service Areas", sublabel: "Across Gauteng" },
   { value: "Same Day", label: "Callouts", sublabel: "Available Daily" },
   { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
+  { value: "Certified", label: "Technicians", sublabel: "Compliance Assured" },
 ]
 
 const popularServices = [
-  { icon: Wind, title: "Air Conditioning Services", href: "/air-conditioning-services" },
-  { icon: Refrigerator, title: "Refrigeration Repairs", href: "/refrigeration-repairs" },
-  { icon: WashingMachine, title: "Appliance Repairs", href: "/appliance-repairs" },
-  { icon: Clock, title: "Emergency Callout Service", href: "/emergency-callout-service" },
+  { icon: Siren, title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
+  { icon: FireExtinguisher, title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
+  { icon: Droplets, title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
+  { icon: GraduationCap, title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
 ]
 
 export default function ServiceAreasPage() {
   return (
     <>
-      {/* Hero Section - Enhanced */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90 py-16 lg:py-24">
-        <div className="absolute inset-0">
-          <Image
-            src="/gauteng-service-areas-map.webp"
-            alt="Cold Fix Services coverage map of Gauteng Province including Pretoria, Johannesburg, and Midrand"
-            fill
-            className="object-cover opacity-10"
-            priority
-            quality={75}
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
-        </div>
-
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <div className="absolute top-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl" />
@@ -204,14 +187,14 @@ export default function ServiceAreasPage() {
                 ))}
               </div>
             </div>
-            
+
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              Appliance, Aircon &amp; Refrigeration Repairs Across <span className="text-accent">Pretoria, Johannesburg &amp; All Gauteng</span>
+              Fire Detection, Suppression &amp; Compliance Across <span className="text-accent">Johannesburg, Pretoria &amp; All Gauteng</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed mb-8">
-              <strong className="text-white">Cold Fix Services</strong> delivers expert appliance, air conditioning, and refrigeration repairs throughout
-              Gauteng province. Our technicians are positioned to reach you fast, with <strong className="text-white">same day callouts</strong> and exceptional service
-              quality across all major areas.
+              <strong className="text-white">Jero Fire Solutions</strong> delivers fire detection, alarm systems, extinguisher servicing, and OHS compliance throughout
+              Gauteng province. Dispatched from our Kempton Park base, with <strong className="text-white">same day callouts</strong> and full compliance documentation
+              across all major areas.
             </p>
 
             {/* Stats Grid */}
@@ -228,7 +211,7 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* Service Areas Grid - Enhanced */}
+      {/* Service Areas Grid */}
       <section className="py-20 lg:py-28" itemScope itemType="https://schema.org/Service">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto mb-16 max-w-3xl text-center">
@@ -239,13 +222,13 @@ export default function ServiceAreasPage() {
               Where We Serve in <span className="text-secondary">Gauteng Province</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              From homes to businesses, we provide comprehensive appliance, air conditioning, and refrigeration
-              repair services across all major areas in Gauteng with rapid response times.
+              From homes to businesses, we provide comprehensive fire detection, suppression, and compliance
+              services across all major areas in Gauteng.
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {serviceAreas.map((area, index) => (
+            {serviceAreas.map((area) => (
               <Card
                 key={area.name}
                 className={`group overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2 ${
@@ -264,25 +247,13 @@ export default function ServiceAreasPage() {
                     </div>
                     {area.highlight && (
                       <span className="rounded-full bg-gradient-to-r from-accent to-accent/80 px-3 py-1 text-xs font-bold text-accent-foreground shadow-md">
-                        FEATURED
+                        PRIMARY
                       </span>
                     )}
                   </div>
 
                   <h3 className="mb-2 text-xl font-bold group-hover:text-secondary transition-colors">{area.name}</h3>
                   <p className="mb-4 text-sm text-muted-foreground leading-relaxed">{area.description}</p>
-
-                  {/* Response Time & Repairs */}
-                  <div className="mb-4 flex items-center gap-4 text-xs">
-                    <div className="flex items-center gap-1.5 bg-muted rounded-full px-3 py-1.5">
-                      <Clock className="h-3 w-3 text-accent" aria-hidden="true" />
-                      <span className="font-semibold">{area.responseTime} response</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 bg-muted rounded-full px-3 py-1.5">
-                      <Award className="h-3 w-3 text-secondary" aria-hidden="true" />
-                      <span className="font-semibold">{area.projects} repairs</span>
-                    </div>
-                  </div>
 
                   <div className="mb-4">
                     <p className="mb-2 text-xs font-semibold text-foreground flex items-center gap-1.5">
@@ -353,7 +324,7 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* Benefits Section - Enhanced */}
+      {/* Benefits Section */}
       <section className="bg-gradient-to-b from-muted/50 to-muted py-20 lg:py-28">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -362,11 +333,11 @@ export default function ServiceAreasPage() {
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Your Local <span className="text-secondary">Gauteng Repair Team</span>
+                Your Local <span className="text-secondary">Gauteng Fire Safety Team</span>
               </h2>
               <p className="mb-8 text-muted-foreground text-lg leading-relaxed">
-                As a locally based team, we have technicians positioned throughout Gauteng. We understand the
-                unique needs of each area and provide reliable repairs with industry leading response times.
+                Dispatched from Kempton Park, we understand the unique fire safety and compliance needs of
+                each area we serve, with reliable response times across the province.
               </p>
 
               <div className="grid gap-4 mb-8">
@@ -391,44 +362,39 @@ export default function ServiceAreasPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-secondary/30 hover:bg-secondary/10 transition-transform hover:scale-105">
-                  <Link href="tel:+27703096749">
-                    Call: +27 70 309 6749
+                  <Link href="tel:+27781336684">
+                    Call: +27 78 133 6684
                   </Link>
                 </Button>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
-                <Image
-                  src="/gauteng-service-areas-map.webp"
-                  alt="Detailed Cold Fix Services coverage map showing all service areas across Gauteng Province"
-                  fill
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                  loading="lazy"
-                  quality={85}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                
-                {/* Animated Markers */}
-                <div className="absolute inset-0" aria-hidden="true">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div className="relative animate-pulse">
-                      <div className="h-6 w-6 rounded-full bg-accent shadow-lg ring-2 ring-white" />
-                      <div className="absolute inset-0 h-6 w-6 animate-ping rounded-full bg-accent opacity-75" />
-                    </div>
-                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-accent text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
-                      Cold Fix Services
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating Badge */}
-              <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gradient-to-br from-accent to-accent/90 p-6 text-accent-foreground shadow-2xl ring-2 ring-white/20 transition-transform hover:scale-110">
-                <p className="text-4xl font-bold">10+</p>
-                <p className="text-sm font-semibold">Service Areas</p>
-                <p className="text-xs opacity-90">Full Coverage</p>
+            {/* Coverage Radius Diagram — same pattern as the homepage, no fake map pins */}
+            <div className="relative flex items-center justify-center">
+              <svg viewBox="0 0 400 400" className="w-full max-w-md" role="img" aria-label="Coverage radius from Jero Fire Solutions headquarters in Kempton Park">
+                <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
+                <circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
+                <circle cx="200" cy="200" r="60" fill="var(--color-secondary)" fillOpacity="0.08" stroke="currentColor" className="text-secondary" strokeWidth="1.5" />
+
+                <circle cx="200" cy="200" r="8" fill="var(--color-accent)" opacity="0.35">
+                  <animate attributeName="r" values="8;40;8" dur="3s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0.35;0;0.35" dur="3s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="200" cy="200" r="8" fill="var(--color-accent)" />
+
+                <text x="200" y="152" textAnchor="middle" className="fill-secondary text-[11px] font-semibold">Primary</text>
+                <text x="200" y="92" textAnchor="middle" className="fill-muted-foreground text-[11px] font-semibold">Extended</text>
+
+                <text x="200" y="60" textAnchor="middle" className="fill-foreground text-[13px] font-bold">Pretoria</text>
+                <text x="345" y="205" textAnchor="middle" className="fill-foreground text-[13px] font-bold">Johannesburg</text>
+                <text x="60" y="205" textAnchor="middle" className="fill-foreground text-[13px] font-bold">Midrand</text>
+                <text x="200" y="350" textAnchor="middle" className="fill-foreground text-[13px] font-bold">Sandton</text>
+              </svg>
+
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-4 text-center">
+                <p className="text-[10px] font-bold text-accent-foreground bg-accent px-2 py-0.5 rounded-full shadow-md whitespace-nowrap">
+                  HQ — Kempton Park
+                </p>
               </div>
 
               {/* Response Time Badge */}
@@ -446,9 +412,8 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* CTA - Enhanced */}
+      {/* CTA */}
       <section className="bg-gradient-to-br from-primary via-primary to-primary/90 py-16 lg:py-24 relative overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <div className="absolute top-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl" />
@@ -457,13 +422,13 @@ export default function ServiceAreasPage() {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Get Professional Repairs <span className="text-accent">in Your Area Today</span>
+              Get Fire Safety Compliance <span className="text-accent">in Your Area Today</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact us for your appliance, aircon, or refrigeration needs. We provide free quotes, same day callouts, and honest assessments for
-              all areas across Gauteng. Licensed, insured, and ready to help.
+              Contact us for your fire detection, suppression, or compliance needs. We provide free quotes, same day callouts, and honest assessments for
+              all areas across Gauteng. Certified, insured, and ready to help.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 text-base font-semibold transition-transform hover:scale-105">
                 <Link href="/contact">
@@ -485,7 +450,7 @@ export default function ServiceAreasPage() {
             </div>
 
             <p className="text-sm text-primary-foreground/70">
-              24 Hour Emergency Support • Same Day Callouts • Free Quotes • Licensed &amp; Insured
+              24 Hour Emergency Support • Same Day Callouts • Free Quotes • Certified &amp; Insured
             </p>
           </div>
         </div>
