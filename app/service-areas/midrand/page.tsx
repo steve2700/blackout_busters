@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Midrand | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Midrand | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Midrand. Serving Carlswald, Halfway House, Vorna Valley, Kyalami, Waterfall and surrounding areas. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Midrand. Serving Carlswald, Halfway House, Vorna Valley, Kyalami, Waterfall and surrounding areas. Same day quotes available.",
 }
 
 export default function MidrandPage() {
   return (
     <ServiceAreaTemplate
       areaName="Midrand"
-      description="Cold Fix Services serves Midrand's growing residential and commercial communities with air conditioning, refrigeration, and appliance repairs. Our central location makes us ideal for fast callouts across this rapidly developing area."
-      introImage="/refrigeration-repair-technician.png"
+      description="Jero Fire Solutions serves Midrand's growing residential and commercial communities with certified fire detection, extinguisher servicing, suppression systems, and OHS compliance. Dispatched from our Kempton Park base, we reach Midrand quickly for both routine servicing and urgent callouts."
+      introImage="/jero-fire-technician-midrand.jpg"
       suburbs={[
         "Carlswald",
         "Halfway House",
@@ -23,28 +23,28 @@ export default function MidrandPage() {
         "Kyalami",
         "Waterfall",
       ]}
-      introduction="Midrand's position between Pretoria and Johannesburg has made it one of Gauteng's fastest growing areas. Cold Fix Services is well placed to serve Midrand's mix of residential estates, office parks, and commercial developments with reliable cooling and appliance repairs. From a fridge that has stopped cooling in a townhouse to refrigeration servicing for a business, we respond quickly with quality work."
+      introduction="Midrand's position between Pretoria and Johannesburg has made it one of Gauteng's fastest growing areas, with new office parks, estates, and commercial developments that all carry their own fire safety and OHS compliance obligations from the day they open. Jero Fire Solutions serves Midrand's mix of residential estates, office parks, and commercial sites with detection, suppression, extinguisher servicing, and compliance work that holds up under an actual inspection. From a faulty alarm panel in a townhouse to a full suppression system for an office park, we respond properly, not just quickly."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
-        "Refrigeration for offices and estates",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for offices and estates",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Centrally located for fast response across Midrand",
+        "Certified technicians reaching Midrand quickly from Kempton Park",
         "Experience with security estates and office parks",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "24 hour emergency support for cooling breakdowns",
-        "Quality parts and lasting repairs on every job",
+        "Technicians who understand OHS Act requirements, not just paperwork",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "24 hour emergency response for fire safety faults",
+        "A Certificate of Compliance issued on every completed job",
       ]}
       nearbyAreas={[
         { name: "Johannesburg", href: "/service-areas/johannesburg" },
