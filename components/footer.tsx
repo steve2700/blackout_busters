@@ -4,21 +4,21 @@ import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Award, Shield, Users }
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 const services = [
-  { title: "Air Conditioning Services", href: "/air-conditioning-services" },
-  { title: "Refrigeration Repairs", href: "/refrigeration-repairs" },
-  { title: "Cold Room Installation & Repair", href: "/cold-room-installation-repair" },
-  { title: "Commercial Refrigeration", href: "/commercial-refrigeration" },
-  { title: "Appliance Repairs", href: "/appliance-repairs" },
-  { title: "Emergency Callout Service", href: "/emergency-callout-service" },
+  { title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
+  { title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
+  { title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
+  { title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
+  { title: "Fire Equipment Maintenance Contracts", href: "/fire-equipment-maintenance-contracts" },
+  { title: "Fire Hydrant Installation & Testing", href: "/fire-hydrant-installation-testing" },
 ]
 
 const serviceAreas = [
-  { name: "Pretoria", href: "/service-areas/pretoria" },
   { name: "Johannesburg", href: "/service-areas/johannesburg" },
-  { name: "Sandton", href: "/service-areas/sandton" },
+  { name: "Pretoria", href: "/service-areas/pretoria" },
+  { name: "Kempton Park", href: "/service-areas/kempton-park" },
   { name: "Midrand", href: "/service-areas/midrand" },
+  { name: "Sandton", href: "/service-areas/sandton" },
   { name: "Centurion", href: "/service-areas/centurion" },
-  { name: "Randburg", href: "/service-areas/randburg" },
 ]
 
 const quickLinks = [
@@ -41,8 +41,8 @@ export function Footer() {
                 <Award className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Experienced Technicians</h4>
-                <p className="text-sm text-primary-foreground/70">Refrigerant handling certified</p>
+                <h4 className="font-semibold text-white">Certified Fire Technicians</h4>
+                <p className="text-sm text-primary-foreground/70">Compliance documentation on every job</p>
               </div>
             </div>
 
@@ -61,8 +61,8 @@ export function Footer() {
                 <Users className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Trusted Team</h4>
-                <p className="text-sm text-primary-foreground/70">Trusted by hundreds of clients</p>
+                <h4 className="font-semibold text-white">Local Gauteng Team</h4>
+                <p className="text-sm text-primary-foreground/70">Based in Kempton Park, serving all of Gauteng</p>
               </div>
             </div>
           </div>
@@ -74,27 +74,19 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Company Info */}
           <div className="space-y-4 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-lg">
-                <Image
-                  src="/logo-icon.png"
-                  alt="Cold Fix Services Logo"
-                  width={48}
-                  height={48}
-                  className="object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-white">
-                  COLD <span className="text-accent">FIX</span>
-                </h3>
-                <p className="text-xs text-primary-foreground/70">Keeping Gauteng Cool</p>
-              </div>
+            <Link href="/" className="inline-block rounded-lg bg-white px-3 py-2 shadow-sm">
+              <Image
+                src="/logo-wordmark.svg"
+                alt="Jero Fire Solutions"
+                width={1000}
+                height={300}
+                className="h-9 w-auto"
+                loading="lazy"
+              />
             </Link>
 
             <p className="max-w-md text-sm leading-relaxed text-primary-foreground/80">
-              Cold Fix Services is your trusted partner for appliance repairs, air conditioning, cold room installation and commercial refrigeration across Gauteng. Experienced technicians, same day callouts, quality workmanship every time.
+              Jero Fire Solutions is your certified partner for fire detection, alarm systems, extinguisher servicing, suppression, and OHS compliance across Gauteng. Certified technicians, full compliance documentation, every job.
             </p>
 
             {/* Social Media Links */}
@@ -103,7 +95,7 @@ export function Footer() {
 
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/coldfixservices"
+                  href="https://www.facebook.com/jerofiresolutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -113,7 +105,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/coldfixservices"
+                  href="https://www.instagram.com/jerofiresolutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -123,7 +115,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://wa.me/27703096749"
+                  href="https://wa.me/27781336684"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-[#25D366] hover:text-white"
@@ -136,7 +128,7 @@ export function Footer() {
               {/* Google Reviews */}
               <div className="mt-4">
                 <a
-                  href="https://www.google.com/search?q=Cold+Fix+Services+Gauteng+reviews"
+                  href="https://www.google.com/search?q=Jero+Fire+Solutions+Gauteng+reviews"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 transition hover:bg-accent hover:text-white"
@@ -187,41 +179,41 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.google.com/maps?q=Cold+Fix+Services+Gauteng+South+Africa"
+                  href="https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-start gap-3"
                 >
                   <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    Gauteng, South Africa
+                    Kempton Park, Gauteng
                     <br />
-                    Serving Pretoria &amp; Johannesburg
+                    Serving Johannesburg &amp; Pretoria
                   </span>
                 </a>
               </li>
 
               <li>
-                <a href="tel:+27703096749" className="group flex items-center gap-3">
+                <a href="tel:+27781336684" className="group flex items-center gap-3">
                   <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 70 309 6749</span>
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 78 133 6684</span>
                 </a>
               </li>
 
               <li>
-                <a href="https://wa.me/27703096749" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
+                <a href="https://wa.me/27781336684" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
                   <WhatsAppIcon className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    WhatsApp: +27 70 309 6749
+                    WhatsApp: +27 78 133 6684
                   </span>
                 </a>
               </li>
 
               <li>
-                <a href="mailto:info@coldfix.co.za" className="group flex items-center gap-3">
+                <a href="mailto:014@jerofiresolutions.co.za" className="group flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    info@coldfix.co.za
+                    014@jerofiresolutions.co.za
                   </span>
                 </a>
               </li>
@@ -259,7 +251,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
           <p className="text-center text-sm text-primary-foreground/70 md:text-left">
-            © {new Date().getFullYear()} Cold Fix Services. All rights reserved.
+            © {new Date().getFullYear()} Jero Fire Solutions. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 transition-colors hover:text-accent">
