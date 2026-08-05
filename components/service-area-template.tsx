@@ -4,7 +4,18 @@ import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Phone, ArrowRight, MapPin, Wind, Refrigerator, WashingMachine, Clock, Award } from "lucide-react"
+import {
+  CheckCircle,
+  Phone,
+  ArrowRight,
+  MapPin,
+  Siren,
+  FireExtinguisher,
+  Droplets,
+  GraduationCap,
+  Clock,
+  FileCheck,
+} from "lucide-react"
 
 interface ServiceAreaTemplateProps {
   areaName: string
@@ -17,15 +28,14 @@ interface ServiceAreaTemplateProps {
   whyChooseUs: string[]
   nearbyAreas: { name: string; href: string }[]
   responseTime?: string
-  projectsCompleted?: number
   children?: ReactNode
 }
 
 const popularServices = [
-  { icon: Wind, title: "Air Conditioning Services", href: "/air-conditioning-services" },
-  { icon: Refrigerator, title: "Refrigeration Repairs", href: "/refrigeration-repairs" },
-  { icon: WashingMachine, title: "Appliance Repairs", href: "/appliance-repairs" },
-  { icon: Clock, title: "Emergency Callout Service", href: "/emergency-callout-service" },
+  { icon: Siren, title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
+  { icon: FireExtinguisher, title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
+  { icon: Droplets, title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
+  { icon: GraduationCap, title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
 ]
 
 export function ServiceAreaTemplate({
@@ -39,17 +49,17 @@ export function ServiceAreaTemplate({
   whyChooseUs,
   nearbyAreas,
   responseTime = "Same day",
-  projectsCompleted = 500,
   children,
 }: ServiceAreaTemplateProps) {
   return (
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-primary py-16 lg:py-24">
+        {/* PLACEHOLDER: swap for a real photo once available */}
         <div className="absolute inset-0">
           <Image
-            src={heroImage || "/map-of-gauteng-south-africa-highlighting-pretoria-.jpg"}
-            alt={`Cold Fix Services appliance and refrigeration repairs in ${areaName}`}
+            src={heroImage || "/fire-technician-servicing-extinguisher-gauteng.jpg"}
+            alt={`Jero Fire Solutions fire detection, suppression, and compliance services in ${areaName}`}
             fill
             className="object-cover opacity-15"
             priority
@@ -66,7 +76,7 @@ export function ServiceAreaTemplate({
                 Service Area
               </div>
               <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-                Appliance, Aircon and Refrigeration Repairs in {areaName}
+                Fire Detection, Suppression &amp; Compliance in {areaName}
               </h1>
               <p className="mb-8 text-pretty text-lg text-primary-foreground/90 leading-relaxed">{description}</p>
 
@@ -80,10 +90,10 @@ export function ServiceAreaTemplate({
                   </div>
                 </div>
                 <div className="flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 backdrop-blur-sm border border-white/10">
-                  <Award className="h-5 w-5 text-accent" />
+                  <FileCheck className="h-5 w-5 text-accent" />
                   <div>
-                    <div className="text-xs text-white/70">Repairs Completed</div>
-                    <div className="text-sm font-semibold text-white">{projectsCompleted}+</div>
+                    <div className="text-xs text-white/70">Every Job</div>
+                    <div className="text-sm font-semibold text-white">Fully Certified</div>
                   </div>
                 </div>
               </div>
@@ -128,10 +138,10 @@ export function ServiceAreaTemplate({
 
                 <div className="mt-6 pt-6 border-t border-white/10">
                   <p className="text-sm text-white/80 mb-3">
-                    <strong className="text-white">Fast response times:</strong> We serve every suburb in {areaName} with quick, professional service.
+                    <strong className="text-white">Certified technicians:</strong> We serve every suburb in {areaName} with certified, compliance-documented service.
                   </p>
                   <p className="text-xs text-white/60">
-                    Based in Gauteng and positioned to reach {areaName} efficiently.
+                    Dispatched from Kempton Park and positioned to reach {areaName} efficiently.
                   </p>
                 </div>
               </div>
@@ -149,13 +159,13 @@ export function ServiceAreaTemplate({
                 About Our Services
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Your Trusted Repair Team in {areaName}
+                Your Trusted Fire Safety Team in {areaName}
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">{introduction}</p>
 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With years of experience serving {areaName} and surrounding areas, Cold Fix Services has completed <strong>{projectsCompleted}+ repairs and installations</strong> for homes and businesses. Our local knowledge means we understand the needs of properties in {areaName}.
+                  Jero Fire Solutions provides certified fire detection, suppression, extinguisher servicing, and compliance services to homes and businesses in <strong>{areaName}</strong>. Our local knowledge means we understand the fire safety requirements of properties in the area.
                 </p>
               </div>
 
@@ -181,18 +191,19 @@ export function ServiceAreaTemplate({
               </Button>
             </div>
 
+            {/* PLACEHOLDER: swap for a real photo once available */}
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
-                  src={introImage || "/cold-fix-technicians-servicing-air-conditioner.png"}
-                  alt={`Professional appliance and refrigeration repairs in ${areaName} by Cold Fix Services`}
+                  src={introImage || "/fire-extinguisher-inspection-certification.jpg"}
+                  alt={`Jero Fire Solutions certified fire safety technician in ${areaName}`}
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-accent p-6 shadow-2xl border border-border max-w-[200px] hidden md:block">
-                <div className="text-4xl font-bold text-accent-foreground mb-1">{projectsCompleted}+</div>
-                <div className="text-sm text-accent-foreground/80">Repairs Completed in {areaName}</div>
+                <FileCheck className="h-8 w-8 text-accent-foreground mb-2" />
+                <div className="text-sm font-semibold text-accent-foreground">Certificate of Compliance on Every Job</div>
               </div>
             </div>
           </div>
@@ -207,10 +218,10 @@ export function ServiceAreaTemplate({
               Comprehensive Services
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              Repair Services Available in {areaName}
+              Fire Safety Services Available in {areaName}
             </h2>
             <p className="text-muted-foreground text-lg">
-              We provide a full range of appliance, air conditioning, and refrigeration services to homes and businesses throughout {areaName} and surrounding suburbs.
+              We provide a full range of fire detection, suppression, extinguisher servicing, and compliance services to homes and businesses throughout {areaName} and surrounding suburbs.
             </p>
           </div>
 
@@ -281,14 +292,14 @@ export function ServiceAreaTemplate({
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Why {areaName} Homes and Businesses Trust Cold Fix Services
+                Why {areaName} Homes and Businesses Trust Jero Fire Solutions
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With years of experience serving {areaName} and surrounding areas, we understand the needs of local homes and businesses. Our commitment to quality workmanship, honest pricing, and friendly service has made us the preferred choice for appliance, aircon, and refrigeration repairs.
+                  With certified technicians serving {areaName} and surrounding areas, we understand the fire safety needs of local homes and businesses. Our commitment to compliance, honest pricing, and documented workmanship has made us a trusted choice for fire detection, suppression, and compliance work.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Based in <strong>Gauteng</strong>, we reach {areaName} quickly with <strong>{responseTime.toLowerCase()} service</strong> for most bookings. We are available for emergency callouts, routine servicing, and new installations.
+                  Dispatched from <strong>Kempton Park</strong>, we reach {areaName} quickly with <strong>{responseTime.toLowerCase()} service</strong> for most bookings. We are available for emergency callouts, routine servicing, and new installations.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -311,7 +322,7 @@ export function ServiceAreaTemplate({
           <div className="mb-8">
             <h2 className="mb-3 text-2xl font-bold">We Also Serve Nearby Areas</h2>
             <p className="text-muted-foreground">
-              Cold Fix Services provides appliance, aircon, and refrigeration repairs throughout Gauteng.
+              Jero Fire Solutions provides fire detection, suppression, and compliance services throughout Gauteng.
               Explore our other service areas:
             </p>
           </div>
@@ -338,10 +349,10 @@ export function ServiceAreaTemplate({
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl">
-              Need a Repair in {areaName}?
+              Need Fire Safety Compliance in {areaName}?
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact Cold Fix Services today for a free quote. Our experienced technicians are ready to help with your appliance, air conditioning, or refrigeration needs in {areaName}, whether at home or at your business.
+              Contact Jero Fire Solutions today for a free quote. Our certified technicians are ready to help with your fire detection, suppression, or compliance needs in {areaName}, whether at home or at your business.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg">
@@ -356,7 +367,7 @@ export function ServiceAreaTemplate({
                 variant="outline"
                 className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                <Link href="tel:+27703096749">
+                <Link href="tel:+27781336684">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Us Now
                 </Link>
