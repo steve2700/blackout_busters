@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Centurion | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Centurion | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs in Centurion. Serving Highveld, Eldoraigne, Irene, Wierdapark, Zwartkop and all Centurion suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Centurion. Serving Highveld, Eldoraigne, Irene, Wierdapark, Zwartkop and all Centurion suburbs. Same day quotes available.",
 }
 
 export default function CenturionPage() {
   return (
     <ServiceAreaTemplate
       areaName="Centurion"
-      description="Cold Fix Services provides trusted air conditioning, refrigeration, and appliance repairs throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep your cooling and appliances running reliably."
-      introImage="/appliance_repairs_centurion.jpg"
+      description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep buildings protected and certificates current."
+      introImage="/jero-fire-technician-centurion.jpg"
       suburbs={[
         "Highveld",
         "Eldoraigne",
@@ -20,33 +20,32 @@ export default function CenturionPage() {
         "Wierdapark",
         "Zwartkop",
         "Die Hoewes",
-        "Wierda Park",
         "Rooihuiskraal",
         "Lyttelton",
         "Clubview",
       ]}
-      introduction="Centurion offers suburban living with easy access to both Pretoria and Johannesburg. Cold Fix Services has become a reliable choice in the area for households and businesses that need fast fridge, freezer, air conditioning, and appliance repairs. Our local presence means prompt service and a real understanding of what Centurion homes and businesses need to stay cool and comfortable."
+      introduction="Centurion offers suburban living with easy access to both Pretoria and Johannesburg, and a mix of family homes, office parks, and industrial sites that each carry different fire safety obligations. Jero Fire Solutions has become a trusted choice in the area for detection systems, extinguisher servicing, suppression work, and OHS compliance that actually gets checked properly, not just signed off. Our technicians understand what Centurion homes and businesses need to stay protected and compliant."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Chest freezer and bar fridge repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for offices and industrial sites",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
-        "Local technicians reaching Centurion quickly for same day callouts",
-        "Refrigerant handling certified and fully insured teams",
-        "Honest, upfront quotes with no hidden costs",
-        "Quality parts and lasting repairs on every job",
-        "24 hour emergency support for cooling breakdowns",
-        "Trusted by Centurion homes and businesses",
+        "Certified technicians reaching Centurion quickly for same day quotes",
+        "Experience across homes, office parks, and industrial sites",
+        "Technicians who understand OHS Act requirements, not just paperwork",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "A Certificate of Compliance issued on every completed job",
+        "24 hour emergency response for fire safety faults",
       ]}
       nearbyAreas={[
         { name: "Pretoria", href: "/service-areas/pretoria" },
