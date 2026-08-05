@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Appliance, Aircon and Refrigeration Repairs in Johannesburg | Cold Fix Services",
+  title: "Fire Detection, Suppression and Compliance in Johannesburg | Jero Fire Solutions",
   description:
-    "Air conditioning, refrigeration, and appliance repairs across Johannesburg. Serving Sandton, Rosebank, Fourways, Randburg, Bryanston and all JHB suburbs. Same day callouts available.",
+    "Fire detection, extinguisher servicing, suppression, and OHS compliance across Johannesburg. Serving Sandton, Rosebank, Fourways, Randburg, Bryanston and all JHB suburbs. Same day quotes available.",
   openGraph: {
-    title: "Appliance, Aircon and Refrigeration Repairs in Johannesburg | Cold Fix Services",
+    title: "Fire Detection, Suppression and Compliance in Johannesburg | Jero Fire Solutions",
     description:
-      "Reliable air conditioning, refrigeration, and appliance repairs for Johannesburg homes and businesses.",
+      "Certified fire safety installation, servicing, and compliance work for Johannesburg homes and businesses.",
   },
 }
 
@@ -16,8 +16,8 @@ export default function JohannesburgPage() {
   return (
     <ServiceAreaTemplate
       areaName="Johannesburg"
-      description="Cold Fix Services delivers air conditioning, refrigeration, and appliance repairs throughout Johannesburg. From homes in the northern suburbs to shops, offices, and restaurants in the city, we keep your cooling and appliances running with fast, professional service."
-      introImage="/commercial-refrigeration-display.png"
+      description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Johannesburg. From homes in the northern suburbs to shops, offices, and restaurants in the city, we keep buildings protected and certificates current."
+      introImage="/jero-fire-technician-johannesburg.jpg"
       suburbs={[
         "Sandton",
         "Rosebank",
@@ -35,28 +35,28 @@ export default function JohannesburgPage() {
         "Parkhurst",
         "Illovo",
       ]}
-      introduction="Johannesburg is a fast moving city where a broken fridge, cold room, or air conditioner can quickly become a real problem for a home or business. Cold Fix Services has built a strong reputation across Johannesburg, helping households, shops, offices, and restaurants keep their cooling and appliances working. With one trusted team for aircon, refrigeration, and appliance repairs, you only need to make one call."
+      introduction="Johannesburg is a fast moving city where a faulty alarm panel, an expired extinguisher certificate, or a suppression system that has never been properly tested can quickly become a real liability for a home or business. Jero Fire Solutions has built a reputation across Johannesburg for fire safety work that is actually done properly, helping households, shops, offices, and restaurants stay protected and compliant. With one trusted team for detection, suppression, extinguishers, and training, you only need to make one call."
       servicesOffered={[
-        "Air conditioning installation and servicing",
-        "Aircon repairs and gas refills",
-        "Fridge and freezer repairs",
-        "Cold room installation and repair",
-        "Commercial and display fridge servicing",
-        "Restaurant and bar refrigeration repairs",
-        "Washing machine and tumble dryer repairs",
-        "Dishwasher, oven, and stove repairs",
-        "Ice machine repairs and servicing",
-        "Emergency breakdown callouts",
-        "Scheduled maintenance contracts",
-        "Appliance water and gas connections",
+        "Fire detection and alarm system installation",
+        "Alarm panel servicing and fault finding",
+        "Fire extinguisher supply and annual servicing",
+        "Extinguisher refills and certification",
+        "Sprinkler and suppression system servicing",
+        "Suppression system installation for restaurants and offices",
+        "OHS compliance audits",
+        "Staff fire safety training and evacuation drills",
+        "Fire equipment maintenance contracts",
+        "Fire hydrant installation and pressure testing",
+        "Certificate of Compliance documentation",
+        "Emergency callouts for faulty systems",
       ]}
       whyChooseUs={[
         "Technicians positioned across Johannesburg for rapid response",
-        "Refrigerant handling certified and fully insured teams",
-        "Experience with both homes and commercial refrigeration",
-        "Honest, upfront quotes with no hidden costs",
-        "24 hour emergency support for cooling breakdowns",
-        "Quality parts and lasting repairs on every job",
+        "Certified technicians who understand OHS Act requirements",
+        "Experience across homes, restaurants, offices, and commercial sites",
+        "Honest assessments, even when the answer is a repair, not a sale",
+        "24 hour emergency response for fire safety faults",
+        "A Certificate of Compliance issued on every completed job",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
