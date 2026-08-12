@@ -161,7 +161,7 @@ Not yet confirmed. Likely candidates based on the previous build: Johannesburg, 
 
 - The **`ServicePageTemplate`** component in `components/` is a shared wrapper. Editing it affects *every* service page at once, so check there first before assuming a bug is page specific.
 - When adding or removing a service, it needs to be updated in **all** of these places: `components/header.tsx`, `components/footer.tsx`, `app/services/page.tsx`, `app/sitemap.ts`, `public/llms.txt`, and any `relatedServices` arrays on individual service pages that link to it.
-- Contact details (phone `+27 83 617 1112`, WhatsApp `wa.me/27836171112`, email TBD) need to be updated together across `app/about/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, `components/service-page-template.tsx`, `header.tsx`, `footer.tsx`, and `layout.tsx`.
+- Contact details (phone `+27 83 617 1112`, WhatsApp `wa.me/27836171112`, info@blackoutbusterssa.co.za) need to be updated together across `app/about/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, `components/service-page-template.tsx`, `header.tsx`, `footer.tsx`, and `layout.tsx`.
 - Bulk find and replace across the repo works well from Git Bash:
   ```bash
   find . -type f \( -name "*.tsx" -o -name "*.ts" \) -not -path "*/node_modules/*" \
