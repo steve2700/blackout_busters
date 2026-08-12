@@ -1,5 +1,4 @@
 "use client"
-
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 interface WhatsAppButtonProps {
@@ -8,17 +7,16 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({
-  phoneNumber = "27781336684",
-  message = "Hi Jero Fire Solutions, I'd like to make an inquiry.",
+  phoneNumber = "27836171112",
+  message = "Hi Blackout Busters, I'd like to make an inquiry.",
 }: WhatsAppButtonProps) {
   const href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Jero Fire Solutions on WhatsApp"
+      aria-label="Chat with Blackout Busters on WhatsApp"
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-[#25D366]/30 transition-transform hover:scale-110 hover:bg-[#25D366]/90 md:h-16 md:w-16"
     >
       <span className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping" aria-hidden="true" />
