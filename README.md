@@ -1,8 +1,8 @@
-# Jero Fire Solutions — Website
+# Blackout Busters — Website
 
-Marketing website for **Jero Fire Solutions**, a fire detection, suppression, and safety compliance company serving Gauteng, South Africa (Johannesburg, Pretoria, Kempton Park, and surrounds).
+Marketing website for **Blackout Busters**, an electrical installation, repair, and solar/backup power solutions company serving Gauteng, South Africa (Johannesburg, Pretoria, Kempton Park, and surrounds).
 
-- **Live URL:** https://www.jerofiresolutions.com
+- **Live URL:** TBD
 - **Framework:** Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
 - **Package manager:** pnpm
 - **Deployment:** Vercel
@@ -30,18 +30,40 @@ pnpm lint    # run eslint
 
 | | |
 |---|---|
-| **Company name** | Jero Fire Solutions |
-| **Phone** | +27 78 133 6684 |
-| **WhatsApp** | wa.me/27781336684 |
-| **Email** | 014@jerofiresolutions.co.za (also mabena@jerofiresolutions.co.za) |
-| **Address** | 18 Profusa Street, Aston Manor, Kempton Park, Johannesburg, Gauteng, South Africa |
-| **Primary color** | `#5C0000` (deep red/maroon) |
-| **Accent color** | `#D4A017` (gold) |
-| **Logo mark** | See `/public/logo-icon.png`, `/public/logo-square.png`, `/public/logo-icon.svg` (vector source) |
-| **Positioning** | Certified technicians, honest compliance documentation, same day quotes and 24 hour emergency callouts |
+| **Company name** | Blackout Busters |
+| **Phone** | +27 83 617 1112 |
+| **WhatsApp** | wa.me/27836171112 |
+| **Email** | TBD |
+| **Address** | TBD |
+| **Primary color** | `#0B2545` (deep charcoal navy) |
+| **Accent color** | `#FFB800` (electric amber) |
+| **Alert / CTA color** | `#D62828` (warm red — emergency callout buttons) |
+| **Logo mark** | TBD — see `/public/logo-icon.png`, `/public/logo-square.png` once added |
+| **Positioning** | Reliable electrical and solar solutions — installations, repairs, backup power, and compliance, done right the first time |
 | **Years in operation** | Not confirmed, do not state a specific figure until provided |
 
-Keep any new copy consistent with this reference. This site replaces Jero's previous Wix site, there is no prior branding to avoid reintroducing. Written copy on the site intentionally avoids the "-" character in body text (headings, paragraphs, button labels), though it is fine in code, URLs, file paths, and this README.
+Keep any new copy consistent with this reference. This site replaces the previous Jero Fire Solutions build — fire-safety content, copy, and branding should not carry over.
+
+---
+
+## Services (14)
+
+1. Electrical Installation
+2. Electrical Repairs
+3. Solar Installation
+4. Maintenance
+5. Backup Power Systems (Inverter & Battery Installation)
+6. Generator Installation & Servicing
+7. DB Board Upgrades / Compliance Certificates (COC)
+8. Load Shedding Solutions & Consultations
+9. Geyser Installation & Repairs
+10. CCTV & Security System Installation
+11. Fault Finding / Electrical Inspections
+12. Prepaid Meter Installation
+13. Emergency / 24-Hour Callout Service
+14. Commercial & Industrial Electrical Work
+
+If Blackout Busters does not actually offer all fourteen (or offers more), confirm and edit this list now rather than after every page and nav reference exists.
 
 ---
 
@@ -49,30 +71,38 @@ Keep any new copy consistent with this reference. This site replaces Jero's prev
 
 ```
 app/
-├── layout.tsx                                # Root layout, metadata, JSON-LD, WhatsApp button (not yet built)
-├── page.tsx                                   # Homepage (not yet built)
-├── about/                                      # About page (done)
-├── contact/                                    # Contact page (done)
-├── services/                                   # Services overview, /services (done)
-├── service-areas/                              # Service area hub + per-suburb pages (not yet built)
-├── privacy-policy/                             # (not yet built)
-├── terms-of-service/                           # (not yet built)
+├── layout.tsx                                   # Root layout, metadata, JSON-LD, WhatsApp button
+├── page.tsx                                     # Homepage
+├── about/                                       # About page
+├── contact/                                     # Contact page
+├── services/                                    # Services overview, /services
+├── service-areas/                               # Service area hub + per-suburb pages
+├── privacy-policy/
+├── terms-of-service/
 │
-├── fire-detection-alarm-systems/               # Service page (done)
-├── fire-extinguisher-supply-servicing/         # Service page (not yet built)
-├── sprinkler-suppression-systems/              # Service page (not yet built)
-├── fire-safety-training-compliance/            # Service page (done)
-├── fire-equipment-maintenance-contracts/        # Service page (done)
-└── fire-hydrant-installation-testing/          # Service page (done)
+├── electrical-installation/                     # Service page
+├── electrical-repairs/                          # Service page
+├── solar-installation/                          # Service page
+├── maintenance/                                 # Service page
+├── backup-power-inverter-battery/               # Service page
+├── generator-installation-servicing/            # Service page
+├── db-board-upgrades-compliance-certificates/   # Service page (not yet built)
+├── load-shedding-solutions/                     # Service page (not yet built)
+├── geyser-installation-repairs/                 # Service page (not yet built)
+├── cctv-security-installation/                  # Service page (not yet built)
+├── fault-finding-inspections/                   # Service page (not yet built)
+├── prepaid-meter-installation/                  # Service page (not yet built)
+├── emergency-247-callout/                       # Service page (not yet built)
+└── commercial-industrial-electrical/            # Service page (not yet built)
 
 components/
-├── header.tsx                                  # Nav, services dropdown, contact bar (not yet built)
-├── footer.tsx                                  # Footer nav, service list, contact info (not yet built)
-├── whatsapp-button.tsx                         # Floating WhatsApp CTA (not yet built)
-├── breadcrumbs.tsx                             # Shared breadcrumb trail, supports variant="onDark" (done)
-├── contact-form.tsx                            # Contact / quote request form (assumed present, referenced by contact page)
-├── service-page-template.tsx                   # Shared wrapper for all service pages (done)
-├── service-area-template.tsx                   # Shared wrapper for all service area pages (not yet built)
+├── header.tsx                                   # Nav, services dropdown, contact bar
+├── footer.tsx                                   # Footer nav, service list, contact info
+├── whatsapp-button.tsx                          # Floating WhatsApp CTA
+├── breadcrumbs.tsx                              # Shared breadcrumb trail, supports variant="onDark"
+├── contact-form.tsx                             # Contact / quote request form
+├── service-page-template.tsx                    # Shared wrapper for all service pages
+├── service-area-template.tsx                    # Shared wrapper for all service area pages
 └── icons/
     └── whatsapp-icon.tsx
 
@@ -84,67 +114,57 @@ public/
 ├── site.webmanifest
 ├── logo-icon.png, logo-square.png, logo-icon.svg, logo-wordmark.svg
 ├── og-image.png
-├── robots.txt, llms.txt (not yet built)
-└── service photography (fire detection, extinguisher, sprinkler, training, hydrant, etc., mostly placeholder references pending real photos)
+├── robots.txt, llms.txt
+└── service photography (electrical, solar, backup power, generators, geysers, CCTV, etc. — mostly placeholder references pending real photos)
 ```
-
----
-
-## Current Services (6, assumed list, confirm or edit with the client)
-
-1. Fire Detection & Alarm Systems
-2. Fire Extinguisher Supply & Servicing
-3. Sprinkler & Suppression Systems
-4. Fire Safety Training & Compliance
-5. Fire Equipment Maintenance Contracts
-6. Fire Hydrant Installation & Testing
-
-If Jero does not actually offer all six, trim the list now rather than after every page and nav reference exists.
 
 ---
 
 ## Service Areas
 
-Not yet built. The contact page references Johannesburg, Pretoria, Kempton Park, and Midrand as featured areas, with Sandton, Centurion, Fourways, Randburg, Bedfordview, and Rosebank as additional coverage, but no `/service-areas` hub or per-suburb pages exist yet. Confirm this list before building those pages.
+Not yet confirmed. Likely candidates based on the previous build: Johannesburg, Pretoria, Kempton Park, and Midrand as featured areas, with Sandton, Centurion, Fourways, Randburg, Bedfordview, and Rosebank as additional coverage — but confirm this list before building `/service-areas` pages, since it may not match Blackout Busters' actual footprint.
 
 ---
 
 ## URL Structure
 
-- Service pages: `/service-name` (e.g. `/fire-detection-alarm-systems`)
-- Service areas: `/service-areas/[suburb]` (not yet built)
+- Service pages: `/service-name` (e.g. `/electrical-installation`)
+- Service areas: `/service-areas/[suburb]`
 
 ---
 
 ## SEO Files
 
-- **`app/sitemap.ts`** — not yet built. Once created, it must include the homepage, core pages, all 6 service pages, and every service area page.
-- **`public/robots.txt`** — not yet built.
-- **`public/llms.txt`** — not yet built. Should summarize the business, real service list, and real service areas once confirmed.
-- **`app/layout.tsx`** — not yet built. Will hold global metadata, Open Graph/Twitter tags, and Organization + LocalBusiness JSON-LD, following the same pattern used on the Cold Fix Services build.
+- **`app/sitemap.ts`** — must include the homepage, core pages, all 14 service pages, and every service area page once confirmed.
+- **`public/robots.txt`**
+- **`public/llms.txt`** — should summarize the business, real service list, and real service areas once confirmed.
+- **`app/layout.tsx`** — holds global metadata, Open Graph/Twitter tags, and Organization + LocalBusiness JSON-LD. Update all Jero-specific values (name, phone, email, address, colors) here first.
 
 ---
 
 ## Known TODOs
 
-- [ ] **Confirm the service list** — the six services above are assumed from the original brief, not confirmed by the client.
-- [ ] **Confirm the service area list** — suburbs referenced only appear on the contact page so far.
-- [ ] **No fabricated stats** — do not add "X years in business" or "hundreds of clients served" style claims anywhere without a real, confirmed number. The service page template and about page were deliberately written to avoid this.
-- [ ] **Real photography** — every image reference across the About, Services, and service pages is a placeholder filename with a comment describing what real photo should replace it.
-- [ ] **Region confirmation** — the original brief marked "Gauteng, South Africa" as assumed, confirm this is correct.
-- [ ] **`layout.tsx`, `header.tsx`, `footer.tsx`, `whatsapp-button.tsx`, `page.tsx`** — foundation files not yet built, needed before the site can run.
-- [ ] **Search verification codes** — placeholder values will need real ones once `layout.tsx` exists.
+- [ ] Confirm live domain / URL
+- [ ] Confirm business email and physical address
+- [ ] Confirm the full service list (14 assumed from client conversation — verify before launch)
+- [ ] Confirm the service area list (suburbs/regions actually covered)
+- [ ] Replace all remaining fire-safety pages, copy, and imagery with Blackout Busters content
+- [ ] **No fabricated stats** — do not add "X years in business" or "hundreds of clients served" style claims anywhere without a real, confirmed number
+- [ ] **Real photography** — replace every placeholder image reference across About, Services, and service pages
+- [ ] Update logo assets and favicon set for the new brand
+- [ ] Update JSON-LD (Organization + LocalBusiness schema) once domain/address are confirmed
+- [ ] Update search engine verification codes in `layout.tsx`
 
 ---
 
 ## Notes for Future Edits
 
 - The **`ServicePageTemplate`** component in `components/` is a shared wrapper. Editing it affects *every* service page at once, so check there first before assuming a bug is page specific.
-- When adding or removing a service, it needs to be updated in **all** of these places once they exist: `components/header.tsx`, `components/footer.tsx`, `app/services/page.tsx`, `app/sitemap.ts`, `public/llms.txt`, and any `relatedServices` arrays on individual service pages that link to it. Right now that means `app/services/page.tsx` and the `relatedServices` array on each of the four built service pages.
-- Contact details (phone `+27 78 133 6684`, WhatsApp `wa.me/27781336684`, email `014@jerofiresolutions.co.za`) currently appear in `app/about/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, and `components/service-page-template.tsx`. Change all of them together once the header, footer, and layout files exist too.
+- When adding or removing a service, it needs to be updated in **all** of these places: `components/header.tsx`, `components/footer.tsx`, `app/services/page.tsx`, `app/sitemap.ts`, `public/llms.txt`, and any `relatedServices` arrays on individual service pages that link to it.
+- Contact details (phone `+27 83 617 1112`, WhatsApp `wa.me/27836171112`, email TBD) need to be updated together across `app/about/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, `components/service-page-template.tsx`, `header.tsx`, `footer.tsx`, and `layout.tsx`.
 - Bulk find and replace across the repo works well from Git Bash:
   ```bash
   find . -type f \( -name "*.tsx" -o -name "*.ts" \) -not -path "*/node_modules/*" \
     -exec sed -i 's/OLD_VALUE/NEW_VALUE/g' {} +
   ```
-  Always `grep -r` first to preview matches before running the replace.
+  Always `grep -r` first to preview matches before running the replace — this is how you'll swap every remaining "Jero Fire Solutions" reference for "Blackout Busters," and every old contact detail/color for the new ones.
