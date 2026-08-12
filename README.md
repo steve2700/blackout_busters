@@ -2,7 +2,7 @@
 
 Marketing website for **Blackout Busters**, an electrical installation, repair, and solar/backup power solutions company serving Gauteng, South Africa (Johannesburg, Pretoria, Kempton Park, and surrounds).
 
-- **Live URL:** TBD
+- **Live URL:** https://www.blackoutbusterssa.co.za/
 - **Framework:** Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
 - **Package manager:** pnpm
 - **Deployment:** Vercel
@@ -33,8 +33,8 @@ pnpm lint    # run eslint
 | **Company name** | Blackout Busters |
 | **Phone** | +27 83 617 1112 |
 | **WhatsApp** | wa.me/27836171112 |
-| **Email** | TBD |
-| **Address** | TBD |
+| **Email** | [info@blackoutbusterssa.co.za)|
+| **Address** | Kempton Park |
 | **Primary color** | `#0B2545` (deep charcoal navy) |
 | **Accent color** | `#FFB800` (electric amber) |
 | **Alert / CTA color** | `#D62828` (warm red — emergency callout buttons) |
