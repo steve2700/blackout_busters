@@ -9,20 +9,23 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 
 const inter = Inter({ subsets: ["latin"] })
 
+// TODO: replace with the confirmed live domain before launch
+const SITE_URL = "https://www.blackoutbusters.co.za"
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.jerofiresolutions.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Jero Fire Solutions | Fire Detection, Suppression & Safety Compliance in Gauteng",
-    template: "%s | Jero Fire Solutions",
+    default: "Blackout Busters | Electrical Installation, Repairs & Solar Solutions in Gauteng",
+    template: "%s | Blackout Busters",
   },
   description:
-    "Jero Fire Solutions delivers fire detection and alarm systems, extinguisher servicing, sprinkler and suppression installation, and OHS fire safety compliance across Gauteng, Johannesburg and Pretoria.",
+    "Blackout Busters provides electrical installation and repairs, solar installation, backup power (inverter & battery), generator servicing, DB board upgrades, and compliance certificates (COC) across Gauteng, Johannesburg and Pretoria.",
   keywords:
-    "fire extinguisher servicing Gauteng, fire alarm installation Johannesburg, fire detection system maintenance, sprinkler system servicing Gauteng, fire safety compliance certificate Gauteng, OHS fire safety audit, fire equipment maintenance contract, emergency fire alarm repair, Jero Fire Solutions",
-  authors: [{ name: "Jero Fire Solutions", url: "https://www.jerofiresolutions.com" }],
-  creator: "Jero Fire Solutions",
-  publisher: "Jero Fire Solutions",
-  applicationName: "Jero Fire Solutions",
+    "electrical installation Gauteng, electrician Johannesburg, solar installation Gauteng, backup power inverter battery, generator installation servicing, DB board upgrade, compliance certificate COC, load shedding solutions, geyser installation repairs, CCTV installation, emergency electrician 24 hour, commercial industrial electrician, Blackout Busters",
+  authors: [{ name: "Blackout Busters", url: SITE_URL }],
+  creator: "Blackout Busters",
+  publisher: "Blackout Busters",
+  applicationName: "Blackout Busters",
   robots: {
     index: true,
     follow: true,
@@ -44,54 +47,52 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#5C0000" },
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#0B2545" },
     ],
   },
   manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://www.jerofiresolutions.com",
-    siteName: "Jero Fire Solutions",
-    title: "Jero Fire Solutions | Fire Detection, Suppression & Safety Compliance in Gauteng",
+    url: SITE_URL,
+    siteName: "Blackout Busters",
+    title: "Blackout Busters | Electrical Installation, Repairs & Solar Solutions in Gauteng",
     description:
-      "Fire detection, alarm, suppression and extinguisher servicing across Gauteng. Serving Johannesburg, Pretoria and surrounding areas.",
+      "Electrical installation, repairs, solar and backup power solutions across Gauteng. Serving Johannesburg, Pretoria and surrounding areas.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jero Fire Solutions, Fire Detection and Safety Compliance in Gauteng",
+        alt: "Blackout Busters, Electrical & Solar Solutions in Gauteng",
       },
       {
         url: "/logo-square.png",
         width: 512,
         height: 512,
-        alt: "Jero Fire Solutions Logo",
+        alt: "Blackout Busters Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@jerofiresolutions",
-    creator: "@jerofiresolutions",
-    title: "Jero Fire Solutions | Fire Safety & Compliance Gauteng",
+    site: "@blackoutbusters", // TODO: confirm handle
+    creator: "@blackoutbusters", // TODO: confirm handle
+    title: "Blackout Busters | Electrical & Solar Solutions Gauteng",
     description:
-      "Fire detection, suppression, extinguisher servicing and compliance audits across Gauteng, Johannesburg and Pretoria.",
+      "Electrical installation, repairs, solar, backup power, generators, and compliance certificates across Gauteng, Johannesburg and Pretoria.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://www.jerofiresolutions.com",
+    canonical: SITE_URL,
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "your-google-verification-code", // TODO: add real code once domain is live
   },
-  category: "Fire Detection, Suppression & Safety Compliance",
+  category: "Electrical Installation, Repairs & Solar Solutions",
   other: {
     "geo.region": "ZA-GP",
     "geo.placename": "Gauteng, South Africa",
-    "geo.position": "-26.1076;28.0567",
-    "ICBM": "-26.1076, 28.0567",
   },
 }
 
@@ -103,7 +104,7 @@ export default function RootLayout({
   return (
     <html lang="en-ZA">
       <head>
-        <meta name="theme-color" content="#5C0000" />
+        <meta name="theme-color" content="#0B2545" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=yes" />
@@ -114,33 +115,27 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Jero Fire Solutions",
-              url: "https://www.jerofiresolutions.com",
-              logo: "https://www.jerofiresolutions.com/logo-square.png",
-              image: "https://www.jerofiresolutions.com/og-image.png",
+              name: "Blackout Busters",
+              url: SITE_URL,
+              logo: `${SITE_URL}/logo-square.png`,
+              image: `${SITE_URL}/og-image.png`,
               description:
-                "Fire detection and alarm systems, extinguisher servicing, sprinkler and suppression systems, and fire safety compliance in Gauteng",
+                "Electrical installation and repairs, solar installation, backup power, generator servicing, DB board upgrades, and compliance certificates in Gauteng",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "18 Profusa Street, Aston Manor",
-                addressLocality: "Kempton Park",
                 addressRegion: "Gauteng",
                 addressCountry: "ZA",
+                // TODO: add streetAddress and addressLocality once confirmed
               },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: -26.1076,
-                longitude: 28.0567,
-              },
-              areaServed: ["Gauteng", "Johannesburg", "Pretoria", "Kempton Park", "Sandton", "Midrand", "Centurion"],
+              areaServed: ["Gauteng", "Johannesburg", "Pretoria", "Kempton Park", "Sandton", "Midrand", "Centurion"], // TODO: confirm actual coverage
               sameAs: [
-                "https://www.facebook.com/jerofiresolutions",
-                "https://www.instagram.com/jerofiresolutions",
+                // TODO: add social links once created, e.g.
+                // "https://www.facebook.com/blackoutbusters",
+                // "https://www.instagram.com/blackoutbusters",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+27-78-133-6684",
-                email: "014@jerofiresolutions.co.za",
+                telephone: "+27-83-617-1112",
                 contactType: "Customer Service",
                 areaServed: "ZA",
                 availableLanguage: ["en"],
@@ -155,34 +150,26 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://www.jerofiresolutions.com",
-              name: "Jero Fire Solutions",
-              image: "https://www.jerofiresolutions.com/logo-square.png",
-              url: "https://www.jerofiresolutions.com",
-              telephone: "+27-78-133-6684",
+              "@id": SITE_URL,
+              name: "Blackout Busters",
+              image: `${SITE_URL}/logo-square.png`,
+              url: SITE_URL,
+              telephone: "+27-83-617-1112",
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "18 Profusa Street, Aston Manor",
-                addressLocality: "Kempton Park",
                 addressRegion: "Gauteng",
                 addressCountry: "ZA",
+                // TODO: add streetAddress and addressLocality once confirmed
               },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: -26.1076,
-                longitude: 28.0567,
-              },
+              // TODO: add geo coordinates once a physical address is confirmed
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                 opens: "08:00",
                 closes: "17:00",
               },
-              sameAs: [
-                "https://www.facebook.com/jerofiresolutions",
-                "https://www.instagram.com/jerofiresolutions",
-              ],
+              sameAs: [],
             }),
           }}
         />
