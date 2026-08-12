@@ -1,18 +1,37 @@
-```css
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * ============================================================
+ * BLACKOUT BUSTERS
+ * Electrical & Solar Solutions
+ * ============================================================
+ *
+ * Brand:
+ * Primary  - #0B2545  Deep Navy
+ * Accent   - #FFB800  Electric Amber
+ * Alert    - #D62828  Warm Red
+ *
+ * Primary: Main navigation, headings, trust elements
+ * Accent:  Solar/energy highlights, CTAs, buttons
+ * Alert:   Emergency callouts and warnings only
+ *
+ * ============================================================
+ */
+
 :root {
-  /* Blackout Busters Brand Colors
-     Primary: #0B2545 Deep Navy
-     Accent:  #FFB800 Electric Amber
-     Alert:   #D62828 Warm Red
-  */
+  /* ----------------------------------------------------------
+   * Base
+   * ---------------------------------------------------------- */
 
   --background: oklch(0.99 0.002 90);
   --foreground: oklch(0.20 0.025 255);
+
+  /* ----------------------------------------------------------
+   * Cards & Popovers
+   * ---------------------------------------------------------- */
 
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.20 0.025 255);
@@ -20,40 +39,76 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.20 0.025 255);
 
-  /* Primary - Deep Navy #0B2545 */
+  /* ----------------------------------------------------------
+   * PRIMARY
+   * Blackout Busters Deep Navy
+   * #0B2545
+   * ---------------------------------------------------------- */
+
   --primary: oklch(0.20 0.055 255);
   --primary-foreground: oklch(0.99 0.002 90);
 
-  /* Secondary - Dark Blue / Charcoal */
+  /* ----------------------------------------------------------
+   * SECONDARY
+   * Supporting dark blue
+   * ---------------------------------------------------------- */
+
   --secondary: oklch(0.27 0.035 255);
   --secondary-foreground: oklch(0.99 0.002 90);
 
-  /* Accent - Electric Amber #FFB800 */
+  /* ----------------------------------------------------------
+   * ACCENT
+   * Electric Amber
+   * #FFB800
+   * ---------------------------------------------------------- */
+
   --accent: oklch(0.80 0.17 85);
   --accent-foreground: oklch(0.18 0.025 255);
 
-  /* Neutral UI */
+  /* ----------------------------------------------------------
+   * MUTED
+   * ---------------------------------------------------------- */
+
   --muted: oklch(0.96 0.008 255);
   --muted-foreground: oklch(0.48 0.025 255);
 
-  /* Emergency / Alert - Warm Red #D62828 */
+  /* ----------------------------------------------------------
+   * DESTRUCTIVE / EMERGENCY
+   * Warm Red
+   * #D62828
+   * ---------------------------------------------------------- */
+
   --destructive: oklch(0.52 0.20 28);
   --destructive-foreground: oklch(0.99 0 0);
+
+  /* ----------------------------------------------------------
+   * Borders / Inputs / Focus
+   * ---------------------------------------------------------- */
 
   --border: oklch(0.90 0.015 255);
   --input: oklch(0.92 0.012 255);
   --ring: oklch(0.80 0.17 85);
 
-  /* Charts */
+  /* ----------------------------------------------------------
+   * Charts
+   * ---------------------------------------------------------- */
+
   --chart-1: oklch(0.80 0.17 85);
   --chart-2: oklch(0.20 0.055 255);
   --chart-3: oklch(0.52 0.20 28);
   --chart-4: oklch(0.35 0.08 255);
   --chart-5: oklch(0.65 0.13 85);
 
+  /* ----------------------------------------------------------
+   * Radius
+   * ---------------------------------------------------------- */
+
   --radius: 0.5rem;
 
-  /* Sidebar */
+  /* ----------------------------------------------------------
+   * Sidebar
+   * ---------------------------------------------------------- */
+
   --sidebar: oklch(0.20 0.055 255);
   --sidebar-foreground: oklch(0.99 0.002 90);
 
@@ -67,9 +122,14 @@
   --sidebar-ring: oklch(0.80 0.17 85);
 }
 
-.dark {
-  /* Blackout Busters Dark Mode */
 
+/*
+ * ============================================================
+ * DARK MODE
+ * ============================================================
+ */
+
+.dark {
   --background: oklch(0.15 0.025 255);
   --foreground: oklch(0.96 0.005 90);
 
@@ -79,7 +139,7 @@
   --popover: oklch(0.19 0.03 255);
   --popover-foreground: oklch(0.96 0.005 90);
 
-  /* Navy remains the main brand color */
+  /* Primary Navy */
   --primary: oklch(0.30 0.065 255);
   --primary-foreground: oklch(0.99 0.002 90);
 
@@ -87,10 +147,11 @@
   --secondary: oklch(0.25 0.04 255);
   --secondary-foreground: oklch(0.96 0.005 90);
 
-  /* Amber remains highly visible in dark mode */
+  /* Electric Amber */
   --accent: oklch(0.80 0.17 85);
   --accent-foreground: oklch(0.16 0.025 255);
 
+  /* Muted */
   --muted: oklch(0.24 0.025 255);
   --muted-foreground: oklch(0.70 0.015 255);
 
@@ -98,6 +159,7 @@
   --destructive: oklch(0.55 0.20 28);
   --destructive-foreground: oklch(0.99 0 0);
 
+  /* Borders */
   --border: oklch(0.30 0.035 255);
   --input: oklch(0.27 0.035 255);
   --ring: oklch(0.80 0.17 85);
@@ -116,49 +178,66 @@
   --sidebar-ring: oklch(0.80 0.17 85);
 }
 
+
+/*
+ * ============================================================
+ * TAILWIND THEME
+ * ============================================================
+ */
+
 @theme inline {
   --font-sans: "Inter", "Inter Fallback", system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
 
+  /* Base colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  /* Cards */
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
+  /* Popovers */
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
 
+  /* Brand */
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
 
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
+  /* Muted */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  /* Emergency */
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
 
+  /* UI */
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
 
+  /* Charts */
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
 
+  /* Radius */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
+  /* Sidebar */
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -169,13 +248,124 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+
+/*
+ * ============================================================
+ * BASE STYLES
+ * ============================================================
+ */
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  ::selection {
+    background: #FFB800;
+    color: #0B2545;
+  }
 }
-```
+
+
+/*
+ * ============================================================
+ * BLACKOUT BUSTERS BRAND UTILITIES
+ * ============================================================
+ */
+
+/* Emergency red utility */
+.bb-emergency {
+  background-color: #D62828;
+  color: white;
+}
+
+.bb-emergency:hover {
+  background-color: #b91f1f;
+}
+
+/* Navy brand background */
+.bb-navy {
+  background-color: #0B2545;
+  color: white;
+}
+
+/* Amber brand background */
+.bb-amber {
+  background-color: #FFB800;
+  color: #0B2545;
+}
+
+/* Amber text */
+.bb-amber-text {
+  color: #FFB800;
+}
+
+/* Navy text */
+.bb-navy-text {
+  color: #0B2545;
+}
+
+
+/*
+ * ============================================================
+ * ACCESSIBILITY
+ * ============================================================
+ */
+
+:focus-visible {
+  outline: 2px solid #FFB800;
+  outline-offset: 2px;
+}
+
+
+/*
+ * ============================================================
+ * SCROLLBAR
+ * ============================================================
+ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B2545;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB800;
+}
+
+
+/*
+ * ============================================================
+ * REDUCED MOTION
+ * ============================================================
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
