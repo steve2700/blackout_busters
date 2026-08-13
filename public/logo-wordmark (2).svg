@@ -1,0 +1,77 @@
+<svg width="1456" height="549" viewBox="0 0 1456 549" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="slice1clip">
+      <path d="M235,265 L17.7,206.8 A225,225 0 0,1 456.6,225.9 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- ===== ICON ===== -->
+  <!-- base white disc -->
+  <circle cx="235" cy="265" r="225" fill="#FFFFFF"/>
+
+  <!-- slice 1: navy, upper-left (solar grid lives here) -->
+  <path d="M235,265 L17.7,206.8 A225,225 0 0,1 456.6,225.9 Z" fill="#0B2545"/>
+
+  <!-- solar panel grid, clipped to slice 1 -->
+  <g clip-path="url(#slice1clip)">
+    <g transform="rotate(-25 160 160)" stroke="#FFFFFF" stroke-width="7">
+      <line x1="70" y1="30" x2="70" y2="270"/>
+      <line x1="112" y1="30" x2="112" y2="270"/>
+      <line x1="154" y1="30" x2="154" y2="270"/>
+      <line x1="196" y1="30" x2="196" y2="270"/>
+      <line x1="238" y1="30" x2="238" y2="270"/>
+      <line x1="30" y1="65" x2="270" y2="65"/>
+      <line x1="30" y1="115" x2="270" y2="115"/>
+      <line x1="30" y1="165" x2="270" y2="165"/>
+      <line x1="30" y1="215" x2="270" y2="215"/>
+    </g>
+  </g>
+
+  <!-- slice 2: navy, right wedge -->
+  <path d="M235,265 L459.15,245.4 A225,225 0 0,1 330.1,468.9 Z" fill="#0B2545"/>
+
+  <!-- slice 3: red, bottom -->
+  <path d="M235,265 L293.2,482.3 A225,225 0 0,1 13.4,304.1 Z" fill="#C81E1E"/>
+
+  <!-- outer ring for crisp edge -->
+  <circle cx="235" cy="265" r="230" fill="none" stroke="#0B2545" stroke-width="10"/>
+
+  <!-- amber lightning bolt, overlaid on top, poking past the circle -->
+  <path d="M450,10 L240,255 L350,230 L95,530 L230,300 L110,330 Z" fill="#FFB800" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- power button icon, front-most -->
+  <g>
+    <circle cx="235" cy="405" r="58" fill="#FFFFFF"/>
+    <circle cx="235" cy="405" r="50" fill="none" stroke="#C81E1E" stroke-width="12"/>
+    <path d="M235,368 v40" stroke="#C81E1E" stroke-width="12" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- ===== WORDMARK ===== -->
+  <text x="500" y="165" font-family="Arial Black, Arial, sans-serif" font-weight="900"
+        font-size="128" letter-spacing="1" fill="#0B2545" transform="skewX(-6)" transform-origin="500 165">
+    BLACKOUT
+  </text>
+  <text x="500" y="305" font-family="Arial Black, Arial, sans-serif" font-weight="900"
+        font-size="138" letter-spacing="1" fill="#FFB800" transform="skewX(-6)" transform-origin="500 305">
+    BUSTERS
+  </text>
+
+  <!-- tagline with amber dividers -->
+  <line x1="390" y1="392" x2="500" y2="392" stroke="#FFB800" stroke-width="4"/>
+  <text x="520" y="400" font-family="Arial, sans-serif" font-weight="700" font-size="30"
+        letter-spacing="3" fill="#0B2545">
+    ELECTRICAL &amp; SOLAR SOLUTIONS
+  </text>
+  <line x1="1270" y1="392" x2="1400" y2="392" stroke="#FFB800" stroke-width="4"/>
+
+  <!-- services row -->
+  <text x="20" y="460" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="1">
+    <tspan fill="#0B2545">ELECTRICAL INSTALLATION</tspan>
+    <tspan fill="#C81E1E" dx="14">|</tspan>
+    <tspan fill="#0B2545" dx="14">ELECTRICAL REPAIRS</tspan>
+    <tspan fill="#C81E1E" dx="14">|</tspan>
+    <tspan fill="#0B2545" dx="14">SOLAR INSTALLATION</tspan>
+    <tspan fill="#C81E1E" dx="14">|</tspan>
+    <tspan fill="#0B2545" dx="14">MAINTENANCE</tspan>
+  </text>
+</svg>
