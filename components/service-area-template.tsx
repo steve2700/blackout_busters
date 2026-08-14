@@ -34,14 +34,11 @@ interface ServiceAreaTemplateProps {
   children?: ReactNode
 }
 
-// TODO: confirm real page slugs once the electrical/solar/backup power service
-// pages are finalised — "electrical-repairs", "solar-installation" and
-// "generator-installation-servicing" already exist, the rest are placeholders.
 const popularServices = [
   { icon: Zap, title: "Electrical Repairs", href: "/electrical-repairs" },
   { icon: Sun, title: "Solar Installation", href: "/solar-installation" },
-  { icon: BatteryCharging, title: "Generator Installation & Servicing", href: "/generator-installation-servicing" },
-  { icon: Wrench, title: "Electrical Compliance Certificates", href: "/electrical-compliance-certificates" },
+  { icon: BatteryCharging, title: "Backup Power (Inverter & Battery)", href: "/backup-power-inverter-battery" },
+  { icon: Wrench, title: "DB Board Upgrades & COC", href: "/db-board-upgrades-compliance-certificates" },
 ]
 
 export function ServiceAreaTemplate({

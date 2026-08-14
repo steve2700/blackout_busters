@@ -1,17 +1,9 @@
 import type { MetadataRoute } from "next"
+import { services, SITE } from "@/lib/services"
 
 export const dynamic = "force-static"
 
-const baseUrl = "https://www.jerofiresolutions.com"
-
-const services = [
-  "fire-detection-alarm-systems",
-  "fire-extinguisher-supply-servicing",
-  "sprinkler-suppression-systems",
-  "fire-safety-training-compliance",
-  "fire-equipment-maintenance-contracts",
-  "fire-hydrant-installation-testing",
-]
+const baseUrl = SITE.url
 
 const serviceAreas = [
   "johannesburg",
@@ -24,6 +16,8 @@ const serviceAreas = [
   "randburg",
   "bedfordview",
   "rosebank",
+  "roodepoort",
+  "morningside",
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -37,8 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/service-areas`, lastModified, changeFrequency: "monthly", priority: 0.8 },
   ]
 
-  const servicePages: MetadataRoute.Sitemap = services.map((slug) => ({
-    url: `${baseUrl}/${slug}`,
+  const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
+    url: `${baseUrl}/${service.slug}`,
     lastModified,
     changeFrequency: "monthly",
     priority: 0.8,
