@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Fire Detection, Suppression and Compliance in Centurion | Jero Fire Solutions",
+  title: "Electrical, Solar & Backup Power in Centurion | Blackout Busters",
   description:
-    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Centurion. Serving Highveld, Eldoraigne, Irene, Wierdapark, Zwartkop and all Centurion suburbs. Same day quotes available.",
+    "Electrical installation and repairs, solar, inverter and battery backup, and compliance certificates (COC) in Centurion. Serving Highveld, Eldoraigne, Irene, Wierdapark, Zwartkop and all Centurion suburbs. Same day quotes available.",
 }
 
 export default function CenturionPage() {
   return (
     <ServiceAreaTemplate
       areaName="Centurion"
-      description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-residential-gauteng.jpg"
+      description="Blackout Busters provides certified electrical installation and repairs, solar, inverter and battery backup, and compliance certificates throughout Centurion. From family homes in established suburbs to modern developments and businesses, we keep the power reliable and certificates current."
+      introImage="/solar-panel-roof-installation.png"
       suburbs={[
         "Highveld",
         "Eldoraigne",
@@ -24,28 +24,28 @@ export default function CenturionPage() {
         "Lyttelton",
         "Clubview",
       ]}
-      introduction="Centurion offers suburban living with easy access to both Pretoria and Johannesburg, and a mix of family homes, office parks, and industrial sites that each carry different fire safety obligations. Jero Fire Solutions has become a trusted choice in the area for detection systems, extinguisher servicing, suppression work, and OHS compliance that actually gets checked properly, not just signed off. Our technicians understand what Centurion homes and businesses need to stay protected and compliant."
+      introduction="Centurion offers suburban living with easy access to both Pretoria and Johannesburg, and a mix of family homes, office parks, and industrial sites that all feel load shedding in their own way. Blackout Busters has become a trusted choice in the area for electrical repairs, solar installation, backup power, and compliance work that actually gets done properly. Our electricians understand what Centurion homes and businesses need to stay powered, protected, and compliant."
       servicesOffered={[
-        "Fire detection and alarm system installation",
-        "Alarm panel servicing and fault finding",
-        "Fire extinguisher supply and annual servicing",
-        "Extinguisher refills and certification",
-        "Sprinkler and suppression system servicing",
-        "Suppression system installation for offices and industrial sites",
-        "OHS compliance audits",
-        "Staff fire safety training and evacuation drills",
-        "Fire equipment maintenance contracts",
-        "Fire hydrant installation and pressure testing",
-        "Certificate of Compliance documentation",
-        "Emergency callouts for faulty systems",
+        "Electrical installation and new wiring",
+        "Electrical repairs and fault finding",
+        "Solar panel system installation",
+        "Inverter and battery backup power installation",
+        "Generator installation and servicing",
+        "DB board upgrades and replacements",
+        "Compliance certificates (COC) for sales and audits",
+        "Load shedding solutions and consultations",
+        "Geyser installation and repairs",
+        "CCTV and security system installation",
+        "Prepaid meter installation",
+        "Emergency 24 hour electrical callouts",
       ]}
       whyChooseUs={[
-        "Certified technicians reaching Centurion quickly for same day quotes",
+        "Certified electricians reaching Centurion quickly for same day quotes",
         "Experience across homes, office parks, and industrial sites",
-        "Technicians who understand OHS Act requirements, not just paperwork",
+        "A Certificate of Compliance (COC) issued on every completed job",
         "Honest assessments, even when the answer is a repair, not a sale",
-        "A Certificate of Compliance issued on every completed job",
-        "24 hour emergency response for fire safety faults",
+        "24 hour emergency response for electrical faults",
+        "Load shedding know-how, from a single plug to a full backup system",
       ]}
       nearbyAreas={[
         { name: "Pretoria", href: "/service-areas/pretoria" },

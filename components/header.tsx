@@ -162,11 +162,11 @@ export function Header() {
           aria-label="Blackout Busters home"
         >
           <Image
-            src="/logo-wordmark.svg"
+            src="/logo-mark.svg"
             alt="Blackout Busters - Electrical & Solar Solutions"
-            width={1000}
-            height={300}
-            className="h-10 w-auto sm:h-12 lg:h-14"
+            width={560}
+            height={150}
+            className="h-11 w-auto sm:h-12 lg:h-14"
             priority
           />
         </Link>
@@ -353,11 +353,11 @@ export function Header() {
                     className="rounded-lg bg-white px-3 py-2 shadow-lg"
                   >
                     <Image
-                      src="/logo-wordmark.svg"
+                      src="/logo-mark.svg"
                       alt="Blackout Busters"
-                      width={1000}
-                      height={300}
-                      className="h-8 w-auto"
+                      width={560}
+                      height={150}
+                      className="h-9 w-auto"
                       priority
                     />
                   </Link>

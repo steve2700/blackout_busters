@@ -80,13 +80,13 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Company Info */}
           <div className="space-y-4 lg:col-span-2">
-            <Link href="/" className="inline-block rounded-lg bg-white px-3 py-2 shadow-sm">
+            <Link href="/" className="inline-block rounded-xl bg-white px-4 py-3 shadow-md">
               <Image
-                src="/logo-wordmark.svg"
+                src="/logo-mark.svg"
                 alt="Blackout Busters"
-                width={1000}
-                height={300}
-                className="h-9 w-auto"
+                width={560}
+                height={150}
+                className="h-12 w-auto"
                 loading="lazy"
               />
             </Link>

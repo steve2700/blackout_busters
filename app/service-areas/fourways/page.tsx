@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Fire Detection, Suppression and Compliance in Fourways | Jero Fire Solutions",
+  title: "Electrical, Solar & Backup Power in Fourways | Blackout Busters",
   description:
-    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Fourways. Serving Lonehill, Dainfern, Broadacres, Cedar Lakes, Douglasdale and surrounding areas. Same day quotes available.",
+    "Electrical installation and repairs, solar, inverter and battery backup, and compliance certificates (COC) in Fourways. Serving Lonehill, Dainfern, Broadacres, Cedar Lakes, Douglasdale and surrounding areas. Same day quotes available.",
   openGraph: {
-    title: "Fire Detection, Suppression and Compliance in Fourways | Jero Fire Solutions",
+    title: "Electrical, Solar & Backup Power in Fourways | Blackout Busters",
     description:
-      "Certified fire safety installation, servicing, and compliance work for Fourways estates, homes, and businesses.",
+      "Certified electrical, solar, and backup power installation, repairs, and compliance work for Fourways estates, homes, and businesses.",
   },
 }
 
@@ -16,8 +16,8 @@ export default function FourwaysPage() {
   return (
     <ServiceAreaTemplate
       areaName="Fourways"
-      description="Jero Fire Solutions delivers certified fire detection, extinguisher servicing, suppression systems, and OHS compliance across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-retail-gauteng.jpg"
+      description="Blackout Busters delivers certified electrical installation and repairs, solar, inverter and battery backup, and compliance certificates across Fourways' residential estates and commercial developments. From luxury homes to shopping centres and offices, we keep the power on and the certificates current."
+      introImage="/blackout-busters-team-gauteng.png"
       suburbs={[
         "Lonehill",
         "Dainfern",
@@ -28,28 +28,28 @@ export default function FourwaysPage() {
         "Douglasdale",
         "Magaliesig",
       ]}
-      introduction="Fourways has grown into one of Johannesburg's most sought after areas, with premier residential estates, modern shopping centres, and busy commercial developments, each carrying its own fire safety and compliance obligations. Jero Fire Solutions provides the detection, suppression, extinguisher servicing, and compliance work that Fourways property owners and body corporates actually need, from alarm servicing in an estate home to a full suppression system for a shopping centre. Our technicians understand estate access requirements and work efficiently to get systems tested, certified, and back online."
+      introduction="Fourways has grown into one of Johannesburg's most sought after areas, with premier residential estates, modern shopping centres, and busy commercial developments that all need reliable power and solid backup for load shedding. Blackout Busters provides the electrical, solar, backup power, and compliance work that Fourways property owners and body corporates actually need, from a repair in an estate home to a full solar and battery system for a shopping centre. Our electricians understand estate access requirements and work efficiently to get systems installed, tested, and certified."
       servicesOffered={[
-        "Fire detection and alarm system installation",
-        "Alarm panel servicing and fault finding",
-        "Fire extinguisher supply and annual servicing",
-        "Extinguisher refills and certification",
-        "Sprinkler and suppression system servicing",
-        "Suppression system installation for retail and commercial sites",
-        "OHS compliance audits",
-        "Staff fire safety training and evacuation drills",
-        "Fire equipment maintenance contracts",
-        "Fire hydrant installation and pressure testing",
-        "Certificate of Compliance documentation",
-        "Emergency callouts for faulty systems",
+        "Electrical installation and new wiring",
+        "Electrical repairs and fault finding",
+        "Solar panel system installation",
+        "Inverter and battery backup power installation",
+        "Generator installation and servicing",
+        "DB board upgrades and replacements",
+        "Compliance certificates (COC) for sales and audits",
+        "Load shedding solutions and consultations",
+        "Geyser installation and repairs",
+        "CCTV and security system installation",
+        "Prepaid meter installation",
+        "Emergency 24 hour electrical callouts",
       ]}
       whyChooseUs={[
-        "Certified technicians reaching Fourways quickly for same day quotes",
+        "Certified electricians reaching Fourways quickly for same day quotes",
         "Experience working within security estates and their access rules",
-        "Technicians who understand OHS Act requirements, not just paperwork",
+        "A Certificate of Compliance (COC) issued on every completed job",
         "Honest assessments, even when the answer is a repair, not a sale",
-        "A Certificate of Compliance issued on every completed job",
-        "24 hour emergency response for fire safety faults",
+        "24 hour emergency response for electrical faults",
+        "Load shedding know-how, from a single plug to a full backup system",
       ]}
       nearbyAreas={[
         { name: "Sandton", href: "/service-areas/sandton" },
