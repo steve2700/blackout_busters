@@ -2,6 +2,10 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MapPin, ArrowRight, CheckCircle, Clock, Phone, CalendarCheck } from "lucide-react"
 
+const PHONE_TEL = "tel:+27836171112"
+const PHONE_DISPLAY = "+27 83 617 1112"
+
+// TODO: confirm this coverage list reflects Blackout Busters' actual footprint before launch
 const primaryAreas = [
   { name: "Johannesburg", href: "/service-areas/johannesburg", suburbs: ["Sandton", "Rosebank", "Fourways", "Randburg", "Roodepoort"] },
   { name: "Pretoria", href: "/service-areas/pretoria", suburbs: ["Centurion", "Montana", "Hatfield", "Silverton", "Brooklyn"] },
@@ -21,7 +25,7 @@ const extendedAreas = [
 const benefits = [
   { icon: Clock, text: "Same day response for emergency callouts", highlight: true },
   { icon: CheckCircle, text: "Free quotes across Gauteng", highlight: false },
-  { icon: CalendarCheck, text: "Scheduled compliance visits and annual servicing", highlight: false },
+  { icon: CalendarCheck, text: "Scheduled maintenance and load shedding consultations", highlight: false },
   { icon: Phone, text: "24/7 emergency support hotline available", highlight: false },
 ]
 
@@ -45,10 +49,12 @@ export function ServiceAreasPreview() {
               className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
               itemProp="name"
             >
-              Dispatched From Kempton Park, Covering <span className="text-secondary">All of Gauteng</span>
+              Proudly Covering <span className="text-secondary">All of Gauteng</span>
             </h2>
             <p className="mb-6 text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-              <strong>Jero Fire Solutions</strong> is based in Aston Manor, Kempton Park, with technicians dispatched across <strong>Johannesburg, Pretoria</strong>, and every major Gauteng suburb for installations, servicing, and compliance work.
+              <strong>Blackout Busters</strong> dispatches technicians across <strong>Johannesburg, Pretoria</strong>,
+              and every major Gauteng suburb for electrical, solar, and backup power installations, repairs,
+              and compliance work.
             </p>
 
             {/* Benefits List */}
@@ -81,22 +87,21 @@ export function ServiceAreasPreview() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-secondary/30 hover:bg-secondary/10 h-12 px-8 transition-transform hover:scale-105">
-                <Link href="tel:+27781336684">
+                <a href={PHONE_TEL}>
                   <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                  Call: +27 78 133 6684
-                </Link>
+                  Call: {PHONE_DISPLAY}
+                </a>
               </Button>
             </div>
           </div>
 
-          {/* Coverage Radius Diagram — replaces the stock map + fake pins */}
+          {/* Coverage Radius Diagram — no unconfirmed HQ address, generic center label */}
           <div className="relative flex items-center justify-center">
-            <svg viewBox="0 0 400 400" className="w-full max-w-md" role="img" aria-label="Coverage radius from Jero Fire Solutions headquarters in Kempton Park">
+            <svg viewBox="0 0 400 400" className="w-full max-w-md" role="img" aria-label="Blackout Busters coverage radius across Gauteng">
               <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
               <circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
               <circle cx="200" cy="200" r="60" fill="var(--color-secondary)" fillOpacity="0.08" stroke="currentColor" className="text-secondary" strokeWidth="1.5" />
 
-              {/* Single pulse tied to the real HQ, not scattered fake pins */}
               <circle cx="200" cy="200" r="8" fill="var(--color-accent)" opacity="0.35">
                 <animate attributeName="r" values="8;40;8" dur="3s" repeatCount="indefinite" />
                 <animate attributeName="opacity" values="0.35;0;0.35" dur="3s" repeatCount="indefinite" />
@@ -114,10 +119,10 @@ export function ServiceAreasPreview() {
               <text x="200" y="350" textAnchor="middle" className="fill-foreground text-[13px] font-bold">Sandton</text>
             </svg>
 
-            {/* HQ label pinned to the center */}
+            {/* Generic center label — no unconfirmed address claim */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-4 text-center">
               <p className="text-[10px] font-bold text-accent-foreground bg-accent px-2 py-0.5 rounded-full shadow-md whitespace-nowrap">
-                HQ — Kempton Park
+                Gauteng Coverage
               </p>
             </div>
           </div>
