@@ -1,15 +1,24 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Award, Shield, Users } from "lucide-react"
+import { Facebook, Instagram, Mail, MapPin, Phone, Clock, Zap, Shield, Users } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
+const PHONE_TEL = "tel:+27836171112"
+const PHONE_DISPLAY = "+27 83 617 1112"
+const WHATSAPP_HREF =
+  "https://wa.me/27836171112?text=" +
+  encodeURIComponent("Hi Blackout Busters, I'd like to make an inquiry.")
+
+// TODO: confirm real page slugs once the electrical/solar/backup power service
+// pages are finalised — "electrical-repairs", "solar-installation" and
+// "generator-installation-servicing" already exist, the rest are placeholders.
 const services = [
-  { title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
-  { title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
-  { title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
-  { title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
-  { title: "Fire Equipment Maintenance Contracts", href: "/fire-equipment-maintenance-contracts" },
-  { title: "Fire Hydrant Installation & Testing", href: "/fire-hydrant-installation-testing" },
+  { title: "Electrical Repairs", href: "/electrical-repairs" },
+  { title: "Solar Installation", href: "/solar-installation" },
+  { title: "Backup Power & Inverter Systems", href: "/backup-power-inverter-systems" },
+  { title: "Generator Installation & Servicing", href: "/generator-installation-servicing" },
+  { title: "Electrical Compliance Certificates (COC)", href: "/electrical-compliance-certificates" },
+  { title: "Load Shedding Solutions", href: "/load-shedding-solutions" },
 ]
 
 const serviceAreas = [
@@ -38,11 +47,11 @@ export function Footer() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
-                <Award className="h-6 w-6 text-accent" />
+                <Zap className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Certified Fire Technicians</h4>
-                <p className="text-sm text-primary-foreground/70">Compliance documentation on every job</p>
+                <h4 className="font-semibold text-white">Certified Electricians</h4>
+                <p className="text-sm text-primary-foreground/70">Compliance Certificate (COC) on every job</p>
               </div>
             </div>
 
@@ -62,7 +71,7 @@ export function Footer() {
               </div>
               <div>
                 <h4 className="font-semibold text-white">Local Gauteng Team</h4>
-                <p className="text-sm text-primary-foreground/70">Based in Kempton Park, serving all of Gauteng</p>
+                <p className="text-sm text-primary-foreground/70">Dispatched across the whole province</p>
               </div>
             </div>
           </div>
@@ -77,7 +86,7 @@ export function Footer() {
             <Link href="/" className="inline-block rounded-lg bg-white px-3 py-2 shadow-sm">
               <Image
                 src="/logo-wordmark.svg"
-                alt="Jero Fire Solutions"
+                alt="Blackout Busters"
                 width={1000}
                 height={300}
                 className="h-9 w-auto"
@@ -86,16 +95,19 @@ export function Footer() {
             </Link>
 
             <p className="max-w-md text-sm leading-relaxed text-primary-foreground/80">
-              Jero Fire Solutions is your certified partner for fire detection, alarm systems, extinguisher servicing, suppression, and OHS compliance across Gauteng. Certified technicians, full compliance documentation, every job.
+              Blackout Busters is your trusted partner for electrical, solar, and backup power
+              installations, repairs, and compliance work across Gauteng. Straightforward quotes,
+              certified technicians, a Compliance Certificate (COC) on every job.
             </p>
 
             {/* Social Media Links */}
+            {/* TODO: confirm real Blackout Busters social handles before launch */}
             <div>
               <h4 className="mb-3 text-sm font-semibold text-white">Follow Us</h4>
 
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/jerofiresolutions"
+                  href="https://www.facebook.com/blackoutbusterssa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -105,7 +117,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/jerofiresolutions"
+                  href="https://www.instagram.com/blackoutbusterssa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-accent hover:text-white"
@@ -115,7 +127,7 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="https://wa.me/27781336684"
+                  href={WHATSAPP_HREF}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 text-primary-foreground/70 transition-all hover:bg-[#25D366] hover:text-white"
@@ -128,7 +140,7 @@ export function Footer() {
               {/* Google Reviews */}
               <div className="mt-4">
                 <a
-                  href="https://www.google.com/search?q=Jero+Fire+Solutions+Gauteng+reviews"
+                  href="https://www.google.com/search?q=Blackout+Busters+Gauteng+reviews"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm text-primary-foreground/80 transition hover:bg-accent hover:text-white"
@@ -177,43 +189,39 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">Contact Us</h4>
             <ul className="space-y-3">
-              <li>
-                <a
-                  href="https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-start gap-3"
-                >
-                  <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    Kempton Park, Gauteng
-                    <br />
-                    Serving Johannesburg &amp; Pretoria
-                  </span>
-                </a>
+              {/* No confirmed street address — keep this to the province, same
+                  approach used on the service-areas coverage diagram. */}
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
+                <span className="text-sm text-primary-foreground/80">
+                  Gauteng, South Africa
+                  <br />
+                  Serving Johannesburg &amp; Pretoria
+                </span>
               </li>
 
               <li>
-                <a href="tel:+27781336684" className="group flex items-center gap-3">
+                <a href={PHONE_TEL} className="group flex items-center gap-3">
                   <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">+27 78 133 6684</span>
+                  <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">{PHONE_DISPLAY}</span>
                 </a>
               </li>
 
               <li>
-                <a href="https://wa.me/27781336684" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
+                <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3">
                   <WhatsAppIcon className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    WhatsApp: +27 78 133 6684
+                    WhatsApp: {PHONE_DISPLAY}
                   </span>
                 </a>
               </li>
 
+              {/* TODO: confirm real inbox before launch */}
               <li>
-                <a href="mailto:014@jerofiresolutions.co.za" className="group flex items-center gap-3">
+                <a href="mailto:info@blackoutbusterssa.co.za" className="group flex items-center gap-3">
                   <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
                   <span className="text-sm text-primary-foreground/80 transition-colors group-hover:text-accent">
-                    014@jerofiresolutions.co.za
+                    info@blackoutbusterssa.co.za
                   </span>
                 </a>
               </li>
@@ -251,7 +259,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
           <p className="text-center text-sm text-primary-foreground/70 md:text-left">
-            © {new Date().getFullYear()} Jero Fire Solutions. All rights reserved.
+            © {new Date().getFullYear()} Blackout Busters. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/privacy-policy" className="text-sm text-primary-foreground/70 transition-colors hover:text-accent">
