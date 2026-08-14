@@ -9,16 +9,13 @@ const WHATSAPP_HREF =
   "https://wa.me/27836171112?text=" +
   encodeURIComponent("Hi Blackout Busters, I'd like to make an inquiry.")
 
-// TODO: confirm real page slugs once the electrical/solar/backup power service
-// pages are finalised — "electrical-repairs", "solar-installation" and
-// "generator-installation-servicing" already exist, the rest are placeholders.
 const services = [
+  { title: "Electrical Installation", href: "/electrical-installation" },
   { title: "Electrical Repairs", href: "/electrical-repairs" },
   { title: "Solar Installation", href: "/solar-installation" },
-  { title: "Backup Power & Inverter Systems", href: "/backup-power-inverter-systems" },
+  { title: "Backup Power (Inverter & Battery)", href: "/backup-power-inverter-battery" },
   { title: "Generator Installation & Servicing", href: "/generator-installation-servicing" },
-  { title: "Electrical Compliance Certificates (COC)", href: "/electrical-compliance-certificates" },
-  { title: "Load Shedding Solutions", href: "/load-shedding-solutions" },
+  { title: "DB Board Upgrades & COC", href: "/db-board-upgrades-compliance-certificates" },
 ]
 
 const serviceAreas = [

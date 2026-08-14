@@ -46,7 +46,7 @@ export function HeroSection() {
             {/* Badge — no unverified claims */}
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs sm:text-sm font-medium text-white backdrop-blur-sm border border-white/10 shadow-lg">
               <Zap className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span>Electrical &amp; Solar Specialists — Gauteng</span>
+              <span>Electrical &amp; Solar Specialists in Gauteng</span>
             </div>
 
             {/* Headline */}
@@ -65,7 +65,7 @@ export function HeroSection() {
             >
               <strong className="text-white">Blackout Busters</strong> installs and repairs the
               electrical, solar and backup power systems that keep Gauteng homes and businesses
-              running — installations, repairs, generators, inverters and compliance
+              running. Installations, repairs, generators, inverters and compliance
               certificates, done right the first time.
             </p>
 

@@ -11,12 +11,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { CheckCircle, Loader2, Send, AlertCircle } from "lucide-react"
 
 const services = [
-  "Fire Detection & Alarm Systems",
-  "Fire Extinguisher Supply & Servicing",
-  "Sprinkler & Suppression Systems",
-  "Fire Safety Training & Compliance",
-  "Fire Equipment Maintenance Contracts",
-  "Fire Hydrant Installation & Testing",
+  "Electrical Installation",
+  "Electrical Repairs",
+  "Solar Installation",
+  "Backup Power (Inverter & Battery)",
+  "Generator Installation & Servicing",
+  "DB Board Upgrades & COC",
+  "Load Shedding Solutions",
+  "Emergency / 24 Hour Callout",
   "Other",
 ]
 
@@ -44,8 +46,8 @@ export function ContactForm() {
 
     const payload = {
       access_key: WEB3FORMS_ACCESS_KEY,
-      subject: "New Quote Request — Jero Fire Solutions Website",
-      from_name: "Jero Fire Solutions Website",
+      subject: "New Quote Request from Blackout Busters Website",
+      from_name: "Blackout Busters Website",
       name: `${firstName} ${lastName}`.trim(),
       email: formData.get("email"),
       phone: formData.get("phone"),

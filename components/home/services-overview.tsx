@@ -140,7 +140,7 @@ const groups: ServiceGroup[] = [
       {
         icon: Siren,
         title: "Emergency / 24-Hour Callout",
-        description: "Urgent electrical faults don't wait for business hours — neither do we.",
+        description: "Urgent electrical faults don't wait for business hours, and neither do we.",
         href: "/emergency-247-callout",
       },
     ],
@@ -188,7 +188,7 @@ export function ServicesOverview() {
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
             <strong>Blackout Busters</strong> covers everything from a single faulty plug point to a full
-            backup power system — installations, repairs, and the compliance paperwork to prove it,
+            backup power system. Installations, repairs, and the compliance paperwork to prove it,
             across <strong>Johannesburg, Pretoria, and Gauteng</strong>.
           </p>
         </div>
@@ -259,7 +259,7 @@ export function ServicesOverview() {
             Not Sure Which Service You Need?
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Tell us what's going on and we'll point you at the right fix — from a quick repair to a full
+            Tell us what's going on and we'll point you at the right fix, from a quick repair to a full
             backup power setup.
           </p>
 

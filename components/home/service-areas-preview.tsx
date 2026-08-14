@@ -162,7 +162,7 @@ export function ServiceAreasPreview() {
               Extended Coverage
             </h3>
             <p className="text-muted-foreground text-sm mb-6">
-              Can&apos;t find your suburb? Contact us — we cover the entire Gauteng province.
+              Can&apos;t find your suburb? Contact us, we cover the entire Gauteng province.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {extendedAreas.map((area) => (

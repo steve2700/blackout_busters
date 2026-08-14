@@ -52,23 +52,23 @@ const services = [
   },
   {
     title: "Electrical Maintenance",
-    href: "/electrical-maintenance",
+    href: "/maintenance",
     description:
       "Reliable scheduled maintenance to keep your electrical systems running safely.",
     icon: CircuitBoard,
   },
   {
-    title: "Inverter & Battery Solutions",
-    href: "/inverter-battery-solutions",
+    title: "Backup Power (Inverter & Battery)",
+    href: "/backup-power-inverter-battery",
     description:
       "Backup power solutions including inverters and battery storage.",
     icon: BatteryCharging,
   },
   {
-    title: "Electrical Compliance",
-    href: "/electrical-compliance",
+    title: "DB Board Upgrades & COC",
+    href: "/db-board-upgrades-compliance-certificates",
     description:
-      "Electrical inspections, safety checks and compliance support.",
+      "Distribution board upgrades and Certificates of Compliance for sales and audits.",
     icon: ShieldCheck,
   },
 ]
