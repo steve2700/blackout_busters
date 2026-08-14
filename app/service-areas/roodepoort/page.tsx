@@ -2,21 +2,21 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Fire Detection, Suppression and Compliance in Roodepoort | Jero Fire Solutions",
+  title: "Electrical, Solar & Backup Power in Roodepoort | Blackout Busters",
   description:
-    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Roodepoort. Serving Wilgeheuwel, Honeydew, Constantia Kloof, Ruimsig, Florida and surrounding suburbs. Same day quotes available.",
+    "Electrical installation and repairs, solar, inverter and battery backup, and compliance certificates (COC) in Roodepoort. Serving Wilgeheuwel, Honeydew, Constantia Kloof, Ruimsig, Florida and surrounding suburbs. Same day quotes available.",
   keywords:
-    "fire detection Roodepoort, fire extinguisher servicing Wilgeheuwel, suppression systems Honeydew, OHS compliance Constantia Kloof, fire safety Radiokop",
+    "electrician Roodepoort, solar installation Wilgeheuwel, backup power Honeydew, DB board upgrade Constantia Kloof, electrical repairs Radiokop",
   openGraph: {
-    title: "Fire Detection, Suppression and Compliance in Roodepoort | Jero Fire Solutions",
+    title: "Electrical, Solar & Backup Power in Roodepoort | Blackout Busters",
     description:
-      "Certified fire safety installation, servicing, and compliance work for Roodepoort homes and businesses.",
+      "Certified electrical, solar, and backup power installation, repairs, and compliance work for Roodepoort homes and businesses.",
     images: [
       {
-        url: "/jero-fire-technician-residential-gauteng.jpg",
+        url: "/electrician-installing-wiring.png",
         width: 1200,
         height: 630,
-        alt: "Certified fire safety technician in Roodepoort by Jero Fire Solutions",
+        alt: "Certified electrician working in Roodepoort for Blackout Busters",
       },
     ],
   },
@@ -26,8 +26,8 @@ export default function RoodepoortPage() {
   return (
     <ServiceAreaTemplate
       areaName="Roodepoort"
-      description="Jero Fire Solutions provides certified fire detection, extinguisher servicing, suppression systems, and OHS compliance throughout Roodepoort and its surrounding suburbs. From family homes to shops, offices, and industrial units, we keep buildings protected with honest pricing and documented workmanship."
-      introImage="/jero-fire-technician-residential-gauteng.jpg"
+      description="Blackout Busters provides certified electrical installation and repairs, solar, inverter and battery backup, and compliance certificates throughout Roodepoort and its surrounding suburbs. From family homes to shops, offices, and industrial units, we keep the power on with honest pricing and documented workmanship."
+      introImage="/electrician-installing-wiring.png"
       suburbs={[
         "Wilgeheuwel",
         "Honeydew",
@@ -42,28 +42,28 @@ export default function RoodepoortPage() {
         "Laser Park",
         "Quellerina",
       ]}
-      introduction="Roodepoort covers a broad mix of residential suburbs, commercial districts, and industrial areas, and each one carries different fire safety and OHS compliance obligations. Jero Fire Solutions brings hands on, properly certified work to every job, whether that means servicing extinguishers in a family home in Wilgeheuwel, installing a suppression system in a commercial building in Radiokop, or auditing compliance for a business in Laser Park."
+      introduction="Roodepoort covers a broad mix of residential suburbs, commercial districts, and industrial areas, and each one feels load shedding and power faults in its own way. Blackout Busters brings hands on, properly certified work to every job, whether that means repairing a tripping board in a family home in Wilgeheuwel, installing a solar and battery system in a commercial building in Radiokop, or issuing a compliance certificate for a business in Laser Park."
       servicesOffered={[
-        "Fire detection and alarm system installation",
-        "Alarm panel servicing and fault finding",
-        "Fire extinguisher supply and annual servicing",
-        "Extinguisher refills and certification",
-        "Sprinkler and suppression system servicing",
-        "Suppression system installation for offices and industrial units",
-        "OHS compliance audits",
-        "Staff fire safety training and evacuation drills",
-        "Fire equipment maintenance contracts",
-        "Fire hydrant installation and pressure testing",
-        "Certificate of Compliance documentation",
-        "Emergency callouts for faulty systems",
+        "Electrical installation and new wiring",
+        "Electrical repairs and fault finding",
+        "Solar panel system installation",
+        "Inverter and battery backup power installation",
+        "Generator installation and servicing",
+        "DB board upgrades and replacements",
+        "Compliance certificates (COC) for sales and audits",
+        "Load shedding solutions and consultations",
+        "Geyser installation and repairs",
+        "CCTV and security system installation",
+        "Prepaid meter installation",
+        "Emergency 24 hour electrical callouts",
       ]}
       whyChooseUs={[
-        "Certified technicians reaching Roodepoort quickly for same day quotes",
+        "Certified electricians reaching Roodepoort quickly for same day quotes",
         "Experience across homes, retail, and industrial sites",
-        "Technicians who understand OHS Act requirements, not just paperwork",
+        "A Certificate of Compliance (COC) issued on every completed job",
         "Honest assessments, even when the answer is a repair, not a sale",
-        "A Certificate of Compliance issued on every completed job",
-        "24 hour emergency response for fire safety faults",
+        "24 hour emergency response for electrical faults",
+        "Load shedding know-how, from a single plug to a full backup system",
       ]}
       nearbyAreas={[
         { name: "Randburg", href: "/service-areas/randburg" },
@@ -77,15 +77,15 @@ export default function RoodepoortPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-3xl font-bold">
-              Fire Detection, Suppression, and Compliance Throughout Roodepoort
+              Electrical, Solar, and Backup Power Throughout Roodepoort
             </h2>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Roodepoort combines residential neighbourhoods, commercial developments, and industrial zones, and
-                each one has its own fire safety requirements. Jero Fire Solutions brings the same standard to every
-                job, whether that is servicing a smoke detector in a family home in Wilgeheuwel, testing a suppression
-                system in a commercial building in Radiokop, or certifying fire equipment for a business in Laser Park.
+                each one has its own power and backup needs. Blackout Busters brings the same standard to every job,
+                whether that is fixing a faulty circuit in a family home in Wilgeheuwel, installing a solar system in
+                a commercial building in Radiokop, or upgrading a DB board for a business in Laser Park.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Serving Roodepoort&apos;s Diverse Suburbs</h3>
@@ -97,7 +97,7 @@ export default function RoodepoortPage() {
                 <div className="p-6 rounded-xl bg-card border border-border">
                   <h4 className="font-bold text-lg mb-2 text-secondary">Residential Areas</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    We look after fire detection and extinguisher servicing in Roodepoort&apos;s established and
+                    We look after electrical repairs, solar, and backup power in Roodepoort&apos;s established and
                     upmarket suburbs including:
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-1">
@@ -111,41 +111,41 @@ export default function RoodepoortPage() {
                 <div className="p-6 rounded-xl bg-card border border-border">
                   <h4 className="font-bold text-lg mb-2 text-secondary">Commercial and Industrial Zones</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Detection, suppression, and compliance services for Roodepoort&apos;s business and industrial
+                    Installation, backup power, and compliance services for Roodepoort&apos;s business and industrial
                     districts:
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>Radiokop, offices, retail, and alarm systems</li>
-                    <li>Laser Park, industrial units and suppression systems</li>
+                    <li>Radiokop, offices, retail, and solar systems</li>
+                    <li>Laser Park, industrial units and backup power</li>
                     <li>Strubensvalley, mixed commercial developments</li>
-                    <li>Quellerina, business parks and compliance audits</li>
+                    <li>Quellerina, business parks and compliance certificates</li>
                   </ul>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 mt-8">Home Fire Safety in Roodepoort</h3>
+              <h3 className="text-2xl font-bold mb-4 mt-8">Home Electrical &amp; Backup Power in Roodepoort</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Roodepoort homeowners trust us for smoke detector installation, extinguisher supply and servicing, and
-                alarm panel repairs. We arrive with the right stock on hand so most servicing can be completed and
+                Roodepoort homeowners trust us for electrical repairs, DB board upgrades, solar installation, and
+                inverter and battery backup. We arrive with the right stock on hand so most work can be completed and
                 certified on the first visit.
               </p>
 
-              <h3 className="text-2xl font-bold mb-4 mt-8">Commercial and Industrial Fire Safety</h3>
+              <h3 className="text-2xl font-bold mb-4 mt-8">Commercial and Industrial Electrical Work</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Roodepoort&apos;s shops, offices, and industrial units depend on systems that actually work when
-                tested, not just once a year during a rushed audit. We service and certify alarm systems, suppression
-                equipment, and fire hydrants, and we work around your operating hours to keep disruption to a minimum.
+                Roodepoort&apos;s shops, offices, and industrial units depend on power that stays on and installations
+                that pass inspection. We install, repair, and certify electrical systems, solar, and backup power, and
+                we work around your operating hours to keep disruption to a minimum.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Emergency Callouts and Fast Response</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                A faulty alarm panel or an expired extinguisher certificate is not something that can wait weeks for
-                attention. Our emergency callout service covers Roodepoort around the clock, so a fire safety fault
-                never has to wait until the next working day.
+                A dead circuit or a tripping DB board is not something that can wait weeks for attention. Our emergency
+                callout service covers Roodepoort around the clock, so an electrical fault never has to wait until the
+                next working day.
               </p>
 
               <div className="mt-8 p-6 rounded-xl bg-secondary/10 border border-secondary/20">
-                <h4 className="font-bold text-lg mb-3">Need Fire Safety Work in Roodepoort?</h4>
+                <h4 className="font-bold text-lg mb-3">Need Electrical or Backup Power Help in Roodepoort?</h4>
                 <p className="text-muted-foreground mb-4">
                   Contact us today for a free, no obligation quote. Whether you are in Wilgeheuwel, Honeydew,
                   Constantia Kloof, or any other Roodepoort suburb, our team is ready to help.

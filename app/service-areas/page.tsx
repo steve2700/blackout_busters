@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -13,28 +14,28 @@ import {
   Star,
   Award,
   FileCheck,
-  Siren,
-  FireExtinguisher,
-  Droplets,
-  GraduationCap,
+  Zap,
+  Sun,
+  BatteryCharging,
+  Wrench,
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Service Areas | Jero Fire Solutions - Johannesburg, Pretoria, Kempton Park & All Gauteng",
+  title: "Service Areas | Blackout Busters - Johannesburg, Pretoria, Kempton Park & All Gauteng",
   description:
-    "Jero Fire Solutions provides fire detection, suppression, extinguisher servicing, and OHS compliance across Gauteng including Johannesburg, Pretoria, Kempton Park, Sandton, Centurion, and more. Same day quotes and 24 hour emergency support.",
+    "Blackout Busters provides electrical installation and repairs, solar, backup power, and compliance certificates (COC) across Gauteng including Johannesburg, Pretoria, Kempton Park, Sandton, Centurion, and more. Same day quotes and 24 hour emergency callouts.",
   keywords:
-    "service areas Gauteng, fire alarm installation Johannesburg, fire extinguisher servicing Pretoria, sprinkler installation Midrand, Sandton fire compliance, Centurion fire safety, Kempton Park fire equipment",
+    "electrical service areas Gauteng, electrician Johannesburg, solar installation Pretoria, backup power Midrand, Sandton electrician, Centurion solar, Kempton Park electrical repairs, load shedding solutions Gauteng",
   openGraph: {
-    title: "Service Areas | Jero Fire Solutions Serving All Gauteng",
+    title: "Service Areas | Blackout Busters Serving All Gauteng",
     description:
-      "Fire detection, suppression, extinguisher servicing, and OHS compliance across all major areas in Gauteng province. Same day callouts, free quotes, and 24 hour emergency support.",
+      "Electrical, solar, and backup power installations, repairs, and compliance across all major areas in Gauteng. Same day callouts, free quotes, and 24 hour emergency support.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jero Fire Solutions service areas across Gauteng Province",
+        alt: "Blackout Busters service areas across Gauteng Province",
       },
     ],
   },
@@ -45,7 +46,7 @@ const serviceAreas = [
     name: "Johannesburg",
     href: "/service-areas/johannesburg",
     description:
-      "Fire detection, extinguisher servicing, suppression, and compliance across Johannesburg including Sandton, Rosebank, Fourways, Randburg, and the CBD.",
+      "Electrical installation and repairs, solar, backup power, and COC compliance across Johannesburg including Sandton, Rosebank, Fourways, Randburg, and the CBD.",
     suburbs: ["Sandton", "Rosebank", "Fourways", "Randburg", "Roodepoort"],
     highlight: true,
   },
@@ -53,7 +54,7 @@ const serviceAreas = [
     name: "Pretoria",
     href: "/service-areas/pretoria",
     description:
-      "Fire safety installation and compliance services throughout Pretoria and surrounding suburbs including Centurion, Montana, Hatfield, and Brooklyn.",
+      "Solar installation, backup power, electrical repairs, and compliance work throughout Pretoria and surrounding suburbs including Centurion, Montana, Hatfield, and Brooklyn.",
     suburbs: ["Centurion", "Montana", "Hatfield", "Silverton", "Brooklyn"],
     highlight: true,
   },
@@ -61,7 +62,7 @@ const serviceAreas = [
     name: "Kempton Park",
     href: "/service-areas/kempton-park",
     description:
-      "Home base for Jero Fire Solutions, with rapid response fire detection, suppression, and compliance work across Kempton Park and Aston Manor.",
+      "Home base for Blackout Busters, with rapid response electrical, solar, and backup power work across Kempton Park and Aston Manor.",
     suburbs: ["Aston Manor", "Birchleigh", "Edleen", "Glen Marais"],
     highlight: true,
   },
@@ -69,7 +70,7 @@ const serviceAreas = [
     name: "Midrand",
     href: "/service-areas/midrand",
     description:
-      "Reliable fire detection, extinguisher servicing, and suppression system work in Carlswald, Halfway House, and surrounding areas.",
+      "Reliable electrical repairs, solar installation, and inverter and battery backup work in Carlswald, Halfway House, and surrounding areas.",
     suburbs: ["Carlswald", "Halfway House", "Waterfall Estate"],
     highlight: true,
   },
@@ -77,42 +78,42 @@ const serviceAreas = [
     name: "Sandton",
     href: "/service-areas/sandton",
     description:
-      "Trusted fire detection and compliance services for residential and commercial properties in Sandton, Morningside, Rivonia, and Bryanston.",
+      "Trusted electrical, solar, and backup power services for residential and commercial properties in Sandton, Morningside, Rivonia, and Bryanston.",
     suburbs: ["Morningside", "Rivonia", "Bryanston"],
   },
   {
     name: "Centurion",
     href: "/service-areas/centurion",
     description:
-      "Expert fire detection, suppression, and compliance solutions throughout Centurion including Highveld, Eldoraigne, and Irene.",
+      "Expert solar installation, backup power, and electrical compliance solutions throughout Centurion including Highveld, Eldoraigne, and Irene.",
     suburbs: ["Highveld", "Eldoraigne", "Irene"],
   },
   {
     name: "Fourways",
     href: "/service-areas/fourways",
     description:
-      "Professional fire safety and compliance services in Fourways, Lonehill, Dainfern, and the northern suburbs of Johannesburg.",
+      "Professional electrical, solar, and backup power services in Fourways, Lonehill, Dainfern, and the northern suburbs of Johannesburg.",
     suburbs: ["Lonehill", "Dainfern", "Cedar Lakes"],
   },
   {
     name: "Randburg",
     href: "/service-areas/randburg",
     description:
-      "Quality fire detection and extinguisher servicing for residential and commercial properties in Randburg, Ferndale, and Blairgowrie.",
+      "Quality electrical repairs, solar, and backup power installation for residential and commercial properties in Randburg, Ferndale, and Blairgowrie.",
     suburbs: ["Ferndale", "Blairgowrie", "Northcliff"],
   },
   {
     name: "Bedfordview",
     href: "/service-areas/bedfordview",
     description:
-      "Comprehensive fire detection and compliance services in Bedfordview, Edenvale, Germiston, and the East Rand suburbs.",
+      "Comprehensive electrical, solar, and backup power services in Bedfordview, Edenvale, Germiston, and the East Rand suburbs.",
     suburbs: ["Edenvale", "Germiston", "Kensington"],
   },
   {
     name: "Rosebank",
     href: "/service-areas/rosebank",
     description:
-      "Trusted fire safety and compliance services in Rosebank, Parktown, Saxonwold, and the northern Johannesburg suburbs.",
+      "Trusted electrical, solar, and compliance services in Rosebank, Parktown, Saxonwold, and the northern Johannesburg suburbs.",
     suburbs: ["Parktown", "Saxonwold", "Melrose"],
   },
 ]
@@ -130,22 +131,22 @@ const benefits = [
   },
   {
     icon: Navigation,
-    title: "Kempton Park HQ",
+    title: "Kempton Park Base",
     description: "Based in Kempton Park for rapid deployment across the province",
   },
   {
     icon: MapPin,
-    title: "Local Expertise",
-    description: "Deep knowledge of fire safety requirements and compliance standards in each area",
+    title: "Local Load Shedding Know-How",
+    description: "We understand the power and backup needs of homes and businesses in each area",
   },
   {
     icon: Award,
-    title: "Certified Technicians",
-    description: "Fully qualified fire safety technicians with all required certifications",
+    title: "Certified Electricians",
+    description: "Qualified electricians with the certifications to sign off compliant work",
   },
   {
     icon: FileCheck,
-    title: "Compliance Documentation",
+    title: "Compliance Certificate (COC)",
     description: "A Certificate of Compliance issued on every completed job",
   },
 ]
@@ -154,14 +155,14 @@ const stats = [
   { value: "10", label: "Service Areas", sublabel: "Across Gauteng" },
   { value: "Same Day", label: "Callouts", sublabel: "Available Daily" },
   { value: "24/7", label: "Emergency Support", sublabel: "Always Available" },
-  { value: "Certified", label: "Technicians", sublabel: "Compliance Assured" },
+  { value: "COC", label: "Certified Work", sublabel: "On Every Job" },
 ]
 
 const popularServices = [
-  { icon: Siren, title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
-  { icon: FireExtinguisher, title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
-  { icon: Droplets, title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
-  { icon: GraduationCap, title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
+  { icon: Zap, title: "Electrical Repairs", href: "/electrical-repairs" },
+  { icon: Sun, title: "Solar Installation", href: "/solar-installation" },
+  { icon: BatteryCharging, title: "Backup Power (Inverter & Battery)", href: "/backup-power-inverter-battery" },
+  { icon: Wrench, title: "DB Board Upgrades & COC", href: "/db-board-upgrades-compliance-certificates" },
 ]
 
 export default function ServiceAreasPage() {
@@ -169,7 +170,17 @@ export default function ServiceAreasPage() {
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90 py-16 lg:py-24">
-        {/* Background Pattern */}
+        {/* Background photo + pattern */}
+        <div className="absolute inset-0">
+          <Image
+            src="/solar-panel-roof-installation.png"
+            alt="Blackout Busters electrical and solar work across Gauteng"
+            fill
+            className="object-cover opacity-15"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary/90" />
+        </div>
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <div className="absolute top-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl" />
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full blur-3xl" />
@@ -189,12 +200,14 @@ export default function ServiceAreasPage() {
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              Fire Detection, Suppression &amp; Compliance Across <span className="text-accent">Johannesburg, Pretoria &amp; All Gauteng</span>
+              Electrical, Solar &amp; Backup Power Across{" "}
+              <span className="text-accent">Johannesburg, Pretoria &amp; All Gauteng</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed mb-8">
-              <strong className="text-white">Jero Fire Solutions</strong> delivers fire detection, alarm systems, extinguisher servicing, and OHS compliance throughout
-              Gauteng province. Dispatched from our Kempton Park base, with <strong className="text-white">same day callouts</strong> and full compliance documentation
-              across all major areas.
+              <strong className="text-white">Blackout Busters</strong> delivers electrical installation and repairs,
+              solar, inverter and battery backup, generators, and compliance certificates throughout Gauteng province.
+              Dispatched from our Kempton Park base, with <strong className="text-white">same day callouts</strong> and a
+              Certificate of Compliance on every completed job.
             </p>
 
             {/* Stats Grid */}
@@ -222,7 +235,7 @@ export default function ServiceAreasPage() {
               Where We Serve in <span className="text-secondary">Gauteng Province</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              From homes to businesses, we provide comprehensive fire detection, suppression, and compliance
+              From homes to businesses, we provide comprehensive electrical, solar, backup power, and compliance
               services across all major areas in Gauteng.
             </p>
           </div>
@@ -240,7 +253,9 @@ export default function ServiceAreasPage() {
                   <div className="mb-4 flex items-start justify-between">
                     <div
                       className={`flex h-12 w-12 items-center justify-center rounded-xl transition-transform group-hover:scale-110 ${
-                        area.highlight ? "bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground shadow-lg" : "bg-secondary/10 text-secondary"
+                        area.highlight
+                          ? "bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground shadow-lg"
+                          : "bg-secondary/10 text-secondary"
                       }`}
                     >
                       <MapPin className="h-6 w-6" aria-hidden="true" />
@@ -310,7 +325,7 @@ export default function ServiceAreasPage() {
 
           {/* Additional Areas CTA */}
           <div className="mt-12 text-center p-8 rounded-2xl bg-gradient-to-br from-muted to-muted/50 border border-border">
-            <h3 className="text-xl font-bold mb-2">Don't See Your Area Listed?</h3>
+            <h3 className="text-xl font-bold mb-2">Don&apos;t See Your Area Listed?</h3>
             <p className="text-muted-foreground mb-4">
               We serve the entire Gauteng province. Contact us to discuss your specific location.
             </p>
@@ -333,16 +348,19 @@ export default function ServiceAreasPage() {
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Your Local <span className="text-secondary">Gauteng Fire Safety Team</span>
+                Your Local <span className="text-secondary">Gauteng Electrical &amp; Solar Team</span>
               </h2>
               <p className="mb-8 text-muted-foreground text-lg leading-relaxed">
-                Dispatched from Kempton Park, we understand the unique fire safety and compliance needs of
-                each area we serve, with reliable response times across the province.
+                Dispatched from Kempton Park, we understand the load shedding and power needs of each area we serve,
+                with reliable response times across the province.
               </p>
 
               <div className="grid gap-4 mb-8">
                 {benefits.map((benefit) => (
-                  <div key={benefit.title} className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border hover:border-secondary/30 hover:shadow-lg transition-all">
+                  <div
+                    key={benefit.title}
+                    className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border hover:border-secondary/30 hover:shadow-lg transition-all"
+                  >
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary flex-shrink-0">
                       <benefit.icon className="h-5 w-5" aria-hidden="true" />
                     </div>
@@ -355,23 +373,35 @@ export default function ServiceAreasPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-transform hover:scale-105">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-transform hover:scale-105"
+                >
                   <Link href="/contact">
                     <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
                     Get Your Free Quote
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-secondary/30 hover:bg-secondary/10 transition-transform hover:scale-105">
-                  <Link href="tel:+27781336684">
-                    Call: +27 78 133 6684
-                  </Link>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-secondary/30 hover:bg-secondary/10 transition-transform hover:scale-105"
+                >
+                  <Link href="tel:+27836171112">Call: +27 83 617 1112</Link>
                 </Button>
               </div>
             </div>
 
-            {/* Coverage Radius Diagram — same pattern as the homepage, no fake map pins */}
+            {/* Coverage Radius Diagram — no fake map pins */}
             <div className="relative flex items-center justify-center">
-              <svg viewBox="0 0 400 400" className="w-full max-w-md" role="img" aria-label="Coverage radius from Jero Fire Solutions headquarters in Kempton Park">
+              <svg
+                viewBox="0 0 400 400"
+                className="w-full max-w-md"
+                role="img"
+                aria-label="Coverage radius from Blackout Busters base in Kempton Park"
+              >
                 <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
                 <circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" className="text-border" strokeWidth="1.5" strokeDasharray="4 6" />
                 <circle cx="200" cy="200" r="60" fill="var(--color-secondary)" fillOpacity="0.08" stroke="currentColor" className="text-secondary" strokeWidth="1.5" />
@@ -393,7 +423,7 @@ export default function ServiceAreasPage() {
 
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-4 text-center">
                 <p className="text-[10px] font-bold text-accent-foreground bg-accent px-2 py-0.5 rounded-full shadow-md whitespace-nowrap">
-                  HQ — Kempton Park
+                  Base — Kempton Park
                 </p>
               </div>
 
@@ -422,15 +452,19 @@ export default function ServiceAreasPage() {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Get Fire Safety Compliance <span className="text-accent">in Your Area Today</span>
+              Get Power Sorted <span className="text-accent">in Your Area Today</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact us for your fire detection, suppression, or compliance needs. We provide free quotes, same day callouts, and honest assessments for
-              all areas across Gauteng. Certified, insured, and ready to help.
+              Contact us for your electrical, solar, backup power, or compliance needs. We provide free quotes, same day
+              callouts, and honest assessments for all areas across Gauteng. Certified, insured, and ready to help.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 text-base font-semibold transition-transform hover:scale-105">
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 text-base font-semibold transition-transform hover:scale-105"
+              >
                 <Link href="/contact">
                   <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
                   Request Free Quote

@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { ServiceAreaTemplate } from "@/components/service-area-template"
 
 export const metadata: Metadata = {
-  title: "Fire Detection, Suppression and Compliance in Bedfordview | Jero Fire Solutions",
+  title: "Electrical, Solar & Backup Power in Bedfordview | Blackout Busters",
   description:
-    "Fire detection, extinguisher servicing, suppression, and OHS compliance in Bedfordview and the East Rand. Serving Edenvale, Germiston, Kensington, and surrounding areas. Same day quotes available.",
+    "Electrical installation and repairs, solar, inverter and battery backup, and compliance certificates (COC) in Bedfordview and the East Rand. Serving Edenvale, Germiston, Kensington, and surrounding areas. Same day quotes available.",
   openGraph: {
-    title: "Fire Detection, Suppression and Compliance in Bedfordview | Jero Fire Solutions",
+    title: "Electrical, Solar & Backup Power in Bedfordview | Blackout Busters",
     description:
-      "Certified fire safety installation, servicing, and compliance work for Bedfordview and East Rand homes and businesses.",
+      "Certified electrical, solar, and backup power installation, repairs, and compliance work for Bedfordview and East Rand homes and businesses.",
   },
 }
 
@@ -16,31 +16,31 @@ export default function BedfordviewPage() {
   return (
     <ServiceAreaTemplate
       areaName="Bedfordview"
-      description="Jero Fire Solutions provides fire detection, extinguisher servicing, suppression systems, and OHS compliance across Bedfordview and the greater East Rand. From upmarket homes to shops, offices, and industrial facilities, we keep buildings protected and certificates current."
-      introImage="/jero-fire-technician-industrial-gauteng.jpg"
+      description="Blackout Busters provides electrical installation and repairs, solar, inverter and battery backup, and compliance certificates across Bedfordview and the greater East Rand. From upmarket homes to shops, offices, and industrial facilities, we keep the power on and certificates current."
+      introImage="/commercial-electrical-work.png"
       suburbs={["Edenvale", "Germiston", "Kensington", "Kempton Park", "Boksburg", "Benoni", "East Rand Mall area"]}
-      introduction="Bedfordview and the greater East Rand feature a wide mix of properties, from upmarket homes to retail centres, offices, and industrial facilities, each with different fire safety and OHS compliance requirements. Jero Fire Solutions serves this region with detection, suppression, extinguisher servicing, and compliance work that holds up under an actual audit, not just a signature on a form. Whether it is a single extinguisher service or a full alarm system installation, our technicians treat every site the same way, properly."
+      introduction="Bedfordview and the greater East Rand feature a wide mix of properties, from upmarket homes to retail centres, offices, and industrial facilities, each with different electrical and backup power needs. Blackout Busters serves this region with installation, repairs, solar, backup power, and compliance work that holds up under an actual audit, not just a signature on a form. Whether it is a single circuit repair or a full solar and battery installation, our electricians treat every site the same way, properly."
       servicesOffered={[
-        "Fire detection and alarm system installation",
-        "Alarm panel servicing and fault finding",
-        "Fire extinguisher supply and annual servicing",
-        "Extinguisher refills and certification",
-        "Sprinkler and suppression system servicing",
-        "Suppression system installation for commercial sites",
-        "OHS compliance audits",
-        "Staff fire safety training and evacuation drills",
-        "Fire equipment maintenance contracts",
-        "Fire hydrant installation and pressure testing",
-        "Certificate of Compliance documentation",
-        "Emergency callouts for faulty systems",
+        "Electrical installation and new wiring",
+        "Electrical repairs and fault finding",
+        "Solar panel system installation",
+        "Inverter and battery backup power installation",
+        "Generator installation and servicing",
+        "DB board upgrades and replacements",
+        "Compliance certificates (COC) for sales and audits",
+        "Load shedding solutions and consultations",
+        "Geyser installation and repairs",
+        "CCTV and security system installation",
+        "Prepaid meter installation",
+        "Emergency 24 hour electrical callouts",
       ]}
       whyChooseUs={[
-        "Technicians reaching the East Rand quickly for same day quotes",
+        "Electricians reaching the East Rand quickly for same day quotes",
         "Experience across homes, retail, offices, and industrial sites",
-        "Certified technicians who understand OHS Act requirements",
+        "A Certificate of Compliance (COC) issued on every completed job",
         "Honest assessments, even when the answer is a repair, not a sale",
-        "A Certificate of Compliance issued on every completed job",
-        "24 hour emergency response for fire safety faults",
+        "24 hour emergency response for electrical faults",
+        "Load shedding know-how, from a single plug to a full backup system",
       ]}
       nearbyAreas={[
         { name: "Johannesburg", href: "/service-areas/johannesburg" },
