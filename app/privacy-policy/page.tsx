@@ -1,13 +1,13 @@
 // File path: app/privacy-policy/page.tsx
-// Clean URL: https://www.jerofiresolutions.com/privacy-policy
+// Clean URL: https://www.blackoutbusters.co.za/privacy-policy
 
 import type { Metadata } from "next"
 import { Shield, Lock, Eye, FileText, Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Jero Fire Solutions POPIA Compliant",
+  title: "Privacy Policy | Blackout Busters POPIA Compliant",
   description:
-    "Privacy Policy for Jero Fire Solutions. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
+    "Privacy Policy for Blackout Busters. Learn how we collect, use, and protect your personal information in compliance with POPIA (Protection of Personal Information Act, 2013).",
   robots: "index, follow",
 }
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Privacy Policy</h1>
             <p className="text-lg text-muted-foreground">
-              Jero Fire Solutions
+              Blackout Busters
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -50,9 +50,9 @@ export default function PrivacyPolicyPage() {
             <div className="mb-12 rounded-xl bg-muted p-8">
               <h2 className="mb-4 text-2xl font-bold">1. Introduction</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                Jero Fire Solutions ("we," "us," "our," or "Jero Fire Solutions") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
-                <a href="https://www.jerofiresolutions.com" className="text-primary hover:underline">
-                  https://www.jerofiresolutions.com
+                Blackout Busters ("we," "us," "our," or "Blackout Busters") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
+                <a href="https://www.blackoutbusters.co.za" className="text-primary hover:underline">
+                  https://www.blackoutbusters.co.za
                 </a>
                 , use our services, or interact with us.
               </p>
@@ -66,21 +66,21 @@ export default function PrivacyPolicyPage() {
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Location</p>
-                    <p className="text-sm text-muted-foreground">18 Profusa Street, Aston Manor, Kempton Park, Gauteng, South Africa</p>
+                    <p className="text-sm text-muted-foreground">Gauteng, South Africa (serving Johannesburg &amp; Pretoria)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-sm text-muted-foreground">+27 78 133 6684</p>
+                    <p className="text-sm text-muted-foreground">+27 83 617 1112</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-sm text-muted-foreground">014@jerofiresolutions.co.za</p>
+                    <p className="text-sm text-muted-foreground">info@blackoutbusterssa.co.za</p>
                   </div>
                 </div>
               </div>
@@ -182,10 +182,10 @@ export default function PrivacyPolicyPage() {
                     title: "3.1 Service Delivery",
                     items: [
                       "Processing service requests and quotations",
-                      "Scheduling site assessments, installations, and servicing visits",
-                      "Delivering fire detection, suppression, extinguisher servicing, and compliance services",
+                      "Scheduling site assessments, installations, repairs, and servicing visits",
+                      "Delivering electrical, solar, backup power, generator, and compliance services",
                       "Managing projects and client relationships",
-                      "Communicating about your site's compliance status",
+                      "Communicating about your installation's status and compliance",
                     ],
                   },
                   {
@@ -211,7 +211,7 @@ export default function PrivacyPolicyPage() {
                     title: "3.4 Legal and Compliance",
                     items: [
                       "Complying with legal obligations and regulations",
-                      "Maintaining applicable fire safety industry certification and OHS compliance records",
+                      "Maintaining Certificate of Compliance (COC) and electrical compliance records",
                       "Protecting our legal rights and preventing fraud",
                       "Responding to legal processes and government requests",
                     ],
@@ -283,9 +283,9 @@ export default function PrivacyPolicyPage() {
                   {
                     title: "5.1 Service Providers and Contractors",
                     items: [
-                      "Subcontractors and specialist fire safety technicians",
+                      "Subcontractors and specialist electricians",
                       "Equipment suppliers and material vendors",
-                      "Professional consultants (fire engineers, OHS auditors)",
+                      "Professional consultants (electrical engineers, compliance assessors)",
                       "Payment processors",
                     ],
                   },
@@ -293,7 +293,7 @@ export default function PrivacyPolicyPage() {
                     title: "5.2 Business Partners",
                     items: [
                       "Insurance providers",
-                      "Applicable fire safety certification and compliance bodies",
+                      "Electrical certification and compliance bodies",
                       "Industry associations",
                     ],
                   },
@@ -383,8 +383,8 @@ export default function PrivacyPolicyPage() {
                     period: "Duration of service relationship plus 5 years",
                   },
                   {
-                    type: "Compliance and certification documentation",
-                    period: "5 years after certification issue, or longer where required by applicable regulation",
+                    type: "Compliance and certification documentation (COC)",
+                    period: "5 years after certificate issue, or longer where required by applicable regulation",
                   },
                   {
                     type: "Financial records",
@@ -461,9 +461,9 @@ export default function PrivacyPolicyPage() {
               <div className="rounded-xl bg-primary/10 p-6 border-2 border-primary/20">
                 <h3 className="mb-4 font-bold">To exercise your rights, contact us at:</h3>
                 <div className="space-y-2 text-sm">
-                  <p><strong>Email:</strong> 014@jerofiresolutions.co.za</p>
-                  <p><strong>Phone:</strong> +27 78 133 6684</p>
-                  <p><strong>Location:</strong> Kempton Park, Gauteng, South Africa</p>
+                  <p><strong>Email:</strong> info@blackoutbusterssa.co.za</p>
+                  <p><strong>Phone:</strong> +27 83 617 1112</p>
+                  <p><strong>Location:</strong> Gauteng, South Africa</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold">We will respond to your request within 30 days.</p>
               </div>
@@ -551,8 +551,8 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <ul className="mb-4 ml-6 space-y-2 list-disc text-muted-foreground">
                   <li>Clicking the "unsubscribe" link in emails</li>
-                  <li>Contacting us at 014@jerofiresolutions.co.za</li>
-                  <li>Calling us at +27 78 133 6684</li>
+                  <li>Contacting us at info@blackoutbusterssa.co.za</li>
+                  <li>Calling us at +27 83 617 1112</li>
                 </ul>
                 <p className="text-sm italic text-muted-foreground">
                   You will continue to receive service-related communications even after unsubscribing from marketing.
@@ -587,10 +587,10 @@ export default function PrivacyPolicyPage() {
                     Our designated Information Officer under POPIA is available to address privacy concerns:
                   </p>
                   <div className="space-y-2">
-                    <p><strong>Information Officer:</strong> Jero Fire Solutions Management</p>
-                    <p><strong>Email:</strong> 014@jerofiresolutions.co.za</p>
-                    <p><strong>Phone:</strong> +27 78 133 6684</p>
-                    <p><strong>Location:</strong> Kempton Park, Gauteng, South Africa</p>
+                    <p><strong>Information Officer:</strong> Blackout Busters Management</p>
+                    <p><strong>Email:</strong> info@blackoutbusterssa.co.za</p>
+                    <p><strong>Phone:</strong> +27 83 617 1112</p>
+                    <p><strong>Location:</strong> Gauteng, South Africa</p>
                   </div>
                 </div>
               </div>
@@ -649,18 +649,18 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:014@jerofiresolutions.co.za"
+                    href="mailto:info@blackoutbusterssa.co.za"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
                   <a
-                    href="tel:+27781336684"
+                    href="tel:+27836171112"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: +27 78 133 6684
+                    Call: +27 83 617 1112
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">
