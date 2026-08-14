@@ -9,13 +9,16 @@ import {
   Phone,
   ArrowRight,
   MapPin,
-  Siren,
-  FireExtinguisher,
-  Droplets,
-  GraduationCap,
+  Zap,
+  Sun,
+  BatteryCharging,
+  Wrench,
   Clock,
   FileCheck,
 } from "lucide-react"
+
+const PHONE_TEL = "tel:+27836171112"
+const PHONE_DISPLAY = "+27 83 617 1112"
 
 interface ServiceAreaTemplateProps {
   areaName: string
@@ -31,11 +34,14 @@ interface ServiceAreaTemplateProps {
   children?: ReactNode
 }
 
+// TODO: confirm real page slugs once the electrical/solar/backup power service
+// pages are finalised — "electrical-repairs", "solar-installation" and
+// "generator-installation-servicing" already exist, the rest are placeholders.
 const popularServices = [
-  { icon: Siren, title: "Fire Detection & Alarm Systems", href: "/fire-detection-alarm-systems" },
-  { icon: FireExtinguisher, title: "Fire Extinguisher Supply & Servicing", href: "/fire-extinguisher-supply-servicing" },
-  { icon: Droplets, title: "Sprinkler & Suppression Systems", href: "/sprinkler-suppression-systems" },
-  { icon: GraduationCap, title: "Fire Safety Training & Compliance", href: "/fire-safety-training-compliance" },
+  { icon: Zap, title: "Electrical Repairs", href: "/electrical-repairs" },
+  { icon: Sun, title: "Solar Installation", href: "/solar-installation" },
+  { icon: BatteryCharging, title: "Generator Installation & Servicing", href: "/generator-installation-servicing" },
+  { icon: Wrench, title: "Electrical Compliance Certificates", href: "/electrical-compliance-certificates" },
 ]
 
 export function ServiceAreaTemplate({
@@ -58,8 +64,8 @@ export function ServiceAreaTemplate({
         {/* PLACEHOLDER: swap for a real photo once available */}
         <div className="absolute inset-0">
           <Image
-            src={heroImage || "/fire-technician-servicing-extinguisher-gauteng.jpg"}
-            alt={`Jero Fire Solutions fire detection, suppression, and compliance services in ${areaName}`}
+            src={heroImage || "/electrician-servicing-db-board-gauteng.jpg"}
+            alt={`Blackout Busters electrical, solar, and backup power services in ${areaName}`}
             fill
             className="object-cover opacity-15"
             priority
@@ -76,7 +82,7 @@ export function ServiceAreaTemplate({
                 Service Area
               </div>
               <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-                Fire Detection, Suppression &amp; Compliance in {areaName}
+                Electrical, Solar &amp; Backup Power in {areaName}
               </h1>
               <p className="mb-8 text-pretty text-lg text-primary-foreground/90 leading-relaxed">{description}</p>
 
@@ -93,7 +99,7 @@ export function ServiceAreaTemplate({
                   <FileCheck className="h-5 w-5 text-accent" />
                   <div>
                     <div className="text-xs text-white/70">Every Job</div>
-                    <div className="text-sm font-semibold text-white">Fully Certified</div>
+                    <div className="text-sm font-semibold text-white">COC Certified</div>
                   </div>
                 </div>
               </div>
@@ -141,7 +147,7 @@ export function ServiceAreaTemplate({
                     <strong className="text-white">Certified technicians:</strong> We serve every suburb in {areaName} with certified, compliance-documented service.
                   </p>
                   <p className="text-xs text-white/60">
-                    Dispatched from Kempton Park and positioned to reach {areaName} efficiently.
+                    Positioned across Gauteng to reach {areaName} efficiently.
                   </p>
                 </div>
               </div>
@@ -159,13 +165,13 @@ export function ServiceAreaTemplate({
                 About Our Services
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Your Trusted Fire Safety Team in {areaName}
+                Your Trusted Electrical &amp; Backup Power Team in {areaName}
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">{introduction}</p>
 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Jero Fire Solutions provides certified fire detection, suppression, extinguisher servicing, and compliance services to homes and businesses in <strong>{areaName}</strong>. Our local knowledge means we understand the fire safety requirements of properties in the area.
+                  Blackout Busters provides certified electrical, solar, and backup power installation, repair, and compliance services to homes and businesses in <strong>{areaName}</strong>. Our local knowledge means we understand the load shedding and power needs of properties in the area.
                 </p>
               </div>
 
@@ -195,15 +201,15 @@ export function ServiceAreaTemplate({
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl border border-border">
                 <Image
-                  src={introImage || "/fire-extinguisher-inspection-certification.jpg"}
-                  alt={`Jero Fire Solutions certified fire safety technician in ${areaName}`}
+                  src={introImage || "/solar-panel-installation-inspection.jpg"}
+                  alt={`Blackout Busters certified electrical technician in ${areaName}`}
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-accent p-6 shadow-2xl border border-border max-w-[200px] hidden md:block">
                 <FileCheck className="h-8 w-8 text-accent-foreground mb-2" />
-                <div className="text-sm font-semibold text-accent-foreground">Certificate of Compliance on Every Job</div>
+                <div className="text-sm font-semibold text-accent-foreground">Compliance Certificate (COC) on Every Job</div>
               </div>
             </div>
           </div>
@@ -218,10 +224,10 @@ export function ServiceAreaTemplate({
               Comprehensive Services
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              Fire Safety Services Available in {areaName}
+              Electrical &amp; Backup Power Services Available in {areaName}
             </h2>
             <p className="text-muted-foreground text-lg">
-              We provide a full range of fire detection, suppression, extinguisher servicing, and compliance services to homes and businesses throughout {areaName} and surrounding suburbs.
+              We provide a full range of electrical, solar, backup power, and compliance services to homes and businesses throughout {areaName} and surrounding suburbs.
             </p>
           </div>
 
@@ -292,14 +298,14 @@ export function ServiceAreaTemplate({
                 Why Choose Us
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                Why {areaName} Homes and Businesses Trust Jero Fire Solutions
+                Why {areaName} Homes and Businesses Trust Blackout Busters
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  With certified technicians serving {areaName} and surrounding areas, we understand the fire safety needs of local homes and businesses. Our commitment to compliance, honest pricing, and documented workmanship has made us a trusted choice for fire detection, suppression, and compliance work.
+                  With certified technicians serving {areaName} and surrounding areas, we understand the load shedding and power needs of local homes and businesses. Our commitment to compliance, honest pricing, and documented workmanship has made us a trusted choice for electrical, solar, and backup power work.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Dispatched from <strong>Kempton Park</strong>, we reach {areaName} quickly with <strong>{responseTime.toLowerCase()} service</strong> for most bookings. We are available for emergency callouts, routine servicing, and new installations.
+                  As a <strong>Gauteng-based team</strong>, we reach {areaName} quickly with <strong>{responseTime.toLowerCase()} service</strong> for most bookings. We are available for emergency callouts, routine servicing, and new installations.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -322,7 +328,7 @@ export function ServiceAreaTemplate({
           <div className="mb-8">
             <h2 className="mb-3 text-2xl font-bold">We Also Serve Nearby Areas</h2>
             <p className="text-muted-foreground">
-              Jero Fire Solutions provides fire detection, suppression, and compliance services throughout Gauteng.
+              Blackout Busters provides electrical, solar, and backup power services throughout Gauteng.
               Explore our other service areas:
             </p>
           </div>
@@ -349,10 +355,10 @@ export function ServiceAreaTemplate({
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl">
-              Need Fire Safety Compliance in {areaName}?
+              Need Electrical or Backup Power Help in {areaName}?
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact Jero Fire Solutions today for a free quote. Our certified technicians are ready to help with your fire detection, suppression, or compliance needs in {areaName}, whether at home or at your business.
+              Contact Blackout Busters today for a free quote. Our certified technicians are ready to help with your electrical, solar, or backup power needs in {areaName}, whether at home or at your business.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg">
@@ -367,9 +373,9 @@ export function ServiceAreaTemplate({
                 variant="outline"
                 className="border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                <Link href="tel:+27781336684">
+                <Link href={PHONE_TEL}>
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Us Now
+                  Call {PHONE_DISPLAY}
                 </Link>
               </Button>
             </div>
