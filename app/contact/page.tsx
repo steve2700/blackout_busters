@@ -5,21 +5,21 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, CheckCircle, Award, Za
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
 
 export const metadata: Metadata = {
-  title: "Contact Jero Fire Solutions | Free Quote in Gauteng, Johannesburg, Pretoria and Kempton Park",
+  title: "Contact Blackout Busters | Free Quote for Electrical & Solar in Gauteng, Johannesburg & Pretoria",
   description:
-    "Contact Jero Fire Solutions for fire detection, alarm systems, extinguisher servicing, suppression, or OHS compliance in Gauteng. Free consultation and same day quotes. Call +27 78 133 6684.",
+    "Contact Blackout Busters for electrical installations, solar power, inverter and battery backup, or COC certificates in Gauteng. Free consultation and same day quotes. Call +27 83 617 1112.",
   keywords:
-    "contact Jero Fire Solutions, fire safety quote Gauteng, fire extinguisher servicing Pretoria, fire alarm installation Johannesburg, Kempton Park fire compliance, emergency callout",
+    "contact Blackout Busters, solar installation quote Gauteng, electrician Pretoria, inverter and battery backup Johannesburg, COC certificate Kempton Park, emergency electrician callout",
   openGraph: {
-    title: "Contact Jero Fire Solutions | Free Quote in Gauteng",
+    title: "Contact Blackout Busters | Free Electrical & Solar Quote in Gauteng",
     description:
-      "Get in touch for fire detection, suppression, extinguisher servicing, and OHS compliance needs across Johannesburg, Pretoria, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
+      "Get in touch for electrical installations, solar systems, inverter and battery backup, and COC compliance across Johannesburg, Pretoria, and Gauteng. Free quotes, 24/7 emergency support, same day response.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Contact Jero Fire Solutions",
+        alt: "Contact Blackout Busters",
       },
     ],
   },
@@ -30,21 +30,21 @@ const contactInfo = [
     icon: MapPin,
     title: "Coverage Area",
     details: ["Gauteng, South Africa", "Serving Johannesburg & Pretoria"],
-    href: "https://www.google.com/maps?q=18+Profusa+Street+Aston+Manor+Kempton+Park+Gauteng",
+    href: "https://www.google.com/maps?q=Blackout+Busters+Gauteng",
     highlight: true,
   },
   {
     icon: Phone,
     title: "Phone and WhatsApp",
-    details: ["+27 78 133 6684"],
-    href: "tel:+27781336684",
+    details: ["+27 83 617 1112"],
+    href: "tel:+27836171112",
     highlight: true,
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["014@jerofiresolutions.co.za"],
-    href: "mailto:014@jerofiresolutions.co.za",
+    details: ["info@blackoutbusterssa.co.za"],
+    href: "mailto:info@blackoutbusterssa.co.za",
     highlight: false,
   },
   {
@@ -79,11 +79,11 @@ const benefits = [
   },
   {
     icon: Award,
-    text: "Certified fire technicians",
+    text: "Qualified electricians and installers",
   },
   {
     icon: Zap,
-    text: "24/7 emergency support",
+    text: "24/7 emergency callouts",
   },
 ]
 
@@ -110,9 +110,10 @@ export default function ContactPage() {
               Get Your <span className="text-accent">Free Quote</span> Today
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              For fire detection, alarm systems, extinguisher servicing, suppression, or OHS compliance in <strong className="text-white">Gauteng</strong>,
-              contact <strong className="text-white">Jero Fire Solutions</strong> today. Our certified team provides free consultations, same day quotes, and full compliance documentation
-              tailored to your site.
+              For electrical installations, solar power, inverter and battery backup, or COC compliance in{" "}
+              <strong className="text-white">Gauteng</strong>, contact{" "}
+              <strong className="text-white">Blackout Busters</strong> today. Our qualified team provides free
+              consultations, same day quotes, and full compliance documentation tailored to your home or business.
             </p>
 
             {/* Quick Benefits */}
@@ -141,7 +142,8 @@ export default function ContactPage() {
               </span>
               <h2 className="mb-2 text-3xl font-bold">Get Your Free Quote in 24 Hours</h2>
               <p className="mb-8 text-muted-foreground leading-relaxed">
-                Fill out the form below with your details. Our team will review your requirements and get back to you within 24 hours with a clear, no obligation quote and compliance-ready recommendations.
+                Fill out the form below with your details. Our team will review your requirements and get back to you
+                within 24 hours with a clear, no obligation quote and compliance-ready recommendations.
               </p>
 
               <ContactForm />
@@ -159,7 +161,7 @@ export default function ContactPage() {
                   <Shield className="h-5 w-5 text-accent flex-shrink-0" aria-hidden="true" />
                   <div>
                     <p className="text-sm font-semibold">Fully Insured</p>
-                    <p className="text-xs text-muted-foreground">Certified Technicians</p>
+                    <p className="text-xs text-muted-foreground">Qualified electricians</p>
                   </div>
                 </div>
               </div>
@@ -172,10 +174,16 @@ export default function ContactPage() {
               </span>
               <h2 className="mb-2 text-3xl font-bold">Get in Touch With Us</h2>
               <p className="mb-8 text-muted-foreground leading-relaxed">
-                Have questions or need urgent assistance? Reach out to us through any of the channels below. We're here to help with immediate support.
+                Have questions or need urgent assistance with a power failure or electrical fault? Reach out to us
+                through any of the channels below. We&apos;re here to help with immediate support.
               </p>
 
-              <div className="mb-8 space-y-4" itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
+              <div
+                className="mb-8 space-y-4"
+                itemProp="contactPoint"
+                itemScope
+                itemType="https://schema.org/ContactPoint"
+              >
                 <meta itemProp="contactType" content="Customer Service" />
                 <meta itemProp="areaServed" content="Gauteng, South Africa" />
                 <meta itemProp="availableLanguage" content="English" />
@@ -185,13 +193,15 @@ export default function ContactPage() {
                     key={info.title}
                     className={`group flex items-start gap-4 p-4 rounded-xl transition-all ${
                       info.highlight
-                        ? 'bg-secondary/5 border-2 border-secondary/20 hover:border-secondary/40 hover:shadow-lg'
-                        : 'bg-muted hover:bg-muted/80'
+                        ? "bg-secondary/5 border-2 border-secondary/20 hover:border-secondary/40 hover:shadow-lg"
+                        : "bg-muted hover:bg-muted/80"
                     }`}
                   >
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg ${
-                      info.highlight ? 'bg-secondary text-secondary-foreground' : 'bg-secondary/10 text-secondary'
-                    } group-hover:scale-110 transition-transform`}>
+                    <div
+                      className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg ${
+                        info.highlight ? "bg-secondary text-secondary-foreground" : "bg-secondary/10 text-secondary"
+                      } group-hover:scale-110 transition-transform`}
+                    >
                       <info.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div className="flex-1">
@@ -203,8 +213,8 @@ export default function ContactPage() {
                             href={info.href}
                             className={`block transition-colors ${
                               info.highlight
-                                ? 'text-secondary font-semibold hover:text-secondary/80'
-                                : 'text-muted-foreground hover:text-secondary'
+                                ? "text-secondary font-semibold hover:text-secondary/80"
+                                : "text-muted-foreground hover:text-secondary"
                             }`}
                             target={info.icon === MapPin ? "_blank" : undefined}
                             rel={info.icon === MapPin ? "noopener noreferrer" : undefined}
@@ -240,7 +250,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.facebook.com/jerofiresolutions"
+                    href="https://www.facebook.com/blackoutbusterssa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#1877F2] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -249,7 +259,7 @@ export default function ContactPage() {
                     <Facebook className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/jerofiresolutions"
+                    href="https://www.instagram.com/blackoutbusterssa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -258,7 +268,7 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://wa.me/27781336684"
+                    href="https://wa.me/27836171112"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary transition-all hover:bg-[#25D366] hover:text-white hover:scale-110 hover:shadow-lg"
@@ -268,7 +278,7 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <p className="mt-4 text-xs text-muted-foreground">
-                  Follow us for compliance reminders, tips, and updates
+                  Follow us for load shedding tips, solar updates, and special offers
                 </p>
               </div>
 
@@ -284,8 +294,8 @@ export default function ContactPage() {
                       key={area.name}
                       className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition-all ${
                         area.featured
-                          ? 'bg-secondary text-secondary-foreground shadow-md hover:shadow-lg hover:scale-105'
-                          : 'bg-card hover:bg-secondary/10 hover:scale-105'
+                          ? "bg-secondary text-secondary-foreground shadow-md hover:shadow-lg hover:scale-105"
+                          : "bg-card hover:bg-secondary/10 hover:scale-105"
                       }`}
                     >
                       <MapPin className="h-3 w-3" aria-hidden="true" />
@@ -294,7 +304,11 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Don't see your area? <a href="tel:+27781336684" className="text-secondary font-semibold hover:underline">Call us</a>, we cover the entire province!
+                  Don&apos;t see your area?{" "}
+                  <a href="tel:+27836171112" className="text-secondary font-semibold hover:underline">
+                    Call us
+                  </a>
+                  , we cover the entire province!
                 </p>
               </div>
             </div>

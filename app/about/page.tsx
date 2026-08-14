@@ -8,37 +8,36 @@ import {
   Eye,
   CheckCircle,
   Users,
-  Shield,
   ShieldCheck,
-  Award,
   Handshake,
   ArrowRight,
   Phone,
   Star,
   Clock,
-  Siren,
-  FireExtinguisher,
-  ClipboardCheck,
-  GraduationCap,
-  Droplets,
+  Zap,
+  Sun,
+  Wrench,
+  BatteryCharging,
+  CircuitBoard,
+  Lightbulb,
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Jero Fire Solutions | Fire Detection and Compliance Specialists in Gauteng",
+  title: "About Blackout Busters | Electrical & Solar Specialists in Gauteng",
   description:
-    "Jero Fire Solutions installs, services, and certifies fire detection, suppression, and safety equipment for homes and businesses across Gauteng, keeping people safe and sites compliant.",
+    "Blackout Busters installs, repairs, and certifies electrical, solar, and backup power systems for homes and businesses across Gauteng, keeping the lights on and every job compliant with a Certificate of Compliance (COC).",
   keywords:
-    "about Jero Fire Solutions, fire safety company Gauteng, fire compliance Johannesburg, fire equipment servicing Pretoria, OHS Act compliance",
+    "about Blackout Busters, electricians Gauteng, solar installers Johannesburg, backup power Pretoria, certificate of compliance COC, load shedding solutions",
   openGraph: {
-    title: "About Jero Fire Solutions | Fire Detection and Compliance Specialists in Gauteng",
+    title: "About Blackout Busters | Electrical & Solar Specialists in Gauteng",
     description:
-      "Certified technicians delivering fire detection, suppression, and compliance services across Gauteng, so your site stays protected and your certificates stay current.",
+      "Certified electricians delivering electrical installations, repairs, solar, and backup power across Gauteng, so your power stays on and your compliance stays current.",
     images: [
       {
-        url: "/jero-fire-team-technicians-gauteng.jpg",
+        url: "/blackout-busters-team-gauteng.png",
         width: 1200,
         height: 630,
-        alt: "Jero Fire Solutions technician team in Gauteng",
+        alt: "Blackout Busters electrical team in Gauteng",
       },
     ],
   },
@@ -49,40 +48,40 @@ const values = [
     icon: ShieldCheck,
     title: "Compliance Without Shortcuts",
     description:
-      "A certificate only means something if the work behind it is real. Every system we install or service is signed off honestly, not rubber stamped.",
+      "A Certificate of Compliance only means something if the work behind it is real. Every installation and repair is tested and signed off honestly, not rubber stamped.",
   },
   {
-    icon: Shield,
-    title: "People Before Paperwork",
+    icon: Zap,
+    title: "Power You Can Rely On",
     description:
-      "Compliance exists because fires cost lives, not just money. We design and service systems around what actually protects the people in a building.",
+      "Load shedding and faults do not wait for convenient hours. We design and install systems that keep your home or business running when the grid does not.",
   },
   {
     icon: Clock,
     title: "We Answer When It Matters",
     description:
-      "A fire alarm fault or an expired extinguisher certificate is not something that can wait weeks. We treat urgent callouts as urgent.",
+      "A tripping DB board or a dead inverter is not something that can wait days. We treat emergency electrical callouts as urgent, around the clock.",
   },
   {
     icon: Handshake,
-    title: "Contracts, Not Once Off Jobs",
+    title: "Honest Quotes, No Surprises",
     description:
-      "Fire safety is not a single visit, it is an ongoing responsibility. We would rather keep a client for years through maintenance contracts than sell a single service and disappear.",
+      "You get a clear, upfront quote before we start. We would rather earn repeat work through straight talk than win a job with a low number and add costs later.",
   },
 ]
 
 const team = [
-  { role: "Certified fire detection technicians", icon: Siren },
-  { role: "Extinguisher service technicians", icon: FireExtinguisher },
-  { role: "Suppression system specialists", icon: Droplets },
-  { role: "OHS compliance auditors", icon: ClipboardCheck },
-  { role: "Fire safety trainers", icon: GraduationCap },
+  { role: "Certified electricians", icon: Zap },
+  { role: "Solar & PV installers", icon: Sun },
+  { role: "Inverter & battery specialists", icon: BatteryCharging },
+  { role: "Fault-finding & repair technicians", icon: Wrench },
+  { role: "DB board & COC assessors", icon: CircuitBoard },
   { role: "Dedicated support team", icon: Users },
 ]
 
 const stats = [
-  { value: "Certified", label: "Technicians", sublabel: "Trained & Qualified" },
-  { value: "Compliant", label: "Certification", sublabel: "OHS Act Aligned" },
+  { value: "Certified", label: "Electricians", sublabel: "Qualified & Insured" },
+  { value: "COC", label: "On Every Job", sublabel: "Compliance Guaranteed" },
   { value: "Same Day", label: "Quotes", sublabel: "No Waiting Around" },
   { value: "24 Hour", label: "Emergency Callouts", sublabel: "Always Available" },
 ]
@@ -101,8 +100,8 @@ export default function AboutPage() {
           <Breadcrumbs variant="onDark" items={[{ label: "About Us" }]} />
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
-              <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span>Fire Detection, Suppression & Compliance</span>
+              <Zap className="h-4 w-4 text-accent" aria-hidden="true" />
+              <span>Electrical, Solar & Backup Power</span>
               <div className="flex items-center gap-0.5 ml-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
@@ -111,11 +110,11 @@ export default function AboutPage() {
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              About <span className="text-accent">Jero Fire Solutions</span>
+              About <span className="text-accent">Blackout Busters</span>
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed">
-              Fire safety is not something you notice until the moment it fails. {" "}
-              <strong className="text-white">Jero Fire Solutions</strong> exists to make sure that moment never happens, through honest installations, proper servicing, and certification that actually holds up.
+              Power is something you only notice when it fails.{" "}
+              <strong className="text-white">Blackout Busters</strong> exists to make sure it keeps running, through proper electrical work, solar and backup power that actually performs, and compliance certificates that hold up.
             </p>
 
             <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -140,25 +139,25 @@ export default function AboutPage() {
                 Who We Are
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl" itemProp="name">
-                Fire Safety Handled Properly, Not Just Signed Off
+                Electrical Work Done Properly, Not Just Done Fast
               </h2>
               <p className="mb-4 text-muted-foreground leading-relaxed" itemProp="description">
-                <strong>Jero Fire Solutions</strong> installs, services, and certifies fire detection systems, extinguishers, suppression equipment, and hydrants for homes and businesses across{" "}
+                <strong>Blackout Busters</strong> installs, repairs, and certifies electrical systems, solar power, inverters, batteries, generators, and DB boards for homes and businesses across{" "}
                 <strong>Gauteng</strong>, including <strong>Johannesburg, Pretoria, and Kempton Park</strong>.
               </p>
               <p className="mb-6 text-muted-foreground leading-relaxed">
-                A lot of fire safety compliance in South Africa gets treated as a box to tick once a year. We do not work that way. Every system we touch gets tested properly, every certificate we issue reflects what we actually found on site, and every client gets told the truth about what their building needs.
+                Plenty of electrical work in South Africa gets rushed to hit a price. We do not work that way. Every circuit we touch is tested properly, every Certificate of Compliance we issue reflects what we actually found on site, and every client gets told the truth about what their installation needs.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Whether it is a single extinguisher service or a full detection and suppression installation for a commercial site, the standard does not change.
+                Whether it is a single plug point, a full solar and battery backup system, or a DB board upgrade for a property sale, the standard does not change.
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-muted">
                   <ShieldCheck className="h-5 w-5 text-secondary flex-shrink-0" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold">OHS Act Aligned</p>
-                    <p className="text-xs text-muted-foreground">Certified Technicians</p>
+                    <p className="text-sm font-semibold">COC on Every Job</p>
+                    <p className="text-xs text-muted-foreground">Certified Electricians</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-muted">
@@ -170,16 +169,15 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <meta itemProp="address" content="Aston Manor, Kempton Park, Johannesburg, Gauteng, South Africa" />
+              <meta itemProp="address" content="Gauteng, Johannesburg, Pretoria, South Africa" />
               <meta itemProp="areaServed" content="Gauteng, Johannesburg, Pretoria, Kempton Park" />
             </div>
 
             <div className="relative">
-              {/* PLACEHOLDER: swap for a real photo of the Jero Fire Solutions team or a technician on site */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/jero-fire-team-technicians-gauteng.jpg"
-                  alt="Jero Fire Solutions technicians preparing for a fire safety inspection in Gauteng"
+                  src="/blackout-busters-team-gauteng.png"
+                  alt="Blackout Busters electricians on site in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="eager"
@@ -212,25 +210,25 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Make sure every detection, suppression, and extinguisher system we touch <strong>actually works when it is needed</strong>, not just on paper.
+                    Make sure every installation and repair we do <strong>actually works safely and reliably</strong>, not just long enough to pass a glance.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Give clients <strong>honest assessments</strong>, even when the truth is that something needs replacing rather than patching.
+                    Give clients <strong>honest quotes and assessments</strong>, even when the truth is that something needs replacing rather than patching.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Keep clients <strong>compliant year round</strong>, not scrambling to fix expired certificates before an audit.
+                    Keep homes and businesses <strong>powered through load shedding</strong> with solar, inverter, and backup systems sized to their real needs.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Train staff and site teams so they know what to do <strong>before an emergency</strong>, not only after one.
+                    Leave every job <strong>fully compliant</strong>, with a valid Certificate of Compliance where the work requires one.
                   </span>
                 </li>
               </ul>
@@ -245,25 +243,25 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Be the fire safety provider Gauteng businesses call <strong>before an inspector forces them to</strong>.
+                    Be the electrical and solar team Gauteng homes and businesses call <strong>first, and keep calling</strong>.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Change how fire compliance is seen, from an annual formality to <strong>an ongoing standard worth maintaining</strong>.
+                    Make dependable power the <strong>normal, not the exception</strong>, even when the grid is unreliable.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Reduce preventable fire damage and injury across the sites and communities we serve.
+                    Raise the standard of electrical work in our area, so <strong>proper, compliant workmanship</strong> is what people expect.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
                   <span className="text-muted-foreground leading-relaxed">
-                    Build a reputation where our name on a certificate means <strong>something was genuinely checked</strong>.
+                    Build a reputation where our name on a certificate means <strong>the work was genuinely done and tested</strong>.
                   </span>
                 </li>
               </ul>
@@ -277,11 +275,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="order-2 lg:order-1 relative">
-              {/* PLACEHOLDER: swap for a real photo of a technician servicing an alarm panel or extinguisher */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/jero-fire-technician-servicing-panel.jpg"
-                  alt="Jero Fire Solutions technician servicing a fire alarm panel in Gauteng"
+                  src="/electrician-servicing-panel.png"
+                  alt="Blackout Busters electrician servicing an electrical panel in Gauteng"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
@@ -294,8 +291,8 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2 text-primary-foreground">
                   <Users className="h-5 w-5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-bold">Certified Technicians</p>
-                    <p className="text-xs opacity-90">Trained & Compliant</p>
+                    <p className="text-sm font-bold">Certified Electricians</p>
+                    <p className="text-xs opacity-90">Qualified & Insured</p>
                   </div>
                 </div>
               </div>
@@ -306,10 +303,10 @@ export default function AboutPage() {
                 Our Team
               </span>
               <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-                People Who Understand <span className="text-secondary">What They Are Certifying</span>
+                People Who Understand <span className="text-secondary">What They Are Signing Off</span>
               </h2>
               <p className="mb-6 text-muted-foreground leading-relaxed">
-                Every technician on our team is trained on the specific systems they work on, detection, suppression, extinguishers, or hydrants, rather than being a generalist stretched across everything. That is what lets us stand behind every certificate we sign.
+                Every technician on our team is trained on the specific work they do, whether that is electrical reticulation, solar and PV, inverters and batteries, or DB board and COC assessments, rather than being a jack of all trades stretched thin. That is what lets us stand behind every certificate we issue.
               </p>
 
               <div className="mb-8 grid grid-cols-2 gap-3">
@@ -350,7 +347,7 @@ export default function AboutPage() {
               Why Our Certificates Are <span className="text-secondary">Worth Trusting</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              These are not values we picked because they sound good. They are what separates a real fire safety inspection from a rubber stamp.
+              These are not values we picked because they sound good. They are what separates proper electrical work from a rushed job and a signature.
             </p>
           </div>
 
@@ -387,10 +384,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Ready to Get Your Site <span className="text-accent">Properly Protected?</span>
+              Ready to Keep Your Power <span className="text-accent">On for Good?</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              Contact us today to discuss detection, suppression, extinguishers, training, or a maintenance contract. We will tell you honestly what your site needs, not just what is easiest to sell.
+              Contact us today to discuss electrical installations, repairs, solar, backup power, or a DB board upgrade and COC. We will tell you honestly what your property needs, not just what is easiest to sell.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -401,7 +398,7 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold transition-transform hover:scale-105">
-                <Link href="tel:+27781336684">Call: +27 78 133 6684</Link>
+                <Link href="tel:+27836171112">Call: +27 83 617 1112</Link>
               </Button>
             </div>
 

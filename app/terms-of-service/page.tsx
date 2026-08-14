@@ -1,13 +1,13 @@
 // File path: app/terms-of-service/page.tsx
-// Clean URL: https://www.jerofiresolutions.com/terms-of-service
+// Clean URL: https://www.blackoutbusters.co.za/terms-of-service
 
 import type { Metadata } from "next"
 import { Scale, FileText, CheckCircle, AlertTriangle, Mail, Phone, MapPin, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Jero Fire Solutions",
+  title: "Terms of Service | Blackout Busters",
   description:
-    "Terms of Service for Jero Fire Solutions. Read the terms and conditions governing our website, quotations, and fire detection, suppression, extinguisher servicing, and compliance services.",
+    "Terms of Service for Blackout Busters. Read the terms and conditions governing our website, quotations, and electrical, solar, backup power, and compliance certificate (COC) services.",
   robots: "index, follow",
 }
 
@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
               </div>
             </div>
             <h1 className="mb-4 text-4xl font-bold lg:text-5xl">Terms of Service</h1>
-            <p className="text-lg text-muted-foreground">Jero Fire Solutions</p>
+            <p className="text-lg text-muted-foreground">Blackout Busters</p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
@@ -49,13 +49,13 @@ export default function TermsOfServicePage() {
               <h2 className="mb-4 text-2xl font-bold">1. Introduction and Acceptance</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
                 These Terms of Service ("Terms") govern your use of the website{" "}
-                <a href="https://www.jerofiresolutions.com" className="text-primary hover:underline">
-                  https://www.jerofiresolutions.com
+                <a href="https://www.blackoutbusters.co.za" className="text-primary hover:underline">
+                  https://www.blackoutbusters.co.za
                 </a>{" "}
-                and any quotation, job, or service you engage Jero Fire Solutions ("we," "us," "our," or "Jero Fire Solutions") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
+                and any quotation, job, or service you engage Blackout Busters ("we," "us," "our," or "Blackout Busters") to carry out. By using our website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.
               </p>
               <p className="leading-relaxed text-muted-foreground">
-                For any booked work, these Terms apply alongside any separate written quotation or scope of work agreed between you and Jero Fire Solutions. Where a signed agreement and these Terms conflict, the signed agreement takes precedence.
+                For any booked work, these Terms apply alongside any separate written quotation or scope of work agreed between you and Blackout Busters. Where a signed agreement and these Terms conflict, the signed agreement takes precedence.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">2. Our Services</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                Jero Fire Solutions provides fire detection and alarm systems, fire extinguisher supply and servicing, sprinkler and suppression systems, fire safety training and OHS compliance audits, fire equipment maintenance contracts, and fire hydrant installation and testing to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any job is defined in the written quotation provided to you before work begins.
+                Blackout Busters provides electrical installations and repairs, solar and PV installation, backup power (inverter and battery) systems, generator installation and servicing, DB board upgrades and Certificates of Compliance (COC), electrical maintenance, and related electrical services to residential, commercial, and industrial clients across Gauteng, South Africa. The specific scope of any job is defined in the written quotation provided to you before work begins.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We reserve the right to decline or discontinue any service request at our discretion, including where a site is unsafe, a request falls outside our expertise, or payment terms are not met.
@@ -133,9 +133,10 @@ export default function TermsOfServicePage() {
                 <li>Normal wear and tear</li>
                 <li>Work or alterations carried out by third parties after project completion</li>
                 <li>Pre-existing defects not identified as part of the original scope</li>
+                <li>Damage caused by power surges, lightning, or grid instability where surge protection was declined</li>
               </ul>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Manufacturer warranties on materials and equipment (e.g. detectors, panels, extinguishers) are passed through to you as provided by the manufacturer or supplier.
+                Manufacturer warranties on materials and equipment (e.g. solar panels, inverters, batteries, generators, DB components) are passed through to you as provided by the manufacturer or supplier.
               </p>
             </div>
 
@@ -146,10 +147,10 @@ export default function TermsOfServicePage() {
               <div className="grid md:grid-cols-2 gap-3">
                 {[
                   "Provide safe and reasonable site access",
-                  "Disclose known site hazards or structural issues",
+                  "Disclose known site hazards or existing wiring issues",
                   "Obtain any required body corporate or landlord approvals",
                   "Respond to requests for decisions or approvals promptly",
-                  "Ensure utilities (water, electricity) are available where needed",
+                  "Ensure the work area is clear and accessible where needed",
                   "Settle invoices according to the agreed payment terms",
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -164,7 +165,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">8. Limitation of Liability</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                While we carry appropriate insurance and take reasonable care in all work performed, the liability of Jero Fire Solutions for any claim arising from our services is limited to the value of the relevant job, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
+                While we carry appropriate insurance and take reasonable care in all work performed, the liability of Blackout Busters for any claim arising from our services is limited to the value of the relevant job, except where liability cannot be excluded or limited under South African law (including gross negligence or willful misconduct).
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 We are not liable for delays or failures caused by circumstances beyond our reasonable control, including extreme weather, load shedding, supplier delays, or municipal service interruptions.
@@ -175,7 +176,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">9. Insurance</h2>
               <p className="leading-relaxed text-muted-foreground">
-                Jero Fire Solutions maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own property or business insurance covering the site during any installation, servicing, or compliance work.
+                Blackout Busters maintains insurance cover appropriate to the work we perform. Details of specific coverage can be provided on request. We recommend clients maintain their own property or business insurance covering the site during any installation, servicing, or compliance work.
               </p>
             </div>
 
@@ -183,7 +184,7 @@ export default function TermsOfServicePage() {
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold">10. Website Use and Intellectual Property</h2>
               <p className="mb-4 leading-relaxed text-muted-foreground">
-                All content on this website, including text, images, logos, and design, is the property of Jero Fire Solutions or its licensors and may not be copied, reproduced, or used without our prior written consent.
+                All content on this website, including text, images, logos, and design, is the property of Blackout Busters or its licensors and may not be copied, reproduced, or used without our prior written consent.
               </p>
               <p className="leading-relaxed text-muted-foreground">
                 You agree not to use this website for any unlawful purpose or in a way that could damage, disable, or impair its functionality.
@@ -233,15 +234,15 @@ export default function TermsOfServicePage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">014@jerofiresolutions.co.za</span>
+                    <span className="text-sm text-muted-foreground">info@blackoutbusterssa.co.za</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">+27 78 133 6684</span>
+                    <span className="text-sm text-muted-foreground">+27 83 617 1112</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Kempton Park, Gauteng, South Africa</span>
+                    <span className="text-sm text-muted-foreground">Gauteng, South Africa</span>
                   </div>
                 </div>
               </div>
@@ -258,18 +259,18 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:014@jerofiresolutions.co.za"
+                    href="mailto:info@blackoutbusterssa.co.za"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     Email Us
                   </a>
                   <a
-                    href="tel:+27781336684"
+                    href="tel:+27836171112"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                   >
                     <Phone className="h-4 w-4" />
-                    Call: +27 78 133 6684
+                    Call: +27 83 617 1112
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-muted-foreground">
