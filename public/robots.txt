@@ -1,5 +1,5 @@
-# robots.txt for Cold Fix Services
-# https://www.coldfix.co.za/robots.txt
+# robots.txt for Blackout Busters SA
+# https://www.blackoutbusterssa.co.za/robots.txt
 
 # Allow all bots to crawl everything
 User-agent: *
@@ -9,10 +9,10 @@ Allow: /
 Crawl-delay: 0
 
 # Sitemap locations
-Sitemap: https://www.coldfix.co.za/sitemap.xml
+Sitemap: https://www.blackoutbusterssa.co.za/sitemap.xml
 
 # Host preference (helps with canonicalization)
-Host: https://www.coldfix.co.za
+Host: https://www.blackoutbusterssa.co.za
 
 # ===== Bot-Specific Rules =====
 
@@ -82,4 +82,4 @@ Disallow: /
 # ===== Additional Instructions =====
 
 # Note: This site uses clean URLs without a /services/ prefix
-# Example: /air-conditioning-services instead of /services/air-conditioning-services
+# Example: /electrical-installation instead of /services/electrical-installation
