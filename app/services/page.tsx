@@ -2,34 +2,22 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { services, serviceCategories, SITE } from "@/lib/services"
 import {
-  Zap,
-  Wrench,
-  Settings2,
-  SearchCheck,
-  Sun,
-  BatteryCharging,
-  Fuel,
-  Activity,
-  FileCheck,
-  CreditCard,
-  Building2,
-  Droplets,
-  Camera,
-  Siren,
   ArrowRight,
   Phone,
   CheckCircle,
+  CheckCircle2,
   Award,
   Clock,
   ShieldCheck,
   MapPin,
+  FileCheck,
 } from "lucide-react"
 
-const PHONE_TEL = "tel:+27836171112"
-const PHONE_DISPLAY = "+27 83 617 1112"
+const PHONE_TEL = SITE.phoneTel
+const PHONE_DISPLAY = SITE.phoneDisplay
 
 export const metadata: Metadata = {
   title: "Our Services | Electrical Installation, Repairs & Solar Solutions in Gauteng | Blackout Busters",
@@ -52,120 +40,12 @@ export const metadata: Metadata = {
   },
 }
 
-const services = [
-  {
-    icon: Zap,
-    title: "Electrical Installation",
-    description: "New wiring, circuits, and fittings installed to code for homes, offices, and industrial sites.",
-    href: "/electrical-installation",
-    features: ["New wiring & circuits", "Distribution boards", "New build & renovations", "Compliance certification", "Testing & sign-off"],
-    featured: true,
-  },
-  {
-    icon: Wrench,
-    title: "Electrical Repairs",
-    description: "Fast, reliable fixes for faults, trips, and failing electrical components.",
-    href: "/electrical-repairs",
-    features: ["Fault repairs", "Tripping DBs", "Socket & switch faults", "Rewiring sections", "Emergency call-outs"],
-    featured: false,
-  },
-  {
-    icon: Sun,
-    title: "Solar Installation",
-    description: "Panel systems sized and installed to match real household or business usage.",
-    href: "/solar-installation",
-    features: ["System design", "Panel installation", "Grid-tied & hybrid setups", "Monitoring setup", "Compliance certification"],
-    featured: true,
-  },
-  {
-    icon: Settings2,
-    title: "Maintenance",
-    description: "Scheduled electrical maintenance to catch problems before they cause an outage.",
-    href: "/maintenance",
-    features: ["Scheduled visits", "Preventative checks", "Multi-site contracts", "Priority response", "Service records"],
-    featured: false,
-  },
-  {
-    icon: BatteryCharging,
-    title: "Backup Power (Inverter & Battery)",
-    description: "Inverter and battery setups that kick in the moment the grid goes down.",
-    href: "/backup-power-inverter-battery",
-    features: ["Inverter installation", "Battery sizing", "Auto changeover", "Load assessment", "Compliance certification"],
-    featured: false,
-  },
-  {
-    icon: Fuel,
-    title: "Generator Installation & Servicing",
-    description: "Sizing, installation, and servicing for standby generators.",
-    href: "/generator-installation-servicing",
-    features: ["Generator sizing", "Installation & wiring", "Auto-start setup", "Scheduled servicing", "Fuel system checks"],
-    featured: false,
-  },
-  {
-    icon: Activity,
-    title: "Load Shedding Solutions",
-    description: "A consultation to match the right backup setup to your budget and needs.",
-    href: "/load-shedding-solutions",
-    features: ["Usage assessment", "System comparison", "Budget planning", "Stage-based recommendations", "Ongoing advice"],
-    featured: false,
-  },
-  {
-    icon: FileCheck,
-    title: "DB Board Upgrades & COC",
-    description: "Distribution board upgrades and Certificates of Compliance for sales, audits, and insurance.",
-    href: "/db-board-upgrades-compliance-certificates",
-    features: ["DB board upgrades", "Certificate of Compliance", "Pre-sale inspections", "Insurance requirements", "Fault correction"],
-    featured: false,
-  },
-  {
-    icon: Droplets,
-    title: "Geyser Installation & Repairs",
-    description: "Geyser installs, repairs, and the electrical connection work that goes with them.",
-    href: "/geyser-installation-repairs",
-    features: ["Geyser installation", "Element & thermostat repairs", "Leak-related electrical faults", "Timer installation", "Replacement quotes"],
-    featured: false,
-  },
-  {
-    icon: Camera,
-    title: "CCTV & Security Installation",
-    description: "Camera systems installed and wired in alongside your electrical work.",
-    href: "/cctv-security-installation",
-    features: ["Camera installation", "Wiring & power runs", "Remote viewing setup", "System upgrades", "Maintenance"],
-    featured: false,
-  },
-  {
-    icon: SearchCheck,
-    title: "Fault Finding & Inspections",
-    description: "Diagnostics that find the actual cause, not just the symptom.",
-    href: "/fault-finding-inspections",
-    features: ["Fault diagnostics", "Pre-purchase inspections", "Insurance inspections", "Thermal checks", "Written reports"],
-    featured: false,
-  },
-  {
-    icon: CreditCard,
-    title: "Prepaid Meter Installation",
-    description: "Prepaid meter setup and replacement, done properly and signed off.",
-    href: "/prepaid-meter-installation",
-    features: ["New meter installation", "Meter replacement", "Municipal coordination", "Faulty meter diagnosis", "Sign-off documentation"],
-    featured: false,
-  },
-  {
-    icon: Siren,
-    title: "Emergency / 24-Hour Callout",
-    description: "Urgent electrical faults don't wait for business hours — neither do we.",
-    href: "/emergency-247-callout",
-    features: ["24-hour availability", "Urgent fault response", "Safety-first triage", "Temporary fixes on-site", "Follow-up repairs"],
-    featured: false,
-  },
-  {
-    icon: Building2,
-    title: "Commercial & Industrial Electrical",
-    description: "Larger-scale electrical work for commercial and industrial sites.",
-    href: "/commercial-industrial-electrical",
-    features: ["Three-phase installations", "Panel & switchgear work", "Site maintenance contracts", "Compliance documentation", "Scheduled shutdown work"],
-    featured: false,
-  },
-]
+const categoryBlurbs: Record<string, string> = {
+  "Electrical Core": "The everyday work that keeps a property safe and running.",
+  "Solar & Backup Power": "For when the grid can't be trusted to stay on.",
+  "Compliance & Upgrades": "The paperwork and panel work that keeps you covered.",
+  "Home & Safety Extras": "The services that usually get bundled in alongside electrical work.",
+}
 
 const stats = [
   { value: "14", label: "Services", icon: Award },
@@ -198,6 +78,14 @@ const benefits = [
 ]
 
 export default function ServicesPage() {
+  const groups = serviceCategories.map((category) => ({
+    label: category,
+    blurb: categoryBlurbs[category] ?? "",
+    services: services.filter((service) => service.category === category),
+  }))
+
+  let rowIndex = 0
+
   return (
     <>
       {/* Hero Section */}
@@ -211,7 +99,7 @@ export default function ServicesPage() {
           <Breadcrumbs variant="onDark" items={[{ label: "Services" }]} />
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
-              <Zap className="h-4 w-4 text-accent" aria-hidden="true" />
+              <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
               <span>Electrical, Solar &amp; Backup Power</span>
             </div>
 
@@ -257,10 +145,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services — alternating editorial rows, grouped by category */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <span className="mb-4 inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary uppercase tracking-wide">
               What We Offer
             </span>
@@ -272,56 +160,82 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <Card
-                key={service.title}
-                className={`group flex flex-col transition-all hover:shadow-2xl hover:-translate-y-2 ${
-                  service.featured ? "border-2 border-secondary ring-1 ring-secondary/20" : "border-border"
-                }`}
-              >
-                <CardHeader>
-                  <div className="flex items-start justify-between mb-4">
-                    <div
-                      className={`flex h-14 w-14 items-center justify-center rounded-xl transition-all group-hover:scale-110 ${
-                        service.featured
-                          ? "bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground shadow-lg"
-                          : "bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground"
-                      }`}
-                    >
-                      <service.icon className="h-7 w-7" aria-hidden="true" />
-                    </div>
-                    {service.featured && (
-                      <span className="rounded-full bg-gradient-to-r from-accent to-accent/80 px-3 py-1 text-xs font-bold text-accent-foreground shadow-md">
-                        POPULAR
-                      </span>
-                    )}
-                  </div>
-                  <CardTitle className="text-xl group-hover:text-secondary transition-colors">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-1 flex-col">
-                  <CardDescription className="mb-4 flex-1 leading-relaxed">{service.description}</CardDescription>
-                  <ul className="mb-6 space-y-2">
-                    {service.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <div className="h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={service.href}
-                    className="inline-flex items-center text-sm font-bold text-secondary hover:text-secondary/80 transition-colors group/link"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" aria-hidden="true" />
-                  </Link>
-                </CardContent>
-              </Card>
+          <div className="space-y-24">
+            {groups.map((group) => (
+              <div key={group.label}>
+                <div className="mb-10 flex flex-wrap items-baseline justify-between gap-2 border-b border-border pb-4">
+                  <h3 className="text-2xl font-bold">{group.label}</h3>
+                  <p className="text-sm text-muted-foreground">{group.blurb}</p>
+                </div>
+
+                <div className="space-y-16">
+                  {group.services.map((service) => {
+                    const reversed = rowIndex % 2 === 1
+                    rowIndex += 1
+                    const features = service.features ?? []
+
+                    return (
+                      <div
+                        key={service.slug}
+                        className="grid items-center gap-8 md:grid-cols-2 md:gap-12"
+                        itemScope
+                        itemType="https://schema.org/Service"
+                      >
+                        <div className={reversed ? "md:order-2" : ""}>
+                          <Link
+                            href={`/${service.slug}`}
+                            className="group relative block aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-1 ring-border"
+                            aria-label={`Learn more about ${service.title}`}
+                          >
+                            <Image
+                              src={service.image || "/placeholder.svg"}
+                              alt={service.imageAlt}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 50vw"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              itemProp="image"
+                            />
+                            <div className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-background/90 text-primary shadow-md backdrop-blur-sm">
+                              <service.icon className="h-5 w-5" aria-hidden="true" />
+                            </div>
+                          </Link>
+                        </div>
+
+                        <div className={reversed ? "md:order-1" : ""}>
+                          <h4 className="mb-3 text-2xl font-bold" itemProp="name">
+                            {service.title}
+                          </h4>
+                          <p className="mb-5 text-muted-foreground leading-relaxed" itemProp="description">
+                            {service.tagline}
+                          </p>
+                          {features.length > 0 && (
+                            <ul className="mb-6 grid gap-2 sm:grid-cols-2">
+                              {features.map((feature) => (
+                                <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                                  <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true" />
+                                  <span>{feature}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                          <Link
+                            href={`/${service.slug}`}
+                            itemProp="url"
+                            className="inline-flex items-center text-sm font-bold text-secondary transition-colors hover:text-secondary/80"
+                          >
+                            Learn More
+                            <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                          </Link>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
             ))}
           </div>
 
-          <div className="mt-12 text-center p-8 rounded-2xl bg-gradient-to-br from-muted to-muted/50 border border-border">
+          <div className="mt-20 text-center p-8 rounded-2xl bg-gradient-to-br from-muted to-muted/50 border border-border">
             <MapPin className="h-12 w-12 text-secondary mx-auto mb-4" aria-hidden="true" />
             <h3 className="text-2xl font-bold mb-2">Serving All of Gauteng</h3>
             <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
@@ -393,11 +307,11 @@ export default function ServicesPage() {
             </div>
 
             <div className="relative">
-              {/* TODO: swap for a real photo of the Blackout Busters team or a technician on site */}
+              {/* Real team photo — fixes the broken placeholder reference */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/blackout-busters-team-electricians-gauteng.jpg"
-                  alt="Blackout Busters electricians ready for an installation in Gauteng"
+                  src="/blackout-busters-team-gauteng.png"
+                  alt="The Blackout Busters team, electrical and solar technicians serving Gauteng"
                   fill
                   className="object-cover"
                   loading="lazy"
