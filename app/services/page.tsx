@@ -5,38 +5,48 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import {
-  Siren,
-  FireExtinguisher,
-  Droplets,
-  GraduationCap,
+  Zap,
   Wrench,
-  ShieldCheck,
+  Settings2,
+  SearchCheck,
+  Sun,
+  BatteryCharging,
+  Fuel,
+  Activity,
+  FileCheck,
+  CreditCard,
+  Building2,
+  Droplets,
+  Camera,
+  Siren,
   ArrowRight,
   Phone,
   CheckCircle,
   Award,
   Clock,
-  Star,
+  ShieldCheck,
   MapPin,
-  Shield,
 } from "lucide-react"
 
+const PHONE_TEL = "tel:+27836171112"
+const PHONE_DISPLAY = "+27 83 617 1112"
+
 export const metadata: Metadata = {
-  title: "Our Services | Fire Detection, Suppression and Compliance in Gauteng | Jero Fire Solutions",
+  title: "Our Services | Electrical Installation, Repairs & Solar Solutions in Gauteng | Blackout Busters",
   description:
-    "Explore Jero Fire Solutions: fire detection and alarm systems, extinguisher servicing, sprinkler and suppression systems, safety training, maintenance contracts, and hydrant testing across Gauteng.",
+    "Explore Blackout Busters: electrical installation and repairs, solar installation, backup power, generator servicing, DB board upgrades and compliance certificates (COC) across Gauteng.",
   keywords:
-    "fire detection Gauteng, fire extinguisher servicing Pretoria, sprinkler installation Johannesburg, fire safety training, fire equipment maintenance contract, fire hydrant testing",
+    "electrical installation Gauteng, electrical repairs Pretoria, solar installation Johannesburg, backup power inverter battery, generator servicing, DB board upgrade, compliance certificate COC, load shedding solutions",
   openGraph: {
-    title: "Our Services | Jero Fire Solutions Gauteng",
+    title: "Our Services | Blackout Busters Gauteng",
     description:
-      "Fire detection, suppression, extinguisher servicing, training, and compliance services for Johannesburg, Pretoria, and the wider Gauteng region.",
+      "Electrical, solar, and backup power services for Johannesburg, Pretoria, and the wider Gauteng region.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jero Fire Solutions fire safety technicians in Gauteng",
+        alt: "Blackout Busters electrical and solar technicians in Gauteng",
       },
     ],
   },
@@ -44,64 +54,122 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    icon: Siren,
-    title: "Fire Detection & Alarm Systems",
-    description:
-      "Smoke detectors, heat detectors, and alarm panels supplied, installed, and maintained by certified technicians for early warning and compliance.",
-    href: "/fire-detection-alarm-systems",
-    features: ["Smoke & heat detectors", "Alarm panels & sounders", "New build & retrofit", "Compliance certification", "System testing"],
+    icon: Zap,
+    title: "Electrical Installation",
+    description: "New wiring, circuits, and fittings installed to code for homes, offices, and industrial sites.",
+    href: "/electrical-installation",
+    features: ["New wiring & circuits", "Distribution boards", "New build & renovations", "Compliance certification", "Testing & sign-off"],
     featured: true,
-  },
-  {
-    icon: FireExtinguisher,
-    title: "Fire Extinguisher Supply & Servicing",
-    description:
-      "Sales, annual servicing, refills, and certification for portable fire extinguishers across homes, offices, and industrial sites.",
-    href: "/fire-extinguisher-supply-servicing",
-    features: ["Supply & installation", "Annual servicing", "Refills & recharging", "Certification & tagging", "Site audits"],
-    featured: true,
-  },
-  {
-    icon: Droplets,
-    title: "Sprinkler & Suppression Systems",
-    description:
-      "Installation, inspection, and maintenance of sprinkler and fire suppression systems for commercial and industrial buildings.",
-    href: "/sprinkler-suppression-systems",
-    features: ["System installation", "Pressure testing", "Scheduled inspection", "Suppression agents", "Compliance reports"],
-    featured: false,
-  },
-  {
-    icon: GraduationCap,
-    title: "Fire Safety Training & Compliance",
-    description:
-      "Staff fire awareness training, evacuation drills, and OHS compliance audits delivered by certified trainers.",
-    href: "/fire-safety-training-compliance",
-    features: ["Staff awareness training", "Evacuation drills", "OHS compliance audits", "Certificates & records", "Refresher sessions"],
-    featured: false,
   },
   {
     icon: Wrench,
-    title: "Fire Equipment Maintenance Contracts",
-    description:
-      "Scheduled maintenance contracts for extinguishers, alarms, and suppression systems that keep every certificate current.",
-    href: "/fire-equipment-maintenance-contracts",
-    features: ["Scheduled servicing", "Multi site contracts", "Priority response", "Compliance records", "Single point of contact"],
+    title: "Electrical Repairs",
+    description: "Fast, reliable fixes for faults, trips, and failing electrical components.",
+    href: "/electrical-repairs",
+    features: ["Fault repairs", "Tripping DBs", "Socket & switch faults", "Rewiring sections", "Emergency call-outs"],
     featured: false,
   },
   {
-    icon: ShieldCheck,
-    title: "Fire Hydrant Installation & Testing",
-    description:
-      "Installation, pressure testing, and certification of fire hydrants for commercial and industrial sites.",
-    href: "/fire-hydrant-installation-testing",
-    features: ["Hydrant installation", "Pressure testing", "Flow testing", "Certification", "Scheduled retesting"],
+    icon: Sun,
+    title: "Solar Installation",
+    description: "Panel systems sized and installed to match real household or business usage.",
+    href: "/solar-installation",
+    features: ["System design", "Panel installation", "Grid-tied & hybrid setups", "Monitoring setup", "Compliance certification"],
+    featured: true,
+  },
+  {
+    icon: Settings2,
+    title: "Maintenance",
+    description: "Scheduled electrical maintenance to catch problems before they cause an outage.",
+    href: "/maintenance",
+    features: ["Scheduled visits", "Preventative checks", "Multi-site contracts", "Priority response", "Service records"],
+    featured: false,
+  },
+  {
+    icon: BatteryCharging,
+    title: "Backup Power (Inverter & Battery)",
+    description: "Inverter and battery setups that kick in the moment the grid goes down.",
+    href: "/backup-power-inverter-battery",
+    features: ["Inverter installation", "Battery sizing", "Auto changeover", "Load assessment", "Compliance certification"],
+    featured: false,
+  },
+  {
+    icon: Fuel,
+    title: "Generator Installation & Servicing",
+    description: "Sizing, installation, and servicing for standby generators.",
+    href: "/generator-installation-servicing",
+    features: ["Generator sizing", "Installation & wiring", "Auto-start setup", "Scheduled servicing", "Fuel system checks"],
+    featured: false,
+  },
+  {
+    icon: Activity,
+    title: "Load Shedding Solutions",
+    description: "A consultation to match the right backup setup to your budget and needs.",
+    href: "/load-shedding-solutions",
+    features: ["Usage assessment", "System comparison", "Budget planning", "Stage-based recommendations", "Ongoing advice"],
+    featured: false,
+  },
+  {
+    icon: FileCheck,
+    title: "DB Board Upgrades & COC",
+    description: "Distribution board upgrades and Certificates of Compliance for sales, audits, and insurance.",
+    href: "/db-board-upgrades-compliance-certificates",
+    features: ["DB board upgrades", "Certificate of Compliance", "Pre-sale inspections", "Insurance requirements", "Fault correction"],
+    featured: false,
+  },
+  {
+    icon: Droplets,
+    title: "Geyser Installation & Repairs",
+    description: "Geyser installs, repairs, and the electrical connection work that goes with them.",
+    href: "/geyser-installation-repairs",
+    features: ["Geyser installation", "Element & thermostat repairs", "Leak-related electrical faults", "Timer installation", "Replacement quotes"],
+    featured: false,
+  },
+  {
+    icon: Camera,
+    title: "CCTV & Security Installation",
+    description: "Camera systems installed and wired in alongside your electrical work.",
+    href: "/cctv-security-installation",
+    features: ["Camera installation", "Wiring & power runs", "Remote viewing setup", "System upgrades", "Maintenance"],
+    featured: false,
+  },
+  {
+    icon: SearchCheck,
+    title: "Fault Finding & Inspections",
+    description: "Diagnostics that find the actual cause, not just the symptom.",
+    href: "/fault-finding-inspections",
+    features: ["Fault diagnostics", "Pre-purchase inspections", "Insurance inspections", "Thermal checks", "Written reports"],
+    featured: false,
+  },
+  {
+    icon: CreditCard,
+    title: "Prepaid Meter Installation",
+    description: "Prepaid meter setup and replacement, done properly and signed off.",
+    href: "/prepaid-meter-installation",
+    features: ["New meter installation", "Meter replacement", "Municipal coordination", "Faulty meter diagnosis", "Sign-off documentation"],
+    featured: false,
+  },
+  {
+    icon: Siren,
+    title: "Emergency / 24-Hour Callout",
+    description: "Urgent electrical faults don't wait for business hours — neither do we.",
+    href: "/emergency-247-callout",
+    features: ["24-hour availability", "Urgent fault response", "Safety-first triage", "Temporary fixes on-site", "Follow-up repairs"],
+    featured: false,
+  },
+  {
+    icon: Building2,
+    title: "Commercial & Industrial Electrical",
+    description: "Larger-scale electrical work for commercial and industrial sites.",
+    href: "/commercial-industrial-electrical",
+    features: ["Three-phase installations", "Panel & switchgear work", "Site maintenance contracts", "Compliance documentation", "Scheduled shutdown work"],
     featured: false,
   },
 ]
 
 const stats = [
-  { value: "6", label: "Service Categories", icon: Award },
-  { value: "Certified", label: "Technicians", icon: ShieldCheck },
+  { value: "14", label: "Services", icon: Award },
+  { value: "4", label: "Service Categories", icon: ShieldCheck },
   { value: "Same Day", label: "Quotes", icon: Clock },
   { value: "24 Hour", label: "Emergency Support", icon: Phone },
 ]
@@ -109,23 +177,23 @@ const stats = [
 const benefits = [
   {
     icon: CheckCircle,
-    title: "One Fire Safety Partner",
-    description: "Detection, suppression, extinguishers, and compliance handled by one accountable team",
+    title: "One Accountable Team",
+    description: "Electrical, solar, backup power, and compliance handled by one company, start to finish",
   },
   {
     icon: Award,
-    title: "Certified Technicians",
-    description: "Trained and certified technicians who understand what they are signing off on",
+    title: "Full Range Capability",
+    description: "From a single household repair to commercial and industrial-scale electrical work",
   },
   {
-    icon: Shield,
-    title: "Fully Insured",
-    description: "Comprehensive insurance coverage for your peace of mind",
+    icon: FileCheck,
+    title: "Compliance on Every Job",
+    description: "Certificates of Compliance (COC) provided so you have the paperwork you need",
   },
   {
     icon: Clock,
     title: "Fast Response",
-    description: "Same day quotes and rapid response when a certificate is about to lapse",
+    description: "Same day quotes and emergency callouts when something can't wait",
   },
 ]
 
@@ -143,21 +211,18 @@ export default function ServicesPage() {
           <Breadcrumbs variant="onDark" items={[{ label: "Services" }]} />
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
-              <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
-              <span>Fire Detection, Suppression & Compliance</span>
-              <div className="flex items-center gap-0.5 ml-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-3 w-3 fill-accent text-accent" aria-hidden="true" />
-                ))}
-              </div>
+              <Zap className="h-4 w-4 text-accent" aria-hidden="true" />
+              <span>Electrical, Solar &amp; Backup Power</span>
             </div>
 
             <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              <span className="text-accent">6</span> Fire Safety Services <br />Across Gauteng
+              <span className="text-accent">14</span> Electrical &amp; Solar Services <br />Across Gauteng
             </h1>
             <p className="text-pretty text-lg text-primary-foreground/90 md:text-xl leading-relaxed mb-8">
-              <strong className="text-white">Jero Fire Solutions</strong> installs, services, and certifies fire safety systems for homes and businesses. From detection and suppression to training and compliance, we serve{" "}
-              <strong className="text-white">Johannesburg, Pretoria, Kempton Park</strong>, and the greater Gauteng region.
+              <strong className="text-white">Blackout Busters</strong> installs, repairs, and certifies
+              electrical and solar systems for homes and businesses. From backup power to compliance
+              certificates, we serve <strong className="text-white">Johannesburg, Pretoria, Kempton Park</strong>,
+              and the greater Gauteng region.
             </p>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -203,7 +268,7 @@ export default function ServicesPage() {
               Our <span className="text-secondary">Complete Service Range</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              From detection systems to compliance training, we keep your building and the people in it protected
+              From a single faulty plug point to a full backup power system, we keep your property running.
             </p>
           </div>
 
@@ -260,7 +325,8 @@ export default function ServicesPage() {
             <MapPin className="h-12 w-12 text-secondary mx-auto mb-4" aria-hidden="true" />
             <h3 className="text-2xl font-bold mb-2">Serving All of Gauteng</h3>
             <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
-              All services available across Johannesburg, Pretoria, Kempton Park, Midrand, Sandton, and many more areas in the Gauteng province
+              All services available across Johannesburg, Pretoria, Kempton Park, Midrand, Sandton, and many
+              more areas in the Gauteng province
             </p>
             <Button asChild variant="outline" size="lg" className="border-secondary/30 hover:bg-secondary/10">
               <Link href="/service-areas">
@@ -281,10 +347,12 @@ export default function ServicesPage() {
                 Why Choose Us
               </span>
               <h2 className="text-3xl font-bold mb-6 md:text-4xl">
-                The <span className="text-secondary">Jero Fire Solutions</span> Advantage
+                The <span className="text-secondary">Blackout Busters</span> Advantage
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We built our name in Gauteng on fire safety work done properly, not just signed off. Every certificate reflects what our technicians actually found and fixed on site.
+                We built Blackout Busters around a simple idea: one team should be able to handle the
+                electrical work and the backup power that goes with it, without you needing two different
+                contractors and two different quotes.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -292,14 +360,14 @@ export default function ServicesPage() {
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
                     <h3 className="font-bold mb-1">Integrated Services</h3>
-                    <p className="text-sm text-muted-foreground">One company for detection, suppression, extinguishers, and compliance with clear accountability</p>
+                    <p className="text-sm text-muted-foreground">One company for electrical, solar, backup power, and compliance with clear accountability</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <h3 className="font-bold mb-1">Certified Professionals</h3>
-                    <p className="text-sm text-muted-foreground">Trained, certified, fully insured, and experienced technicians</p>
+                    <h3 className="font-bold mb-1">Documentation You Can Use</h3>
+                    <p className="text-sm text-muted-foreground">Compliance Certificates (COC) provided for audits, insurance, and property sales</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -319,17 +387,17 @@ export default function ServicesPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-secondary/30 hover:bg-secondary/10">
-                  <Link href="/contact">Get Free Quote</Link>
+                  <a href={PHONE_TEL}>Call: {PHONE_DISPLAY}</a>
                 </Button>
               </div>
             </div>
 
             <div className="relative">
-              {/* PLACEHOLDER: swap for a real photo of the Jero Fire Solutions team or a technician on site */}
+              {/* TODO: swap for a real photo of the Blackout Busters team or a technician on site */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-border">
                 <Image
-                  src="/jero-fire-team-technicians-gauteng.jpg"
-                  alt="Jero Fire Solutions technicians ready for a fire safety inspection in Gauteng"
+                  src="/blackout-busters-team-electricians-gauteng.jpg"
+                  alt="Blackout Busters electricians ready for an installation in Gauteng"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -339,7 +407,7 @@ export default function ServicesPage() {
               </div>
 
               <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gradient-to-br from-accent to-accent/90 p-6 text-accent-foreground shadow-2xl ring-2 ring-white/20">
-                <ShieldCheck className="h-8 w-8 mb-1" aria-hidden="true" />
+                <FileCheck className="h-8 w-8 mb-1" aria-hidden="true" />
                 <p className="text-sm font-semibold">Compliance</p>
                 <p className="text-xs opacity-90">Done Properly</p>
               </div>
@@ -361,23 +429,24 @@ export default function ServicesPage() {
               Need a Service <span className="text-accent">Not Listed?</span>
             </h2>
             <p className="mb-8 text-lg text-primary-foreground/90 leading-relaxed">
-              If it protects your building from fire, we can most likely help. Contact us to discuss your specific site and receive a tailored, no obligation quote.
+              If it involves electricity or backup power, we can most likely help. Contact us to discuss
+              your specific site and receive a tailored, no obligation quote.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-xl h-14 px-8 text-base font-semibold">
-                <Link href="/contact">
+                <a href={PHONE_TEL}>
                   <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
-                  Request Free Quote
-                </Link>
+                  Call {PHONE_DISPLAY}
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-14 px-8 text-base font-semibold">
-                <Link href="tel:+27781336684">Call: +27 78 133 6684</Link>
+                <Link href="/contact">Request Free Quote</Link>
               </Button>
             </div>
 
             <p className="text-sm text-primary-foreground/70">
-              24 Hour Emergency Support • Same Day Quotes • Licensed and Insured • Serving All Gauteng
+              24 Hour Emergency Support • Same Day Quotes • Serving All Gauteng
             </p>
           </div>
         </div>
