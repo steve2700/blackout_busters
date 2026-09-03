@@ -1,151 +1,20 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import {
-  Zap,
-  Wrench,
-  Settings2,
-  SearchCheck,
-  Sun,
-  BatteryCharging,
-  Fuel,
-  Activity,
-  FileCheck,
-  CreditCard,
-  Building2,
-  Droplets,
-  Camera,
-  Siren,
-  ArrowRight,
-  ClipboardCheck,
-  BellRing,
-  Phone,
-} from "lucide-react"
+import { services, serviceCategories, SITE } from "@/lib/services"
+import { ArrowRight, FileCheck, ClipboardCheck, BellRing, Phone } from "lucide-react"
 
-const PHONE_TEL = "tel:+27836171112"
-const PHONE_DISPLAY = "+27 83 617 1112"
+const PHONE_TEL = SITE.phoneTel
+const PHONE_DISPLAY = SITE.phoneDisplay
 
-type ServiceGroup = {
-  label: string
-  blurb: string
-  services: {
-    icon: typeof Zap
-    title: string
-    description: string
-    href: string
-  }[]
+// Short intro line per category, keyed to the category names in lib/services.ts
+const categoryBlurbs: Record<string, string> = {
+  "Electrical Core": "The everyday work that keeps a property safe and running.",
+  "Solar & Backup Power": "For when the grid can't be trusted to stay on.",
+  "Compliance & Upgrades": "The paperwork and panel work that keeps you covered.",
+  "Home & Safety Extras": "The services that usually get bundled in alongside electrical work.",
 }
-
-const groups: ServiceGroup[] = [
-  {
-    label: "Electrical Core",
-    blurb: "The everyday work that keeps a property safe and running.",
-    services: [
-      {
-        icon: Zap,
-        title: "Electrical Installation",
-        description: "New wiring, circuits, and fittings installed to code for homes and businesses.",
-        href: "/electrical-installation",
-      },
-      {
-        icon: Wrench,
-        title: "Electrical Repairs",
-        description: "Fast, reliable fixes for faults, trips, and failing electrical components.",
-        href: "/electrical-repairs",
-      },
-      {
-        icon: Settings2,
-        title: "Maintenance",
-        description: "Scheduled electrical maintenance to catch problems before they become outages.",
-        href: "/maintenance",
-      },
-      {
-        icon: SearchCheck,
-        title: "Fault Finding & Inspections",
-        description: "Diagnostics that find the actual cause, not just the symptom.",
-        href: "/fault-finding-inspections",
-      },
-    ],
-  },
-  {
-    label: "Solar & Backup Power",
-    blurb: "For when the grid can't be trusted to stay on.",
-    services: [
-      {
-        icon: Sun,
-        title: "Solar Installation",
-        description: "Panel systems sized and installed for real Gauteng usage patterns.",
-        href: "/solar-installation",
-      },
-      {
-        icon: BatteryCharging,
-        title: "Backup Power (Inverter & Battery)",
-        description: "Inverter and battery setups that kick in the moment the power drops.",
-        href: "/backup-power-inverter-battery",
-      },
-      {
-        icon: Fuel,
-        title: "Generator Installation & Servicing",
-        description: "Sizing, installation, and servicing for standby generators.",
-        href: "/generator-installation-servicing",
-      },
-      {
-        icon: Activity,
-        title: "Load Shedding Solutions",
-        description: "A consultation to match the right backup setup to your budget and needs.",
-        href: "/load-shedding-solutions",
-      },
-    ],
-  },
-  {
-    label: "Compliance & Upgrades",
-    blurb: "The paperwork and panel work that keeps you covered.",
-    services: [
-      {
-        icon: FileCheck,
-        title: "DB Board Upgrades & COC",
-        description: "Distribution board upgrades and Certificates of Compliance for sales, audits, and insurance.",
-        href: "/db-board-upgrades-compliance-certificates",
-      },
-      {
-        icon: CreditCard,
-        title: "Prepaid Meter Installation",
-        description: "Prepaid meter setup and replacement, done properly and signed off.",
-        href: "/prepaid-meter-installation",
-      },
-      {
-        icon: Building2,
-        title: "Commercial & Industrial Electrical",
-        description: "Larger-scale electrical work for commercial and industrial sites.",
-        href: "/commercial-industrial-electrical",
-      },
-    ],
-  },
-  {
-    label: "Home & Safety Extras",
-    blurb: "The services that usually get bundled in alongside electrical work.",
-    services: [
-      {
-        icon: Droplets,
-        title: "Geyser Installation & Repairs",
-        description: "Geyser installs, repairs, and electrical connection work in one visit.",
-        href: "/geyser-installation-repairs",
-      },
-      {
-        icon: Camera,
-        title: "CCTV & Security Installation",
-        description: "Camera systems installed and wired in alongside your electrical work.",
-        href: "/cctv-security-installation",
-      },
-      {
-        icon: Siren,
-        title: "Emergency / 24-Hour Callout",
-        description: "Urgent electrical faults don't wait for business hours, and neither do we.",
-        href: "/emergency-247-callout",
-      },
-    ],
-  },
-]
 
 const inclusions = [
   {
@@ -166,6 +35,16 @@ const inclusions = [
 ]
 
 export function ServicesOverview() {
+  // Group the single source of truth by category, preserving category order
+  const groups = serviceCategories.map((category) => ({
+    label: category,
+    blurb: categoryBlurbs[category] ?? "",
+    services: services.filter((service) => service.category === category),
+  }))
+
+  // Running position for the ItemList schema across all groups
+  let position = 0
+
   return (
     <section
       className="py-20 lg:py-28 bg-gradient-to-b from-background to-muted/30"
@@ -187,9 +66,9 @@ export function ServicesOverview() {
             Electrical, Solar &amp; Backup Power in Gauteng
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed" itemProp="description">
-            <strong>Blackout Busters</strong> covers everything from a single faulty plug point to a full
-            backup power system. Installations, repairs, and the compliance paperwork to prove it,
-            across <strong>Johannesburg, Pretoria, and Gauteng</strong>.
+            <strong>Blackout Busters</strong> covers everything from a single faulty plug point to a full backup power
+            system. Installations, repairs, and the compliance paperwork to prove it, across{" "}
+            <strong>Johannesburg, Pretoria, and Gauteng</strong>.
           </p>
         </div>
 
@@ -202,35 +81,66 @@ export function ServicesOverview() {
                 <p className="text-sm text-muted-foreground">{group.blurb}</p>
               </div>
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {group.services.map((service) => (
-                  <Card
-                    key={service.href}
-                    className="group relative overflow-hidden border-border transition-all duration-300 hover:border-accent hover:shadow-xl hover:-translate-y-1"
-                    itemScope
-                    itemType="https://schema.org/Service"
-                    itemProp="itemListElement"
-                  >
-                    <CardContent className="relative p-5">
-                      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
-                        <service.icon className="h-5 w-5" aria-hidden="true" />
-                      </div>
-                      <h4 className="mb-1.5 text-sm font-bold group-hover:text-primary transition-colors" itemProp="name">
-                        {service.title}
-                      </h4>
-                      <p className="mb-3 text-xs text-muted-foreground leading-relaxed" itemProp="description">
-                        {service.description}
-                      </p>
+                {group.services.map((service) => {
+                  position += 1
+                  const currentPosition = position
+                  return (
+                    <Card
+                      key={service.slug}
+                      className="group relative flex flex-col overflow-hidden border-border p-0 transition-all duration-300 hover:border-accent hover:shadow-xl hover:-translate-y-1"
+                      itemScope
+                      itemType="https://schema.org/Service"
+                      itemProp="itemListElement"
+                    >
+                      <meta itemProp="position" content={String(currentPosition)} />
+                      {/* Service image — lazy-loaded and optimized by next/image */}
                       <Link
-                        href={service.href}
-                        className="inline-flex items-center text-xs font-semibold text-primary hover:text-accent transition-colors"
-                        itemProp="url"
+                        href={`/${service.slug}`}
+                        className="relative block aspect-[16/10] overflow-hidden bg-muted"
+                        aria-label={`Learn more about ${service.title}`}
                       >
-                        Learn More
-                        <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                        <Image
+                          src={service.image || "/placeholder.svg"}
+                          alt={service.imageAlt}
+                          fill
+                          loading="lazy"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          itemProp="image"
+                        />
+                        <div
+                          className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                          aria-hidden="true"
+                        />
+                        <div className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-background/90 text-primary shadow-sm backdrop-blur-sm">
+                          <service.icon className="h-4 w-4" aria-hidden="true" />
+                        </div>
                       </Link>
-                    </CardContent>
-                  </Card>
-                ))}
+                      <CardContent className="flex flex-1 flex-col p-5">
+                        <h4
+                          className="mb-1.5 text-sm font-bold transition-colors group-hover:text-primary"
+                          itemProp="name"
+                        >
+                          {service.title}
+                        </h4>
+                        <p className="mb-3 flex-1 text-xs leading-relaxed text-muted-foreground" itemProp="description">
+                          {service.tagline}
+                        </p>
+                        <Link
+                          href={`/${service.slug}`}
+                          className="inline-flex items-center text-xs font-semibold text-primary transition-colors hover:text-accent"
+                          itemProp="url"
+                        >
+                          Learn More
+                          <ArrowRight
+                            className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1"
+                            aria-hidden="true"
+                          />
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
               </div>
             </div>
           ))}
@@ -253,14 +163,15 @@ export function ServicesOverview() {
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border-2 border-accent/30 bg-card p-8 lg:p-12 text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary" aria-hidden="true" />
+          <div
+            className="absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary"
+            aria-hidden="true"
+          />
 
-          <h3 className="text-2xl lg:text-3xl font-bold text-card-foreground mb-4">
-            Not Sure Which Service You Need?
-          </h3>
+          <h3 className="text-2xl lg:text-3xl font-bold text-card-foreground mb-4">Not Sure Which Service You Need?</h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Tell us what's going on and we'll point you at the right fix, from a quick repair to a full
-            backup power setup.
+            Tell us what's going on and we'll point you at the right fix, from a quick repair to a full backup power
+            setup.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
